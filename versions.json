@@ -2,9 +2,9 @@
   "stable": null,
   "versions": [
     {
-      "tag": "main",
-      "label": "Development (main)",
-      "url": "/main/"
+      "tag": "master",
+      "label": "Development (master)",
+      "url": "/master/"
     }
   ]
 }
