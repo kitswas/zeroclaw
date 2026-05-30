@@ -6,6 +6,9 @@ use xtask::cmd;
 struct Cli {
     #[command(subcommand)]
     command: Cmd,
+    /// Optional tag for versioned docs output (e.g. v0.7.5). Falls back to TAG env var.
+    #[arg(long)]
+    tag: Option<String>,
 }
 
 #[derive(Subcommand)]
@@ -44,10 +47,12 @@ enum Cmd {
 
 fn main() -> anyhow::Result<()> {
     let cli = Cli::parse();
+    let tag_owned = cli.tag.or_else(|| std::env::var("TAG").ok());
+    let tag = tag_owned.as_deref();
     match cli.command {
-        Cmd::Serve { locale } => cmd::mdbook::serve::run(locale.as_deref()),
-        Cmd::Build => cmd::mdbook::build::run(),
-        Cmd::Refs => cmd::mdbook::refs::run(),
+        Cmd::Serve { locale } => cmd::mdbook::serve::run(locale.as_deref(), tag),
+        Cmd::Build => cmd::mdbook::build::run(tag),
+        Cmd::Refs => cmd::mdbook::refs::run(tag),
         Cmd::Sync {
             locale,
             force,

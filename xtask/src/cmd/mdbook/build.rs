@@ -3,7 +3,7 @@ use crate::util::*;
 use std::path::Path;
 use std::process::Command;
 
-pub fn run() -> anyhow::Result<()> {
+pub fn run(tag: Option<&str>) -> anyhow::Result<()> {
     let root = repo_root();
     require_tool("cargo", "https://rustup.rs")?;
     ensure_cargo_tool("mdbook", "mdbook")?;
@@ -13,16 +13,20 @@ pub fn run() -> anyhow::Result<()> {
 
     build_refs(&root)?;
     build_api(&root)?;
-    build_locales(&root)?;
-    assemble(&root)?;
+    build_locales(&root, tag)?;
+    assemble(&root, tag)?;
     println!(
         "==> Done. Open: {}",
-        book_dir(&root).join("book/index.html").display()
+        book_dir(&root)
+            .join("book")
+            .join(tag.unwrap_or("master"))
+            .join("index.html")
+            .display()
     );
     Ok(())
 }
 
-pub fn build_locales(root: &std::path::Path) -> anyhow::Result<()> {
+pub fn build_locales(root: &std::path::Path, tag: Option<&str>) -> anyhow::Result<()> {
     let book = book_dir(root);
     let entries = locale_entries();
     println!(
@@ -35,10 +39,12 @@ pub fn build_locales(root: &std::path::Path) -> anyhow::Result<()> {
     );
     inject_lang_switcher_locales(&book, &entries)?;
     let mdbook = mdbook_program()?;
+    let tag_dir = tag.unwrap_or("master");
     for entry in &entries {
+        let dest = format!("book/{}/{}", tag_dir, entry.code);
         run_cmd(
             Command::new(&mdbook)
-                .args(["build", "-d", &format!("book/{}", entry.code)])
+                .args(["build", "-d", &dest])
                 .env("MDBOOK_BOOK__LANGUAGE", &entry.code)
                 .current_dir(&book),
         )?;
@@ -85,20 +91,20 @@ pub fn print_locales() {
     println!("{}", codes.join(" "));
 }
 
-pub fn assemble(root: &std::path::Path) -> anyhow::Result<()> {
+pub fn assemble(root: &std::path::Path, tag: Option<&str>) -> anyhow::Result<()> {
     println!("==> Assembling site (rustdoc + locale redirect)");
     let book = book_dir(root);
-    let api_dest = book.join("book/api");
+    let tag_dir = tag.unwrap_or("master");
+    let api_dest = book.join("book").join(tag_dir).join("api");
     let _ = std::fs::remove_dir_all(&api_dest);
     copy_dir_all(root.join("target/doc"), &api_dest)?;
 
-    const INDEX_HTML: &str = "\
-<!doctype html>
-<meta charset=\"utf-8\">
-<meta http-equiv=\"refresh\" content=\"0; url=./en/\">
-<link rel=\"canonical\" href=\"./en/\">
-<title>ZeroClaw Docs</title>
-";
-    std::fs::write(book.join("book/index.html"), INDEX_HTML)?;
+    const INDEX_HTML: &str = "<!doctype html>\n<meta charset=\"utf-8\">\n<meta http-equiv=\"refresh\" content=\"0; url=./en/\">\n<link rel=\"canonical\" href=\"./en/\">\n<title>ZeroClaw Docs</title>\n";
+    let out_dir = book.join("book").join(tag_dir);
+    std::fs::create_dir_all(&out_dir)?;
+    std::fs::write(out_dir.join("index.html"), INDEX_HTML)?;
+    // Write small metadata file with the version tag
+    let version_meta = format!("{}\n", tag.unwrap_or("master"));
+    std::fs::write(out_dir.join("_version.txt"), version_meta)?;
     Ok(())
 }
