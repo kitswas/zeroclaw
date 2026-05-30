@@ -1,0 +1,10 @@
+{
+  "stable": null,
+  "versions": [
+    {
+      "tag": "main",
+      "label": "Development (main)",
+      "url": "/main/"
+    }
+  ]
+}

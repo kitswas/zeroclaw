@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "rust-lang.rust-analyzer",
+    "vadimcn.vscode-lldb",
+    "serayuzgur.crates",
+    "bungcip.better-toml",
+    "eamodio.gitlens",
+    "tamasfe.even-better-toml",
+    "oderwat.indent-rainbow",
+    "ryanluker.vscode-coverage-gutters"
+  ]
+}
