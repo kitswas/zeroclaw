@@ -58,10 +58,31 @@ jobs:
           echo "TAG=$TAG" >> $GITHUB_OUTPUT
           echo "Building docs for TAG=$TAG"
 
+      # Checks out the version being built. For workflow_dispatch with an old
+      # release tag, this replaces the workspace with that tag's source tree,
+      # which may predate the deploy helpers introduced in this PR.
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           ref: ${{ github.event.inputs.tag || github.ref }}
           fetch-depth: 1
+
+      # Always fetch the deploy-helper scripts from the commit that triggered
+      # this workflow run (github.sha). For workflow_dispatch, github.sha is
+      # master's HEAD — regardless of which tag input was chosen — so the
+      # helpers are always present even when the target ref predates this PR.
+      # For tag-push events, github.sha is the tag commit, which will contain
+      # the helpers because pre-PR tags don't carry this workflow file and
+      # cannot trigger a tag-push run.
+      - name: Fetch deploy helpers from current workflow revision
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          ref: ${{ github.sha }}
+          path: .workflow-scripts
+          sparse-checkout: |
+            .github/scripts
+          sparse-checkout-cone-mode: false
+          fetch-depth: 1
+
 
       # MDBOOK_BIN_VERSION is scoped to this step only. Workflow-level
       # `MDBOOK_*` env vars leak into `cargo mdbook build` below — mdbook 0.5.0
@@ -167,13 +188,14 @@ jobs:
           # or GitHub Pages will remove it (re-introduced fix from #6142).
           echo "docs.zeroclawlabs.ai" > CNAME
 
-          python3 "${GITHUB_WORKSPACE}/.github/scripts/generate-versions.py" > versions.json
+          SCRIPTS="${GITHUB_WORKSPACE}/.workflow-scripts/.github/scripts"
+          python3 "${SCRIPTS}/generate-versions.py" > versions.json
 
           # Ensure root index.html points to /stable/en/ if stable docs exist, otherwise /master/en/
           if [ -d "stable" ]; then
-            bash "${GITHUB_WORKSPACE}/.github/scripts/gen-index-stable.sh"
+            bash "${SCRIPTS}/gen-index-stable.sh"
           else
-            bash "${GITHUB_WORKSPACE}/.github/scripts/gen-index-master.sh"
+            bash "${SCRIPTS}/gen-index-master.sh"
           fi
 
           git add --all
