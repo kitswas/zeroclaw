@@ -3,6 +3,8 @@ use crate::util::*;
 use std::path::Path;
 use std::process::Command;
 
+const DEFAULT_TAG: &str = "master";
+
 pub fn run(tag: Option<&str>) -> anyhow::Result<()> {
     let root = repo_root();
     require_tool("cargo", "https://rustup.rs")?;
@@ -19,7 +21,7 @@ pub fn run(tag: Option<&str>) -> anyhow::Result<()> {
         "==> Done. Open: {}",
         book_dir(&root)
             .join("book")
-            .join(tag.unwrap_or("master"))
+            .join(tag.unwrap_or(DEFAULT_TAG))
             .join("index.html")
             .display()
     );
@@ -39,7 +41,7 @@ pub fn build_locales(root: &std::path::Path, tag: Option<&str>) -> anyhow::Resul
     );
     inject_lang_switcher_locales(&book, &entries)?;
     let mdbook = mdbook_program()?;
-    let tag_dir = tag.unwrap_or("master");
+    let tag_dir = tag.unwrap_or(DEFAULT_TAG);
     for entry in &entries {
         let dest = format!("book/{}/{}", tag_dir, entry.code);
         run_cmd(
@@ -94,7 +96,7 @@ pub fn print_locales() {
 pub fn assemble(root: &std::path::Path, tag: Option<&str>) -> anyhow::Result<()> {
     println!("==> Assembling site (rustdoc + locale redirect)");
     let book = book_dir(root);
-    let tag_dir = tag.unwrap_or("master");
+    let tag_dir = tag.unwrap_or(DEFAULT_TAG);
     let api_dest = book.join("book").join(tag_dir).join("api");
     let _ = std::fs::remove_dir_all(&api_dest);
     copy_dir_all(root.join("target/doc"), &api_dest)?;
@@ -104,7 +106,7 @@ pub fn assemble(root: &std::path::Path, tag: Option<&str>) -> anyhow::Result<()>
     std::fs::create_dir_all(&out_dir)?;
     std::fs::write(out_dir.join("index.html"), INDEX_HTML)?;
     // Write small metadata file with the version tag
-    let version_meta = format!("{}\n", tag.unwrap_or("master"));
+    let version_meta = format!("{}\n", tag.unwrap_or(DEFAULT_TAG));
     std::fs::write(out_dir.join("_version.txt"), version_meta)?;
     Ok(())
 }
