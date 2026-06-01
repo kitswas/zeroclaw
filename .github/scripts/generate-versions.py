@@ -14,10 +14,8 @@ Usage:
 import json
 import os
 import re
-import sys
 
-
-_SEMVER_RE = re.compile(r'^v(\d+)\.(\d+)\.(\d+)(?:-(.*))?$')
+_SEMVER_RE = re.compile(r"^v(\d+)\.(\d+)\.(\d+)(?:-(.*))?$")
 
 
 def semver_key(tag: str):
@@ -32,16 +30,21 @@ def semver_key(tag: str):
     without requiring a separate reverse pass that would disrupt the
     master/stable pin.
     """
-    if tag == 'master':
-        return (0, 0, 0, 0, 0, '')
-    if tag == 'stable':
-        return (0, 0, 0, 0, 1, '')
+    if tag == "master":
+        return (0, 0, 0, 0, 0, "")
+    if tag == "stable":
+        return (0, 0, 0, 0, 1, "")
     m = _SEMVER_RE.match(tag)
     if m:
-        major, minor, patch, pre = int(m.group(1)), int(m.group(2)), int(m.group(3)), m.group(4)
+        major, minor, patch, pre = (
+            int(m.group(1)),
+            int(m.group(2)),
+            int(m.group(3)),
+            m.group(4),
+        )
         # GA release (pre is None) sorts before pre-releases of the same triplet.
         pre_rank = 0 if pre is None else 1
-        return (1, -major, -minor, -patch, pre_rank, pre or '')
+        return (1, -major, -minor, -patch, pre_rank, pre or "")
     # Unrecognised tag: sort lexicographically at the end.
     return (2, 0, 0, 0, 0, tag)
 
@@ -54,17 +57,17 @@ def _parse_version(tag: str):
 
 
 def main():
-    min_version_env = os.environ.get('DOCS_MIN_VERSION', '')
+    min_version_env = os.environ.get("DOCS_MIN_VERSION", "")
     min_parsed = _parse_version(min_version_env) if min_version_env else None
 
     # Find all version-like directories (v0.7.5, master, stable, v0.8.0-beta-1, etc.)
     version_pattern = re.compile(
-        r'^(master|stable|v\d+\.\d+\.\d+(-[a-z0-9.-]+)?)$', re.IGNORECASE
+        r"^(master|stable|v\d+\.\d+\.\d+(-[a-z0-9.-]+)?)$", re.IGNORECASE
     )
     dirs = []
-    for d in os.listdir('.'):
-        if os.path.isdir(d) and d != '.git' and version_pattern.match(d):
-            if min_parsed and d not in ('master', 'stable'):
+    for d in os.listdir("."):
+        if os.path.isdir(d) and d != ".git" and version_pattern.match(d):
+            if min_parsed and d not in ("master", "stable"):
                 d_parsed = _parse_version(d)
                 if d_parsed and d_parsed < min_parsed:
                     continue  # below floor
@@ -79,27 +82,27 @@ def main():
 
     for tag in dirs:
         # Determine label
-        if tag == 'master':
-            label = 'Development (master)'
-        elif tag == 'stable':
-            label = 'Stable'
+        if tag == "master":
+            label = "Development (master)"
+        elif tag == "stable":
+            label = "Stable"
             stable_tag = tag
         else:
             label = tag
 
-        versions.append({'tag': tag, 'label': label})
+        versions.append({"tag": tag, "label": label})
 
     # If 'stable' exists, use it; otherwise find the latest stable version (no pre-release)
     if not stable_tag:
         for tag in reversed(dirs):
-            if re.match(r'^v\d+\.\d+\.\d+$', tag):  # No pre-release suffix
+            if re.match(r"^v\d+\.\d+\.\d+$", tag):  # No pre-release suffix
                 stable_tag = tag
                 break
 
-    output = {'stable': stable_tag, 'versions': versions}
+    output = {"stable": stable_tag, "versions": versions}
 
     print(json.dumps(output, indent=2))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
