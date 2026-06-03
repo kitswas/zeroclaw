@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="ayu sidebar-visible" dir="ltr">
+<html lang="en" class="default-dark sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -13,11 +13,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon-fc23365c.svg">
-        <link rel="shortcut icon" href="favicon-53763955.png">
+        <link rel="icon" href="../../_shared/favicon.svg">
+        <link rel="shortcut icon" href="../../_shared/favicon.png">
         <link rel="stylesheet" href="css/variables-8adf115d.css">
         <link rel="stylesheet" href="css/general-2459343d.css">
-        <link rel="stylesheet" href="css/chrome-9dfbd86b.css">
+        <link rel="stylesheet" href="../../_shared/css/chrome.css">
         <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
@@ -28,19 +28,20 @@
         <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
         <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
 
-        <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="theme/custom-a6e9ac27.css">
+        <!-- Custom theme stylesheets (pc-themes.css generated; ordered first) -->
+        <link rel="stylesheet" href="../../_shared/theme/pc-themes.css">
+        <link rel="stylesheet" href="../../_shared/theme/custom.css">
 
 
         <!-- Provide site root and default themes to javascript -->
         <script>
             const path_to_root = "";
-            const default_light_theme = "ayu";
-            const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "searchindex-fcea717d.js";
+            const default_light_theme = "default-dark";
+            const default_dark_theme = "default-dark";
+            window.path_to_searchindex_js = "searchindex-746d3711.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-83aaa531.js"></script>
+        <script src="toc-836a5a90.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -78,7 +79,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
-            html.classList.remove('ayu')
+            html.classList.remove('default-dark')
             html.classList.add(theme);
             html.classList.add("js");
         </script>
@@ -128,11 +129,34 @@
                         </button>
                         <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
                             <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                            <!-- PC_THEME_LIST_START: generated from themes.json by `cargo xtask mdbook themes`; do not edit between markers -->
+                            <li role="none" class="pc-theme-group">Dark</li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-default-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#1e1e24;--s1:#22d3ee;--s2:#a78bfa;--s3:#f59e0b"></span><span class="pc-theme-name">Default Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-oled-black"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#000000;--s1:#22d3ee;--s2:#8b5cf6;--s3:#10b981"></span><span class="pc-theme-name">OLED Black</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-nord-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#2e3440;--s1:#88c0d0;--s2:#81a1c1;--s3:#a3be8c"></span><span class="pc-theme-name">Nord Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-dracula"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#282a36;--s1:#bd93f9;--s2:#ff79c6;--s3:#50fa7b"></span><span class="pc-theme-name">Dracula</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-monokai"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#272822;--s1:#f92672;--s2:#a6e22e;--s3:#e6db74"></span><span class="pc-theme-name">Monokai</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-solarized-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#002b36;--s1:#268bd2;--s2:#2aa198;--s3:#b58900"></span><span class="pc-theme-name">Solarized Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-kanagawa-wave"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#1f1f28;--s1:#7e9cd8;--s2:#957fb8;--s3:#e6c384"></span><span class="pc-theme-name">Kanagawa Wave</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-kanagawa-dragon"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#181616;--s1:#8ba4b0;--s2:#a292a3;--s3:#c4b28a"></span><span class="pc-theme-name">Kanagawa Dragon</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-rose-pine"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#191724;--s1:#ebbcba;--s2:#c4a7e7;--s3:#f6c177"></span><span class="pc-theme-name">Rosé Pine</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-rose-pine-moon"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#232136;--s1:#ea9a97;--s2:#c4a7e7;--s3:#f6c177"></span><span class="pc-theme-name">Rosé Pine Moon</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-night-owl"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#011627;--s1:#82aaff;--s2:#c792ea;--s3:#addb67"></span><span class="pc-theme-name">Night Owl</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-everforest-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#2d353b;--s1:#a7c080;--s2:#83c092;--s3:#dbbc7f"></span><span class="pc-theme-name">Everforest Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-cobalt2"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#193549;--s1:#ffc600;--s2:#ff9d00;--s3:#80ffbb"></span><span class="pc-theme-name">Cobalt2</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-flexoki-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#100f0f;--s1:#ce5d97;--s2:#879a39;--s3:#da702c"></span><span class="pc-theme-name">Flexoki Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-hacker-green"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#0a0e0a;--s1:#00ff41;--s2:#00cc33;--s3:#008f11"></span><span class="pc-theme-name">Hacker Green</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-material-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#212121;--s1:#89ddff;--s2:#c792ea;--s3:#ffcb6b"></span><span class="pc-theme-name">Material Dark</span></button></li>
+                            <li role="none" class="pc-theme-group">Light</li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-default-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#f4f4f5;--s1:#22d3ee;--s2:#8b5cf6;--s3:#f59e0b"></span><span class="pc-theme-name">Default Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-nord-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#eceff4;--s1:#5e81ac;--s2:#88c0d0;--s3:#a3be8c"></span><span class="pc-theme-name">Nord Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-solarized-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fdf6e3;--s1:#268bd2;--s2:#2aa198;--s3:#b58900"></span><span class="pc-theme-name">Solarized Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-kanagawa-lotus"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#f2ecbc;--s1:#4d699b;--s2:#b35b79;--s3:#836f4a"></span><span class="pc-theme-name">Kanagawa Lotus</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-rose-pine-dawn"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#faf4ed;--s1:#d7827e;--s2:#907aa9;--s3:#ea9d34"></span><span class="pc-theme-name">Rosé Pine Dawn</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-everforest-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fdf6e3;--s1:#8da101;--s2:#35a77c;--s3:#dfa000"></span><span class="pc-theme-name">Everforest Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-flexoki-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fffcf0;--s1:#ce5d97;--s2:#879a39;--s3:#da702c"></span><span class="pc-theme-name">Flexoki Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-material-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fafafa;--s1:#6182b8;--s2:#7c4dff;--s3:#f76d47"></span><span class="pc-theme-name">Material Light</span></button></li>
+                            <!-- PC_THEME_LIST_END -->
                         </ul>
                         <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
                             <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
@@ -142,11 +166,11 @@
                     <h1 class="menu-title">ZeroClaw Docs</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
-                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
-                        </a>
                         <a href="https://github.com/zeroclaw-labs/zeroclaw" title="Git repository" aria-label="Git repository">
                             <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
+                        </a>
+                        <a href="https://discord.gg/tQ88WUkPyJ" title="Join our Discord" aria-label="Join our Discord" rel="external noopener" target="_blank">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg></span>
                         </a>
 
                     </div>
@@ -178,6 +202,7 @@
                 </script>
 
                 <div id="mdbook-content" class="content">
+                    <aside id="pc-page-toc" class="pc-page-toc" aria-label="On this page"></aside>
                     <main>
                         <h1 id="zeroclaw"><a class="header" href="#zeroclaw">ZeroClaw</a></h1>
 <p>Personal AI assistant you own, written in Rust.</p>
@@ -548,7 +573,7 @@ max_actions_per_hour = 30
 </code></pre>
 <p>The <code>dev</code> agent runs from the CLI (no channel binding required — <code>zeroclaw agent -a dev</code> is enough). When Ollama is down, the dev agent fails fast and surfaces the error. The prod channels are unaffected.</p>
 <h2 id="cost-tiering--heavy-model-when-needed-fast-model-otherwise"><a class="header" href="#cost-tiering--heavy-model-when-needed-fast-model-otherwise">Cost tiering — heavy model when needed, fast model otherwise</a></h2>
-<p>Run two agents and route channels to the appropriate tier. The <code>delegate</code> tool lets one agent hand off to another mid-conversation. Each agent picks the risk profile that matches its trust surface: <code>frontline</code> faces public traffic, so it gets a stricter <code>hardened</code> profile; <code>heavy</code> is reached only via <code>delegate</code> from inside the trusted agent loop, so it can run on a looser <code>permissive</code> profile.</p>
+<p>Run two agents and route channels to the appropriate tier. The <code>delegate</code> tool lets one agent hand off to another mid-conversation. Delegation is gated: the caller’s risk profile must set <code>delegation_policy mode = "allow"</code>, and <strong>both agents must share the same risk profile</strong> (delegation does not cross trust tiers). So the frontline and heavy agents below run on the <em>same</em> <code>trusted</code> risk profile — they differ in model and runtime profile (iteration budget), not in trust surface.</p>
 <pre><code class="language-toml">[providers.models.anthropic.opus]
 model   = "claude-opus-4-7"
 api_key = "sk-ant-..."
@@ -563,29 +588,28 @@ bot_token = "..."
 
 [agents.frontline]
 model_provider  = "anthropic.haiku"
-risk_profile    = "hardened"     # public-facing strictness
+risk_profile    = "trusted"      # shared trust tier (delegation requires a match)
 runtime_profile = "tight"        # low iteration cap, fast turn-around
 channels        = ["telegram.home"]
 
 [agents.heavy]
 model_provider  = "anthropic.opus"
-risk_profile    = "permissive"   # internal-delegate trust
+risk_profile    = "trusted"      # SAME profile as frontline — required to be delegable
 runtime_profile = "deep"         # high iteration cap for chain-of-thought work
 # No channels — invoked via the delegate tool from frontline
 
-# risk_profile and runtime_profile reference independent alias maps —
-# the names above intentionally differ between the two profile kinds
-# to make that clear.
+# runtime_profile references an independent alias map from risk_profile;
+# the two agents share one risk profile but differ in runtime profile.
 
-[risk_profiles.hardened]
+[risk_profiles.trusted]
 level                            = "supervised"
 workspace_only                   = true
 require_approval_for_medium_risk = true
 block_high_risk_commands         = true
-
-[risk_profiles.permissive]
-level          = "full"
-workspace_only = false
+# allow this profile's agents to delegate to each other; without this,
+# delegation is forbidden by default.
+delegation_policy                = { mode = "allow" }
+allowed_tools                    = ["shell", "file_read", "memory_recall", "delegate"]
 
 [runtime_profiles.tight]
 max_tool_iterations  = 5
@@ -595,7 +619,7 @@ max_actions_per_hour = 30
 max_tool_iterations  = 50
 max_actions_per_hour = 200
 </code></pre>
-<p>The frontline agent handles every inbound message on Haiku. When it needs deeper reasoning, it calls the <code>delegate</code> tool with <code>agent = "heavy"</code> and the heavier agent picks up the sub-task.</p>
+<p>The frontline agent handles every inbound message on Haiku. When it needs deeper reasoning, it calls the <code>delegate</code> tool with <code>agent = "heavy"</code>; because both agents share the <code>trusted</code> risk profile and that profile allows delegation, the heavier agent picks up the sub-task on Opus.</p>
 <h2 id="error-handling"><a class="header" href="#error-handling">Error handling</a></h2>
 <p>Inside-one-provider retries trigger on:</p>
 <ol>
@@ -646,6 +670,234 @@ zeroclaw doctor traces --contains "model_provider"
 <li><a href="#model-providers--overview">Model Providers → Overview</a></li>
 <li><a href="#routing">Model Providers → Routing</a></li>
 <li><a href="#environment-variables">Environment variables</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="zerocode"><a class="header" href="#zerocode">zerocode</a></h1>
+<p>zerocode is ZeroClaw’s terminal interface for managing configuration,
+chatting with agents, and monitoring your daemon. It connects over a local
+IPC stream — a Unix domain socket on Unix, a named pipe on Windows — or
+over WebSocket Secure (WSS) for remote use.</p>
+<h2 id="local-setup"><a class="header" href="#local-setup">Local setup</a></h2>
+<p>On the same machine as the daemon, no extra configuration is needed:</p>
+<pre><code class="language-bash">zerocode
+</code></pre>
+<p>zerocode finds the daemon’s local endpoint automatically — <code>&lt;data_dir&gt;/data/daemon.sock</code>
+on Unix, <code>\\.\pipe\zeroclaw-&lt;hash&gt;</code> on Windows. If the daemon isn’t running,
+zerocode spawns an ephemeral one.</p>
+<h2 id="remote-setup-wss"><a class="header" href="#remote-setup-wss">Remote setup (WSS)</a></h2>
+<p>Connect zerocode on your workstation to a daemon running on another machine
+(Raspberry Pi, home server, VPS, etc.).</p>
+<h3 id="on-the-remote-host-daemon-side"><a class="header" href="#on-the-remote-host-daemon-side">On the remote host (daemon side)</a></h3>
+<ol>
+<li>
+<p><strong>Generate a self-signed TLS certificate:</strong></p>
+<pre><code class="language-bash">openssl req -x509 -newkey ec -pkeyopt ec_paramgen_curve:prime256v1 \
+  -keyout ~/.zeroclaw/wss.key \
+  -out ~/.zeroclaw/wss.cert \
+  -days 3650 -nodes -subj '/CN=zeroclaw'
+</code></pre>
+</li>
+<li>
+<p><strong>Enable WSS in <code>~/.zeroclaw/config.toml</code>:</strong></p>
+<pre><code class="language-toml">[wss]
+enabled = true
+cert_path = "/home/youruser/.zeroclaw/wss.cert"
+key_path = "/home/youruser/.zeroclaw/wss.key"
+</code></pre>
+<p>Use absolute paths. The config does not expand <code>~</code>.</p>
+</li>
+<li>
+<p><strong>Open the firewall port:</strong></p>
+<pre><code class="language-bash">sudo ufw allow 9781/tcp
+</code></pre>
+<p>The default WSS port is <strong>9781</strong>. Change it with <code>port = &lt;number&gt;</code> in the <code>[wss]</code> section.</p>
+</li>
+<li>
+<p><strong>Start (or restart) the daemon:</strong></p>
+<pre><code class="language-bash">zeroclaw daemon
+</code></pre>
+<p>You should see a log line confirming the WSS listener started on <code>0.0.0.0:9781</code>.</p>
+</li>
+</ol>
+<h3 id="on-your-workstation-zerocode-side"><a class="header" href="#on-your-workstation-zerocode-side">On your workstation (zerocode side)</a></h3>
+<ol start="5">
+<li>
+<p><strong>Connect with TLS verification skipped:</strong></p>
+<pre><code class="language-bash">zerocode --connect wss://&lt;remote-ip&gt;:9781 --tls-skip-verify
+</code></pre>
+<p><code>--tls-skip-verify</code> is required for self-signed certificates. The HMAC session signing still authenticates the connection.</p>
+</li>
+</ol>
+<p>That’s it. zerocode reconnects automatically if the connection drops.</p>
+<h2 id="config-reference"><a class="header" href="#config-reference">Config reference</a></h2>
+<p>The <code>[wss]</code> section in <code>config.toml</code>:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Field</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>enabled</code></td><td><code>false</code></td><td>Enable the WSS listener</td></tr>
+<tr><td><code>bind</code></td><td><code>0.0.0.0</code></td><td>Bind address</td></tr>
+<tr><td><code>port</code></td><td><code>9781</code></td><td>Listen port</td></tr>
+<tr><td><code>cert_path</code></td><td>(none)</td><td>Absolute path to PEM certificate</td></tr>
+<tr><td><code>key_path</code></td><td>(none)</td><td>Absolute path to PEM private key</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="environment-variable-pass-through"><a class="header" href="#environment-variable-pass-through">Environment variable pass-through</a></h2>
+<p>The daemon runs as a background process and typically has a stripped-down
+environment. Your terminal has the full environment set up by your shell
+profile. There are two ways env vars reach shell subprocesses spawned by the
+agent.</p>
+<h3 id="zerocode-forwarding-automatic"><a class="header" href="#zerocode-forwarding-automatic">zerocode forwarding (automatic)</a></h3>
+<p>When zerocode connects it captures its own process environment and sends it to
+the daemon as part of the <code>initialize</code> handshake. The daemon stores that
+snapshot in <code>TuiRegistry</code> keyed by zerocode’s unique <code>tui_id</code>. When you open a
+new chat session (<code>session/new</code>), the daemon looks up zerocode’s snapshot and
+clones it into the agent’s <code>ShellTool</code>. That clone is then overlaid on top of
+the safe-env baseline for every shell subprocess the agent spawns:</p>
+<pre><code>cmd.env_clear()
+  → Layer 1: SAFE_ENV_VARS + shell_env_passthrough (from daemon process)
+  → Layer 2: zerocode's env snapshot (wins on conflict)
+</code></pre>
+<p>zerocode vars win on conflict — your <code>PATH</code>, <code>HOME</code>, and credential sockets
+take precedence over whatever the daemon inherited. No configuration required.</p>
+<p>This is why <code>SSH_AUTH_SOCK</code> works when you run zerocode from a terminal that
+has an ssh-agent running, even if the daemon was started as a service with no
+agent:</p>
+<pre><code class="language-bash"># Terminal has SSH_AUTH_SOCK set by ssh-agent or a hardware token (YubiKey, etc.)
+echo $SSH_AUTH_SOCK
+# /run/user/1000/gnupg/S.gpg-agent.ssh
+
+# Daemon was started as a systemd service — no SSH_AUTH_SOCK in its env.
+# zerocode forwards its env at connect time, so any shell command the agent
+# runs (git push, ssh, gpg-sign) gets SSH_AUTH_SOCK from your terminal.
+</code></pre>
+<p>zerocode sends its full environment. On a shared or remote daemon where that’s
+a concern, use WSS with a dedicated user account.</p>
+<h3 id="multiple-connected-clients--no-cross-session-clobbering"><a class="header" href="#multiple-connected-clients--no-cross-session-clobbering">Multiple connected clients — no cross-session clobbering</a></h3>
+<p>Each zerocode instance gets a unique <code>tui_id</code> (<code>tui_</code> + 8 random hex chars).
+The registry is a <code>HashMap&lt;tui_id → TuiEntry&gt;</code> — entries are completely
+independent:</p>
+<pre><code>TuiRegistry
+├── "tui_a1b2c3d4"  →  { env: { PATH: "/home/alice/…", VIRTUAL_ENV: "…" } }
+├── "tui_beef0042"  →  { env: { PATH: "/home/bob/…"  } }
+└── "tui_cafe1234"  →  { env: { PATH: "/opt/pyenv/…" } }
+</code></pre>
+<p>When zerocode <code>tui_a1b2c3d4</code> opens a session, only <em>its</em> env snapshot is
+cloned and used. The other clients’ envs are never touched. Concretely:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Scenario</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr><td>Two clients open from different shells with different <code>PATH</code>s</td><td>Each session gets its own <code>PATH</code>; neither affects the other</td></tr>
+<tr><td>Client A has <code>VIRTUAL_ENV</code> set; Client B does not</td><td>Only sessions from Client A see <code>VIRTUAL_ENV</code></td></tr>
+<tr><td>Client A disconnects while Client B’s session is running</td><td>Client B is unaffected — env was <strong>cloned at session creation</strong></td></tr>
+<tr><td>Client A reconnects with the same <code>tui_id</code></td><td>Old entry is removed, new entry with fresh env is registered; already-running sessions keep their original clone</td></tr>
+</tbody>
+</table>
+</div>
+<p>The last point matters: <code>get_env</code> returns a <strong>clone</strong>, not a reference. Once a
+session is created it owns its env snapshot. Reconnects or disconnects of the
+originating client have no effect on running sessions.</p>
+<h3 id="risk-profile-passthrough-explicit-allowlist"><a class="header" href="#risk-profile-passthrough-explicit-allowlist">Risk profile passthrough (explicit allowlist)</a></h3>
+<p><code>shell_env_passthrough</code> on a risk profile controls which variables from the
+<em>daemon’s own process environment</em> are passed to shell subprocesses. This is
+useful when you want specific vars available regardless of whether zerocode is
+connected — for example, on a headless server where the daemon itself has the
+vars set.</p>
+<pre><code class="language-toml">[risk_profiles.default]
+shell_env_passthrough = ["SSH_AUTH_SOCK", "GPG_AGENT_INFO"]
+</code></pre>
+<p>Subagents cannot expand this list beyond what the parent policy allows — adding
+a var not present on the parent’s list is rejected as a policy escalation.</p>
+<h2 id="cli-flags"><a class="header" href="#cli-flags">CLI flags</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Flag</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>--connect &lt;url&gt;</code></td><td>Connect to a remote daemon via WSS (e.g. <code>wss://host:9781</code>)</td></tr>
+<tr><td><code>--tls-skip-verify</code></td><td>Skip TLS certificate verification. Required for self-signed certs</td></tr>
+<tr><td><code>--config-dir &lt;path&gt;</code></td><td>Override the config directory</td></tr>
+</tbody>
+</table>
+</div>
+<div style="break-before: page; page-break-before: always;"></div>
+<h1 id="language--translations"><a class="header" href="#language--translations">Language &amp; translations</a></h1>
+<p>ZeroClaw’s interface strings (CLI messages, command help, and the <code>zerocode</code>
+TUI) can be shown in languages other than English. English is always built in;
+other languages are downloaded on demand.</p>
+<h2 id="set-your-language"><a class="header" href="#set-your-language">Set your language</a></h2>
+<p>ZeroClaw reads a top-level <code>locale</code> key from your config. Set it to a locale
+code such as <code>ja</code>, <code>fr</code>, or <code>zh-CN</code>:</p>
+<pre><code class="language-toml"># ~/.zeroclaw/config.toml
+locale = "ja"
+</code></pre>
+<p>If <code>locale</code> is unset, ZeroClaw uses your operating system’s language and falls
+back to English when no translation is available.</p>
+<h2 id="fetch-your-language-files"><a class="header" href="#fetch-your-language-files">Fetch your language files</a></h2>
+<p>English ships inside the binary. For any other language you fetch the
+translated files once:</p>
+<pre><code class="language-bash">zeroclaw locales fetch ja
+</code></pre>
+<p>This downloads the Japanese translation files from the ZeroClaw project and
+installs them under <code>~/.zeroclaw/data/ftl/ja/</code>, where ZeroClaw looks for them
+at startup. Restart ZeroClaw (and <code>zerocode</code>) afterward to pick them up.</p>
+<p>Fetch any locale the same way:</p>
+<pre><code class="language-bash">zeroclaw locales fetch fr        # French
+zeroclaw locales fetch zh-CN     # Simplified Chinese
+</code></pre>
+<h3 id="fetching-only-part-of-a-language"><a class="header" href="#fetching-only-part-of-a-language">Fetching only part of a language</a></h3>
+<p>By default <code>fetch</code> downloads every catalogue for the locale. To download only
+some, pass <code>--catalog</code> with a comma-separated list:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Catalog</th><th>Covers</th></tr>
+</thead>
+<tbody>
+<tr><td><code>cli</code></td><td>CLI messages and command help</td></tr>
+<tr><td><code>tools</code></td><td>Built-in tool descriptions</td></tr>
+<tr><td><code>zerocode</code></td><td>The <code>zerocode</code> terminal UI</td></tr>
+</tbody>
+</table>
+</div>
+<pre><code class="language-bash">zeroclaw locales fetch ja --catalog cli            # just CLI strings
+zeroclaw locales fetch ja --catalog cli,zerocode   # CLI + the TUI
+</code></pre>
+<p>If a catalogue has not been translated for your language yet, <code>fetch</code> skips it
+and tells you — the catalogues that do exist are still installed.</p>
+<h2 id="where-the-files-live"><a class="header" href="#where-the-files-live">Where the files live</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Path</th><th>What</th></tr>
+</thead>
+<tbody>
+<tr><td><code>~/.zeroclaw/data/ftl/&lt;locale&gt;/cli.ftl</code></td><td>CLI message translations</td></tr>
+<tr><td><code>~/.zeroclaw/data/ftl/&lt;locale&gt;/tools.ftl</code></td><td>Tool description translations</td></tr>
+<tr><td><code>~/.zeroclaw/data/ftl/&lt;locale&gt;/zerocode.ftl</code></td><td><code>zerocode</code> TUI translations</td></tr>
+</tbody>
+</table>
+</div>
+<p>If you run ZeroClaw with a custom config directory (<code>--config-dir</code> or
+<code>ZEROCLAW_CONFIG_DIR</code>), the files install under that directory’s <code>data/ftl/</code>
+instead.</p>
+<h2 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h2>
+<ul>
+<li><strong>Still seeing English after fetching.</strong> Confirm <code>locale</code> in your config
+matches the locale you fetched, and restart the process. ZeroClaw loads
+language files at startup.</li>
+<li><strong><code>fetch</code> reports a catalogue was skipped.</strong> That catalogue has not been
+translated for your locale yet. The available catalogues are still installed;
+untranslated strings fall back to English.</li>
+<li><strong>A specific string is in English even though the rest is translated.</strong> That
+individual string has no translation yet and falls back to English by design.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="linux"><a class="header" href="#linux">Linux</a></h1>
@@ -1040,7 +1292,7 @@ rmdir /s /q "%LOCALAPPDATA%\ZeroClaw"
 </ol>
 <p><code>zeroclaw onboard tunnel</code> configures ngrok or Cloudflare tunnels directly; the resulting public URL is what you point your webhook senders at.</p>
 <h2 id="kubernetes"><a class="header" href="#kubernetes">Kubernetes</a></h2>
-<p>Helm chart and marketplace templates are published to the <a href="https://github.com/zeroclaw-labs/zeroclaw-templates">zeroclaw-templates</a> repo. Typical manifest fragment:</p>
+<p>Helm chart templates are published to the <a href="https://github.com/zeroclaw-labs/zeroclaw-templates">zeroclaw-templates</a> repo. Typical manifest fragment:</p>
 <pre><code class="language-yaml">apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -1184,7 +1436,7 @@ sc stop ZeroClaw
 <ul>
 <li><a href="#linux">Linux setup</a>, <a href="#macos">macOS setup</a>, <a href="#windows">Windows setup</a></li>
 <li><a href="#logs--observability">Operations → Logs &amp; observability</a></li>
-<li><a href="#troubleshooting-5">Operations → Troubleshooting</a></li>
+<li><a href="#troubleshooting-6">Operations → Troubleshooting</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="architecture-overview"><a class="header" href="#architecture-overview">Architecture Overview</a></h1>
@@ -1229,7 +1481,7 @@ sc stop ZeroClaw
 <tr><th>Crate</th><th>Role</th></tr>
 </thead>
 <tbody>
-<tr><td><code>zeroclaw-runtime</code></td><td>Agent loop, security policy enforcement, SOP engine, cron scheduler, onboarding sections, TUI</td></tr>
+<tr><td><code>zeroclaw-runtime</code></td><td>Agent loop, security policy enforcement, SOP engine, cron scheduler, onboarding sections, RPC layer for zerocode</td></tr>
 <tr><td><code>zeroclaw-config</code></td><td>TOML schema, secrets encryption, autonomy levels, workspace resolution</td></tr>
 <tr><td><code>zeroclaw-api</code></td><td>Public traits — <code>Provider</code>, <code>Channel</code>, <code>Tool</code>. The kernel ABI</td></tr>
 <tr><td><code>zeroclaw-providers</code></td><td>All LLM client impls (Anthropic, OpenAI, Ollama, …) plus the hint-based router and same-provider retry wrapper</td></tr>
@@ -1242,7 +1494,7 @@ sc stop ZeroClaw
 <tr><td><code>zeroclaw-hardware</code></td><td>Hardware abstraction layer (GPIO, I2C, SPI, USB)</td></tr>
 <tr><td><code>zeroclaw-infra</code></td><td>Tracing, metrics, structured logging</td></tr>
 <tr><td><code>zeroclaw-macros</code></td><td>Derive macros for config, tool registration</td></tr>
-<tr><td><code>zeroclaw-tui</code></td><td>Terminal UI</td></tr>
+<tr><td><code>zerocode</code></td><td>Terminal UI</td></tr>
 <tr><td><code>aardvark-sys</code>, <code>robot-kit</code></td><td>Specialised hardware support</td></tr>
 </tbody>
 </table>
@@ -1364,7 +1616,7 @@ sc stop ZeroClaw
 <p>The workspace is split into layers. Edge crates talk to the outside world; core crates orchestrate; support crates provide utilities. Each crate has its own rustdoc — see <a href="#api-reference">API (rustdoc)</a>.</p>
 <h2 id="layer-core"><a class="header" href="#layer-core">Layer: Core</a></h2>
 <h3 id="zeroclaw-runtime"><a class="header" href="#zeroclaw-runtime"><code>zeroclaw-runtime</code></a></h3>
-<p>The agent loop, security-policy enforcement, SOP engine, cron scheduler, onboarding sections, and TUI. Depends on every other core and edge crate.</p>
+<p>The agent loop, security-policy enforcement, SOP engine, cron scheduler, onboarding sections, and RPC layer for zerocode. Depends on every other core and edge crate.</p>
 <p>Notable submodules:</p>
 <ul>
 <li><code>agent/</code> — the main request/response loop, streaming, tool-call orchestration</li>
@@ -1382,7 +1634,7 @@ sc stop ZeroClaw
 <li>Workspace resolution (env vars, Homebrew paths, XDG, container detection)</li>
 <li>Schema versioning and migration</li>
 </ul>
-<p>All user-facing config keys are documented in <a href="#config-reference">Reference → Config</a>, which is generated from this crate.</p>
+<p>All user-facing config keys are documented in <a href="#config-reference-1">Reference → Config</a>, which is generated from this crate.</p>
 <h3 id="zeroclaw-api"><a class="header" href="#zeroclaw-api"><code>zeroclaw-api</code></a></h3>
 <p>The kernel ABI. Defines three public traits:</p>
 <ul>
@@ -1454,7 +1706,7 @@ typed <code>Observer</code> for Prometheus / OTel consumers. See
 backend. Not a tracing/metrics layer — that’s <code>zeroclaw-log</code>.</p>
 <h3 id="zeroclaw-macros"><a class="header" href="#zeroclaw-macros"><code>zeroclaw-macros</code></a></h3>
 <p>Derive macros for config schema, tool registration, and channel registration. Saves boilerplate across the workspace.</p>
-<h3 id="zeroclaw-tui"><a class="header" href="#zeroclaw-tui"><code>zeroclaw-tui</code></a></h3>
+<h3 id="zerocode-1"><a class="header" href="#zerocode-1"><code>zerocode</code></a></h3>
 <p>Terminal UI. Optional — compile with <code>--features tui</code>.</p>
 <h3 id="aardvark-sys-robot-kit"><a class="header" href="#aardvark-sys-robot-kit"><code>aardvark-sys</code>, <code>robot-kit</code></a></h3>
 <p>Specialised hardware support used by the <code>hardware</code> submodule. Out-of-scope unless you’re bringing up specific peripherals.</p>
@@ -1611,7 +1863,7 @@ async move {
   "severity_number": 9,
   "severity_text": "INFO",
   "event": { "category": "channel", "action": "inbound", "outcome": "success" },
-  "service": { "name": "zeroclaw", "version": "0.8.0-beta-1" },
+  "service": { "name": "zeroclaw", "version": "0.8.0-beta-2" },
   "trace_id": "&lt;turn id&gt;",
   "span_id": "&lt;sub-span id&gt;",
   "zeroclaw": {
@@ -1653,7 +1905,7 @@ async move {
 <p>For configuration knobs (<code>log_persistence</code>, <code>log_tool_io</code>, OTel export) and query syntax, see <a href="#logs--observability">Logs &amp; observability</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="multi-agent-runtime"><a class="header" href="#multi-agent-runtime">Multi-agent runtime</a></h1>
-<p>This page documents the architecture and operator-facing surface of the multi-agent runtime. The doc is intentionally short — for the schema-level field reference, see <a href="#config-reference">Config</a>; for live setup steps, see <a href="#multi-agent-setup-walkthrough">Multi-agent setup</a>.</p>
+<p>This page documents the architecture and operator-facing surface of the multi-agent runtime. The doc is intentionally short — for the schema-level field reference, see <a href="#config-reference-1">Config</a>; for live setup steps, see <a href="#multi-agent-setup-walkthrough">Multi-agent setup</a>.</p>
 <h2 id="vocabulary"><a class="header" href="#vocabulary">Vocabulary</a></h2>
 <ul>
 <li><strong>Install dir</strong> — the directory holding everything ZeroClaw owns on a host. Typically <code>~/.zeroclaw/</code>. Equivalent to the dir containing <code>config.toml</code>.</li>
@@ -1711,7 +1963,7 @@ async move {
 <p>Two tools sit nearby. They are not interchangeable.</p>
 <ul>
 <li><strong><code>spawn_subagent</code></strong> — runs the SAME agent again under its own identity for a focused subtask. The child sees the parent’s full permissions envelope minus any narrowing. Use when the parent wants to scope an internal subtask out of its main conversation history without changing identity.</li>
-<li><strong><code>delegate</code></strong> — hands the request off to a DIFFERENT configured agent (named by alias). The target agent runs under its own identity, its own risk profile, its own model provider. Use when a sibling agent is the right specialist for the work.</li>
+<li><strong><code>delegate</code></strong> — hands the request off to a DIFFERENT configured agent (named by alias). The target agent runs under its own identity and model provider, but delegation is gated: the caller’s risk profile must set <code>delegation_policy mode = "allow"</code> (default is <code>"forbidden"</code>), AND the target must share the <strong>same</strong> risk profile as the caller. Use when a sibling agent on the same trust tier is the right specialist for the work. See <a href="#delegation-gating">Delegation gating</a> below.</li>
 </ul>
 <p>This page documents <code>spawn_subagent</code> end to end. <code>delegate</code> lives at <code>crates/zeroclaw-runtime/src/tools/delegate.rs</code> and is a separate surface.</p>
 <h2 id="how-a-subagent-is-instantiated"><a class="header" href="#how-a-subagent-is-instantiated">How a SubAgent is instantiated</a></h2>
@@ -1804,6 +2056,22 @@ allowed_tools = ["shell", "file_read", "memory_recall", "spawn_subagent", "deleg
 <p>Tail your log. The tool-spawned child runs inside a <code>scope!</code> that emits a tracing span named <code>zeroclaw_scope</code> (with target <code>zeroclaw_log_internal_scope</code>) carrying <code>agent_alias=&lt;parent&gt;</code> and <code>session_key=&lt;uuid&gt;</code>. Every log line emitted during the child run carries those fields. The parent’s own turn has its own <code>session_key</code>; a NEW <code>session_key</code> value appearing mid-turn for the same <code>agent_alias</code> is the signal that a SubAgent ran. The child’s conversation-history session path is <code>subagent-&lt;uuid&gt;</code> (filesystem-ish identifier, distinct from the tracing field).</p>
 <p>Cron-launched agent jobs use a different, more explicit span name: <code>subagent</code> (literal) with fields <code>category="cron"</code>, <code>agent_alias=&lt;owning agent&gt;</code>, <code>cron_job_id=&lt;id&gt;</code>, <code>run_id=&lt;uuid&gt;</code>, <code>spawn_site="cron"</code>. Cron paths are trivially greppable: <code>grep 'spawn_site="cron"' zeroclaw.log</code>. Note that cron-launched runs are top-level (<code>is_subagent=false</code>); they may themselves call <code>spawn_subagent</code> once.</p>
 <p>This is a thin signal for the agent-loop spawn path. A dedicated “subagent started / completed” record routed through <code>attribution_span!(tool)</code> is tracked as a code-side follow-up — once the agent loop wraps tool execution in an attribution span, every <code>record!</code> inside the tool will carry <code>tool=spawn_subagent</code> automatically and the question becomes a trivial grep.</p>
+<h3 id="delegation-gating"><a class="header" href="#delegation-gating">Delegation gating</a></h3>
+<p><code>delegate</code> enforces two gates in <code>crates/zeroclaw-runtime/src/tools/delegate.rs</code> before a target agent runs, in this order:</p>
+<ol>
+<li>
+<p><strong><code>delegation_policy.mode</code></strong> — the caller’s risk profile must permit delegation. <code>[risk_profiles.&lt;alias&gt;].delegation_policy</code> is <code>{ mode = "forbidden" }</code> by default; set <code>mode = "allow"</code> to permit delegation at all. When forbidden, the refusal is:</p>
+<pre><code>delegation is forbidden by the caller's delegation_policy; set [risk_profiles.&lt;caller_profile&gt;].delegation_policy mode = "allow"
+</code></pre>
+<p>This is editable in the gateway dashboard and zerocode at <strong>Config → Risk profiles → <code>&lt;profile&gt;</code> → <code>delegation_policy.mode</code></strong> (a forbidden/allow select).</p>
+</li>
+<li>
+<p><strong>Shared risk profile</strong> — the target agent must use the <strong>same</strong> risk profile as the caller. Delegation does not cross trust tiers: an agent on <code>hardened</code> cannot delegate to an agent on <code>permissive</code>. When they differ, the refusal is:</p>
+<pre><code>delegate target "&lt;target&gt;" uses risk profile "&lt;target_profile&gt;", but delegation requires the same risk profile as the caller ("&lt;caller_profile&gt;")
+</code></pre>
+</li>
+</ol>
+<p>Because reachability is gated by the shared risk profile, the advertised roster (the <code>agent</code> parameter’s enum in the tool schema) lists only the configured agents that share the caller’s risk profile, minus the caller itself — and only when <code>delegation_policy.mode = "allow"</code>. There is no separate per-agent allow-list: the shared profile <em>is</em> the allow-list.</p>
 <h3 id="delegate-output-strings-the-model-sees"><a class="header" href="#delegate-output-strings-the-model-sees"><code>delegate</code>: output strings the model sees</a></h3>
 <p>Exact, sourced from <code>crates/zeroclaw-runtime/src/tools/delegate.rs</code>.</p>
 <ol>
@@ -1837,13 +2105,14 @@ The result file lives at <code>&lt;workspace&gt;/delegate_results/&lt;uuid&gt;.j
 <tr><th></th><th><code>spawn_subagent</code></th><th><code>delegate</code></th></tr>
 </thead>
 <tbody>
-<tr><td><strong>Identity</strong></td><td>Same as parent (same UUID, same risk profile)</td><td>Target agent’s identity (different alias, different profile)</td></tr>
-<tr><td><strong>Permission model</strong></td><td>Parent’s policy verbatim (or narrowed subset)</td><td>Target agent’s own policy</td></tr>
+<tr><td><strong>Identity</strong></td><td>Same as parent (same UUID, same risk profile)</td><td>Target agent’s identity (different alias, <strong>same</strong> risk profile — delegation requires it)</td></tr>
+<tr><td><strong>Permission model</strong></td><td>Parent’s policy verbatim (or narrowed subset)</td><td>Target agent’s own policy (within the shared risk profile)</td></tr>
 <tr><td><strong>Model provider</strong></td><td>Parent’s</td><td>Target agent’s configured provider</td></tr>
 <tr><td><strong>Spawn depth</strong></td><td>Hard cap at 1</td><td>Up to <code>runtime_profile.max_delegation_depth</code> (default 3)</td></tr>
 <tr><td><strong>Background mode</strong></td><td>Not supported</td><td><code>background: true</code> returns a <code>task_id</code></td></tr>
 <tr><td><strong>Parallel fan-out</strong></td><td>Not supported</td><td><code>parallel: [...]</code> runs multiple targets concurrently</td></tr>
-<tr><td><strong>Use when</strong></td><td>Internal subtask that should stay within the same identity</td><td>Want a different specialist (different model, different permission envelope) to handle the task</td></tr>
+<tr><td><strong>Gating</strong></td><td><code>risk_profile.allowed_tools</code> must list <code>spawn_subagent</code></td><td><code>allowed_tools</code> must list <code>delegate</code>, caller’s <code>delegation_policy mode = "allow"</code>, and target shares the caller’s risk profile</td></tr>
+<tr><td><strong>Use when</strong></td><td>Internal subtask that should stay within the same identity</td><td>Want a different specialist (different model, different alias) on the <strong>same trust tier</strong> to handle the task</td></tr>
 </tbody>
 </table>
 </div>
@@ -1856,30 +2125,166 @@ The result file lives at <code>&lt;workspace&gt;/delegate_results/&lt;uuid&gt;.j
 <li><strong>A <code>[agents.&lt;alias&gt;].subagent_*</code> config block.</strong> The validator and override type ship today; the operator-facing config surface that plumbs caller-defined narrowing is not in this release. Both spawn sites pass <code>SubAgentOverrides::default()</code> until that surface lands.</li>
 </ol>
 <div style="break-before: page; page-break-before: always;"></div>
+<h1 id="rpc-socket-transport"><a class="header" href="#rpc-socket-transport">RPC Socket Transport</a></h1>
+<p>The daemon exposes a JSON-RPC 2.0 interface over a local IPC stream — a Unix
+domain socket on Unix and a named pipe on Windows. This is the primary
+transport for local clients like zerocode. The HTTP/WS gateway remains for
+webhooks, the web dashboard, and remote REST consumers.</p>
+<h2 id="endpoint-resolution"><a class="header" href="#endpoint-resolution">Endpoint resolution</a></h2>
+<p>Each <code>--data-dir</code> gets its own endpoint, so multiple daemon instances on the
+same machine do not collide.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>OS</th><th>Default endpoint</th></tr>
+</thead>
+<tbody>
+<tr><td>Linux</td><td><code>&lt;data_dir&gt;/daemon.sock</code> (Unix domain socket)</td></tr>
+<tr><td>macOS</td><td><code>&lt;data_dir&gt;/daemon.sock</code> (Unix domain socket)</td></tr>
+<tr><td>Windows</td><td><code>\\.\pipe\zeroclaw-&lt;hash&gt;</code> where <code>&lt;hash&gt;</code> is derived from <code>data_dir</code></td></tr>
+</tbody>
+</table>
+</div>
+<p>Override with the <code>ZEROCLAW_SOCKET</code> environment variable on either platform:</p>
+<pre><code class="language-bash"># Unix
+export ZEROCLAW_SOCKET=/tmp/my-zeroclaw.sock
+zeroclaw daemon
+</code></pre>
+<pre><code class="language-powershell"># Windows
+$env:ZEROCLAW_SOCKET = '\\.\pipe\my-zeroclaw'
+zeroclaw daemon
+</code></pre>
+<h2 id="wire-protocol"><a class="header" href="#wire-protocol">Wire protocol</a></h2>
+<p>NDJSON (newline-delimited JSON). Each line is a complete JSON-RPC 2.0 message.
+No HTTP framing, no length prefix. The framing is identical across platforms;
+named pipes carry the same byte stream as Unix sockets.</p>
+<pre><code>{"jsonrpc":"2.0","method":"initialize","params":{"protocolVersion":1},"id":1}\n
+{"jsonrpc":"2.0","result":{"protocolVersion":1,"serverVersion":"0.8.1"},"id":1}\n
+</code></pre>
+<h2 id="handshake"><a class="header" href="#handshake">Handshake</a></h2>
+<p>The first RPC call must be <code>initialize</code>. The daemon rejects all other methods
+until <code>initialize</code> succeeds. Protocol version mismatch produces a structured
+error with code <code>-32002</code>.</p>
+<pre><code class="language-json">{
+  "jsonrpc": "2.0",
+  "method": "initialize",
+  "params": {
+    "protocolVersion": 1
+  },
+  "id": 1
+}
+</code></pre>
+<p>The endpoint does not require a pairing token. Access control is handled by
+the operating system:</p>
+<ul>
+<li>Unix: socket is <code>0o600</code>, parent directory is <code>0o700</code>.</li>
+<li>Windows: named pipe ACL defaults to the creating user and <code>SYSTEM</code>.</li>
+</ul>
+<h2 id="methods"><a class="header" href="#methods">Methods</a></h2>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Method</th><th>Direction</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>initialize</code></td><td>client -&gt; daemon</td><td>Authenticate and negotiate protocol version</td></tr>
+<tr><td><code>session/new</code></td><td>client -&gt; daemon</td><td>Create an agent session (requires <code>agentAlias</code>, optional <code>cwd</code>, <code>sessionId</code>)</td></tr>
+<tr><td><code>session/close</code></td><td>client -&gt; daemon</td><td>Close and clean up a session</td></tr>
+<tr><td><code>session/prompt</code></td><td>client -&gt; daemon</td><td>Run a turn (streamed via <code>session/update</code> notifications)</td></tr>
+<tr><td><code>session/cancel</code></td><td>client -&gt; daemon</td><td>Cancel an in-flight turn</td></tr>
+<tr><td><code>status</code></td><td>client -&gt; daemon</td><td>Server version, protocol version, active session list</td></tr>
+<tr><td><code>session/update</code></td><td>daemon -&gt; client</td><td>Streaming notification during a turn (text chunks, tool calls, approvals)</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="turn-streaming"><a class="header" href="#turn-streaming">Turn streaming</a></h3>
+<p><code>session/prompt</code> returns the final result when the turn completes. During
+execution, the daemon sends <code>session/update</code> notifications with incremental
+events:</p>
+<pre><code class="language-json">{"jsonrpc":"2.0","method":"session/update","params":{"sessionId":"...","type":"agent_message_chunk","text":"Hello"}}
+{"jsonrpc":"2.0","method":"session/update","params":{"sessionId":"...","type":"tool_call","toolCallId":"tc_1","name":"bash","rawInput":{...}}}
+{"jsonrpc":"2.0","method":"session/update","params":{"sessionId":"...","type":"tool_result","toolCallId":"tc_1","name":"bash","rawOutput":"..."}}
+</code></pre>
+<p>Event types: <code>agent_message_chunk</code>, <code>agent_thought_chunk</code>, <code>tool_call</code>,
+<code>tool_result</code>, <code>approval_request</code>.</p>
+<h2 id="ephemeral-mode"><a class="header" href="#ephemeral-mode">Ephemeral mode</a></h2>
+<p><code>zeroclaw daemon --ephemeral</code> tracks connected clients and self-terminates
+when the last one disconnects (after a 30-second grace period). A reconnect
+during the grace period cancels the shutdown. The daemon will not exit until
+at least one client has connected.</p>
+<p>Daemons started without <code>--ephemeral</code> ignore client count and run until
+explicitly stopped.</p>
+<h2 id="security"><a class="header" href="#security">Security</a></h2>
+<ul>
+<li>Unix socket directory: <code>0o700</code> (owner only)</li>
+<li>Unix socket file: <code>0o600</code> (owner only)</li>
+<li>Windows named pipe: default ACL grants the creating user and <code>SYSTEM</code></li>
+<li><code>SO_PEERCRED</code> on Linux provides the connecting process PID and UID for
+audit logging; Windows logs <code>pipe:local</code> as the peer label</li>
+</ul>
+<h2 id="quick-test"><a class="header" href="#quick-test">Quick test</a></h2>
+<p>Start the daemon in one terminal:</p>
+<pre><code class="language-bash">zeroclaw daemon
+</code></pre>
+<p>In a second terminal on Unix, connect with <code>socat</code>:</p>
+<pre><code class="language-bash">socat READLINE UNIX-CONNECT:~/.local/share/zeroclaw/daemon.sock
+</code></pre>
+<p>Paste lines one at a time:</p>
+<pre><code>{"jsonrpc":"2.0","method":"initialize","params":{"protocolVersion":1},"id":1}
+{"jsonrpc":"2.0","method":"status","params":{},"id":2}
+</code></pre>
+<p>On Windows, use any named-pipe client (PowerShell <code>[System.IO.Pipes.NamedPipeClientStream]</code>,
+<code>nc</code> via WSL, or just run <code>zerocode</code>).</p>
+<h2 id="internals"><a class="header" href="#internals">Internals</a></h2>
+<p>The dispatch layer lives in <code>crates/zeroclaw-runtime/src/rpc/</code>:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>File</th><th>Role</th></tr>
+</thead>
+<tbody>
+<tr><td><code>transport.rs</code></td><td><code>RpcTransport</code> trait</td></tr>
+<tr><td><code>turn.rs</code></td><td><code>execute_turn()</code> shared turn executor</td></tr>
+<tr><td><code>session.rs</code></td><td><code>RpcSession</code>, <code>SessionStore</code></td></tr>
+<tr><td><code>dispatch.rs</code></td><td><code>RpcDispatcher</code> method routing</td></tr>
+<tr><td><code>local.rs</code></td><td><code>LocalTransport</code> + listener (Unix socket / Windows named pipe)</td></tr>
+<tr><td><code>wss.rs</code></td><td>WSS (WebSocket Secure) transport + TLS acceptor</td></tr>
+<tr><td><code>attachments.rs</code></td><td>File upload processing, dedup, marker generation</td></tr>
+</tbody>
+</table>
+</div>
+<p>The <code>RpcTransport</code> trait is designed so that additional transports (vsock,
+custom IPC) slot in without touching the dispatch or session logic. The
+<code>local.rs</code> module wraps the Unix and Windows primitives behind a single
+<code>LocalTransport</code> struct using <code>tokio::io::split</code>, so the read/write loop is
+shared across both platforms.</p>
+<div style="break-before: page; page-break-before: always;"></div>
 <h1 id="command-line-help-for-zeroclaw"><a class="header" href="#command-line-help-for-zeroclaw">Command-Line Help for <code>zeroclaw</code></a></h1>
 <p>This document contains the help content for the <code>zeroclaw</code> command-line program.</p>
 <p><strong>Command Overview:</strong></p>
 <ul>
 <li><a href="#zeroclaw-1"><code>zeroclaw</code>↴</a></li>
+<li><a href="#zeroclaw-quickstart"><code>zeroclaw quickstart</code>↴</a></li>
 <li><a href="#zeroclaw-onboard"><code>zeroclaw onboard</code>↴</a></li>
 <li><a href="#zeroclaw-onboard-providers.models"><code>zeroclaw onboard providers.models</code>↴</a></li>
-<li><a href="#zeroclaw-onboard-risk-profiles"><code>zeroclaw onboard risk-profiles</code>↴</a></li>
-<li><a href="#zeroclaw-onboard-runtime-profiles"><code>zeroclaw onboard runtime-profiles</code>↴</a></li>
+<li><a href="#zeroclaw-onboard-risk_profiles"><code>zeroclaw onboard risk_profiles</code>↴</a></li>
+<li><a href="#zeroclaw-onboard-runtime_profiles"><code>zeroclaw onboard runtime_profiles</code>↴</a></li>
 <li><a href="#zeroclaw-onboard-storage"><code>zeroclaw onboard storage</code>↴</a></li>
 <li><a href="#zeroclaw-onboard-memory"><code>zeroclaw onboard memory</code>↴</a></li>
 <li><a href="#zeroclaw-onboard-skills"><code>zeroclaw onboard skills</code>↴</a></li>
-<li><a href="#zeroclaw-onboard-skill-bundles"><code>zeroclaw onboard skill-bundles</code>↴</a></li>
+<li><a href="#zeroclaw-onboard-skill_bundles"><code>zeroclaw onboard skill_bundles</code>↴</a></li>
 <li><a href="#zeroclaw-onboard-mcp"><code>zeroclaw onboard mcp</code>↴</a></li>
-<li><a href="#zeroclaw-onboard-mcp-bundles"><code>zeroclaw onboard mcp-bundles</code>↴</a></li>
-<li><a href="#zeroclaw-onboard-knowledge-bundles"><code>zeroclaw onboard knowledge-bundles</code>↴</a></li>
+<li><a href="#zeroclaw-onboard-mcp_bundles"><code>zeroclaw onboard mcp_bundles</code>↴</a></li>
+<li><a href="#zeroclaw-onboard-knowledge_bundles"><code>zeroclaw onboard knowledge_bundles</code>↴</a></li>
 <li><a href="#zeroclaw-onboard-providers.tts"><code>zeroclaw onboard providers.tts</code>↴</a></li>
 <li><a href="#zeroclaw-onboard-providers.transcription"><code>zeroclaw onboard providers.transcription</code>↴</a></li>
 <li><a href="#zeroclaw-onboard-channels"><code>zeroclaw onboard channels</code>↴</a></li>
 <li><a href="#zeroclaw-onboard-hardware"><code>zeroclaw onboard hardware</code>↴</a></li>
 <li><a href="#zeroclaw-onboard-agents"><code>zeroclaw onboard agents</code>↴</a></li>
-<li><a href="#zeroclaw-onboard-peer-groups"><code>zeroclaw onboard peer-groups</code>↴</a></li>
+<li><a href="#zeroclaw-onboard-peer_groups"><code>zeroclaw onboard peer_groups</code>↴</a></li>
 <li><a href="#zeroclaw-onboard-cron"><code>zeroclaw onboard cron</code>↴</a></li>
 <li><a href="#zeroclaw-onboard-tunnel"><code>zeroclaw onboard tunnel</code>↴</a></li>
+<li><a href="#zeroclaw-onboard-onboard_state"><code>zeroclaw onboard onboard_state</code>↴</a></li>
 <li><a href="#zeroclaw-agent"><code>zeroclaw agent</code>↴</a></li>
 <li><a href="#zeroclaw-gateway-1"><code>zeroclaw gateway</code>↴</a></li>
 <li><a href="#zeroclaw-gateway-start"><code>zeroclaw gateway start</code>↴</a></li>
@@ -1988,13 +2393,16 @@ The result file lives at <code>&lt;workspace&gt;/delegate_results/&lt;uuid&gt;.j
 <li><a href="#zeroclaw-self-test"><code>zeroclaw self-test</code>↴</a></li>
 <li><a href="#zeroclaw-completions"><code>zeroclaw completions</code>↴</a></li>
 <li><a href="#zeroclaw-desktop"><code>zeroclaw desktop</code>↴</a></li>
+<li><a href="#zeroclaw-locales"><code>zeroclaw locales</code>↴</a></li>
+<li><a href="#zeroclaw-locales-fetch"><code>zeroclaw locales fetch</code>↴</a></li>
 </ul>
 <h2 id="zeroclaw-1"><a class="header" href="#zeroclaw-1"><code>zeroclaw</code></a></h2>
 <p>The fastest, smallest AI assistant.</p>
 <p><strong>Usage:</strong> <code>zeroclaw [OPTIONS] &lt;COMMAND&gt;</code></p>
 <p><strong>Subcommands:</strong></p>
 <ul>
-<li><code>onboard</code> — Initialize your workspace and configuration</li>
+<li><code>quickstart</code> — Quickstart — create one working agent end-to-end. Replaces the section-by-section onboarding flow with a single preset-driven path. Non-interactive in this build: writes balanced defaults for risk/runtime/memory and prints next-step instructions</li>
+<li><code>onboard</code> — Deprecated. Use <code>zeroclaw quickstart</code>. Any flags error</li>
 <li><code>agent</code> — Start the AI agent loop</li>
 <li><code>gateway</code> — Start/manage the gateway server (webhooks, websockets)</li>
 <li><code>acp</code> — Start ACP (Agent Control Protocol) server over stdio</li>
@@ -2021,55 +2429,65 @@ The result file lives at <code>&lt;workspace&gt;/delegate_results/&lt;uuid&gt;.j
 <li><code>self-test</code> — Run diagnostic self-tests</li>
 <li><code>completions</code> — Generate shell completion script to stdout</li>
 <li><code>desktop</code> — Launch or install the companion desktop app</li>
+<li><code>locales</code> — Fetch translated locale files (FTL) from upstream</li>
 </ul>
 <p><strong>Options:</strong></p>
 <ul>
-<li><code>--config-dir &lt;CONFIG_DIR&gt;</code></li>
+<li>
+<p><code>--config-dir &lt;CONFIG_DIR&gt;</code></p>
+</li>
+<li>
+<p><code>--log-level &lt;LOG_LEVEL&gt;</code> — Lowest severity recorded to the runtime trace (and capture layer). Immutable for the process. Precedence: this flag &gt; RUST_LOG env &gt; per-command default</p>
+<p>Possible values: <code>error</code>, <code>warn</code>, <code>info</code>, <code>debug</code>, <code>trace</code></p>
+</li>
+<li>
+<p><code>-v</code>, <code>--verbose</code> — Surface recorded logs on the terminal. Off by default: logs go to the trace file only and the terminal shows just command output. When on, the terminal shows events down to the recorded floor. Immutable for the process</p>
+</li>
+</ul>
+<h2 id="zeroclaw-quickstart"><a class="header" href="#zeroclaw-quickstart"><code>zeroclaw quickstart</code></a></h2>
+<p>Quickstart — create one working agent end-to-end. Replaces the section-by-section onboarding flow with a single preset-driven path. Non-interactive in this build: writes balanced defaults for risk/runtime/memory and prints next-step instructions</p>
+<p><strong>Usage:</strong> <code>zeroclaw quickstart [OPTIONS]</code></p>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>--model-provider &lt;MODEL_PROVIDER&gt;</code> — Provider type (anthropic / openai / openrouter / ollama)</li>
+<li><code>--model &lt;MODEL&gt;</code> — Model id for the new provider entry</li>
+<li><code>--api-key &lt;API_KEY&gt;</code> — API key for the new provider entry (omit for ollama / local)</li>
+<li><code>--agent &lt;AGENT&gt;</code> — Alias for the new agent. Defaults to a sanitized provider name</li>
 </ul>
 <h2 id="zeroclaw-onboard"><a class="header" href="#zeroclaw-onboard"><code>zeroclaw onboard</code></a></h2>
-<p>Initialize your workspace and configuration</p>
-<p><strong>Usage:</strong> <code>zeroclaw onboard [OPTIONS] [COMMAND]</code></p>
+<p>Deprecated. Use <code>zeroclaw quickstart</code>. Any flags error</p>
+<p><strong>Usage:</strong> <code>zeroclaw onboard [COMMAND]</code></p>
 <p><strong>Subcommands:</strong></p>
 <ul>
 <li><code>providers.models</code> — Pick a model provider to configure (Anthropic, OpenAI, OpenRouter, Ollama, custom OpenAI-compatible gateways, etc.). Multiple aliases per provider are supported — e.g. anthropic.production and anthropic.dev can coexist</li>
-<li><code>risk-profiles</code> — Named risk profiles binding allowlists, denylists, and approval thresholds. Agents reference one via <code>agents.&lt;alias&gt;.risk_profile</code></li>
-<li><code>runtime-profiles</code> — Named runtime tuning profiles (token limits, retry policy, timeouts). Agents reference one via <code>agents.&lt;alias&gt;.runtime_profile</code></li>
+<li><code>risk_profiles</code> — Named risk profiles binding allowlists, denylists, and approval thresholds. Agents reference one via <code>agents.&lt;alias&gt;.risk_profile</code></li>
+<li><code>runtime_profiles</code> — Named runtime tuning profiles (token limits, retry policy, timeouts). Agents reference one via <code>agents.&lt;alias&gt;.runtime_profile</code></li>
 <li><code>storage</code> — SQLite is the safe default for single-node installs (file-based, zero-config, no extra services). Pick Postgres for shared or multi-instance deployments, Qdrant for vector search, Markdown or Lucid for human-readable files. Each backend supports multiple aliased instances; agents reference them via <code>memory.storage_ref</code></li>
 <li><code>memory</code> — Persistent memory backend. SQLite is the default; pick <code>none</code> to disable long-term recall entirely</li>
 <li><code>skills</code> — Skills tool settings — where skill markdown lives on disk (defaults to the data dir), and how the skills loader handles community repositories. Add skill BUNDLES under <code>skill-bundles</code> below</li>
-<li><code>skill-bundles</code> — Named bundles of skill files. Agents reference a bundle to load a set of capabilities at startup</li>
+<li><code>skill_bundles</code> — Named bundles of skill files. Agents reference a bundle to load a set of capabilities at startup</li>
 <li><code>mcp</code> — Model Context Protocol settings. Toggle <code>enabled</code> and pick deferred or eager loading. Individual MCP servers live under <code>mcp.servers[]</code></li>
-<li><code>mcp-bundles</code> — Named bundles of MCP servers. Agents reference a bundle to pull in a set of MCP tools as one unit</li>
-<li><code>knowledge-bundles</code> — Named bundles of knowledge sources (RAG indexes, doc folders). Agents reference a bundle to surface relevant snippets at inference time</li>
+<li><code>mcp_bundles</code> — Named bundles of MCP servers. Agents reference a bundle to pull in a set of MCP tools as one unit</li>
+<li><code>knowledge_bundles</code> — Named bundles of knowledge sources (RAG indexes, doc folders). Agents reference a bundle to surface relevant snippets at inference time</li>
 <li><code>providers.tts</code> — Text-to-speech providers (OpenAI, ElevenLabs, Google, Edge, Piper). Configure one per voice / language; agents reference them by alias</li>
 <li><code>providers.transcription</code> — Speech-to-text providers (OpenAI Whisper, Groq, Deepgram, AssemblyAI, Google, local Whisper). Configure one per pipeline; agents reference them by alias</li>
 <li><code>channels</code> — Pick which chat platforms ZeroClaw should listen on. You can configure multiple — each channel gets its own alias</li>
 <li><code>hardware</code> — Optional: hardware peripherals (Arduino, STM32, GPIO, etc.). Skip if you don’t need them</li>
 <li><code>agents</code> — An agent binds a model provider, profiles, bundles, and channels into one dispatchable unit. Add one per persona; reuse the same alias across channels to share state</li>
-<li><code>peer-groups</code> — Named groups binding a channel, member agents, and external peers. Mutual opt-in: two agents become peers only when both appear in the same group’s <code>agents</code> list</li>
+<li><code>peer_groups</code> — Named groups binding a channel, member agents, and external peers. Mutual opt-in: two agents become peers only when both appear in the same group’s <code>agents</code> list</li>
 <li><code>cron</code> — Scheduled tasks. Each cron entry binds a schedule expression to a prompt, channel, and target</li>
 <li><code>tunnel</code> — Optional: expose your gateway over the public internet via Cloudflare or ngrok. Pick <code>none</code> to keep it localhost-only</li>
-</ul>
-<p><strong>Options:</strong></p>
-<ul>
-<li><code>--quick</code> — Skip interactive prompts; read from –api-key/–model-provider/–model/–memory</li>
-<li><code>--cli</code> — Force the dialoguer CLI backend instead of the default ratatui TUI</li>
-<li><code>--force</code> — Don’t ask “keep stored secret?” — always re-prompt</li>
-<li><code>--reinit</code> — Back up existing config and start from defaults</li>
-<li><code>--api-key &lt;API_KEY&gt;</code> — API key for model_provider configuration</li>
-<li><code>--model-provider &lt;MODEL_PROVIDER&gt;</code> — ModelProvider name. Used as the type key for the synthesized <code>[model_providers.&lt;type&gt;.default]</code> entry</li>
-<li><code>--model &lt;MODEL&gt;</code> — Model ID override</li>
-<li><code>--memory &lt;MEMORY&gt;</code> — Memory backend (sqlite, lucid, markdown, none)</li>
+<li><code>onboard_state</code> — Quickstart lifecycle state. <code>quickstart_completed</code> flips to true once the Quickstart finishes a successful run; while false, the web gateway and TUI auto-launch the Quickstart on startup. <code>completed_sections</code> is a legacy per-section ledger retained for backwards compatibility with prior data</li>
 </ul>
 <h2 id="zeroclaw-onboard-providersmodels"><a class="header" href="#zeroclaw-onboard-providersmodels"><code>zeroclaw onboard providers.models</code></a></h2>
 <p>Pick a model provider to configure (Anthropic, OpenAI, OpenRouter, Ollama, custom OpenAI-compatible gateways, etc.). Multiple aliases per provider are supported — e.g. anthropic.production and anthropic.dev can coexist</p>
 <p><strong>Usage:</strong> <code>zeroclaw onboard providers.models</code></p>
-<h2 id="zeroclaw-onboard-risk-profiles"><a class="header" href="#zeroclaw-onboard-risk-profiles"><code>zeroclaw onboard risk-profiles</code></a></h2>
+<h2 id="zeroclaw-onboard-risk_profiles"><a class="header" href="#zeroclaw-onboard-risk_profiles"><code>zeroclaw onboard risk_profiles</code></a></h2>
 <p>Named risk profiles binding allowlists, denylists, and approval thresholds. Agents reference one via <code>agents.&lt;alias&gt;.risk_profile</code></p>
-<p><strong>Usage:</strong> <code>zeroclaw onboard risk-profiles</code></p>
-<h2 id="zeroclaw-onboard-runtime-profiles"><a class="header" href="#zeroclaw-onboard-runtime-profiles"><code>zeroclaw onboard runtime-profiles</code></a></h2>
+<p><strong>Usage:</strong> <code>zeroclaw onboard risk_profiles</code></p>
+<h2 id="zeroclaw-onboard-runtime_profiles"><a class="header" href="#zeroclaw-onboard-runtime_profiles"><code>zeroclaw onboard runtime_profiles</code></a></h2>
 <p>Named runtime tuning profiles (token limits, retry policy, timeouts). Agents reference one via <code>agents.&lt;alias&gt;.runtime_profile</code></p>
-<p><strong>Usage:</strong> <code>zeroclaw onboard runtime-profiles</code></p>
+<p><strong>Usage:</strong> <code>zeroclaw onboard runtime_profiles</code></p>
 <h2 id="zeroclaw-onboard-storage"><a class="header" href="#zeroclaw-onboard-storage"><code>zeroclaw onboard storage</code></a></h2>
 <p>SQLite is the safe default for single-node installs (file-based, zero-config, no extra services). Pick Postgres for shared or multi-instance deployments, Qdrant for vector search, Markdown or Lucid for human-readable files. Each backend supports multiple aliased instances; agents reference them via <code>memory.storage_ref</code></p>
 <p><strong>Usage:</strong> <code>zeroclaw onboard storage</code></p>
@@ -2079,18 +2497,18 @@ The result file lives at <code>&lt;workspace&gt;/delegate_results/&lt;uuid&gt;.j
 <h2 id="zeroclaw-onboard-skills"><a class="header" href="#zeroclaw-onboard-skills"><code>zeroclaw onboard skills</code></a></h2>
 <p>Skills tool settings — where skill markdown lives on disk (defaults to the data dir), and how the skills loader handles community repositories. Add skill BUNDLES under <code>skill-bundles</code> below</p>
 <p><strong>Usage:</strong> <code>zeroclaw onboard skills</code></p>
-<h2 id="zeroclaw-onboard-skill-bundles"><a class="header" href="#zeroclaw-onboard-skill-bundles"><code>zeroclaw onboard skill-bundles</code></a></h2>
+<h2 id="zeroclaw-onboard-skill_bundles"><a class="header" href="#zeroclaw-onboard-skill_bundles"><code>zeroclaw onboard skill_bundles</code></a></h2>
 <p>Named bundles of skill files. Agents reference a bundle to load a set of capabilities at startup</p>
-<p><strong>Usage:</strong> <code>zeroclaw onboard skill-bundles</code></p>
+<p><strong>Usage:</strong> <code>zeroclaw onboard skill_bundles</code></p>
 <h2 id="zeroclaw-onboard-mcp"><a class="header" href="#zeroclaw-onboard-mcp"><code>zeroclaw onboard mcp</code></a></h2>
 <p>Model Context Protocol settings. Toggle <code>enabled</code> and pick deferred or eager loading. Individual MCP servers live under <code>mcp.servers[]</code></p>
 <p><strong>Usage:</strong> <code>zeroclaw onboard mcp</code></p>
-<h2 id="zeroclaw-onboard-mcp-bundles"><a class="header" href="#zeroclaw-onboard-mcp-bundles"><code>zeroclaw onboard mcp-bundles</code></a></h2>
+<h2 id="zeroclaw-onboard-mcp_bundles"><a class="header" href="#zeroclaw-onboard-mcp_bundles"><code>zeroclaw onboard mcp_bundles</code></a></h2>
 <p>Named bundles of MCP servers. Agents reference a bundle to pull in a set of MCP tools as one unit</p>
-<p><strong>Usage:</strong> <code>zeroclaw onboard mcp-bundles</code></p>
-<h2 id="zeroclaw-onboard-knowledge-bundles"><a class="header" href="#zeroclaw-onboard-knowledge-bundles"><code>zeroclaw onboard knowledge-bundles</code></a></h2>
+<p><strong>Usage:</strong> <code>zeroclaw onboard mcp_bundles</code></p>
+<h2 id="zeroclaw-onboard-knowledge_bundles"><a class="header" href="#zeroclaw-onboard-knowledge_bundles"><code>zeroclaw onboard knowledge_bundles</code></a></h2>
 <p>Named bundles of knowledge sources (RAG indexes, doc folders). Agents reference a bundle to surface relevant snippets at inference time</p>
-<p><strong>Usage:</strong> <code>zeroclaw onboard knowledge-bundles</code></p>
+<p><strong>Usage:</strong> <code>zeroclaw onboard knowledge_bundles</code></p>
 <h2 id="zeroclaw-onboard-providerstts"><a class="header" href="#zeroclaw-onboard-providerstts"><code>zeroclaw onboard providers.tts</code></a></h2>
 <p>Text-to-speech providers (OpenAI, ElevenLabs, Google, Edge, Piper). Configure one per voice / language; agents reference them by alias</p>
 <p><strong>Usage:</strong> <code>zeroclaw onboard providers.tts</code></p>
@@ -2106,15 +2524,18 @@ The result file lives at <code>&lt;workspace&gt;/delegate_results/&lt;uuid&gt;.j
 <h2 id="zeroclaw-onboard-agents"><a class="header" href="#zeroclaw-onboard-agents"><code>zeroclaw onboard agents</code></a></h2>
 <p>An agent binds a model provider, profiles, bundles, and channels into one dispatchable unit. Add one per persona; reuse the same alias across channels to share state</p>
 <p><strong>Usage:</strong> <code>zeroclaw onboard agents</code></p>
-<h2 id="zeroclaw-onboard-peer-groups"><a class="header" href="#zeroclaw-onboard-peer-groups"><code>zeroclaw onboard peer-groups</code></a></h2>
+<h2 id="zeroclaw-onboard-peer_groups"><a class="header" href="#zeroclaw-onboard-peer_groups"><code>zeroclaw onboard peer_groups</code></a></h2>
 <p>Named groups binding a channel, member agents, and external peers. Mutual opt-in: two agents become peers only when both appear in the same group’s <code>agents</code> list</p>
-<p><strong>Usage:</strong> <code>zeroclaw onboard peer-groups</code></p>
+<p><strong>Usage:</strong> <code>zeroclaw onboard peer_groups</code></p>
 <h2 id="zeroclaw-onboard-cron"><a class="header" href="#zeroclaw-onboard-cron"><code>zeroclaw onboard cron</code></a></h2>
 <p>Scheduled tasks. Each cron entry binds a schedule expression to a prompt, channel, and target</p>
 <p><strong>Usage:</strong> <code>zeroclaw onboard cron</code></p>
 <h2 id="zeroclaw-onboard-tunnel"><a class="header" href="#zeroclaw-onboard-tunnel"><code>zeroclaw onboard tunnel</code></a></h2>
 <p>Optional: expose your gateway over the public internet via Cloudflare or ngrok. Pick <code>none</code> to keep it localhost-only</p>
 <p><strong>Usage:</strong> <code>zeroclaw onboard tunnel</code></p>
+<h2 id="zeroclaw-onboard-onboard_state"><a class="header" href="#zeroclaw-onboard-onboard_state"><code>zeroclaw onboard onboard_state</code></a></h2>
+<p>Quickstart lifecycle state. <code>quickstart_completed</code> flips to true once the Quickstart finishes a successful run; while false, the web gateway and TUI auto-launch the Quickstart on startup. <code>completed_sections</code> is a legacy per-section ledger retained for backwards compatibility with prior data</p>
+<p><strong>Usage:</strong> <code>zeroclaw onboard onboard_state</code></p>
 <h2 id="zeroclaw-agent"><a class="header" href="#zeroclaw-agent"><code>zeroclaw agent</code></a></h2>
 <p>Start the AI agent loop.</p>
 <p>Launches an interactive chat session with the configured AI model_provider. Use –message for single-shot queries without entering interactive mode.</p>
@@ -2215,6 +2636,7 @@ zeroclaw daemon –host 127.0.0.1  # localhost only</p>
 <ul>
 <li><code>-p</code>, <code>--port &lt;PORT&gt;</code> — Port to listen on (use 0 for random available port); defaults to config gateway.port</li>
 <li><code>--host &lt;HOST&gt;</code> — Host to bind to; defaults to config gateway.host</li>
+<li><code>--ephemeral</code> — Self-terminate after all socket clients disconnect (with grace period)</li>
 </ul>
 <h2 id="zeroclaw-service"><a class="header" href="#zeroclaw-service"><code>zeroclaw service</code></a></h2>
 <p>Manage OS service lifecycle (launchd/systemd user service)</p>
@@ -3256,13 +3678,36 @@ zeroclaw desktop –install    # download and install it</p>
 <ul>
 <li><code>--install</code> — Download and install the companion app</li>
 </ul>
+<h2 id="zeroclaw-locales"><a class="header" href="#zeroclaw-locales"><code>zeroclaw locales</code></a></h2>
+<p>Fetch translated Fluent (.ftl) catalogues for a locale from the upstream repository and install them under <config-dir>/data/ftl/<locale>/, where the runtime and zerocode loaders read them.</locale></config-dir></p>
+<p>Pass a single locale. By default every catalogue is fetched; restrict with –catalog (comma-separated): cli, tools, zerocode.</p>
+<p>Examples:
+zeroclaw locales fetch ja
+zeroclaw locales fetch fr –catalog cli,tools
+zeroclaw locales fetch zh-CN –catalog zerocode</p>
+<p><strong>Usage:</strong> <code>zeroclaw locales &lt;COMMAND&gt;</code></p>
+<p><strong>Subcommands:</strong></p>
+<ul>
+<li><code>fetch</code> — Download translated FTL files for a locale from upstream</li>
+</ul>
+<h2 id="zeroclaw-locales-fetch"><a class="header" href="#zeroclaw-locales-fetch"><code>zeroclaw locales fetch</code></a></h2>
+<p>Download translated FTL files for a locale from upstream</p>
+<p><strong>Usage:</strong> <code>zeroclaw locales fetch [OPTIONS] &lt;LOCALE&gt;</code></p>
+<p><strong>Arguments:</strong></p>
+<ul>
+<li><code>&lt;LOCALE&gt;</code> — Locale code to fetch (e.g. <code>ja</code>, <code>fr</code>, <code>zh-CN</code>)</li>
+</ul>
+<p><strong>Options:</strong></p>
+<ul>
+<li><code>--catalog &lt;CATALOG&gt;</code> — Comma-separated catalogues to fetch: cli, tools, zerocode. Omit to fetch all of them</li>
+</ul>
 <hr />
 <p><small><i>
 This document was generated automatically by
 <a href="https://crates.io/crates/clap-markdown"><code>clap-markdown</code></a>.
 </i></small></p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="config-reference"><a class="header" href="#config-reference">Config Reference</a></h1>
+<h1 id="config-reference-1"><a class="header" href="#config-reference-1">Config Reference</a></h1>
 <p>ZeroClaw is configured via a TOML file. All fields are optional unless noted.</p>
 <div class="table-wrapper">
 <table>
@@ -3288,7 +3733,9 @@ This document was generated automatically by
 <tr><td><code>delegate</code></td><td>Global delegate tool configuration for default timeout values.</td></tr>
 <tr><td><code>embedding_routes</code></td><td>Embedding-routing rules — route <code>hint:&lt;name&gt;</code> to specific</td></tr>
 <tr><td><code>escalation</code></td><td>Escalation routing configuration (<code>[escalation]</code> section).</td></tr>
+<tr><td><code>file_download</code></td><td>Standalone file download tool configuration (<code>[file_download]</code>).</td></tr>
 <tr><td><code>file_upload</code></td><td>Standalone file upload tool configuration (<code>[file_upload]</code>).</td></tr>
+<tr><td><code>file_upload_bundle</code></td><td>Standalone multi-file bundle upload tool configuration</td></tr>
 <tr><td><code>gateway</code></td><td>Gateway server configuration (<code>[gateway]</code> section).</td></tr>
 <tr><td><code>gemini_cli</code></td><td>Gemini CLI tool configuration (<code>[gemini_cli]</code> section).</td></tr>
 <tr><td><code>google_workspace</code></td><td>Google Workspace CLI (<code>gws</code>) tool configuration (<code>[google_workspace]</code> section).</td></tr>
@@ -3347,6 +3794,7 @@ This document was generated automatically by
 <tr><td><code>verifiable_intent</code></td><td>Verifiable Intent (VI) credential verification and issuance (<code>[verifiable_intent]</code> section).</td></tr>
 <tr><td><code>web_fetch</code></td><td>Web fetch tool configuration (<code>[web_fetch]</code> section).</td></tr>
 <tr><td><code>web_search</code></td><td>Web search tool configuration (<code>[web_search]</code> section).</td></tr>
+<tr><td><code>wss</code></td><td>WebSocket Secure (WSS) transport for remote TUI-to-daemon connections (<code>[wss]</code>).</td></tr>
 </tbody>
 </table>
 </div>
@@ -3730,6 +4178,28 @@ Alerts are sent best-effort and do not block the escalation.</p>
 </tbody>
 </table>
 </div>
+<h2 id="file_download"><a class="header" href="#file_download"><code>file_download</code></a></h2>
+<p>Standalone file download tool configuration (<code>[file_download]</code>).</p>
+<p>When <code>url</code> is set to a non-empty value, registers a <code>file_download</code> tool
+that GETs a file from the configured endpoint and writes it to the agent’s
+workspace filesystem. The LLM supplies only a document identifier and a
+workspace-relative destination path; the endpoint URL comes solely from this
+config and is never model-controlled. Response bytes are streamed to disk
+and never loaded into model context.</p>
+<p>When <code>url</code> is <code>None</code> or empty, the tool is not registered.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Key</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>headers</code></td><td>map</td><td><code>{}</code></td><td>Static HTTP headers attached to every download request — typically an</td></tr>
+<tr><td><code>max_file_size_bytes</code></td><td>integer</td><td><code>26214400</code></td><td>Maximum download size in bytes. Enforced while streaming: the transfer</td></tr>
+<tr><td><code>timeout_secs</code></td><td>integer</td><td><code>120</code></td><td>Request timeout in seconds. Default: 120.</td></tr>
+<tr><td><code>url</code></td><td>any</td><td><code>null</code></td><td>Download endpoint URL. Tool is disabled when this is <code>None</code> or empty.</td></tr>
+</tbody>
+</table>
+</div>
 <h2 id="file_upload"><a class="header" href="#file_upload"><code>file_upload</code></a></h2>
 <p>Standalone file upload tool configuration (<code>[file_upload]</code>).</p>
 <p>When <code>url</code> is set to a non-empty value, registers a <code>file_upload</code> tool that
@@ -3749,6 +4219,32 @@ the model context.</p>
 <tr><td><code>max_file_size_bytes</code></td><td>integer</td><td><code>26214400</code></td><td>Maximum file size in bytes. Larger files are rejected before any</td></tr>
 <tr><td><code>method</code></td><td>string</td><td><code>"POST"</code></td><td>HTTP method. Only <code>POST</code> (default) and <code>PUT</code> are accepted.</td></tr>
 <tr><td><code>timeout_secs</code></td><td>integer</td><td><code>60</code></td><td>Request timeout in seconds. Default: 60.</td></tr>
+<tr><td><code>url</code></td><td>any</td><td><code>null</code></td><td>Upload endpoint URL. Tool is disabled when this is <code>None</code> or empty.</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="file_upload_bundle"><a class="header" href="#file_upload_bundle"><code>file_upload_bundle</code></a></h2>
+<p>Standalone multi-file bundle upload tool configuration
+(<code>[file_upload_bundle]</code>).</p>
+<p>When <code>url</code> is set to a non-empty value, registers a <code>file_upload_bundle</code>
+tool that POSTs N files from the agent’s local filesystem to the
+configured endpoint as a single <code>multipart/form-data</code> request. The LLM
+provides only file paths; the host reads the bytes.</p>
+<p>When <code>url</code> is <code>None</code> or empty, the tool is not registered.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Key</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>field_name</code></td><td>string</td><td><code>"file"</code></td><td>Multipart form-field name reused across every file part. Default: <code>file</code>.</td></tr>
+<tr><td><code>headers</code></td><td>map</td><td><code>{}</code></td><td>Static HTTP headers attached to every upload request.</td></tr>
+<tr><td><code>max_file_size_bytes</code></td><td>integer</td><td><code>10485760</code></td><td>Maximum per-file size in bytes. Default: 10 MiB.</td></tr>
+<tr><td><code>max_files</code></td><td>integer</td><td><code>16</code></td><td>Maximum number of files per call. Default: 16.</td></tr>
+<tr><td><code>max_response_body_bytes</code></td><td>integer</td><td><code>4096</code></td><td>Maximum response body bytes to read from the upload endpoint.</td></tr>
+<tr><td><code>max_total_size_bytes</code></td><td>integer</td><td><code>33554432</code></td><td>Maximum cumulative size across every file in one call. Default: 32 MiB.</td></tr>
+<tr><td><code>method</code></td><td>string</td><td><code>"POST"</code></td><td>HTTP method. Only <code>POST</code> (default) and <code>PUT</code> are accepted.</td></tr>
+<tr><td><code>timeout_secs</code></td><td>integer</td><td><code>120</code></td><td>Request timeout in seconds. Default: 120.</td></tr>
 <tr><td><code>url</code></td><td>any</td><td><code>null</code></td><td>Upload endpoint URL. Tool is disabled when this is <code>None</code> or empty.</td></tr>
 </tbody>
 </table>
@@ -3989,6 +4485,7 @@ requests are rejected.</p>
 <tbody>
 <tr><td><code>allow_private_hosts</code></td><td>bool</td><td><code>false</code></td><td>Allow requests to private/LAN hosts (RFC 1918, loopback, link-local, .local).</td></tr>
 <tr><td><code>allowed_domains</code></td><td>string[]</td><td><code>[]</code></td><td>Allowed domains for HTTP requests (exact or subdomain match)</td></tr>
+<tr><td><code>allowed_private_hosts</code></td><td>string[]</td><td><code>[]</code></td><td>Private/internal hosts explicitly allowed to bypass SSRF protection.</td></tr>
 <tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Enable <code>http_request</code> tool for API interactions</td></tr>
 <tr><td><code>max_response_size</code></td><td>integer</td><td><code>1000000</code></td><td>Maximum response size in bytes (default: 1MB, 0 = unlimited)</td></tr>
 <tr><td><code>timeout_secs</code></td><td>integer</td><td><code>30</code></td><td>Request timeout in seconds (default: 30)</td></tr>
@@ -4336,6 +4833,7 @@ personal or sensitive images should be aware of the upload semantics. See
 <tbody>
 <tr><td><code>allow_remote_fetch</code></td><td>bool</td><td><code>false</code></td><td>Allow fetching remote image URLs (http/https). Disabled by default.</td></tr>
 <tr><td><code>max_image_size_mb</code></td><td>integer</td><td><code>5</code></td><td>Maximum image payload size in MiB before base64 encoding.</td></tr>
+<tr><td><code>max_image_turns</code></td><td>integer</td><td><code>0</code></td><td>Maximum age of images in conversation turns.</td></tr>
 <tr><td><code>max_images</code></td><td>integer</td><td><code>4</code></td><td>Maximum number of image attachments accepted per request.</td></tr>
 <tr><td><code>vision_model</code></td><td>any</td><td><code>null</code></td><td>Model to use when routing to the vision model_provider (e.g. <code>"llava:7b"</code>).</td></tr>
 <tr><td><code>vision_model_provider</code></td><td>any</td><td><code>null</code></td><td>ModelProvider name to use for vision/image messages (e.g. <code>"ollama"</code>).</td></tr>
@@ -4415,7 +4913,7 @@ Requires <code>api_key</code> (or the <code>NOTION_API_KEY</code> env var) and <
 <tr><td><code>log_persistence_path</code></td><td>string</td><td><code>"state/runtime-trace.jsonl"</code></td><td>Log persistence file path. Relative paths resolve under workspace_dir.</td></tr>
 <tr><td><code>log_tool_io</code></td><td>string</td><td><code>"redacted"</code></td><td>Tool I/O capture policy: “off” | “redacted” | “full”.</td></tr>
 <tr><td><code>log_tool_io_denylist</code></td><td>string[]</td><td><code>[]</code></td><td>Tool names whose I/O is never logged beyond name + outcome + duration</td></tr>
-<tr><td><code>log_tool_io_truncate_bytes</code></td><td>integer</td><td><code>8192</code></td><td>Truncate the captured tool input and output at this many bytes when</td></tr>
+<tr><td><code>log_tool_io_truncate_bytes</code></td><td>integer</td><td><code>40960</code></td><td>Truncate the captured tool input and output at this many bytes when</td></tr>
 <tr><td><code>otel_endpoint</code></td><td>any</td><td><code>null</code></td><td>OTLP endpoint (e.g. <code>"http://localhost:4318"</code>). Only used when backend = <code>"otel"</code>.</td></tr>
 <tr><td><code>otel_headers</code></td><td>any</td><td><code>null</code></td><td>Optional HTTP headers sent with every OTLP export request (e.g. authorization).</td></tr>
 <tr><td><code>otel_service_name</code></td><td>any</td><td><code>null</code></td><td>Service name reported to the OTel collector. Defaults to “zeroclaw”.</td></tr>
@@ -4426,18 +4924,19 @@ Requires <code>api_key</code> (or the <code>NOTION_API_KEY</code> env var) and <
 <p>Multi-client workspace isolation configuration.</p>
 <p>When enabled, each client engagement gets an isolated workspace with
 separate memory, audit, secrets, and tool restrictions.
-Opaque state the <code>zeroclaw onboard</code> flow writes so it can tell, on a
+Opaque state the Quickstart flow writes so it can tell, on a
 re-run, which sections the user has already walked through at least
 once — which lets it offer “Reconfigure? [y/N]” skip gates instead of
 forcing users through every field again.</p>
-<p>This is meta-state about the onboard process, not user-facing config.</p>
+<p>This is meta-state about the Quickstart flow, not user-facing config.</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Key</th><th>Type</th><th>Default</th><th>Description</th></tr>
 </thead>
 <tbody>
-<tr><td><code>completed_sections</code></td><td>string[]</td><td><code>[]</code></td><td>Section keys the user has completed at least once via onboard.</td></tr>
+<tr><td><code>completed_sections</code></td><td>string[]</td><td><code>[]</code></td><td>Section keys the user has completed at least once.</td></tr>
+<tr><td><code>quickstart_completed</code></td><td>bool</td><td><code>false</code></td><td><code>true</code> once the Quickstart has applied a <code>BuilderSubmission</code></td></tr>
 </tbody>
 </table>
 </div>
@@ -4837,7 +5336,7 @@ scheduler loop’s runtime behavior (<code>enabled</code>, polling cap, catch-up
 </tbody>
 </table>
 </div>
-<h2 id="security"><a class="header" href="#security"><code>security</code></a></h2>
+<h2 id="security-1"><a class="header" href="#security-1"><code>security</code></a></h2>
 <p>Security configuration for audit logging, OTP, e-stop, IAM/SSO, and WebAuthn.</p>
 <p>Sandbox backend and resource limits live on per-agent risk profiles
 (see <code>RiskProfileConfig::sandbox_*</code> and <code>RiskProfileConfig::max_*</code>); the
@@ -5381,11 +5880,31 @@ falls back to the Firecrawl API for stealth content extraction.</p>
 <tbody>
 <tr><td><code>brave_api_key</code> 🔑</td><td>any</td><td><code>null</code></td><td>Brave Search API key (required if search_provider is “brave”)</td></tr>
 <tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Enable <code>web_search_tool</code> for web searches</td></tr>
+<tr><td><code>jina_api_key</code> 🔑</td><td>any</td><td><code>null</code></td><td>Jina AI API key (required if search_provider is “jina”)</td></tr>
 <tr><td><code>max_results</code></td><td>integer</td><td><code>5</code></td><td>Maximum results per search (1-10)</td></tr>
-<tr><td><code>search_provider</code></td><td>string</td><td><code>"duckduckgo"</code></td><td>Search provider: “duckduckgo” (free), “brave” (requires API key), “tavily” (requires API key), or “searxng” (self-hosted)</td></tr>
+<tr><td><code>search_provider</code></td><td>string</td><td><code>"duckduckgo"</code></td><td>Search provider: “duckduckgo” (free), “brave” (requires API key), “tavily” (requires API key), “searxng” (self-hosted), or “jina” (requires API key)</td></tr>
 <tr><td><code>searxng_instance_url</code></td><td>any</td><td><code>null</code></td><td>SearXNG instance URL (required if search_provider is <code>"searxng"</code>), e.g. <code>"https://searx.example.com"</code>.</td></tr>
 <tr><td><code>tavily_api_key</code> 🔑</td><td>any</td><td><code>null</code></td><td>Tavily Search API key (required if search_provider is “tavily”)</td></tr>
 <tr><td><code>timeout_secs</code></td><td>integer</td><td><code>15</code></td><td>Request timeout in seconds</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="wss"><a class="header" href="#wss"><code>wss</code></a></h2>
+<p>WebSocket Secure (WSS) transport for remote TUI-to-daemon connections (<code>[wss]</code>).</p>
+<p>When enabled, the daemon listens for TLS-encrypted WebSocket connections
+on the configured bind address and port. TUI clients connect via
+<code>--connect wss://host:port</code>.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Key</th><th>Type</th><th>Default</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td><code>bind</code></td><td>string</td><td><code>"0.0.0.0"</code></td><td>Bind address for the WSS listener (default: “0.0.0.0”).</td></tr>
+<tr><td><code>cert_path</code></td><td>string</td><td><code>""</code></td><td>Path to the PEM-encoded server certificate file.</td></tr>
+<tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Enable the WSS listener (default: false).</td></tr>
+<tr><td><code>key_path</code></td><td>string</td><td><code>""</code></td><td>Path to the PEM-encoded server private key file.</td></tr>
+<tr><td><code>port</code></td><td>integer</td><td><code>9781</code></td><td>Port for the WSS listener (default: 9781).</td></tr>
 </tbody>
 </table>
 </div>
@@ -5410,6 +5929,9 @@ ZEROCLAW_channels__matrix__homeserver=https://matrix.example.org
 ZEROCLAW_gateway__request_timeout_secs=120
 ZEROCLAW_gateway__long_running_request_timeout_secs=900
 
+# Point the gateway at a built web dashboard (absolute path; no ~ / $HOME)
+ZEROCLAW_gateway__web_dist_dir=/srv/zeroclaw/web/dist
+
 # Inject webhook signing secrets
 ZEROCLAW_channels__whatsapp__home__app_secret=...
 ZEROCLAW_channels__linq__home__signing_secret=...
@@ -5430,6 +5952,7 @@ ZEROCLAW_storage__qdrant__home__api_key=...
 <tr><td><code>[providers.models.anthropic.home] api_key = "..."</code></td><td><code>ZEROCLAW_providers__models__anthropic__home__api_key=...</code></td></tr>
 <tr><td><code>[channels.matrix] homeserver = "..."</code></td><td><code>ZEROCLAW_channels__matrix__homeserver=...</code></td></tr>
 <tr><td><code>[gateway] request_timeout_secs = 120</code></td><td><code>ZEROCLAW_gateway__request_timeout_secs=120</code></td></tr>
+<tr><td><code>[gateway] web_dist_dir = "/srv/zeroclaw/web/dist"</code></td><td><code>ZEROCLAW_gateway__web_dist_dir=/srv/zeroclaw/web/dist</code></td></tr>
 </tbody>
 </table>
 </div>
@@ -5439,6 +5962,10 @@ ZEROCLAW_storage__qdrant__home__api_key=...
 <pre><code class="language-sh">ZEROCLAW_WORKSPACE=/srv/zeroclaw          # workspace root
 ZEROCLAW_CONFIG_DIR=/etc/zeroclaw         # config-file location
 </code></pre>
+<p>The gateway’s web-dashboard location is configured via the standard
+schema-mirror form <code>ZEROCLAW_gateway__web_dist_dir</code> — see
+<a href="#web-dashboard-gatewayweb_dist_dir">Web dashboard (web_dist_dir)</a> for the full
+setting reference.</p>
 <h2 id="persistence-boundary"><a class="header" href="#persistence-boundary">Persistence boundary</a></h2>
 <p>Values applied via <code>ZEROCLAW_*</code> env vars land on the <strong>in-memory</strong> <code>Config</code> at load time and are <strong>never</strong> persisted to disk. <code>zeroclaw config save</code> masks env-overridden paths back to their disk-or-default values before encryption. A <code>WARN</code> log line is emitted whenever a secret-typed path (e.g. an API key) is env-overridden, so audit logs make the injection visible.</p>
 <h2 id="alias-grammar"><a class="header" href="#alias-grammar">Alias grammar</a></h2>
@@ -5656,6 +6183,164 @@ the page degrades gracefully and points you at the raw spec at
 <code>/api/openapi.json</code> so you can use any compatible viewer
 (Insomnia, Postman, Swagger UI, etc.).</p>
 <div style="break-before: page; page-break-before: always;"></div>
+<h1 id="web-dashboard-gatewayweb_dist_dir"><a class="header" href="#web-dashboard-gatewayweb_dist_dir">Web dashboard (<code>gateway.web_dist_dir</code>)</a></h1>
+<p>The gateway daemon ships its HTTP API in the binary, but the web dashboard
+HTML/JS/CSS lives on disk in a <code>web/dist/</code> directory produced by Vite. The
+<code>gateway.web_dist_dir</code> setting (and its <code>ZEROCLAW_gateway__web_dist_dir</code>
+schema-mirror env-var override) tells the daemon where that directory is.
+When neither the setting nor a known fallback location contains a built
+<code>index.html</code>, the gateway boots in <strong>API-only mode</strong> and the dashboard URL
+returns a “not available” message.</p>
+<h2 id="tldr"><a class="header" href="#tldr">TL;DR</a></h2>
+<pre><code class="language-toml"># config.toml
+[gateway]
+web_dist_dir = "/absolute/path/to/zeroclaw/web/dist"   # NOTE: no ~, no $HOME
+</code></pre>
+<pre><code class="language-sh"># Equivalent env-var override (in-memory only, never persisted)
+export ZEROCLAW_gateway__web_dist_dir="/absolute/path/to/zeroclaw/web/dist"
+</code></pre>
+<p>Then build the bundle once:</p>
+<pre><code class="language-sh">cargo web build
+</code></pre>
+<p>…and restart the daemon. The startup log changes from</p>
+<pre><code class="language-text">Web dashboard: not available — no web/dist found. Build with `cargo web build` …
+</code></pre>
+<p>to</p>
+<pre><code class="language-text">Web dashboard: serving from /absolute/path/to/zeroclaw/web/dist
+</code></pre>
+<h2 id="what-the-setting-does"><a class="header" href="#what-the-setting-does">What the setting does</a></h2>
+<p><code>gateway.web_dist_dir</code> is an <code>Option&lt;String&gt;</code> pointing at the directory that
+contains a built <code>index.html</code>. At gateway start, the daemon:</p>
+<ol>
+<li>Reads the value from <code>config.toml</code> (or the env-var override).</li>
+<li>Verifies the directory exists AND contains <code>index.html</code> on this machine.</li>
+<li>If yes — serves the dashboard from that path.</li>
+<li>If no — logs a WARN (“path doesn’t contain <code>index.html</code> on this machine;
+falling back to auto-detect”) and tries the auto-detect candidates below.</li>
+<li>If auto-detect also turns up nothing — the gateway runs in API-only mode
+and <code>GET /</code> returns a “not available” message that points back here.</li>
+</ol>
+<p>The value is treated as a hint, not a hard requirement. A stale path (typo,
+host-specific path copied from another machine, missing build) demotes to
+auto-detect rather than crashing every dashboard request.</p>
+<h2 id="default--auto-detect-order"><a class="header" href="#default--auto-detect-order">Default — auto-detect order</a></h2>
+<p>When <code>gateway.web_dist_dir</code> is unset (or set to a path with no <code>index.html</code>),
+the daemon probes these locations in order and serves from the first one that
+contains <code>index.html</code>:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>#</th><th>Candidate</th><th>When it matches</th></tr>
+</thead>
+<tbody>
+<tr><td>1</td><td><code>./web/dist</code> (relative to CWD)</td><td>Running <code>cargo run</code> from the repo root in dev</td></tr>
+<tr><td>2</td><td><code>&lt;dir-of-binary&gt;/web/dist</code></td><td>The packaged binary ships <code>web/dist</code> next to itself</td></tr>
+<tr><td>3</td><td><code>/zeroclaw-data/web/dist</code></td><td>Standard Docker / packaged-volume layout</td></tr>
+<tr><td>4</td><td><code>/usr/share/zeroclawlabs/web/dist</code></td><td>AUR / system package install</td></tr>
+<tr><td>5</td><td><code>${XDG_DATA_HOME:-~/.local/share}/zeroclaw/web/dist</code></td><td>Prebuilt-binary installer (per-user)</td></tr>
+</tbody>
+</table>
+</div>
+<p>If you’re on one of those distributions and the dashboard “just works”, you
+don’t need to set <code>gateway.web_dist_dir</code> at all — the auto-detect found it.</p>
+<h2 id="how-to-obtain-a-webdist"><a class="header" href="#how-to-obtain-a-webdist">How to obtain a <code>web/dist</code></a></h2>
+<p>You have three options. Pick whichever matches how you installed ZeroClaw.</p>
+<h3 id="a-source-checkout-developers--packagers"><a class="header" href="#a-source-checkout-developers--packagers">A) Source checkout (developers / packagers)</a></h3>
+<pre><code class="language-sh">git clone https://github.com/zeroclaw-labs/zeroclaw.git
+cd zeroclaw
+cargo web build           # alias for `cargo run -p xtask --bin web -- build`
+                          # auto-runs `npm install` on first run
+</code></pre>
+<p>The bundle lands in <code>web/dist/</code>. Point <code>web_dist_dir</code> at the absolute path of
+that directory, or run the daemon from the repo root and let auto-detect
+candidate 1 pick it up.</p>
+<p>The full set of <code>cargo web</code> subcommands (<code>dev</code>, <code>check</code>, <code>gen-api</code>, etc.) is
+documented in <a href="#building-the-web-dashboard">Building the web dashboard</a>.</p>
+<h3 id="b-pre-built-release-artifact"><a class="header" href="#b-pre-built-release-artifact">B) Pre-built release artifact</a></h3>
+<p>Release archives on the <a href="https://github.com/zeroclaw-labs/zeroclaw/releases">Releases page</a>
+ship the daemon with <code>web/dist/</code> already populated alongside the binary.
+Auto-detect candidate 2 finds it; no <code>gateway.web_dist_dir</code> configuration
+needed.</p>
+<h3 id="c-docker-image"><a class="header" href="#c-docker-image">C) Docker image</a></h3>
+<p>The official Docker image places the bundle at <code>/zeroclaw-data/web/dist</code>
+(auto-detect candidate 3). It works out of the box; you only need to set
+<code>web_dist_dir</code> if you mount your own volume over that path.</p>
+<h2 id="override-precedence"><a class="header" href="#override-precedence">Override precedence</a></h2>
+<p>The value is resolved with the standard config-layer order:</p>
+<ol>
+<li><code>ZEROCLAW_gateway__web_dist_dir</code> (schema-mirror env var, see
+<a href="#environment-variables">Environment variables</a>)</li>
+<li><code>gateway.web_dist_dir</code> in <code>config.toml</code></li>
+<li>Auto-detect (the five candidates above)</li>
+</ol>
+<p>Env-var overrides apply to the in-memory <code>Config</code> only; they are never
+written back to <code>config.toml</code>.</p>
+<h2 id="schema-mirror-grammar--deriving-zeroclaw_gateway__web_dist_dir"><a class="header" href="#schema-mirror-grammar--deriving-zeroclaw_gateway__web_dist_dir">Schema-mirror grammar — deriving <code>ZEROCLAW_gateway__web_dist_dir</code></a></h2>
+<p>The general operator override grammar (see
+<a href="#environment-variables">Environment variables</a>) maps the dotted TOML path
+to an env-var name mechanically:</p>
+<pre><code class="language-text">TOML path:  gateway.web_dist_dir
+            ─────── ─────────────
+            section field-name (snake_case, kept as-is)
+
+Env var:    ZEROCLAW_gateway__web_dist_dir
+            ─────────       ──            ────────────
+            prefix          path-separator  field-name
+                            (`.` → `__`)    (unchanged)
+</code></pre>
+<p>The same three steps produce env-var names for every other gateway knob —
+e.g. <code>gateway.request_timeout_secs</code> becomes
+<code>ZEROCLAW_gateway__request_timeout_secs</code>.</p>
+<h2 id="common-pitfalls"><a class="header" href="#common-pitfalls">Common pitfalls</a></h2>
+<h3 id="dont-use--or-home"><a class="header" href="#dont-use--or-home">Don’t use <code>~</code> or <code>$HOME</code></a></h3>
+<p>A literal tilde is <strong>not</strong> expanded by the gateway:</p>
+<pre><code class="language-toml"># Broken — the gateway looks for a directory literally named "~"
+web_dist_dir = "~/zeroclaw/web/dist"
+</code></pre>
+<pre><code class="language-toml"># Correct
+web_dist_dir = "/home/alice/zeroclaw/web/dist"
+</code></pre>
+<p>Shell variables (<code>$HOME</code>, <code>%USERPROFILE%</code>) are likewise not expanded. Pre-expand
+them in the env var if you set the value that way:</p>
+<pre><code class="language-sh">export ZEROCLAW_gateway__web_dist_dir="$HOME/zeroclaw/web/dist"   # shell expands $HOME
+</code></pre>
+<p>Companion <a href="https://github.com/zeroclaw-labs/zeroclaw/pull/6961">PR #6961</a> adds
+the targeted “looks like an unexpanded <code>~</code> / <code>$VAR</code> —
+<a href="https://crates.io/crates/shellexpand"><code>shellexpand</code></a> it before writing this
+value” check tracked in
+<a href="https://github.com/zeroclaw-labs/zeroclaw/issues/6079">issue #6079</a> to both
+<code>zeroclaw doctor</code> and <code>zeroclaw self-test</code> as a Warn-severity diagnostic.
+Neither command surfaces it on current <code>master</code> — until #6961 lands, expand
+<code>~</code> / <code>$VAR</code> yourself before writing <code>gateway.web_dist_dir</code> (for example
+write <code>/home/alice/zeroclaw/web/dist</code> instead of <code>~/zeroclaw/web/dist</code>).</p>
+<h3 id="relative-paths-resolve-against-cwd-not-the-config-file"><a class="header" href="#relative-paths-resolve-against-cwd-not-the-config-file">Relative paths resolve against CWD, not the config file</a></h3>
+<p><code>web_dist_dir = "web/dist"</code> is interpreted relative to the daemon’s working
+directory at start time — not relative to the location of <code>config.toml</code>. If
+you ship a config to another host or invoke the daemon from a different
+directory (e.g. via systemd), the relative form will look in the wrong place.
+<strong>Use absolute paths in <code>config.toml</code>.</strong></p>
+<h3 id="stale-path-warn-at-startup"><a class="header" href="#stale-path-warn-at-startup">“Stale path” WARN at startup</a></h3>
+<pre><code class="language-text">WARN gateway.web_dist_dir points at a path that doesn't contain index.html
+on this machine; falling back to auto-detect. Update or remove the setting
+in config.toml to silence this warning.
+</code></pre>
+<p>This means the path is syntactically valid but the file isn’t there yet.
+Either run <code>cargo web build</code>, fix the path, or remove the setting entirely
+and let auto-detect handle it.</p>
+<h3 id="web-dashboard-not-available-at-startup"><a class="header" href="#web-dashboard-not-available-at-startup">“Web dashboard: not available” at startup</a></h3>
+<pre><code class="language-text">INFO Web dashboard: not available — no web/dist found. Build with
+`cargo web build` and point gateway.web_dist_dir at the resulting
+web/dist directory.
+</code></pre>
+<p>API endpoints still work — only the HTML/JS bundle is missing. Build it
+(option A/B/C above) or set the path.</p>
+<h2 id="see-also-2"><a class="header" href="#see-also-2">See also</a></h2>
+<ul>
+<li><a href="#environment-variables">Environment variables</a> — full schema-mirror grammar</li>
+<li><a href="#gateway-http-api">Gateway HTTP API</a> — what the dashboard talks to</li>
+<li><a href="#building-the-web-dashboard">Building the web dashboard</a> — <code>cargo web</code> subcommands and what gets generated</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div>
 <h1 id="model-providers--overview"><a class="header" href="#model-providers--overview">Model Providers — Overview</a></h1>
 <p>Model providers are ZeroClaw’s abstraction over any LLM endpoint the agent can call. Every chat-completion request goes through a <code>ModelProvider</code> trait implementation (<code>zeroclaw-api::ModelProvider</code>), whether the target is a remote API, a self-hosted inference server, or a local Ollama model.</p>
 <p>Why “model” provider? We use the phrase “model provider” consistently — there are also TTS providers and transcription providers, and keeping the qualifier specific avoids ambiguity.</p>
@@ -5861,7 +6546,7 @@ runtime_profile = "deep"             # alias into runtime_profiles.&lt;alias&gt;
 </code></pre>
 <p><code>risk_profile</code> and <code>runtime_profile</code> reference independent alias maps, so their names need not match (<code>runtime_profile</code> is also optional). <code>Config::validate()</code> fails loud at startup if <code>model_provider</code> doesn’t resolve to a configured <code>[providers.models.&lt;type&gt;.&lt;alias&gt;]</code> entry, or if <code>risk_profile</code> doesn’t resolve to a configured <code>[risk_profiles.&lt;alias&gt;]</code> entry.</p>
 <p>For multiple agents pointing at different providers, see <a href="#routing">Routing</a>.</p>
-<h2 id="see-also-2"><a class="header" href="#see-also-2">See also</a></h2>
+<h2 id="see-also-3"><a class="header" href="#see-also-3">See also</a></h2>
 <ul>
 <li><a href="#model-providers--overview">Overview</a></li>
 <li><a href="#provider-catalog">Provider catalog</a> — concrete config example for every family</li>
@@ -6054,7 +6739,7 @@ INFO agent=fast model_provider=anthropic.haiku turn_id=...
 INFO model_provider=anthropic.haiku stream complete tokens={input=512, output=128}
 </code></pre>
 <p>For production deployments, wire the log output to Loki / Grafana. See <a href="#logs--observability">Operations → Logs &amp; observability</a>.</p>
-<h2 id="see-also-3"><a class="header" href="#see-also-3">See also</a></h2>
+<h2 id="see-also-4"><a class="header" href="#see-also-4">See also</a></h2>
 <ul>
 <li><a href="#model-providers--overview">Overview</a> — provider model and per-agent dispatch</li>
 <li><a href="#provider-configuration">Configuration</a> — full <code>[providers.*]</code> schema</li>
@@ -6357,7 +7042,7 @@ impl ModelEndpoint for MyProviderEndpoint {
 <li>Add a feature flag in <code>Cargo.toml</code> if the provider pulls heavy deps.</li>
 </ol>
 <p>See <code>anthropic.rs</code> as a reference for a provider with a fully custom wire format. See <code>compatible.rs</code> for the SSE-streaming OpenAI-compat pattern.</p>
-<h2 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h2>
+<h2 id="troubleshooting-1"><a class="header" href="#troubleshooting-1">Troubleshooting</a></h2>
 <h3 id="authentication-errors"><a class="header" href="#authentication-errors">Authentication errors</a></h3>
 <ul>
 <li>Verify the API key matches the endpoint (many vendors use key prefixes — <code>sk-</code>, <code>gsk_</code>, <code>sk-ant-</code>).</li>
@@ -6379,7 +7064,7 @@ impl ModelEndpoint for MyProviderEndpoint {
 <li>Firewall, proxy, egress rules? VPS providers sometimes block outbound high ports.</li>
 <li>Vendor status page if it’s a hosted service.</li>
 </ul>
-<h2 id="see-also-4"><a class="header" href="#see-also-4">See also</a></h2>
+<h2 id="see-also-5"><a class="header" href="#see-also-5">See also</a></h2>
 <ul>
 <li><a href="#model-providers--overview">Overview</a> — provider model and how per-agent dispatch works</li>
 <li><a href="#provider-configuration">Configuration</a> — full <code>[providers.*]</code> schema, Azure typed config, regional and OAuth variants</li>
@@ -6390,6 +7075,11 @@ impl ModelEndpoint for MyProviderEndpoint {
 <h1 id="channels--overview"><a class="header" href="#channels--overview">Channels — Overview</a></h1>
 <p>A <strong>channel</strong> is a messaging surface the agent talks through. One ZeroClaw instance can bind multiple channels simultaneously — the same agent can answer in Discord, Telegram, email, and over the REST gateway without you running separate processes.</p>
 <p>Channels are implementations of the <code>Channel</code> trait in <code>zeroclaw-api</code>. Each one is feature-gated at compile time, so a minimal build only includes the channels you want.</p>
+<p>The default ZeroClaw build includes a lean channel bundle: ACP, webhook, email, and Telegram. These cover local/editor sessions, gateway ingress, and common first-run external messaging without compiling every bundled platform integration. Pre-built binaries use this lean default. For source installs that need the historical broad channel set, run <code>install.sh --source --preset full</code>, build with <code>--features channels-full</code>, or use individual <code>channel-*</code> features for selective builds:</p>
+<pre><code class="language-bash">./install.sh --source --preset full
+cargo build --features channels-full
+cargo build --no-default-features --features "agent-runtime,gateway,channel-discord"
+</code></pre>
 <h2 id="categories"><a class="header" href="#categories">Categories</a></h2>
 <h3 id="chat-platforms"><a class="header" href="#chat-platforms">Chat platforms</a></h3>
 <p>Real-time messaging where the agent can hold a conversation, get notified of new messages via push or long-poll, and reply as a bot user.</p>
@@ -6402,7 +7092,7 @@ impl ModelEndpoint for MyProviderEndpoint {
 <tr><td>Matrix</td><td><code>channel-matrix</code></td><td><a href="#matrix">Matrix</a></td></tr>
 <tr><td>Mattermost</td><td><code>channel-mattermost</code></td><td><a href="#mattermost">Mattermost</a></td></tr>
 <tr><td>LINE</td><td><code>channel-line</code></td><td><a href="#line">LINE</a></td></tr>
-<tr><td>Nextcloud Talk</td><td><code>channel-nextcloud-talk</code></td><td><a href="#nextcloud-talk">Nextcloud Talk</a></td></tr>
+<tr><td>Nextcloud Talk</td><td><code>channel-nextcloud</code></td><td><a href="#nextcloud-talk">Nextcloud Talk</a></td></tr>
 <tr><td>Signal</td><td><code>channel-signal</code></td><td><a href="#signal">Signal</a></td></tr>
 <tr><td>WhatsApp Cloud API</td><td><code>channel-whatsapp-cloud</code></td><td><a href="#whatsapp">WhatsApp</a></td></tr>
 <tr><td>WhatsApp Web</td><td><code>whatsapp-web</code></td><td><a href="#whatsapp">WhatsApp</a></td></tr>
@@ -6434,7 +7124,7 @@ impl ModelEndpoint for MyProviderEndpoint {
 </thead>
 <tbody>
 <tr><td>IMAP / SMTP</td><td><code>channel-email</code></td><td>Classic poll-based inbox</td></tr>
-<tr><td>Gmail Push</td><td><code>channel-gmail-push</code></td><td>Google Pub/Sub push notifications — real-time, no polling</td></tr>
+<tr><td>Gmail Push</td><td><code>channel-email</code></td><td>Google Pub/Sub push notifications — real-time, no polling</td></tr>
 </tbody>
 </table>
 </div>
@@ -6448,8 +7138,8 @@ impl ModelEndpoint for MyProviderEndpoint {
 <tbody>
 <tr><td>ClawdTalk</td><td><code>channel-clawdtalk</code></td><td>Telnyx SIP real-time voice</td></tr>
 <tr><td>Voice Call</td><td><code>channel-voice-call</code></td><td>Twilio / Telnyx / Plivo</td></tr>
-<tr><td>Voice Wake</td><td><code>channel-voice-wake</code></td><td>Local wake-word detection</td></tr>
-<tr><td>TTS</td><td><code>channel-tts</code></td><td>Outbound speech synthesis (OpenAI, ElevenLabs, Google Cloud, Edge, Piper)</td></tr>
+<tr><td>Voice Wake</td><td><code>voice-wake</code></td><td>Local wake-word detection</td></tr>
+<tr><td>TTS</td><td>always compiled with channel support</td><td>Outbound speech synthesis (OpenAI, ElevenLabs, Google Cloud, Edge, Piper)</td></tr>
 </tbody>
 </table>
 </div>
@@ -6461,10 +7151,10 @@ impl ModelEndpoint for MyProviderEndpoint {
 <tr><th>Channel</th><th>Feature flag</th><th>Shape</th></tr>
 </thead>
 <tbody>
-<tr><td>Webhook</td><td>(always on with gateway)</td><td>Inbound HTTP → agent</td></tr>
+<tr><td>Webhook</td><td><code>channel-webhook</code></td><td>Inbound HTTP → agent</td></tr>
 <tr><td>CLI</td><td>always on</td><td>Local stdin/stdout</td></tr>
 <tr><td>Gateway REST/WS</td><td>always on</td><td>HTTP + WebSocket</td></tr>
-<tr><td>ACP (Agent Client Protocol)</td><td>(always on with runtime)</td><td>JSON-RPC 2.0 over stdio — editor/IDE sessions</td></tr>
+<tr><td>ACP (Agent Client Protocol)</td><td><code>channel-acp-server</code></td><td>JSON-RPC 2.0 over stdio — editor/IDE sessions</td></tr>
 </tbody>
 </table>
 </div>
@@ -6544,7 +7234,7 @@ zeroclaw config set channels.matrix.allowed-rooms '["!room:matrix.example.com"]'
 zeroclaw config set channels.matrix.ack-reactions true       # default: true (👀 → ✅)
 zeroclaw config set channels.matrix.reply-in-thread true     # default: true
 </code></pre>
-<p>Required: <code>homeserver</code>, <code>access-token</code>, <code>allowed-users</code>. Strongly recommended for E2EE: <code>user-id</code> and <code>device-id</code>. <code>allowed-rooms</code> is optional — leave empty to allow every room the bot has joined, or list explicit IDs/aliases to restrict. For the full field index, see the <a href="#config-reference">Config reference</a>.</p>
+<p>Required: <code>homeserver</code>, <code>access-token</code>, <code>allowed-users</code>. Strongly recommended for E2EE: <code>user-id</code> and <code>device-id</code>. <code>allowed-rooms</code> is optional — leave empty to allow every room the bot has joined, or list explicit IDs/aliases to restrict. For the full field index, see the <a href="#config-reference-1">Config reference</a>.</p>
 <blockquote>
 <p><strong>Don’t have an <code>access-token</code> yet?</strong> See §3 below — it walks through the Matrix password-login API call that mints a token plus a stable <code>device_id</code> in one shot. If you only need to look up <code>device_id</code> for a token you already have, see §5H.</p>
 </blockquote>
@@ -6781,10 +7471,10 @@ zeroclaw config set channels.matrix.device-id &lt;new_device_id&gt;
 <p><strong><code>device-id</code> drift is detected but tolerated, not wiped.</strong> If <code>channels.matrix.device-id</code> differs from the device id stored in <code>session.json</code>, the channel logs a warning and honors the saved id (which is the value the homeserver actually assigned at login). Wiping on drift would create a recovery loop because auto-recovery itself generates a new id, leaving config and session permanently out of sync.</p>
 <p>When <strong><code>recover()</code> itself fails</strong> (typically <code>MAC check for the secret storage key failed</code>), the channel logs the homeserver’s default secret-storage key id, whether the key event has passphrase info, the whitespace-stripped input length, and the full error chain — these point at <em>which</em> layer rejected the recovery key without leaking the value. Recovery failures are <strong>non-fatal</strong> (they don’t trigger auto-wipe); the bot continues, the new device just won’t be cross-signed.</p>
 <p>If <code>password</code> + <code>user-id</code> aren’t configured, auto-recovery can’t run — the channel bails with an actionable error pointing at the two choices: configure them, or <code>rm -rf ~/.zeroclaw/state/matrix/</code> manually.</p>
-<h2 id="see-also-5"><a class="header" href="#see-also-5">See also</a></h2>
+<h2 id="see-also-6"><a class="header" href="#see-also-6">See also</a></h2>
 <ul>
 <li><a href="#network-deployment">Network deployment</a></li>
-<li><a href="#config-reference">Config reference</a> — generated from the live schema</li>
+<li><a href="#config-reference-1">Config reference</a> — generated from the live schema</li>
 <li><a href="#channels--overview">Channels overview</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
@@ -6901,11 +7591,11 @@ excluded_tools     = []                               # tools hidden from this c
 <li>The bot identity is fetched once via <code>GET /api/v4/users/me</code> and cached for the process lifetime. Username changes require a restart.</li>
 <li>The session token from the password login flow is in-memory only. A restart re-logs in.</li>
 </ol>
-<h2 id="see-also-6"><a class="header" href="#see-also-6">See also</a></h2>
+<h2 id="see-also-7"><a class="header" href="#see-also-7">See also</a></h2>
 <ul>
 <li><a href="#channels--overview">Channels overview</a></li>
 <li><a href="#security--overview">Security: peer groups</a></li>
-<li><a href="#config-reference">Reference: config schema</a></li>
+<li><a href="#config-reference-1">Reference: config schema</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="line"><a class="header" href="#line">LINE</a></h1>
@@ -6931,7 +7621,7 @@ excluded_tools     = []                               # tools hidden from this c
 </ol>
 <hr>
 <h2 id="2-configure-zeroclaw"><a class="header" href="#2-configure-zeroclaw">2. Configure ZeroClaw</a></h2>
-<p>Configure the LINE channel under <code>[channels.line]</code> with at minimum <code>channel_access_token</code> and <code>channel_secret</code>. See the <a href="#config-reference">Config reference</a> for the full field index, defaults, and the <code>dm_policy</code> / <code>group_policy</code> enums (whose user-facing semantics are also covered in §6 below).</p>
+<p>Configure the LINE channel under <code>[channels.line]</code> with at minimum <code>channel_access_token</code> and <code>channel_secret</code>. See the <a href="#config-reference-1">Config reference</a> for the full field index, defaults, and the <code>dm_policy</code> / <code>group_policy</code> enums (whose user-facing semantics are also covered in §6 below).</p>
 <h3 id="using-environment-variables-instead-of-config-file"><a class="header" href="#using-environment-variables-instead-of-config-file">Using environment variables instead of config file</a></h3>
 <p>If you prefer not to store credentials in the config file, omit the token fields and export them as environment variables instead:</p>
 <pre><code class="language-bash">export LINE_CHANNEL_ACCESS_TOKEN="your-channel-access-token"
@@ -7000,7 +7690,7 @@ export LINE_CHANNEL_SECRET="your-channel-secret"
 </div>
 <hr>
 <h2 id="7-audio--voice-message-transcription-optional"><a class="header" href="#7-audio--voice-message-transcription-optional">7. Audio / Voice Message Transcription (optional)</a></h2>
-<p>When transcription is enabled (via the global <code>[transcription]</code> config — see <a href="#config-reference">Config reference</a>), LINE <code>audio</code> message events are automatically downloaded from the LINE Content API and transcribed before being passed to the model.</p>
+<p>When transcription is enabled (via the global <code>[transcription]</code> config — see <a href="#config-reference-1">Config reference</a>), LINE <code>audio</code> message events are automatically downloaded from the LINE Content API and transcribed before being passed to the model.</p>
 <p>The maximum accepted audio size is 25 MB. Larger files are silently skipped with a log warning.</p>
 <hr>
 <h2 id="8-troubleshooting"><a class="header" href="#8-troubleshooting">8. Troubleshooting</a></h2>
@@ -7035,9 +7725,9 @@ export LINE_CHANNEL_SECRET="your-channel-secret"
 </table>
 </div>
 <hr>
-<h2 id="see-also-7"><a class="header" href="#see-also-7">See also</a></h2>
+<h2 id="see-also-8"><a class="header" href="#see-also-8">See also</a></h2>
 <ul>
-<li><a href="#config-reference">Config reference</a> — full config field index</li>
+<li><a href="#config-reference-1">Config reference</a> — full config field index</li>
 <li><a href="https://developers.line.biz/en/docs/messaging-api/">LINE Developers Documentation</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
@@ -7068,7 +7758,7 @@ allowed_users = ["*"]                          # actor IDs; "*" = allow all (use
 proxy_url = ""                                 # optional per-channel proxy override
 </code></pre>
 <p>Environment override: <code>ZEROCLAW_NEXTCLOUD_TALK_WEBHOOK_SECRET</code> takes precedence over the config value. Useful for rotating secrets without editing the config.</p>
-<p>Full field reference: <a href="#config-reference">Config</a>.</p>
+<p>Full field reference: <a href="#config-reference-1">Config</a>.</p>
 <h2 id="gateway-endpoint"><a class="header" href="#gateway-endpoint">Gateway endpoint</a></h2>
 <pre><code class="language-bash">zeroclaw daemon
 </code></pre>
@@ -7103,7 +7793,7 @@ if X-Nextcloud-Talk-Signature != expected_sig:
 <li>Confirm ZeroClaw receives and replies in the same room</li>
 <li>Tighten <code>allowed_users</code> to explicit actor IDs (e.g. <code>["alice", "bob"]</code>)</li>
 </ol>
-<h2 id="troubleshooting-1"><a class="header" href="#troubleshooting-1">Troubleshooting</a></h2>
+<h2 id="troubleshooting-2"><a class="header" href="#troubleshooting-2">Troubleshooting</a></h2>
 <ul>
 <li><strong><code>404 Nextcloud Talk not configured</code></strong> — <code>[channels.nextcloud_talk]</code> section missing or <code>enabled = false</code></li>
 <li><strong><code>401 Invalid signature</code></strong> — secret mismatch, wrong random header, or body-signing bug. Check the raw body is being signed (not the parsed JSON)</li>
@@ -7119,7 +7809,7 @@ if X-Nextcloud-Talk-Signature != expected_sig:
 <li>Rate limits are Nextcloud-server dependent; the default bot doesn’t run into them in normal conversation cadences</li>
 <li>Per-channel proxy: set <code>proxy_url</code> to override the global <code>[proxy]</code> setting for Nextcloud Talk only (<code>http://</code>, <code>https://</code>, <code>socks5://</code>, <code>socks5h://</code>)</li>
 </ul>
-<h2 id="see-also-8"><a class="header" href="#see-also-8">See also</a></h2>
+<h2 id="see-also-9"><a class="header" href="#see-also-9">See also</a></h2>
 <ul>
 <li><a href="#matrix">Matrix</a> — richer E2EE but more operational complexity</li>
 <li><a href="#mattermost">Mattermost</a> — similar self-hosted posture, different protocol</li>
@@ -7364,7 +8054,9 @@ robot_code = "..."
 enabled = true
 app_id = "..."
 app_secret = "..."
+# use_feishu = true  # route this Lark-compatible channel to Feishu endpoints
 </code></pre>
+<p>Build with <code>channel-lark</code> for either Lark or Feishu. The root <code>channel-feishu</code> feature is an alias for <code>channel-lark</code>; runtime selection still happens through <code>use_feishu = true</code>.</p>
 <h2 id="qq"><a class="header" href="#qq">QQ</a></h2>
 <pre><code class="language-toml">[channels.qq]
 enabled = true
@@ -7655,7 +8347,7 @@ api_url = "http://127.0.0.1:5000/v1/audio/speech"   # OpenAI-compatible Piper HT
 </div>
 <p>ClawdTalk shortcuts several of these by keeping the audio stream live; regular <code>voice_call</code> incurs STT + LLM + TTS sequentially.</p>
 <h2 id="stt"><a class="header" href="#stt">STT</a></h2>
-<p>Speech-to-text is configured separately from the voice channels — see the <code>[transcription]</code> config in the <a href="#config-reference">Config reference</a>. Voice channels invoke whichever transcription provider is active when they need to turn audio into text.</p>
+<p>Speech-to-text is configured separately from the voice channels — see the <code>[transcription]</code> config in the <a href="#config-reference-1">Config reference</a>. Voice channels invoke whichever transcription provider is active when they need to turn audio into text.</p>
 <h2 id="hardware-notes"><a class="header" href="#hardware-notes">Hardware notes</a></h2>
 <p>For always-on voice on an SBC:</p>
 <ul>
@@ -7747,7 +8439,7 @@ retry_max_delay_ms = 30000  # per-wait cap; default: 30000 (30s)
 <li>Channel: <code>crates/zeroclaw-channels/src/webhook.rs</code></li>
 <li>Config: <code>crates/zeroclaw-config/src/schema.rs</code> (<code>WebhookConfig</code>)</li>
 </ul>
-<h2 id="see-also-9"><a class="header" href="#see-also-9">See also</a></h2>
+<h2 id="see-also-10"><a class="header" href="#see-also-10">See also</a></h2>
 <ul>
 <li><a href="#network-deployment">Operations → Network deployment</a> — TLS termination, tunnels, the gateway’s separate <code>/webhook</code></li>
 <li><a href="#channels--overview">Channels → Overview</a></li>
@@ -7810,6 +8502,11 @@ retry_max_delay_ms = 30000  # per-wait cap; default: 30000 (30s)
 <p><code>cwd</code> is canonicalized on intake — <code>../</code> traversal cannot escape the intended root. If <code>cwd</code> is omitted, the server uses the daemon’s launch directory.</p>
 <h3 id="sessionprompt"><a class="header" href="#sessionprompt"><code>session/prompt</code></a></h3>
 <p>Send a prompt. The response is a sequence of <code>session/update</code> notifications streaming back, terminated by the <code>session/prompt</code> result.</p>
+<p>The <code>prompt</code> parameter accepts either a plain string or an array of content parts:</p>
+<ul>
+<li><strong>String:</strong> <code>"prompt": "Summarise the changes in the last commit."</code></li>
+<li><strong>Array:</strong> each element is a text part <code>{"text": "..."}</code> or an ACP resource block <code>{"type": "resource", "resource": {"uri": "file:///path/to/file.rs", "text": "&lt;file contents&gt;"}}</code>. Resource blocks carry <code>@</code>-notation file attachments from the editor. Parts are joined with double newlines in the order they appear.</li>
+</ul>
 <pre><code class="language-json">→ {"jsonrpc":"2.0","id":3,"method":"session/prompt","params":{
     "sessionId": "s-ab12cd",
     "prompt": "Summarise the changes in the last commit."
@@ -7826,7 +8523,7 @@ retry_max_delay_ms = 30000  # per-wait cap; default: 30000 (30s)
 ← {"jsonrpc":"2.0","method":"session/update","params":{
     "sessionId": "s-ab12cd",
     "update": {"sessionUpdate": "tool_call_update", "toolCallId": "tc-1",
-               "status": "finished", "rawOutput": "..."}
+               "status": "completed", "rawOutput": "..."}
   }}
 ← {"jsonrpc":"2.0","id":3,"result":{
     "sessionId": "s-ab12cd",
@@ -7834,7 +8531,21 @@ retry_max_delay_ms = 30000  # per-wait cap; default: 30000 (30s)
     "content": "The last commit introduces..."
   }}
 </code></pre>
-<p><code>stopReason</code> is <code>"end_turn"</code> on normal completion. The ACP completion signal is <code>stopReason</code>; ZeroClaw also includes the current final <code>content</code> string for existing clients.</p>
+<p><code>stopReason</code> is <code>"end_turn"</code> on normal completion and <code>"cancelled"</code> when the turn was interrupted by <code>session/cancel</code>. The ACP completion signal is <code>stopReason</code>; ZeroClaw also includes the current final <code>content</code> string for existing clients.</p>
+<p>Errors:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Code</th><th>Meaning</th></tr>
+</thead>
+<tbody>
+<tr><td><code>-32000</code> <code>SESSION_NOT_FOUND</code></td><td>No active session with the given <code>sessionId</code></td></tr>
+<tr><td><code>-32002</code> <code>SESSION_BUSY</code></td><td>A prompt turn is already in flight for this session — wait for it to complete or cancel it first</td></tr>
+<tr><td><code>-32602</code> <code>INVALID_PARAMS</code></td><td>Missing or malformed <code>sessionId</code> / <code>prompt</code></td></tr>
+<tr><td><code>-32603</code> <code>INTERNAL_ERROR</code></td><td>Agent task panicked or turn failed</td></tr>
+</tbody>
+</table>
+</div>
 <h3 id="sessionupdate-notifications-agent--client"><a class="header" href="#sessionupdate-notifications-agent--client"><code>session/update</code> notifications (agent → client)</a></h3>
 <p>ZeroClaw sends four kinds of <code>session/update</code> notification during a prompt turn. The discriminant is the <code>sessionUpdate</code> field inside <code>update</code>:</p>
 <div class="table-wrapper">
@@ -7846,7 +8557,7 @@ retry_max_delay_ms = 30000  # per-wait cap; default: 30000 (30s)
 <tr><td><code>agent_message_chunk</code></td><td>Each streaming text token</td><td><code>content.type = "text"</code>, <code>content.text</code></td></tr>
 <tr><td><code>agent_thought_chunk</code></td><td>Internal reasoning tokens (when enabled)</td><td><code>content.type = "text"</code>, <code>content.text</code></td></tr>
 <tr><td><code>tool_call</code></td><td>Tool call initiated</td><td><code>toolCallId</code>, <code>title</code>, <code>kind</code>, <code>status: "pending"</code>, <code>rawInput</code></td></tr>
-<tr><td><code>tool_call_update</code></td><td>Tool call completed</td><td><code>toolCallId</code>, <code>status: "finished"</code>, <code>rawOutput</code>, <code>content[]</code></td></tr>
+<tr><td><code>tool_call_update</code></td><td>Tool call completed</td><td><code>toolCallId</code>, <code>status: "completed"</code>, <code>rawOutput</code>, <code>content[]</code></td></tr>
 </tbody>
 </table>
 </div>
@@ -7899,12 +8610,11 @@ not part of the base ACP spec. If ACP later standardizes a conflicting
     "content": "partial...\n\n[interrupted by user]"
   }}
 </code></pre>
-<p>Only one <code>session/prompt</code> may be active for a session at a time. A second prompt for the same session is rejected until the active turn completes or is cancelled.</p>
 <p>If no turn is active for the session, the cancel is a noop — it succeeds silently without error. This follows ACP notification semantics: notifications must not produce errors.</p>
 <h3 id="sessionstop-zeroclaw-extension"><a class="header" href="#sessionstop-zeroclaw-extension"><code>session/stop</code> <em>(ZeroClaw extension)</em></a></h3>
 <p>Cleanly end a session. Not in the base ACP spec — ZeroClaw-specific. If a future ACP spec revision adds <code>session/stop</code> with different semantics, this will be renamed <code>_meta/session/stop</code>.</p>
 <pre><code class="language-json">→ {"jsonrpc":"2.0","id":4,"method":"session/stop","params":{"sessionId":"s-ab12cd"}}
-← {"jsonrpc":"2.0","id":4,"result":{"stopped":true}}
+← {"jsonrpc":"2.0","id":4,"result":{"sessionId": "s-ab12cd", "stopped":true}}
 </code></pre>
 <h3 id="sessionupdate-client--server-zeroclaw-extension"><a class="header" href="#sessionupdate-client--server-zeroclaw-extension"><code>session/update</code> (client → server) <em>(ZeroClaw extension)</em></a></h3>
 <p>ZeroClaw also accepts inbound <code>session/update</code> (and the legacy <code>session/event</code> alias) notifications from the client for custom event injection. Not in the base ACP spec — ZeroClaw-specific. If the ACP spec later defines an inbound <code>session/update</code> with different semantics, this will be renamed <code>_meta/session/update</code>.</p>
@@ -7992,9 +8702,20 @@ zeroclaw-acp-bridge --config-dir=/tmp/zeroclaw
 <li>Implement <code>session/request_permission</code> response handling — the approval mechanism moved from a server notification to a client-answered RPC.</li>
 <li>Drop the <code>systemPrompt</code> param from <code>session/new</code> — it is not read.</li>
 </ul>
-<h2 id="security-1"><a class="header" href="#security-1">Security</a></h2>
+<h2 id="security-2"><a class="header" href="#security-2">Security</a></h2>
 <p>ACP inherits the running config’s autonomy level. When <code>[autonomy] level = "supervised"</code>, medium-risk tool calls trigger approval via the ACP back-channel — a <code>session/request_permission</code> outbound request the client must acknowledge. In <code>full</code> mode, tool calls execute without approval and <code>workspace_only</code> is implicitly disabled (the agent can reach paths outside the session cwd); <code>forbidden_paths</code> still apply.</p>
 <p>The <code>cwd</code> from <code>session/new</code> becomes the <code>SecurityPolicy</code> workspace boundary used by all file and shell tools for that session. Note: the agent’s system prompt currently reflects the daemon’s global <code>workspace_dir</code> rather than the session <code>cwd</code> — this does not affect enforcement, only the directory the model believes it is working in.</p>
+<h2 id="memory-1"><a class="header" href="#memory-1">Memory</a></h2>
+<p>ACP sessions do not interact with the agent’s persistent memory system. This is a deliberate design choice: ACP is for IDE-driven coding tasks, not long-term relationship building.</p>
+<p><strong>What ACP sessions inherit</strong> from the agent config: personality, skills, risk profile, runtime profile, model provider, and all non-memory tools.</p>
+<p><strong>What ACP sessions exclude:</strong></p>
+<ul>
+<li>Memory tools (<code>memory_recall</code>, <code>memory_store</code>, <code>memory_forget</code>, <code>memory_export</code>, <code>memory_purge</code>) are not available</li>
+<li>Automatic memory recall (the context preamble built from long-term memory at each turn) is disabled</li>
+<li>Automatic conversation auto-save to the agent’s memory store is disabled</li>
+</ul>
+<p><strong>Session context</strong> comes from the persisted conversation history in <code>acp-sessions.db</code>. Sessions are persistent, resumable, and deleteable — the session history serves as the working context, not the agent’s long-term memory.</p>
+<p>This separation ensures that ephemeral coding-assist conversations do not pollute the agent’s long-term memory, and that unrelated knowledge from chat channels does not bleed into ACP sessions.</p>
 <h2 id="code-reference"><a class="header" href="#code-reference">Code reference</a></h2>
 <ul>
 <li>ACP server: <code>crates/zeroclaw-channels/src/orchestrator/acp_server.rs</code></li>
@@ -8004,7 +8725,7 @@ zeroclaw-acp-bridge --config-dir=/tmp/zeroclaw
 <li>Per-session path enforcement: <code>crates/zeroclaw-config/src/policy.rs</code> (<code>SecurityPolicy::from_config</code>), <code>crates/zeroclaw-runtime/src/agent/agent.rs</code> (<code>from_config_with_session_cwd_and_mcp</code>)</li>
 <li>OS-level sandbox detection/backends: <code>crates/zeroclaw-runtime/src/security/detect.rs</code>, <code>landlock.rs</code>, <code>bubblewrap.rs</code>, <code>seatbelt.rs</code></li>
 </ul>
-<h2 id="see-also-10"><a class="header" href="#see-also-10">See also</a></h2>
+<h2 id="see-also-11"><a class="header" href="#see-also-11">See also</a></h2>
 <ul>
 <li><a href="#channels--overview">Channels → Overview</a></li>
 <li><a href="#mcp-1">Tools → MCP</a> — clients providing tools to the agent; ACP is the inverse</li>
@@ -8085,7 +8806,7 @@ zeroclaw-acp-bridge --config-dir=/tmp/zeroclaw
 non_cli_excluded_tools = ["shell", "file_write", "browser"]
 </code></pre>
 <p>The granularity is binary (CLI vs non-CLI), not per-channel. If you need finer-grained gating, drop the global <code>[autonomy].level</code> to <code>read_only</code> or <code>supervised</code> and rely on the per-tool <code>auto_approve</code> / <code>always_ask</code> lists to gate sensitive tools behind operator approval.</p>
-<h2 id="see-also-11"><a class="header" href="#see-also-11">See also</a></h2>
+<h2 id="see-also-12"><a class="header" href="#see-also-12">See also</a></h2>
 <ul>
 <li><a href="#mcp-1">MCP</a></li>
 <li><a href="#acp--agent-client-protocol">ACP</a></li>
@@ -8103,7 +8824,7 @@ non_cli_excluded_tools = ["shell", "file_write", "browser"]
 <li><strong>http</strong>: Simple HTTP POST-based servers.</li>
 </ul>
 <h2 id="configuration-5"><a class="header" href="#configuration-5">Configuration</a></h2>
-<p>MCP servers are configured under <code>[mcp]</code> and <code>[[mcp.servers]]</code> in <code>config.toml</code>. The display <code>name</code> (used as the tool prefix <code>name__tool_name</code>) is required, plus <code>transport</code> (<code>stdio</code> | <code>sse</code> | <code>http</code>) and the transport-specific fields. See the <a href="#config-reference">Config reference</a> for the full field index and defaults.</p>
+<p>MCP servers are configured under <code>[mcp]</code> and <code>[[mcp.servers]]</code> in <code>config.toml</code>. The display <code>name</code> (used as the tool prefix <code>name__tool_name</code>) is required, plus <code>transport</code> (<code>stdio</code> | <code>sse</code> | <code>http</code>) and the transport-specific fields. See the <a href="#config-reference-1">Config reference</a> for the full field index and defaults.</p>
 <p>Keep <code>deferred_loading = true</code> (the default) to load tool schemas on demand — this minimizes initial token overhead.</p>
 <h2 id="security-and-auto-approval"><a class="header" href="#security-and-auto-approval">Security and Auto-Approval</a></h2>
 <p>By default, any tool execution from an MCP server requires manual approval unless the agent’s risk-profile level is set to <code>full</code>.</p>
@@ -8152,7 +8873,7 @@ agent-browser install              # macOS/Windows
 zeroclaw config set browser.enabled false
 </code></pre>
 <p>For the <code>agent_browser</code> backend, set <code>browser.headed = true</code> to launch the browser in headed mode for debugging or first-time login setup, or <code>browser.headed = false</code> to force headless mode. When <code>browser.headed</code> is unset, Zeroclaw preserves the inherited <code>AGENT_BROWSER_HEADED</code> environment behavior. The rust-native backend continues to use <code>browser.native_headless</code>.</p>
-<p>See the <a href="#config-reference">Config reference</a> for all browser fields and defaults.</p>
+<p>See the <a href="#config-reference-1">Config reference</a> for all browser fields and defaults.</p>
 <h3 id="3-test"><a class="header" href="#3-test">3. Test</a></h3>
 <pre><code class="language-bash">echo "Open https://example.com and tell me what it says" | zeroclaw agent -a assistant
 </code></pre>
@@ -8247,7 +8968,7 @@ echo "Go to https://github.com/trending and list the top 3 repos" | zeroclaw age
 # Form interaction
 echo "Go to Wikipedia, search for 'Rust programming language', and summarize" | zeroclaw agent -a assistant
 </code></pre>
-<h2 id="troubleshooting-2"><a class="header" href="#troubleshooting-2">Troubleshooting</a></h2>
+<h2 id="troubleshooting-3"><a class="header" href="#troubleshooting-3">Troubleshooting</a></h2>
 <h3 id="element-not-found"><a class="header" href="#element-not-found">“Element not found”</a></h3>
 <p>The page may not be fully loaded. Add a wait:</p>
 <pre><code class="language-bash">agent-browser open https://slow-site.com
@@ -8277,7 +8998,7 @@ agent-browser get text body
 <h2 id="related"><a class="header" href="#related">Related</a></h2>
 <ul>
 <li><a href="https://github.com/vercel-labs/agent-browser">agent-browser Documentation</a></li>
-<li><a href="#config-reference">Config reference</a></li>
+<li><a href="#config-reference-1">Config reference</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="skills-1"><a class="header" href="#skills-1">Skills</a></h1>
@@ -8378,7 +9099,7 @@ open_skills_enabled = true
 <pre><code class="language-toml">[skills]
 prompt_injection_mode = "compact"
 </code></pre>
-<h2 id="see-also-12"><a class="header" href="#see-also-12">See also</a></h2>
+<h2 id="see-also-13"><a class="header" href="#see-also-13">See also</a></h2>
 <ul>
 <li><a href="#tools--overview">Tools overview</a></li>
 <li><a href="#security--overview">Security overview</a></li>
@@ -8503,7 +9224,7 @@ allowed_workspace_roots = ["/srv/zeroclaw-workspaces"]
 <li>Use a custom Docker runtime image when you need repeatable dependencies, production packaging, or an explicit container boundary for built-in shell calls.</li>
 <li>Use stricter risk profiles, narrower command allowlists, and containerized execution for unreviewed or multi-tenant skill sources.</li>
 </ul>
-<h2 id="see-also-13"><a class="header" href="#see-also-13">See Also</a></h2>
+<h2 id="see-also-14"><a class="header" href="#see-also-14">See Also</a></h2>
 <ul>
 <li><a href="#skills-1">Skills</a></li>
 <li><a href="#autonomy-levels">Autonomy levels</a></li>
@@ -8587,7 +9308,7 @@ allowed_workspace_roots = ["/srv/zeroclaw-workspaces"]
 <li>E-stop: <code>false</code></li>
 </ul>
 <p>This is a reasonable middle ground — safe enough for a laptop, permissive enough to not frustrate. Crank it up for production (OTP, audit, restricted tools) or down to <a href="#yolo-mode">YOLO</a> for a dev box.</p>
-<h2 id="see-also-14"><a class="header" href="#see-also-14">See also</a></h2>
+<h2 id="see-also-15"><a class="header" href="#see-also-15">See also</a></h2>
 <ul>
 <li><a href="#autonomy-levels">Autonomy levels</a></li>
 <li><a href="#sandboxing">Sandboxing</a></li>
@@ -8729,6 +9450,7 @@ firejail_args   = []          # extra args when sandbox_backend = "firejail"
 <li>Docker container network mode follows <code>[runtime.docker].network</code> when <code>[runtime].kind = "docker"</code>.</li>
 </ul>
 <p>Tool-specific network gates (browser, HTTP, web_fetch) live on those tools’ own config blocks (<code>[browser].allowed_domains</code>, <code>[http_request].allowed_domains</code>, <code>[web_fetch].allowed_domains</code>).</p>
+<p>For <code>http_request</code>, private/local targets remain blocked by default. Use <code>[http_request].allowed_private_hosts</code> to allow only named private/local hosts such as <code>localhost</code> or <code>10.0.0.1</code> while keeping <code>[http_request].allowed_domains</code> non-empty; <code>allowed_domains = []</code> still disables requests. The existing <code>[http_request].allow_private_hosts = true</code> setting remains a broader compatibility opt-in.</p>
 <h3 id="environment"><a class="header" href="#environment">Environment</a></h3>
 <p>The sandbox passes through only the env vars listed in <code>[risk_profiles.&lt;alias&gt;].shell_env_passthrough</code>. Inherited secrets do not reach sandboxed tools unless explicitly passed.</p>
 <h3 id="process-limits"><a class="header" href="#process-limits">Process limits</a></h3>
@@ -8779,7 +9501,7 @@ image = "zeroclaw-sandbox:local"
 <p>Limitation: some CLI tools (older <code>git</code>, some Homebrew-linked binaries) don’t cooperate with Seatbelt’s file-access rules. If you see “Operation not permitted” errors from the agent’s shell calls on macOS, the tool needs broader filesystem access — consider switching to Docker.</p>
 <h3 id="none"><a class="header" href="#none"><code>none</code></a></h3>
 <p>No sandboxing. Tools run with the full privileges of the ZeroClaw service user. This is what YOLO mode enables. Loud, obvious, intentional.</p>
-<h2 id="troubleshooting-3"><a class="header" href="#troubleshooting-3">Troubleshooting</a></h2>
+<h2 id="troubleshooting-4"><a class="header" href="#troubleshooting-4">Troubleshooting</a></h2>
 <ul>
 <li><strong>“Sandbox backend unavailable”</strong> on startup — check <code>zeroclaw service status</code> and the journal; the auto-detect logs which backends it tried.</li>
 <li><strong>Tools working on dev, failing in service</strong> — the service user often differs from the CLI user. Verify both have whatever sandbox-adjacent permissions are needed (Landlock: nothing; Bubblewrap: userns enabled; Docker: service user in <code>docker</code> group).</li>
@@ -8896,11 +9618,11 @@ inject_system_prompt = true # instruct the model to echo receipts verbatim
 </tbody>
 </table>
 </div>
-<h2 id="see-also-15"><a class="header" href="#see-also-15">See also</a></h2>
+<h2 id="see-also-16"><a class="header" href="#see-also-16">See also</a></h2>
 <ul>
 <li><a href="#security--overview">Security → Overview</a></li>
 <li><a href="#autonomy-levels">Autonomy levels</a> — the policy layer that decides whether a receipt-worthy call happens</li>
-<li><a href="#config-reference">Reference → Config</a> — generated config reference</li>
+<li><a href="#config-reference-1">Reference → Config</a> — generated config reference</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="operations--overview"><a class="header" href="#operations--overview">Operations — Overview</a></h1>
@@ -8909,7 +9631,7 @@ inject_system_prompt = true # instruct the model to echo receipts verbatim
 <ul>
 <li><a href="#service--daemon">Service &amp; daemon</a> — keeping the process alive</li>
 <li><a href="#logs--observability">Logs &amp; observability</a> — reading what the agent did</li>
-<li><a href="#troubleshooting-5">Troubleshooting</a> — when things break</li>
+<li><a href="#troubleshooting-6">Troubleshooting</a> — when things break</li>
 <li><a href="#network-deployment">Network deployment</a> — exposing the gateway, tunnels, reverse proxies</li>
 </ul>
 <h2 id="the-shape-of-a-deployment"><a class="header" href="#the-shape-of-a-deployment">The shape of a deployment</a></h2>
@@ -8940,7 +9662,7 @@ launchctl list | grep -c com.zeroclaw.daemon
 # Windows
 sc query ZeroClaw | findstr STATE
 </code></pre>
-<p>If it’s dying repeatedly, check <a href="#troubleshooting-5">Troubleshooting → Daemon keeps restarting</a>.</p>
+<p>If it’s dying repeatedly, check <a href="#troubleshooting-6">Troubleshooting → Daemon keeps restarting</a>.</p>
 <h3 id="2-channel-health"><a class="header" href="#2-channel-health">2. Channel health</a></h3>
 <p>Are channels connected? The gateway exposes <code>/health/channels</code>:</p>
 <pre><code class="language-bash">curl -s http://localhost:42617/health/channels | jq
@@ -8999,11 +9721,11 @@ zeroclaw_tool_calls_total{tool="file_write",outcome="success"} 89
 <li>Verify <code>/health/*</code> endpoints return green</li>
 </ol>
 <p>If the new version requires config migrations, the startup log emits a warning and the binary usually auto-migrates. Check <code>zeroclaw config list</code> to spot-check values after upgrade, and <code>zeroclaw config migrate</code> to apply any pending schema migrations manually.</p>
-<h2 id="see-also-16"><a class="header" href="#see-also-16">See also</a></h2>
+<h2 id="see-also-17"><a class="header" href="#see-also-17">See also</a></h2>
 <ul>
 <li><a href="#service-management">Setup → Service management</a> — install/remove/logs per platform</li>
 <li><a href="#logs--observability">Logs &amp; observability</a></li>
-<li><a href="#troubleshooting-5">Troubleshooting</a></li>
+<li><a href="#troubleshooting-6">Troubleshooting</a></li>
 <li><a href="#network-deployment">Network deployment</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
@@ -9112,11 +9834,11 @@ journalctl --user -u zeroclaw --since "1 day ago" | grep -E 'Started|Stopped|fai
 log show --predicate 'process == "zeroclaw"' --last 1d | grep -E 'start|stop|error'
 </code></pre>
 <p>If you’re seeing repeated restarts, enable debug logging (<code>RUST_LOG=debug</code> via the unit file’s <code>Environment=</code>) and let one more crash happen to capture the full trace.</p>
-<h2 id="see-also-17"><a class="header" href="#see-also-17">See also</a></h2>
+<h2 id="see-also-18"><a class="header" href="#see-also-18">See also</a></h2>
 <ul>
 <li><a href="#service-management">Setup → Service management</a></li>
 <li><a href="#logs--observability">Logs &amp; observability</a></li>
-<li><a href="#troubleshooting-5">Troubleshooting</a></li>
+<li><a href="#troubleshooting-6">Troubleshooting</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="logs--observability"><a class="header" href="#logs--observability">Logs &amp; observability</a></h1>
@@ -9527,7 +10249,7 @@ dropdowns.</li>
 section exists; the resource key passes <code>#[resource_key]</code> instead
 of <code>validate_alias_key</code>.</li>
 </ul>
-<h2 id="troubleshooting-4"><a class="header" href="#troubleshooting-4">Troubleshooting</a></h2>
+<h2 id="troubleshooting-5"><a class="header" href="#troubleshooting-5">Troubleshooting</a></h2>
 <p><strong>Dashboard shows $0.0000 for all agents after configuring rates.</strong>
 Old records are immutable — they were recorded with <code>cost_usd = 0</code>
 because no rate was set when they happened. Make a new chat request
@@ -9547,7 +10269,7 @@ sheet (some providers return versioned ids like
 <code>claude-3-5-sonnet</code>). Add the exact id the warn names, or set the
 unversioned id and rely on <code>resolve_rates</code>’s suffix-match path.</p>
 <div style="break-before: page; page-break-before: always;"></div>
-<h1 id="troubleshooting-5"><a class="header" href="#troubleshooting-5">Troubleshooting</a></h1>
+<h1 id="troubleshooting-6"><a class="header" href="#troubleshooting-6">Troubleshooting</a></h1>
 <p>Common failure modes, in the order you’re likely to encounter them.</p>
 <p>First stop for any issue:</p>
 <pre><code class="language-bash">zeroclaw doctor
@@ -9738,12 +10460,12 @@ zeroclaw channel doctor
 journalctl --user -u zeroclaw --since "1 hour ago" &gt; zeroclaw-log.txt
 </code></pre>
 <p>Sanitise <code>zeroclaw-log.txt</code> (redact channel tokens if any slipped through — they shouldn’t) and attach it to the issue. See <a href="#communication">Contributing → Communication</a> for where.</p>
-<h2 id="see-also-18"><a class="header" href="#see-also-18">See also</a></h2>
+<h2 id="see-also-19"><a class="header" href="#see-also-19">See also</a></h2>
 <ul>
 <li><a href="#logs--observability">Logs &amp; observability</a></li>
 <li><a href="#service--daemon">Service &amp; daemon</a></li>
 <li><a href="#service-management">Setup → Service management</a></li>
-<li><a href="#config-reference">Reference → Config</a></li>
+<li><a href="#config-reference-1">Reference → Config</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="network-deployment"><a class="header" href="#network-deployment">Network Deployment</a></h1>
@@ -9881,7 +10603,7 @@ sudo rc-service zeroclaw status
 <li><strong>Rate limiting</strong> — <code>rate_limit_per_sec</code> in the webhook channel config</li>
 </ul>
 <p>See <a href="#webhooks">Channels → Webhooks</a> for the full set of knobs.</p>
-<h2 id="see-also-19"><a class="header" href="#see-also-19">See also</a></h2>
+<h2 id="see-also-20"><a class="header" href="#see-also-20">See also</a></h2>
 <ul>
 <li><a href="#docker--containers">Setup → Container</a> — Docker-specific network config</li>
 <li><a href="#service-management">Setup → Service management</a> — platform service integration</li>
@@ -9968,7 +10690,7 @@ non_cli_excluded_tools = ["gpio_write", "i2c_write", "spi_transfer", "peripheral
 </ul>
 <h2 id="adding-new-hardware"><a class="header" href="#adding-new-hardware">Adding new hardware</a></h2>
 <p>See <a href="#adding-boards-and-tools--zeroclaw-hardware-guide">Adding boards &amp; tools</a> for the step-by-step. TL;DR: implement the <code>Peripheral</code> trait from <code>crates/zeroclaw-hardware/src/</code>, add a board-specific feature flag, write a probe routine that identifies the board from USB descriptors or serial handshake.</p>
-<h2 id="see-also-20"><a class="header" href="#see-also-20">See also</a></h2>
+<h2 id="see-also-21"><a class="header" href="#see-also-21">See also</a></h2>
 <ul>
 <li><a href="#hardware-peripherals-design--zeroclaw">Peripherals design</a> — the architecture</li>
 <li><a href="#adding-boards-and-tools--zeroclaw-hardware-guide">Adding boards &amp; tools</a> — implementation guide</li>
@@ -10002,7 +10724,7 @@ zeroclaw daemon --host 127.0.0.1 --port 42617
 </table>
 </div>
 <h2 id="manual-config"><a class="header" href="#manual-config">Manual Config</a></h2>
-<p>Boards are configured under <code>[peripherals]</code> and <code>[[peripherals.boards]]</code> in <code>~/.zeroclaw/config.toml</code>. See the <a href="#config-reference">Config reference</a> for the full field index, including <code>datasheet_dir</code> (RAG source).</p>
+<p>Boards are configured under <code>[peripherals]</code> and <code>[[peripherals.boards]]</code> in <code>~/.zeroclaw/config.toml</code>. See the <a href="#config-reference-1">Config reference</a> for the full field index, including <code>datasheet_dir</code> (RAG source).</p>
 <h2 id="adding-a-datasheet-rag"><a class="header" href="#adding-a-datasheet-rag">Adding a Datasheet (RAG)</a></h2>
 <p>Place <code>.md</code> or <code>.txt</code> files in <code>docs/datasheets/</code> (or your <code>datasheet_dir</code>). Name files by board: <code>nucleo-f401re.md</code>, <code>arduino-uno.md</code>.</p>
 <h3 id="pin-aliases-recommended"><a class="header" href="#pin-aliases-recommended">Pin Aliases (Recommended)</a></h3>
@@ -10042,7 +10764,7 @@ builtin_led: 13
 </ol>
 <h2 id="cli-reference"><a class="header" href="#cli-reference">CLI Reference</a></h2>
 <p>See the <a href="#command-line-help-for-zeroclaw">generated CLI reference</a> for <code>zeroclaw peripheral</code> and <code>zeroclaw hardware</code> subcommands.</p>
-<h2 id="troubleshooting-6"><a class="header" href="#troubleshooting-6">Troubleshooting</a></h2>
+<h2 id="troubleshooting-7"><a class="header" href="#troubleshooting-7">Troubleshooting</a></h2>
 <ul>
 <li><strong>Serial port not found</strong> — On macOS use <code>/dev/cu.usbmodem*</code>; on Linux use <code>/dev/ttyACM0</code> or <code>/dev/ttyUSB0</code>.</li>
 <li><strong>Build with hardware</strong> — <code>cargo build --features hardware</code></li>
@@ -10181,7 +10903,7 @@ builtin_led: 13
 </div>
 <p><strong>Recommendation:</strong> Start with pre-compiled templates + parameterization; evolve to Wasm for user-defined logic once stable.</p>
 <h2 id="5-cli-and-config"><a class="header" href="#5-cli-and-config">5. CLI and Config</a></h2>
-<p>See the <a href="#command-line-help-for-zeroclaw">CLI reference</a> for <code>zeroclaw hardware</code> / <code>zeroclaw peripheral</code> subcommands and the <a href="#config-reference">Config reference</a> for the <code>[peripherals]</code> and <code>[[peripherals.boards]]</code> fields.</p>
+<p>See the <a href="#command-line-help-for-zeroclaw">CLI reference</a> for <code>zeroclaw hardware</code> / <code>zeroclaw peripheral</code> subcommands and the <a href="#config-reference-1">Config reference</a> for the <code>[peripherals]</code> and <code>[[peripherals.boards]]</code> fields.</p>
 <h2 id="6-architecture-peripheral-as-extension-point"><a class="header" href="#6-architecture-peripheral-as-extension-point">6. Architecture: Peripheral as Extension Point</a></h2>
 <h3 id="new-trait-peripheral"><a class="header" href="#new-trait-peripheral">New Trait: <code>Peripheral</code></a></h3>
 <pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
@@ -10424,7 +11146,7 @@ mkdir -p ~/.zeroclaw/workspace
 nano ~/.zeroclaw/config.toml
 </code></pre>
 <h3 id="32-minimal-config"><a class="header" href="#32-minimal-config">3.2 Minimal config</a></h3>
-<p>At minimum, configure one <code>[providers.models.&lt;type&gt;.&lt;alias&gt;]</code> entry with <code>api_key</code> / <code>model</code>, one <code>[agents.&lt;alias&gt;]</code> that references it via <code>model_provider = "&lt;type&gt;.&lt;alias&gt;"</code>, and one <code>[channels.telegram.&lt;alias&gt;]</code> with your <code>bot_token</code>. Bind the channel to the agent via <code>channels = ["telegram.&lt;alias&gt;"]</code> on the agent. Leave <code>[peripherals]</code> disabled until Phase 4 below. See the <a href="#config-reference">Config reference</a> for all fields.</p>
+<p>At minimum, configure one <code>[providers.models.&lt;type&gt;.&lt;alias&gt;]</code> entry with <code>api_key</code> / <code>model</code>, one <code>[agents.&lt;alias&gt;]</code> that references it via <code>model_provider = "&lt;type&gt;.&lt;alias&gt;"</code>, and one <code>[channels.telegram.&lt;alias&gt;]</code> with your <code>bot_token</code>. Bind the channel to the agent via <code>channels = ["telegram.&lt;alias&gt;"]</code> on the agent. Leave <code>[peripherals]</code> disabled until Phase 4 below. See the <a href="#config-reference-1">Config reference</a> for all fields.</p>
 <hr>
 <h2 id="phase-4-run-zeroclaw-daemon"><a class="header" href="#phase-4-run-zeroclaw-daemon">Phase 4: Run ZeroClaw Daemon</a></h2>
 <pre><code class="language-bash">ssh arduino@&lt;UNO_Q_IP&gt;
@@ -10475,7 +11197,7 @@ zeroclaw daemon --host 127.0.0.1 --port 42617
 </table>
 </div>
 <hr>
-<h2 id="troubleshooting-7"><a class="header" href="#troubleshooting-7">Troubleshooting</a></h2>
+<h2 id="troubleshooting-8"><a class="header" href="#troubleshooting-8">Troubleshooting</a></h2>
 <ul>
 <li><strong>“command not found: zeroclaw”</strong> — Use full path: <code>/usr/local/bin/zeroclaw</code> or ensure <code>~/.cargo/bin</code> is in PATH.</li>
 <li><strong>Telegram not responding</strong> — Check bot_token, allowed_users, and that the Uno Q has internet (WiFi).</li>
@@ -10496,7 +11218,7 @@ zeroclaw daemon --host 127.0.0.1 --port 42617
 <li><em>“Chip info”</em></li>
 </ul>
 <p>The agent uses the <code>hardware_board_info</code> tool to return chip name, architecture, and memory map. With the <code>probe</code> feature, it reads live data via USB/SWD; otherwise it returns static datasheet info.</p>
-<p><strong>Config:</strong> Run <code>zeroclaw onboard</code> (hardware step adds the board interactively), or use <code>zeroclaw config set peripherals.boards.0.board nucleo-f401re</code>, <code>transport serial</code>, and <code>path &lt;your-serial-port&gt;</code>. See the <a href="#config-reference">Config reference</a> for all fields.</p>
+<p><strong>Config:</strong> Run <code>zeroclaw onboard</code> (hardware step adds the board interactively), or use <code>zeroclaw config set peripherals.boards.0.board nucleo-f401re</code>, <code>transport serial</code>, and <code>path &lt;your-serial-port&gt;</code>. See the <a href="#config-reference-1">Config reference</a> for all fields.</p>
 <p><strong>CLI alternative:</strong></p>
 <pre><code class="language-bash">cargo build --features hardware,probe
 zeroclaw hardware info
@@ -10551,7 +11273,7 @@ probe-rs run --chip STM32F401RETx target/thumbv7em-none-eabihf/release/nucleo
 <p>USART2 (PA2/PA3) is bridged to the ST-Link’s virtual COM port, so the host sees one serial device.</p>
 <hr>
 <h2 id="phase-3-configure-zeroclaw-1"><a class="header" href="#phase-3-configure-zeroclaw-1">Phase 3: Configure ZeroClaw</a></h2>
-<p>Enable <code>[peripherals]</code> and add a <code>[[peripherals.boards]]</code> entry for the Nucleo (<code>board = "nucleo-f401re"</code>, <code>transport = "serial"</code>, <code>path = "/dev/cu.usbmodem101"</code> — adjust to your serial port). See the <a href="#config-reference">Config reference</a> for all fields.</p>
+<p>Enable <code>[peripherals]</code> and add a <code>[[peripherals.boards]]</code> entry for the Nucleo (<code>board = "nucleo-f401re"</code>, <code>transport = "serial"</code>, <code>path = "/dev/cu.usbmodem101"</code> — adjust to your serial port). See the <a href="#config-reference-1">Config reference</a> for all fields.</p>
 <hr>
 <h2 id="phase-4-run-and-test"><a class="header" href="#phase-4-run-and-test">Phase 4: Run and Test</a></h2>
 <pre><code class="language-bash">zeroclaw daemon --host 127.0.0.1 --port 42617
@@ -10577,7 +11299,7 @@ probe-rs run --chip STM32F401RETx target/thumbv7em-none-eabihf/release/nucleo
 </table>
 </div>
 <hr>
-<h2 id="troubleshooting-8"><a class="header" href="#troubleshooting-8">Troubleshooting</a></h2>
+<h2 id="troubleshooting-9"><a class="header" href="#troubleshooting-9">Troubleshooting</a></h2>
 <ul>
 <li><strong>flash-nucleo unrecognized</strong> — Build from repo: <code>cargo run --features hardware -- peripheral flash-nucleo</code>. The subcommand is only in the repo build, not in crates.io installs.</li>
 <li><strong>probe-rs not found</strong> — <code>cargo install probe-rs-tools --locked</code> (the <code>probe-rs</code> crate is a library; the CLI is in <code>probe-rs-tools</code>)</li>
@@ -10661,7 +11383,7 @@ export PATH=$ANDROID_NDK_HOME/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH
 cargo build --release --target armv7-linux-androideabi
 cargo build --release --target aarch64-linux-android
 </code></pre>
-<h2 id="troubleshooting-9"><a class="header" href="#troubleshooting-9">Troubleshooting</a></h2>
+<h2 id="troubleshooting-10"><a class="header" href="#troubleshooting-10">Troubleshooting</a></h2>
 <h3 id="permission-denied"><a class="header" href="#permission-denied">“Permission denied”</a></h3>
 <pre><code class="language-bash">chmod +x zeroclaw
 </code></pre>
@@ -11181,7 +11903,7 @@ loginctl enable-linger $USER
 </li>
 <li>Use the <code>peripherals</code> crate’s GPIO bindings from your skills. See <a href="#hardware-peripherals-design--zeroclaw">Hardware → Peripherals design</a> for the abstraction model.</li>
 </ol>
-<h2 id="troubleshooting-10"><a class="header" href="#troubleshooting-10">Troubleshooting</a></h2>
+<h2 id="troubleshooting-11"><a class="header" href="#troubleshooting-11">Troubleshooting</a></h2>
 <h3 id="oom-killed-during-build"><a class="header" href="#oom-killed-during-build">OOM-killed during build</a></h3>
 <p>The <code>release</code> profile peaks at ~8-10 GB RSS during the final link. Either:</p>
 <ul>
@@ -11447,7 +12169,7 @@ expression = "0 9 * * *"
 </ul>
 <h2 id="2-mqtt-integration"><a class="header" href="#2-mqtt-integration">2. MQTT Integration</a></h2>
 <h3 id="21-configuration"><a class="header" href="#21-configuration">2.1 Configuration</a></h3>
-<p>Configure broker access with <code>zeroclaw config set channels.mqtt.&lt;field&gt; &lt;value&gt;</code> — the keys land under <code>[channels.mqtt]</code> in the stored config. See the <a href="#config-reference">Config reference</a> for all fields. The <code>use_tls</code> flag must match the scheme of <code>broker_url</code> (<code>mqtts://</code> ⇒ <code>true</code>, <code>mqtt://</code> ⇒ <code>false</code>).</p>
+<p>Configure broker access with <code>zeroclaw config set channels.mqtt.&lt;field&gt; &lt;value&gt;</code> — the keys land under <code>[channels.mqtt]</code> in the stored config. See the <a href="#config-reference-1">Config reference</a> for all fields. The <code>use_tls</code> flag must match the scheme of <code>broker_url</code> (<code>mqtts://</code> ⇒ <code>true</code>, <code>mqtt://</code> ⇒ <code>false</code>).</p>
 <h3 id="22-trigger-definition"><a class="header" href="#22-trigger-definition">2.2 Trigger Definition</a></h3>
 <p>In <code>SOP.toml</code>:</p>
 <pre><code class="language-toml">[[triggers]]
@@ -11811,7 +12533,7 @@ zeroclaw plugin install /path/to/my-plugin/
 cp -r my-plugin/ ~/.zeroclaw/plugins/my-plugin/
 </code></pre>
 <h2 id="configuration-7"><a class="header" href="#configuration-7">Configuration</a></h2>
-<p>Enable the plugin system via the <code>[plugins]</code> and <code>[plugins.security]</code> sections of <code>config.toml</code> — see the <a href="#config-reference">Config reference</a> for all fields, defaults, and the <code>signature_mode</code> enum.</p>
+<p>Enable the plugin system via the <code>[plugins]</code> and <code>[plugins.security]</code> sections of <code>config.toml</code> — see the <a href="#config-reference-1">Config reference</a> for all fields, defaults, and the <code>signature_mode</code> enum.</p>
 <p>The <code>plugins-wasm</code> feature flag must be enabled at compile time (included in the default <code>ci-all</code> feature set).</p>
 <div style="break-before: page; page-break-before: always;"></div>
 <h1 id="extension-examples"><a class="header" href="#extension-examples">Extension Examples</a></h1>
@@ -12230,6 +12952,9 @@ cargo mdbook sync --locale ja --force    # force-retranslate one locale
 cargo mdbook stats                       # show translated/fuzzy/untranslated per locale
 cargo mdbook check                       # validate .po format (run before a translation PR)
 </code></pre>
+<blockquote>
+<p>Always go through the <code>cargo mdbook …</code> wrapper. Running <code>mdbook build</code> directly from <code>docs/book/</code> skips the xtask step that renders <code>theme/lang-switcher.js</code> from <code>locales.toml</code>, which fails the build with <code>failed to open theme/lang-switcher.js for hashing</code>.</p>
+</blockquote>
 <h2 id="required-tools"><a class="header" href="#required-tools">Required tools</a></h2>
 <p><code>cargo mdbook</code> will fail fast and tell you what’s missing, but for reference:</p>
 <div class="table-wrapper">
@@ -16710,7 +17435,7 @@ chore: bump tokio to 1.43
 </div>
 <h2 id="code-of-conduct"><a class="header" href="#code-of-conduct">Code of conduct</a></h2>
 <p>Don’t be a jerk. Disagree on ideas; not people. Accept that maintainers will close things they don’t want to own — usually with an explanation, occasionally without. If a close feels unjustified, ask; if the ask goes nowhere, move on.</p>
-<h2 id="see-also-21"><a class="header" href="#see-also-21">See also</a></h2>
+<h2 id="see-also-22"><a class="header" href="#see-also-22">See also</a></h2>
 <ul>
 <li><a href="#rfc-process">RFC process</a> — for anything bigger than a patch</li>
 <li><a href="#architecture-and-contribution-map">Architecture and contribution map</a> — which architecture, foundation, and workflow docs to read first</li>
@@ -16867,7 +17592,7 @@ It exists to make architecture and contribution scope easier to find. After RFC 
 <li>The human takes the ratification vote, not the AI</li>
 </ul>
 <p>This has worked well so far — treat AI drafts as first-class but remember the sponsor is accountable.</p>
-<h2 id="see-also-22"><a class="header" href="#see-also-22">See also</a></h2>
+<h2 id="see-also-23"><a class="header" href="#see-also-23">See also</a></h2>
 <ul>
 <li><a href="#how-to-contribute">How to contribute</a></li>
 <li><a href="#communication">Communication</a></li>
@@ -16941,7 +17666,7 @@ It exists to make architecture and contribution scope easier to find. After RFC 
 <p>Open-ended feedback — “I tried to do X and it felt wrong”, UX observations, direction thoughts — lands best as a thread in Discord <code>#general</code> or <code>#dev</code>. The team is more likely to see and discuss it there. If the thread turns into something concrete, move it to a GitHub Discussion or issue.</p>
 <h2 id="contributor-recognition"><a class="header" href="#contributor-recognition">Contributor recognition</a></h2>
 <p>Everyone who’s had a PR merged appears in the contributors list on the repo. For substantial contributions — features, RFCs, significant bug fixes — your handle shows up in the release notes.</p>
-<h2 id="see-also-23"><a class="header" href="#see-also-23">See also</a></h2>
+<h2 id="see-also-24"><a class="header" href="#see-also-24">See also</a></h2>
 <ul>
 <li><a href="#how-to-contribute">How to contribute</a></li>
 <li><a href="#rfc-process">RFC process</a></li>
@@ -17305,9 +18030,7 @@ read_memory_from = ["primary"]
 <pre><code class="language-toml">[peer_groups.research]
 channel = "telegram.prod"
 agents = ["primary", "researcher"]
-external_peers = [
-    { username = "operator" },
-]
+external_peers = ["operator"]
 ignore = []
 </code></pre>
 <p><code>external_peers</code> lists humans or external bots the group expects on the same channel; the runtime accepts inbound from those usernames as cross-agent traffic. <code>ignore</code> is a per-group blocklist that subtracts from the resolved peer set every member sees — useful for excluding a specific bot account that’s noisy.</p>
@@ -17407,15 +18130,16 @@ zeroclaw daemon 2&gt;&amp;1 | grep '\[system\]'       # boot/migration/scheduler
 </tbody>
 </table>
 </div>
-<p>They are filled separately and stored separately. Both use a provider-agnostic fill pipeline: configure any OpenAI-compatible endpoint in <code>~/.zeroclaw/config.toml</code> under <code>[providers.models.&lt;type&gt;.&lt;alias&gt;]</code> and pass <code>--provider &lt;type&gt;</code> to the fill commands.</p>
+<p>They are filled separately and stored separately. Both use a provider-agnostic fill pipeline: configure any OpenAI-compatible endpoint in <code>~/.zeroclaw/config.toml</code> under <code>[providers.models.&lt;kind&gt;.&lt;alias&gt;]</code> and pass <code>--model-provider &lt;alias&gt;</code> to the fill commands. Any configured alias is choosable — a bare alias (<code>--model-provider &lt;alias&gt;</code>), or a <code>kind.alias</code> qualifier (<code>--model-provider anthropic.&lt;alias&gt;</code>) when the same alias exists under more than one kind. The resolver reads <code>uri</code>, <code>model</code>, and <code>api_key</code> straight from the matched entry; a missing <code>uri</code> or <code>model</code> is a hard error, not a guessed default.</p>
 <p>Local models via <a href="https://ollama.com">Ollama</a> are a first-class option — no API keys required, no per-call cost. A hosted provider is also fine for release-grade quality. Translation is a local operation. Run <code>cargo mdbook sync</code> for dedicated translation-cache PRs, release translation passes, and new locales; routine English docs PRs may defer broad generated <code>.po</code> churn to a focused follow-up.</p>
 <h2 id="provider-configuration-1"><a class="header" href="#provider-configuration-1">Provider configuration</a></h2>
 <p>Ollama is the current canonical source for docs. Ensure you have <a href="https://ollama.com/">Ollama</a> installed and have <code>qwen3.6:35-a3b</code> pulled. Then, in <code>~/.zeroclaw/config.toml</code> (or your established config home):</p>
 <pre><code class="language-toml"># Local via Ollama — free, runs on your machine
 [providers.models.ollama.local]
-uri   = "http://localhost:11434"
+uri   = "http://localhost:11434/v1/chat/completions"
 model = "qwen3.6:35b-a3b" # Current preferred model
 </code></pre>
+<p><code>uri</code> is the full endpoint URL and is <strong>optional</strong> — leave it unset to use the provider family’s default endpoint (resolved by the runtime provider stack). Set it only to point at a self-hosted gateway or proxy. Any configured family works (Anthropic, OpenAI, OpenRouter, Ollama, …); the translation tools build the real runtime provider, so each family’s endpoint, auth header, and wire protocol are handled for you — no OpenAI-compatibility requirement.</p>
 <h2 id="building-the-docs-locally-1"><a class="header" href="#building-the-docs-locally-1">Building the docs locally</a></h2>
 <h1 id="building-the-docs-locally-1-1"><a class="header" href="#building-the-docs-locally-1-1">Building the docs locally</a></h1>
 <p>The docs site you’re reading is published from <code>docs/book/</code>. You can build the same site on your own machine — useful for offline reading, previewing edits before opening a PR, or developing translations.</p>
@@ -17431,6 +18155,9 @@ cargo mdbook sync --locale ja --force    # force-retranslate one locale
 cargo mdbook stats                       # show translated/fuzzy/untranslated per locale
 cargo mdbook check                       # validate .po format (run before a translation PR)
 </code></pre>
+<blockquote>
+<p>Always go through the <code>cargo mdbook …</code> wrapper. Running <code>mdbook build</code> directly from <code>docs/book/</code> skips the xtask step that renders <code>theme/lang-switcher.js</code> from <code>locales.toml</code>, which fails the build with <code>failed to open theme/lang-switcher.js for hashing</code>.</p>
+</blockquote>
 <h2 id="required-tools-2"><a class="header" href="#required-tools-2">Required tools</a></h2>
 <p><code>cargo mdbook</code> will fail fast and tell you what’s missing, but for reference:</p>
 <div class="table-wrapper">
@@ -17535,26 +18262,73 @@ cargo mdbook stats   # review coverage
 <li><strong>Zero-cost re-runs:</strong> <code>cargo mdbook sync</code> against unchanged English source completes in seconds — no AI calls, no cost.</li>
 </ul>
 <h2 id="filling-app-strings-fluent"><a class="header" href="#filling-app-strings-fluent">Filling app strings (Fluent)</a></h2>
-<p>App strings live in <code>crates/zeroclaw-runtime/locales/</code>. English is the source of truth and is embedded at compile time. Non-English locales are loaded from <code>~/.zeroclaw/workspace/locales/</code> at runtime.</p>
-<pre><code class="language-bash">cargo fluent stats                                          # coverage per locale
-cargo fluent check                                          # validate .ftl syntax
-cargo fluent fill --locale ja --provider ollama             # fill missing keys (default batch 50)
-cargo fluent fill --locale ja --provider ollama --batch 1   # one-at-a-time (use when a file has long entries that truncate at batch 50, e.g. tools.ftl)
-cargo fluent fill --locale ja --provider ollama --force     # retranslate everything
-cargo fluent scan                                           # find stale or missing keys vs Rust source
+<p>App strings live in <code>crates/zeroclaw-runtime/locales/</code>. English is the source of truth and is embedded at compile time.</p>
+<blockquote>
+<p><strong>Runtime loading caveat (verify before relying on this).</strong> As of this writing, only <code>en</code> and <code>zh-CN</code> are wired into the runtime: <code>crates/zeroclaw-runtime/src/i18n.rs</code> embeds them via <code>include_str!</code>, and <code>builtin_cli_ftl_source()</code> returns <code>None</code> for every other locale. A disk-override path exists (<code>load_ftl_from_disk</code> → <code>workspace_dir_from_config</code>) but it resolves a top-level <code>workspace_dir</code> config key that no longer exists in v0.8.0 and falls back to <code>~/.zeroclaw/workspace</code>, which v0.8.0 does not create. <strong>So a freshly filled <code>ja/cli.ftl</code> is generated and committed, but is not actually loaded at runtime</strong> until either the locale is added to <code>builtin_cli_ftl_source()</code> or the disk-override path is repaired. Confirm the current state in <code>i18n.rs</code> rather than trusting this note.</p>
+</blockquote>
+<blockquote>
+<p>The <code>apps/zerocode</code> TUI maintains an independent Fluent catalogue (<code>apps/zerocode/locales/</code>) — see <a href="#zerocode-strings-fluent-independent">zerocode strings</a> below. <code>cargo fluent</code> walks <strong>both</strong> catalogue roots (runtime + zerocode), so every subcommand below covers both by default.</p>
+</blockquote>
+<pre><code class="language-bash">cargo fluent stats                                                   # coverage per locale, per catalogue
+cargo fluent check                                                   # validate .ftl syntax across both catalogues
+cargo fluent fill --locale ja --model-provider anthropic.&lt;alias&gt;             # fill missing keys (default batch 50)
+cargo fluent fill --locale ja --model-provider anthropic.&lt;alias&gt; --batch 10  # smaller batches: fewer entries per request (eases rate limits / truncation)
+cargo fluent fill --locale ja --model-provider anthropic.&lt;alias&gt; --force     # retranslate everything
+cargo fluent scan                                                    # find stale or missing keys vs Rust source
 </code></pre>
-<p>Each batch is written to disk before the next API call, so a mid-run failure only loses the in-flight batch. Re-running skips keys that already exist in the target <code>.ftl</code>, so resume is automatic — no <code>--force</code> needed.</p>
-<p>After filling, copy the updated <code>.ftl</code> file to your workspace and rebuild to pick up the changes:</p>
-<pre><code class="language-bash">mkdir -p ~/.zeroclaw/workspace/locales/ja
-cp crates/zeroclaw-runtime/locales/ja/cli.ftl ~/.zeroclaw/workspace/locales/ja/cli.ftl
+<p><strong>Scoping to one catalogue</strong> — every subcommand takes <code>--catalog &lt;runtime|zerocode&gt;</code> (default: both). To translate only the TUI:</p>
+<pre><code class="language-bash">cargo fluent fill --locale ja --model-provider anthropic.&lt;alias&gt; --catalog zerocode
+cargo fluent check --catalog zerocode                                # syntax-check only zerocode
 </code></pre>
+<p>An unknown <code>--catalog</code> value errors with the valid choices.</p>
+<p><code>fill</code> generates <code>&lt;locale&gt;/&lt;domain&gt;.ftl</code> for every selected catalogue root that has an <code>en/</code> directory — the runtime’s <code>cli.ftl</code>/<code>tools.ftl</code> and zerocode’s <code>zerocode.ftl</code>.</p>
+<p><strong>Provider resolution is shared with the runtime.</strong> <code>--model-provider</code> accepts any alias configured under <code>[providers.models.&lt;kind&gt;.&lt;alias&gt;]</code> — a bare alias (<code>&lt;alias&gt;</code>) or a <code>kind.alias</code> qualifier (<code>anthropic.&lt;alias&gt;</code>) when ambiguous. The tool builds the actual runtime provider, so the endpoint, auth header, and wire protocol are resolved per family (Anthropic <code>/v1/messages</code> + <code>x-api-key</code>, OpenAI-compatible <code>/v1/chat/completions</code> + <code>Bearer</code>, etc.) — nothing is assumed. Encrypted <code>api_key</code> values are decrypted through the canonical <code>SecretStore</code>. Use <code>--config-dir &lt;dir&gt;</code> (mirrors <code>zeroclaw --config-dir</code>) to read config + <code>.secret-key</code> from a non-default location; defaults to <code>~/.zeroclaw</code> then <code>~/.config/zeroclaw</code>.</p>
+<p><strong>Batching:</strong> <code>fill</code> sends one request per batch (all N entries as a single JSON object); <code>--batch</code> lowers N to ease provider rate limits or response truncation on long entries. Each batch is written to disk before the next request, so a mid-run failure only loses the in-flight batch. Re-running skips keys that already exist in the target <code>.ftl</code>, so resume is automatic — no <code>--force</code> needed.</p>
+<h2 id="zerocode-strings-fluent-independent"><a class="header" href="#zerocode-strings-fluent-independent">zerocode strings (Fluent, independent)</a></h2>
+<p><code>apps/zerocode</code> carries its own self-contained Fluent setup, separate from the runtime catalogues above. The TUI is intentionally decoupled from the rest of the workspace — it has no <code>zeroclaw-*</code> crate dependency, and its strings live next to its source rather than under <code>zeroclaw-runtime/locales/</code>.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Where</th><th>What</th></tr>
+</thead>
+<tbody>
+<tr><td><code>apps/zerocode/locales/en/zerocode.ftl</code></td><td>Source of truth, embedded at compile time</td></tr>
+<tr><td><code>apps/zerocode/locales/&lt;locale&gt;/zerocode.ftl</code></td><td>Other locales, embedded if present in-tree</td></tr>
+<tr><td><code>$ZEROCODE_LOCALE_DIR/&lt;locale&gt;/zerocode.ftl</code></td><td>Explicit override, useful for testing translations</td></tr>
+<tr><td><code>&lt;config-dir&gt;/zerocode/locales/&lt;locale&gt;/zerocode.ftl</code></td><td>Per-user catalogue override</td></tr>
+<tr><td><code>~/.zeroclaw/zerocode/locales/&lt;locale&gt;/zerocode.ftl</code></td><td>Alternate per-user location</td></tr>
+<tr><td><code>&lt;install-prefix&gt;/share/zerocode/locales/&lt;locale&gt;/zerocode.ftl</code></td><td>System install path</td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="key-namespace"><a class="header" href="#key-namespace">Key namespace</a></h3>
+<p>All zerocode keys are prefixed <code>zc-</code> and never collide with the runtime’s <code>cli-</code>, <code>channel-</code>, or <code>tool-</code> namespaces. The convention inside <code>zc-</code> is <code>zc-&lt;pane&gt;-&lt;purpose&gt;</code>:</p>
+<ul>
+<li><code>zc-pane-&lt;name&gt;</code> — top-level mode bar labels</li>
+<li><code>zc-app-&lt;purpose&gt;</code> — strings owned by <code>app.rs</code> (dialogs, help, status)</li>
+<li><code>zc-&lt;pane&gt;-&lt;purpose&gt;</code> — strings local to a specific pane (<code>zc-dashboard-*</code>, <code>zc-chat-*</code>, …)</li>
+</ul>
+<h3 id="chord-literals-are-not-translated"><a class="header" href="#chord-literals-are-not-translated">Chord literals are not translated</a></h3>
+<p>Chord glyphs like <code>Ctrl+C</code>, <code>Esc</code>, <code>Shift+Up</code> are protocol, not language. The <code>HelpEntry</code> and <code>HelpNode</code> constructors take the chord vector as <code>&amp;'static str</code> and the description as <code>String</code>, so chord literals stay hard-coded while descriptions flow through <code>t()</code>. When prose embeds a chord inline, use a <code>{ $keys }</code> Fluent slot and pass the chord at render time rather than concatenating translated text around a literal.</p>
+<h3 id="locale-resolution"><a class="header" href="#locale-resolution">Locale resolution</a></h3>
+<p>Locale comes from a top-level <code>locale</code> field in <code>zerocode-config.toml</code>. When unset, <code>i18n::detect_locale()</code> walks (in order) <code>&lt;config-dir&gt;/zerocode/zerocode-config.toml</code>, <code>~/.zeroclaw/zerocode-config.toml</code>, <code>~/.zeroclaw/config.toml</code>, then <code>&lt;config-dir&gt;/zeroclaw/config.toml</code>, finally falling back to <code>en</code>. The same lookup matches how the daemon resolves its own locale.</p>
+<h3 id="adding-strings"><a class="header" href="#adding-strings">Adding strings</a></h3>
+<ol>
+<li>Add the key + English value to <code>apps/zerocode/locales/en/zerocode.ftl</code>. Group keys by source file with a section comment so the catalogue stays scannable.</li>
+<li>Replace the literal in the source with <code>crate::i18n::t("zc-…")</code>. For enum→label <code>match</code> arms, return the key constant (<code>&amp;'static str</code>) from a <code>fluent_key()</code> method and call <code>t()</code> at the render site — never <code>match</code> on a string.</li>
+<li><code>cargo check -p zerocode</code> and the <code>i18n</code> unit tests (<code>cargo test -p zerocode i18n</code>) catch missing keys at compile/test time. Missing keys at runtime render as <code>{zc-key-name}</code> and emit a one-shot stderr warning.</li>
+</ol>
+<h3 id="filling-translations"><a class="header" href="#filling-translations">Filling translations</a></h3>
+<p><code>cargo fluent</code> walks the zerocode catalogue alongside the runtime one, so no manual step is needed. Running <code>cargo fluent fill --locale &lt;code&gt; --model-provider &lt;alias&gt;</code> generates <code>apps/zerocode/locales/&lt;code&gt;/zerocode.ftl</code> in the same pass that fills the runtime catalogue. <code>cargo fluent check</code> and <code>cargo fluent stats</code> likewise report zerocode; <code>scan</code> indexes <code>apps/</code> so <code>zc-</code> key references resolve against zerocode’s source. The generated <code>&lt;code&gt;/zerocode.ftl</code> is embedded in-tree at compile time, or can be dropped into any of the disk-search paths above for testing with <code>--config-dir</code>.</p>
 <h2 id="filling-doc-translations-gettext"><a class="header" href="#filling-doc-translations-gettext">Filling doc translations (gettext)</a></h2>
-<p>Doc translations live in <code>docs/book/po/</code>. <code>cargo mdbook sync</code> runs extract → merge → strip obsolete → AI-fill in one step. Without <code>--provider</code>, sync still runs extract + merge and reports how many strings need translation — partial translations fall back to English at render time.</p>
-<pre><code class="language-bash">cargo mdbook sync --provider ollama              # delta fill
-cargo mdbook sync --provider ollama --force      # quality pass: retranslate all entries
-cargo mdbook sync --provider ollama --batch 1    # one-at-a-time (helpful for flaky local models)
-cargo mdbook sync --locale ja --provider ollama  # single locale
+<p>Doc translations live in <code>docs/book/po/</code>. <code>cargo mdbook sync</code> runs extract → merge → strip obsolete → AI-fill in one step. Without <code>--model-provider</code>, sync still runs extract + merge and reports how many strings need translation — partial translations fall back to English at render time.</p>
+<pre><code class="language-bash">cargo mdbook sync --model-provider anthropic.&lt;alias&gt;              # delta fill
+cargo mdbook sync --model-provider anthropic.&lt;alias&gt; --force      # quality pass: retranslate all entries
+cargo mdbook sync --model-provider anthropic.&lt;alias&gt; --batch 1    # write after every entry (safest resume)
+cargo mdbook sync --locale ja --model-provider anthropic.&lt;alias&gt;  # single locale
+cargo mdbook sync --model-provider anthropic.&lt;alias&gt; --config-dir ~/.zeroclaw  # qualified alias + explicit config dir
 </code></pre>
+<p><code>--model-provider</code> resolves through the same shared runtime provider path as <code>cargo fluent</code> (any configured family/alias, per-family endpoint + auth + wire protocol, <code>SecretStore</code> decryption, <code>--config-dir</code> support). Unlike <code>cargo fluent</code> — which sends a whole batch as one JSON object — the gettext filler issues <strong>one request per source string</strong> to keep the <code>msgid → msgstr</code> mapping unambiguous, so <code>--batch</code> controls how often the <code>.po</code> is flushed to disk (the checkpoint interval), not the request size. A full-catalogue locale is thousands of sequential requests; for routine delta fills a cheap local Ollama alias is the economical choice.</p>
 <p>The pipeline has built-in resilience:</p>
 <ul>
 <li><strong>Leak detection</strong> — if a model returns its own instructions instead of a translation, the tool detects the pattern (via response-length ratio and bullet-list structure), attempts to recover the real translation from the response tail, and blanks the entry for re-translation if recovery fails.</li>
@@ -17580,6 +18354,9 @@ label = "Language Name"
 <p>Bootstrap and fill the docs <code>.po</code> file:</p>
 <pre><code class="language-bash">cargo mdbook sync --locale &lt;code&gt; --provider ollama
 </code></pre>
+</li>
+<li>
+<p>For zerocode parity, copy <code>apps/zerocode/locales/en/zerocode.ftl</code> to <code>apps/zerocode/locales/&lt;code&gt;/zerocode.ftl</code> and translate the values by hand. <code>cargo fluent</code> does not yet operate on the zerocode catalogue; the file can be dropped into any of the disk-search paths or embedded in-tree once translated.</p>
 </li>
 </ol>
 <p>Everything else — <code>lang-switcher.js</code>, CI deploy target list, <code>cargo mdbook locales</code> output — reads from <code>locales.toml</code> automatically.</p>
@@ -17622,8 +18399,6 @@ label = "Language Name"
 <p>Fires after a successful stable release. Posts the release notes to the community Discord.</p>
 <h3 id="tweet-release-tweet-releaseyml"><a class="header" href="#tweet-release-tweet-releaseyml">Tweet Release (<code>tweet-release.yml</code>)</a></h3>
 <p>Fires after a successful stable release. Posts an announcement tweet.</p>
-<h3 id="sync-marketplace-templates-sync-marketplace-templatesyml"><a class="header" href="#sync-marketplace-templates-sync-marketplace-templatesyml">Sync Marketplace Templates (<code>sync-marketplace-templates.yml</code>)</a></h3>
-<p>Fires after every stable release. Auto-opens PRs to update version numbers in the downstream marketplace template repos (docker, k8s, compose).</p>
 <p>Docs are built and published as part of the release pipeline rather than on every <code>master</code> push. Translation is a local-only workflow: run <code>cargo mdbook sync --provider &lt;name&gt;</code> for dedicated translation-cache PRs, new locales, and release translation passes. Routine English docs PRs may defer broad generated <code>.po</code> churn. See <a href="#docs--translations">Docs &amp; Translations</a> for details.</p>
 <h2 id="manual-workflows"><a class="header" href="#manual-workflows">Manual workflows</a></h2>
 <h3 id="cross-platform-build-cross-platform-build-manualyml"><a class="header" href="#cross-platform-build-cross-platform-build-manualyml">Cross-Platform Build (<code>cross-platform-build-manual.yml</code>)</a></h3>
@@ -18534,7 +19309,7 @@ version = "X.Y.Z"
 <p>Sync all other version references:</p>
 <pre><code class="language-bash">bash scripts/release/bump-version.sh X.Y.Z
 </code></pre>
-<p>This updates README badges, the Tauri config, marketplace templates, and
+<p>This updates README badges, the Tauri config, and
 workflow description examples. Commit everything together:</p>
 <pre><code class="language-text">chore: bump version to vX.Y.Z
 </code></pre>
@@ -18712,6 +19487,44 @@ job from the workflow run page — you do not need to restart from scratch.</p>
 <p>You do not need to manually verify Docker, crates.io, or distribution channels
 unless a job in the workflow run shows red. Check the workflow run summary — if
 all jobs are green, you are done.</p>
+<hr>
+<h2 id="step-7--versioned-documentation-deployment"><a class="header" href="#step-7--versioned-documentation-deployment">Step 7 — Versioned documentation deployment</a></h2>
+<p>ZeroClaw docs use a versioned structure on the <code>gh-pages</code> branch. When a tag is pushed, the <code>Deploy mdBook docs to Pages</code> workflow automatically builds and deploys the documentation for that version.</p>
+<h3 id="what-happens-automatically"><a class="header" href="#what-happens-automatically">What happens automatically</a></h3>
+<ul>
+<li>Pushing a tag (e.g., <code>v0.8.0</code>) triggers a build that lands in <code>/v0.8.0/</code>.</li>
+<li>If the tag is a GA release (no pre-release suffix), it is also copied to <code>/stable/</code>.</li>
+<li>The <code>_shared/</code> directory (containing UI CSS, JS, and favicons) is updated from the build so the theme cascades to all deployed versions.</li>
+</ul>
+<h3 id="bootstrapping-gh-pages"><a class="header" href="#bootstrapping-gh-pages">Bootstrapping <code>gh-pages</code></a></h3>
+<p>If <code>gh-pages</code> is ever deleted or needs to be fully recreated, seed the versions in this specific order:</p>
+<ol>
+<li><strong>Oldest supported release:</strong> <code>workflow_dispatch</code> with tag <code>v0.7.5</code></li>
+<li><strong>Next releases:</strong> <code>workflow_dispatch</code> with tag <code>v0.8.0-beta-1</code> etc.</li>
+<li><strong>Current master:</strong> <code>workflow_dispatch</code> with tag <code>master</code></li>
+</ol>
+<blockquote class="blockquote-tag blockquote-tag-important">
+<p class="blockquote-tag-title"><svg viewbox="0 0 16 16" width="18" height="18"><path d="M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path></svg>Important</p>
+<p><code>master</code> must be deployed <strong>last</strong> during bootstrapping. It writes the definitive <code>_shared/</code> chrome layer that all other versions use.</p>
+</blockquote>
+<h3 id="manual-redeploys-and-the-version-floor"><a class="header" href="#manual-redeploys-and-the-version-floor">Manual redeploys and the Version Floor</a></h3>
+<p>To manually re-deploy a specific version:</p>
+<ol>
+<li>Go to <strong>Actions</strong> → <strong>Deploy mdBook docs to Pages</strong></li>
+<li>Click <strong>Run workflow</strong></li>
+<li>Enter the tag (e.g., <code>v0.7.5</code> or <code>master</code>)</li>
+</ol>
+<p><strong>The <code>DOCS_MIN_VERSION</code> floor:</strong>
+To prevent accidentally deploying very old or unsupported versions, the workflow enforces a minimum version floor (currently <code>v0.7.5</code>).</p>
+<ul>
+<li>Tags older than <code>DOCS_MIN_VERSION</code> (like <code>v0.7.4</code>) are rejected by the workflow.</li>
+<li><code>cargo mdbook gen-versions</code> (the xtask helper) ignores any directories on <code>gh-pages</code> below this floor, keeping them out of the version dropdown.</li>
+</ul>
+<p>If you need to raise the floor to drop support for an older version:</p>
+<ol>
+<li>Update the <code>DOCS_MIN_VERSION</code> environment variable in <code>.github/workflows/docs-deploy.yml</code>.</li>
+<li>(Optional) Delete the old version’s directory from the <code>gh-pages</code> branch to save space.</li>
+</ol>
 <hr>
 <h2 id="if-something-goes-wrong"><a class="header" href="#if-something-goes-wrong">If something goes wrong</a></h2>
 <p><strong>validate failed — version mismatch:</strong> The version bump PR was not merged, or
@@ -18971,10 +19784,11 @@ git commit -m "chore(release): add CHANGELOG-next.md for vX.Y.Z"
         <script src="book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
-        <script src="theme/version-selector-e8a1edcd.js"></script>
-        <script src="theme/lang-switcher-82c8c4bf.js"></script>
+        <script src="../../_shared/theme/version-selector.js"></script>
+        <script src="../../_shared/theme/lang-switcher.js"></script>
+        <script src="../../_shared/theme/pc-enhance.js"></script>
         <script src="mermaid-193ae996.min.js"></script>
-        <script src="mermaid-init-94f7f342.js"></script>
+        <script src="mermaid-init-d3ccd83c.js"></script>
 
         <script>
         window.addEventListener('load', function() {

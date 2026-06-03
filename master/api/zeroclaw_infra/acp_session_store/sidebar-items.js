@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"struct":["AcpSessionData","AcpSessionStore"]};
+window.SIDEBAR_ITEMS = {"struct":["AcpSessionData","AcpSessionStore","AcpSessionSummary"]};

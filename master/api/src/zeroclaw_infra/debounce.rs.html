@@ -85,7 +85,7 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../" data
 <a href=#83 id=83 data-nosnippet>83</a>
 <a href=#84 id=84 data-nosnippet>84</a>            <span class="comment">// Spawn a new timer.
 <a href=#85 id=85 data-nosnippet>85</a>            </span><span class="kw">let </span>key_clone = key.clone();
-<a href=#86 id=86 data-nosnippet>86</a>            entry.timer_handle = tokio::spawn(<span class="kw">async move </span>{
+<a href=#86 id=86 data-nosnippet>86</a>            entry.timer_handle = <span class="macro">zeroclaw_spawn::spawn!</span>(<span class="kw">async move </span>{
 <a href=#87 id=87 data-nosnippet>87</a>                tokio::time::sleep(window).<span class="kw">await</span>;
 <a href=#88 id=88 data-nosnippet>88</a>                fire_debounced(<span class="kw-2">&amp;</span>entries_ref, <span class="kw-2">&amp;</span>key_clone).<span class="kw">await</span>;
 <a href=#89 id=89 data-nosnippet>89</a>            });
@@ -96,7 +96,7 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../" data
 <a href=#94 id=94 data-nosnippet>94</a>
 <a href=#95 id=95 data-nosnippet>95</a>            <span class="kw">let </span>key_clone = key.clone();
 <a href=#96 id=96 data-nosnippet>96</a>            <span class="kw">let </span>entries_spawn = Arc::clone(<span class="kw-2">&amp;</span><span class="self">self</span>.entries);
-<a href=#97 id=97 data-nosnippet>97</a>            <span class="kw">let </span>handle = tokio::spawn(<span class="kw">async move </span>{
+<a href=#97 id=97 data-nosnippet>97</a>            <span class="kw">let </span>handle = <span class="macro">zeroclaw_spawn::spawn!</span>(<span class="kw">async move </span>{
 <a href=#98 id=98 data-nosnippet>98</a>                tokio::time::sleep(window).<span class="kw">await</span>;
 <a href=#99 id=99 data-nosnippet>99</a>                fire_debounced(<span class="kw-2">&amp;</span>entries_spawn, <span class="kw-2">&amp;</span>key_clone).<span class="kw">await</span>;
 <a href=#100 id=100 data-nosnippet>100</a>            });

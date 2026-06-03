@@ -178,59 +178,63 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../../" d
 <a href=#176 id=176 data-nosnippet>176</a>            kind: <span class="string">"http"</span>.to_string(),
 <a href=#177 id=177 data-nosnippet>177</a>            command: <span class="string">"https://api.example.com/weather?city={{city}}"</span>.to_string(),
 <a href=#178 id=178 data-nosnippet>178</a>            args,
-<a href=#179 id=179 data-nosnippet>179</a>        }
-<a href=#180 id=180 data-nosnippet>180</a>    }
-<a href=#181 id=181 data-nosnippet>181</a>
-<a href=#182 id=182 data-nosnippet>182</a>    <span class="attr">#[test]
-<a href=#183 id=183 data-nosnippet>183</a>    </span><span class="kw">fn </span>skill_http_tool_name_is_prefixed() {
-<a href=#184 id=184 data-nosnippet>184</a>        <span class="kw">let </span>tool = SkillHttpTool::new(<span class="string">"weather_skill"</span>, <span class="kw-2">&amp;</span>sample_http_tool());
-<a href=#185 id=185 data-nosnippet>185</a>        <span class="macro">assert_eq!</span>(tool.name(), <span class="string">"weather_skill__get_weather"</span>);
-<a href=#186 id=186 data-nosnippet>186</a>    }
-<a href=#187 id=187 data-nosnippet>187</a>
-<a href=#188 id=188 data-nosnippet>188</a>    <span class="attr">#[test]
-<a href=#189 id=189 data-nosnippet>189</a>    </span><span class="kw">fn </span>skill_http_tool_description() {
-<a href=#190 id=190 data-nosnippet>190</a>        <span class="kw">let </span>tool = SkillHttpTool::new(<span class="string">"weather_skill"</span>, <span class="kw-2">&amp;</span>sample_http_tool());
-<a href=#191 id=191 data-nosnippet>191</a>        <span class="macro">assert_eq!</span>(tool.description(), <span class="string">"Fetch weather for a city"</span>);
-<a href=#192 id=192 data-nosnippet>192</a>    }
-<a href=#193 id=193 data-nosnippet>193</a>
-<a href=#194 id=194 data-nosnippet>194</a>    <span class="attr">#[test]
-<a href=#195 id=195 data-nosnippet>195</a>    </span><span class="kw">fn </span>skill_http_tool_parameters_schema() {
-<a href=#196 id=196 data-nosnippet>196</a>        <span class="kw">let </span>tool = SkillHttpTool::new(<span class="string">"weather_skill"</span>, <span class="kw-2">&amp;</span>sample_http_tool());
-<a href=#197 id=197 data-nosnippet>197</a>        <span class="kw">let </span>schema = tool.parameters_schema();
-<a href=#198 id=198 data-nosnippet>198</a>
-<a href=#199 id=199 data-nosnippet>199</a>        <span class="macro">assert_eq!</span>(schema[<span class="string">"type"</span>], <span class="string">"object"</span>);
-<a href=#200 id=200 data-nosnippet>200</a>        <span class="macro">assert!</span>(schema[<span class="string">"properties"</span>][<span class="string">"city"</span>].is_object());
-<a href=#201 id=201 data-nosnippet>201</a>        <span class="macro">assert_eq!</span>(schema[<span class="string">"properties"</span>][<span class="string">"city"</span>][<span class="string">"type"</span>], <span class="string">"string"</span>);
-<a href=#202 id=202 data-nosnippet>202</a>    }
-<a href=#203 id=203 data-nosnippet>203</a>
-<a href=#204 id=204 data-nosnippet>204</a>    <span class="attr">#[test]
-<a href=#205 id=205 data-nosnippet>205</a>    </span><span class="kw">fn </span>skill_http_tool_substitute_args() {
-<a href=#206 id=206 data-nosnippet>206</a>        <span class="kw">let </span>tool = SkillHttpTool::new(<span class="string">"weather_skill"</span>, <span class="kw-2">&amp;</span>sample_http_tool());
-<a href=#207 id=207 data-nosnippet>207</a>        <span class="kw">let </span>result = tool.substitute_args(<span class="kw-2">&amp;</span><span class="macro">serde_json::json!</span>({<span class="string">"city"</span>: <span class="string">"London"</span>}));
-<a href=#208 id=208 data-nosnippet>208</a>        <span class="macro">assert_eq!</span>(result, <span class="string">"https://api.example.com/weather?city=London"</span>);
-<a href=#209 id=209 data-nosnippet>209</a>    }
-<a href=#210 id=210 data-nosnippet>210</a>
-<a href=#211 id=211 data-nosnippet>211</a>    <span class="attr">#[test]
-<a href=#212 id=212 data-nosnippet>212</a>    </span><span class="kw">fn </span>skill_http_tool_spec_roundtrip() {
-<a href=#213 id=213 data-nosnippet>213</a>        <span class="kw">let </span>tool = SkillHttpTool::new(<span class="string">"weather_skill"</span>, <span class="kw-2">&amp;</span>sample_http_tool());
-<a href=#214 id=214 data-nosnippet>214</a>        <span class="kw">let </span>spec = tool.spec();
-<a href=#215 id=215 data-nosnippet>215</a>        <span class="macro">assert_eq!</span>(spec.name, <span class="string">"weather_skill__get_weather"</span>);
-<a href=#216 id=216 data-nosnippet>216</a>        <span class="macro">assert_eq!</span>(spec.description, <span class="string">"Fetch weather for a city"</span>);
-<a href=#217 id=217 data-nosnippet>217</a>        <span class="macro">assert_eq!</span>(spec.parameters[<span class="string">"type"</span>], <span class="string">"object"</span>);
-<a href=#218 id=218 data-nosnippet>218</a>    }
-<a href=#219 id=219 data-nosnippet>219</a>
-<a href=#220 id=220 data-nosnippet>220</a>    <span class="attr">#[test]
-<a href=#221 id=221 data-nosnippet>221</a>    </span><span class="kw">fn </span>skill_http_tool_empty_args() {
-<a href=#222 id=222 data-nosnippet>222</a>        <span class="kw">let </span>st = SkillTool {
-<a href=#223 id=223 data-nosnippet>223</a>            name: <span class="string">"ping"</span>.to_string(),
-<a href=#224 id=224 data-nosnippet>224</a>            description: <span class="string">"Ping endpoint"</span>.to_string(),
-<a href=#225 id=225 data-nosnippet>225</a>            kind: <span class="string">"http"</span>.to_string(),
-<a href=#226 id=226 data-nosnippet>226</a>            command: <span class="string">"https://api.example.com/ping"</span>.to_string(),
-<a href=#227 id=227 data-nosnippet>227</a>            args: HashMap::new(),
-<a href=#228 id=228 data-nosnippet>228</a>        };
-<a href=#229 id=229 data-nosnippet>229</a>        <span class="kw">let </span>tool = SkillHttpTool::new(<span class="string">"s"</span>, <span class="kw-2">&amp;</span>st);
-<a href=#230 id=230 data-nosnippet>230</a>        <span class="kw">let </span>schema = tool.parameters_schema();
-<a href=#231 id=231 data-nosnippet>231</a>        <span class="macro">assert!</span>(schema[<span class="string">"properties"</span>].as_object().unwrap().is_empty());
-<a href=#232 id=232 data-nosnippet>232</a>    }
-<a href=#233 id=233 data-nosnippet>233</a>}
+<a href=#179 id=179 data-nosnippet>179</a>            target: <span class="prelude-val">None</span>,
+<a href=#180 id=180 data-nosnippet>180</a>            locked_args: HashMap::new(),
+<a href=#181 id=181 data-nosnippet>181</a>        }
+<a href=#182 id=182 data-nosnippet>182</a>    }
+<a href=#183 id=183 data-nosnippet>183</a>
+<a href=#184 id=184 data-nosnippet>184</a>    <span class="attr">#[test]
+<a href=#185 id=185 data-nosnippet>185</a>    </span><span class="kw">fn </span>skill_http_tool_name_is_prefixed() {
+<a href=#186 id=186 data-nosnippet>186</a>        <span class="kw">let </span>tool = SkillHttpTool::new(<span class="string">"weather_skill"</span>, <span class="kw-2">&amp;</span>sample_http_tool());
+<a href=#187 id=187 data-nosnippet>187</a>        <span class="macro">assert_eq!</span>(tool.name(), <span class="string">"weather_skill__get_weather"</span>);
+<a href=#188 id=188 data-nosnippet>188</a>    }
+<a href=#189 id=189 data-nosnippet>189</a>
+<a href=#190 id=190 data-nosnippet>190</a>    <span class="attr">#[test]
+<a href=#191 id=191 data-nosnippet>191</a>    </span><span class="kw">fn </span>skill_http_tool_description() {
+<a href=#192 id=192 data-nosnippet>192</a>        <span class="kw">let </span>tool = SkillHttpTool::new(<span class="string">"weather_skill"</span>, <span class="kw-2">&amp;</span>sample_http_tool());
+<a href=#193 id=193 data-nosnippet>193</a>        <span class="macro">assert_eq!</span>(tool.description(), <span class="string">"Fetch weather for a city"</span>);
+<a href=#194 id=194 data-nosnippet>194</a>    }
+<a href=#195 id=195 data-nosnippet>195</a>
+<a href=#196 id=196 data-nosnippet>196</a>    <span class="attr">#[test]
+<a href=#197 id=197 data-nosnippet>197</a>    </span><span class="kw">fn </span>skill_http_tool_parameters_schema() {
+<a href=#198 id=198 data-nosnippet>198</a>        <span class="kw">let </span>tool = SkillHttpTool::new(<span class="string">"weather_skill"</span>, <span class="kw-2">&amp;</span>sample_http_tool());
+<a href=#199 id=199 data-nosnippet>199</a>        <span class="kw">let </span>schema = tool.parameters_schema();
+<a href=#200 id=200 data-nosnippet>200</a>
+<a href=#201 id=201 data-nosnippet>201</a>        <span class="macro">assert_eq!</span>(schema[<span class="string">"type"</span>], <span class="string">"object"</span>);
+<a href=#202 id=202 data-nosnippet>202</a>        <span class="macro">assert!</span>(schema[<span class="string">"properties"</span>][<span class="string">"city"</span>].is_object());
+<a href=#203 id=203 data-nosnippet>203</a>        <span class="macro">assert_eq!</span>(schema[<span class="string">"properties"</span>][<span class="string">"city"</span>][<span class="string">"type"</span>], <span class="string">"string"</span>);
+<a href=#204 id=204 data-nosnippet>204</a>    }
+<a href=#205 id=205 data-nosnippet>205</a>
+<a href=#206 id=206 data-nosnippet>206</a>    <span class="attr">#[test]
+<a href=#207 id=207 data-nosnippet>207</a>    </span><span class="kw">fn </span>skill_http_tool_substitute_args() {
+<a href=#208 id=208 data-nosnippet>208</a>        <span class="kw">let </span>tool = SkillHttpTool::new(<span class="string">"weather_skill"</span>, <span class="kw-2">&amp;</span>sample_http_tool());
+<a href=#209 id=209 data-nosnippet>209</a>        <span class="kw">let </span>result = tool.substitute_args(<span class="kw-2">&amp;</span><span class="macro">serde_json::json!</span>({<span class="string">"city"</span>: <span class="string">"London"</span>}));
+<a href=#210 id=210 data-nosnippet>210</a>        <span class="macro">assert_eq!</span>(result, <span class="string">"https://api.example.com/weather?city=London"</span>);
+<a href=#211 id=211 data-nosnippet>211</a>    }
+<a href=#212 id=212 data-nosnippet>212</a>
+<a href=#213 id=213 data-nosnippet>213</a>    <span class="attr">#[test]
+<a href=#214 id=214 data-nosnippet>214</a>    </span><span class="kw">fn </span>skill_http_tool_spec_roundtrip() {
+<a href=#215 id=215 data-nosnippet>215</a>        <span class="kw">let </span>tool = SkillHttpTool::new(<span class="string">"weather_skill"</span>, <span class="kw-2">&amp;</span>sample_http_tool());
+<a href=#216 id=216 data-nosnippet>216</a>        <span class="kw">let </span>spec = tool.spec();
+<a href=#217 id=217 data-nosnippet>217</a>        <span class="macro">assert_eq!</span>(spec.name, <span class="string">"weather_skill__get_weather"</span>);
+<a href=#218 id=218 data-nosnippet>218</a>        <span class="macro">assert_eq!</span>(spec.description, <span class="string">"Fetch weather for a city"</span>);
+<a href=#219 id=219 data-nosnippet>219</a>        <span class="macro">assert_eq!</span>(spec.parameters[<span class="string">"type"</span>], <span class="string">"object"</span>);
+<a href=#220 id=220 data-nosnippet>220</a>    }
+<a href=#221 id=221 data-nosnippet>221</a>
+<a href=#222 id=222 data-nosnippet>222</a>    <span class="attr">#[test]
+<a href=#223 id=223 data-nosnippet>223</a>    </span><span class="kw">fn </span>skill_http_tool_empty_args() {
+<a href=#224 id=224 data-nosnippet>224</a>        <span class="kw">let </span>st = SkillTool {
+<a href=#225 id=225 data-nosnippet>225</a>            name: <span class="string">"ping"</span>.to_string(),
+<a href=#226 id=226 data-nosnippet>226</a>            description: <span class="string">"Ping endpoint"</span>.to_string(),
+<a href=#227 id=227 data-nosnippet>227</a>            kind: <span class="string">"http"</span>.to_string(),
+<a href=#228 id=228 data-nosnippet>228</a>            command: <span class="string">"https://api.example.com/ping"</span>.to_string(),
+<a href=#229 id=229 data-nosnippet>229</a>            args: HashMap::new(),
+<a href=#230 id=230 data-nosnippet>230</a>            target: <span class="prelude-val">None</span>,
+<a href=#231 id=231 data-nosnippet>231</a>            locked_args: HashMap::new(),
+<a href=#232 id=232 data-nosnippet>232</a>        };
+<a href=#233 id=233 data-nosnippet>233</a>        <span class="kw">let </span>tool = SkillHttpTool::new(<span class="string">"s"</span>, <span class="kw-2">&amp;</span>st);
+<a href=#234 id=234 data-nosnippet>234</a>        <span class="kw">let </span>schema = tool.parameters_schema();
+<a href=#235 id=235 data-nosnippet>235</a>        <span class="macro">assert!</span>(schema[<span class="string">"properties"</span>].as_object().unwrap().is_empty());
+<a href=#236 id=236 data-nosnippet>236</a>    }
+<a href=#237 id=237 data-nosnippet>237</a>}
 </code></pre></div></section></main></body></html>

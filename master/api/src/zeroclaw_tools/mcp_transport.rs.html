@@ -489,7 +489,7 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../" data
 <a href=#487 id=487 data-nosnippet>487</a>        <span class="kw">let </span>sse_url = <span class="self">self</span>.sse_url.clone();
 <a href=#488 id=488 data-nosnippet>488</a>        <span class="kw">let </span>server_name = <span class="self">self</span>.server_name.clone();
 <a href=#489 id=489 data-nosnippet>489</a>
-<a href=#490 id=490 data-nosnippet>490</a>        <span class="self">self</span>.reader_task = <span class="prelude-val">Some</span>(tokio::spawn(<span class="kw">async move </span>{
+<a href=#490 id=490 data-nosnippet>490</a>        <span class="self">self</span>.reader_task = <span class="prelude-val">Some</span>(<span class="macro">zeroclaw_spawn::spawn!</span>(<span class="kw">async move </span>{
 <a href=#491 id=491 data-nosnippet>491</a>            <span class="kw">let </span>stream = resp
 <a href=#492 id=492 data-nosnippet>492</a>                .bytes_stream()
 <a href=#493 id=493 data-nosnippet>493</a>                .map(|item| item.map_err(std::io::Error::other));

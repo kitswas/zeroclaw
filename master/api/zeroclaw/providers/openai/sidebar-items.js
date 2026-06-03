@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"struct":["OpenAiModelProvider"]};
+window.SIDEBAR_ITEMS = {"struct":["OpenAiModelProvider","OpenAiResponsesModelProvider"]};

@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ja" class="ayu sidebar-visible" dir="ltr">
+<html lang="ja" class="default-dark sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -12,11 +12,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="../favicon-fc23365c.svg">
-        <link rel="shortcut icon" href="../favicon-53763955.png">
+        <link rel="icon" href="../../../_shared/favicon.svg">
+        <link rel="shortcut icon" href="../../../_shared/favicon.png">
         <link rel="stylesheet" href="../css/variables-8adf115d.css">
         <link rel="stylesheet" href="../css/general-2459343d.css">
-        <link rel="stylesheet" href="../css/chrome-9dfbd86b.css">
+        <link rel="stylesheet" href="../../../_shared/css/chrome.css">
         <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
@@ -27,19 +27,20 @@
         <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
         <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
 
-        <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="../theme/custom-a6e9ac27.css">
+        <!-- Custom theme stylesheets (pc-themes.css generated; ordered first) -->
+        <link rel="stylesheet" href="../../../_shared/theme/pc-themes.css">
+        <link rel="stylesheet" href="../../../_shared/theme/custom.css">
 
 
         <!-- Provide site root and default themes to javascript -->
         <script>
             const path_to_root = "../";
-            const default_light_theme = "ayu";
-            const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../searchindex-ebf8c374.js";
+            const default_light_theme = "default-dark";
+            const default_dark_theme = "default-dark";
+            window.path_to_searchindex_js = "../searchindex-341576cc.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-0ac1f263.js"></script>
+        <script src="../toc-961cbe6b.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -77,7 +78,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
-            html.classList.remove('ayu')
+            html.classList.remove('default-dark')
             html.classList.add(theme);
             html.classList.add("js");
         </script>
@@ -127,11 +128,34 @@
                         </button>
                         <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
                             <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                            <!-- PC_THEME_LIST_START: generated from themes.json by `cargo xtask mdbook themes`; do not edit between markers -->
+                            <li role="none" class="pc-theme-group">Dark</li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-default-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#1e1e24;--s1:#22d3ee;--s2:#a78bfa;--s3:#f59e0b"></span><span class="pc-theme-name">Default Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-oled-black"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#000000;--s1:#22d3ee;--s2:#8b5cf6;--s3:#10b981"></span><span class="pc-theme-name">OLED Black</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-nord-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#2e3440;--s1:#88c0d0;--s2:#81a1c1;--s3:#a3be8c"></span><span class="pc-theme-name">Nord Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-dracula"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#282a36;--s1:#bd93f9;--s2:#ff79c6;--s3:#50fa7b"></span><span class="pc-theme-name">Dracula</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-monokai"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#272822;--s1:#f92672;--s2:#a6e22e;--s3:#e6db74"></span><span class="pc-theme-name">Monokai</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-solarized-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#002b36;--s1:#268bd2;--s2:#2aa198;--s3:#b58900"></span><span class="pc-theme-name">Solarized Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-kanagawa-wave"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#1f1f28;--s1:#7e9cd8;--s2:#957fb8;--s3:#e6c384"></span><span class="pc-theme-name">Kanagawa Wave</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-kanagawa-dragon"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#181616;--s1:#8ba4b0;--s2:#a292a3;--s3:#c4b28a"></span><span class="pc-theme-name">Kanagawa Dragon</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-rose-pine"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#191724;--s1:#ebbcba;--s2:#c4a7e7;--s3:#f6c177"></span><span class="pc-theme-name">Rosé Pine</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-rose-pine-moon"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#232136;--s1:#ea9a97;--s2:#c4a7e7;--s3:#f6c177"></span><span class="pc-theme-name">Rosé Pine Moon</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-night-owl"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#011627;--s1:#82aaff;--s2:#c792ea;--s3:#addb67"></span><span class="pc-theme-name">Night Owl</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-everforest-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#2d353b;--s1:#a7c080;--s2:#83c092;--s3:#dbbc7f"></span><span class="pc-theme-name">Everforest Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-cobalt2"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#193549;--s1:#ffc600;--s2:#ff9d00;--s3:#80ffbb"></span><span class="pc-theme-name">Cobalt2</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-flexoki-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#100f0f;--s1:#ce5d97;--s2:#879a39;--s3:#da702c"></span><span class="pc-theme-name">Flexoki Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-hacker-green"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#0a0e0a;--s1:#00ff41;--s2:#00cc33;--s3:#008f11"></span><span class="pc-theme-name">Hacker Green</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-material-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#212121;--s1:#89ddff;--s2:#c792ea;--s3:#ffcb6b"></span><span class="pc-theme-name">Material Dark</span></button></li>
+                            <li role="none" class="pc-theme-group">Light</li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-default-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#f4f4f5;--s1:#22d3ee;--s2:#8b5cf6;--s3:#f59e0b"></span><span class="pc-theme-name">Default Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-nord-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#eceff4;--s1:#5e81ac;--s2:#88c0d0;--s3:#a3be8c"></span><span class="pc-theme-name">Nord Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-solarized-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fdf6e3;--s1:#268bd2;--s2:#2aa198;--s3:#b58900"></span><span class="pc-theme-name">Solarized Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-kanagawa-lotus"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#f2ecbc;--s1:#4d699b;--s2:#b35b79;--s3:#836f4a"></span><span class="pc-theme-name">Kanagawa Lotus</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-rose-pine-dawn"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#faf4ed;--s1:#d7827e;--s2:#907aa9;--s3:#ea9d34"></span><span class="pc-theme-name">Rosé Pine Dawn</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-everforest-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fdf6e3;--s1:#8da101;--s2:#35a77c;--s3:#dfa000"></span><span class="pc-theme-name">Everforest Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-flexoki-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fffcf0;--s1:#ce5d97;--s2:#879a39;--s3:#da702c"></span><span class="pc-theme-name">Flexoki Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-material-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fafafa;--s1:#6182b8;--s2:#7c4dff;--s3:#f76d47"></span><span class="pc-theme-name">Material Light</span></button></li>
+                            <!-- PC_THEME_LIST_END -->
                         </ul>
                         <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
                             <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
@@ -141,14 +165,11 @@
                     <h1 class="menu-title">ZeroClaw Docs</h1>
 
                     <div class="right-buttons">
-                        <a href="../print.html" title="Print this book" aria-label="Print this book">
-                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
-                        </a>
                         <a href="https://github.com/zeroclaw-labs/zeroclaw" title="Git repository" aria-label="Git repository">
                             <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
                         </a>
-                        <a href="https://github.com/zeroclaw-labs/zeroclaw/edit/master/docs/book/src/reference/config.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
-                            <span class=fa-svg id="git-edit-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M421.7 220.3l-11.3 11.3-22.6 22.6-205 205c-6.6 6.6-14.8 11.5-23.8 14.1L30.8 511c-8.4 2.5-17.5 .2-23.7-6.1S-1.5 489.7 1 481.2L38.7 353.1c2.6-9 7.5-17.2 14.1-23.8l205-205 22.6-22.6 11.3-11.3 33.9 33.9 62.1 62.1 33.9 33.9zM96 353.9l-9.3 9.3c-.9 .9-1.6 2.1-2 3.4l-25.3 86 86-25.3c1.3-.4 2.5-1.1 3.4-2l9.3-9.3H112c-8.8 0-16-7.2-16-16V353.9zM453.3 19.3l39.4 39.4c25 25 25 65.5 0 90.5l-14.5 14.5-22.6 22.6-11.3 11.3-33.9-33.9-62.1-62.1L314.3 67.7l11.3-11.3 22.6-22.6 14.5-14.5c25-25 65.5-25 90.5 0z"/></svg></span>
+                        <a href="https://discord.gg/tQ88WUkPyJ" title="Join our Discord" aria-label="Join our Discord" rel="external noopener" target="_blank">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg></span>
                         </a>
 
                     </div>
@@ -180,6 +201,7 @@
                 </script>
 
                 <div id="mdbook-content" class="content">
+                    <aside id="pc-page-toc" class="pc-page-toc" aria-label="On this page"></aside>
                     <main>
                         <h1 id="設定リファレンス"><a class="header" href="#設定リファレンス">設定リファレンス</a></h1>
 <p>ZeroClaw は TOML ファイルを通じて設定されます。特に記載がない限り、すべてのフィールドはオプションです。</p>
@@ -190,7 +212,7 @@
 </thead>
 <tbody>
 <tr><td><code>acp</code></td><td>ACP (Agent Client Protocol) server configuration (<code>[acp]</code> section).</td></tr>
-<tr><td><code>agents</code></td><td>Aliased agents in this install. Each entry under <code>[agents.&lt;alias&gt;]</code></td></tr>
+<tr><td><code>agents</code></td><td>このインストールでエイリアス設定されたエージェント。<code>[agents.&lt;alias&gt;]</code> 配下の各エントリ</td></tr>
 <tr><td><code>backup</code></td><td>バックアップツール設定 (<code>[backup]</code> セクション)。</td></tr>
 <tr><td><code>browser</code></td><td>ブラウザ自動化設定 (<code>[browser]</code> セクション)。</td></tr>
 <tr><td><code>browser_delegate</code></td><td></td></tr>
@@ -202,12 +224,14 @@
 <tr><td><code>composio</code></td><td>Composio マネージドOAuthツール統合 (<code>[composio]</code> セクション)。</td></tr>
 <tr><td><code>conversational_ai</code></td><td>会話型AIエージェントビルダー設定 (<code>[conversational_ai]</code> セクション)。</td></tr>
 <tr><td><code>cost</code></td><td>コスト追跡と予算強制設定 (<code>[cost]</code> セクション)。</td></tr>
-<tr><td><code>cron</code></td><td>Declarative cron jobs (<code>[cron.&lt;alias&gt;]</code>), alias-keyed.</td></tr>
+<tr><td><code>cron</code></td><td>宣言的 cron ジョブ（<code>[cron.&lt;alias&gt;]</code>）、エイリアスをキーとする。</td></tr>
 <tr><td><code>data_retention</code></td><td>データ保持とパージ設定 (<code>[data_retention]</code> セクション)。</td></tr>
 <tr><td><code>delegate</code></td><td>デフォルトのタイムアウト値のグローバルデリゲートツール設定。</td></tr>
-<tr><td><code>embedding_routes</code></td><td>Embedding-routing rules — route <code>hint:&lt;name&gt;</code> to specific</td></tr>
-<tr><td><code>escalation</code></td><td>Escalation routing configuration (<code>[escalation]</code> section).</td></tr>
+<tr><td><code>embedding_routes</code></td><td>埋め込みルーティングルール — <code>hint:&lt;name&gt;</code> を特定のものにルーティング</td></tr>
+<tr><td><code>escalation</code></td><td>エスカレーションルーティングの設定（<code>[escalation]</code> セクション）。</td></tr>
+<tr><td><code>file_download</code></td><td>Standalone file download tool configuration (<code>[file_download]</code>).</td></tr>
 <tr><td><code>file_upload</code></td><td>Standalone file upload tool configuration (<code>[file_upload]</code>).</td></tr>
+<tr><td><code>file_upload_bundle</code></td><td>Standalone multi-file bundle upload tool configuration</td></tr>
 <tr><td><code>gateway</code></td><td>ゲートウェイサーバー設定 (<code>[gateway]</code> セクション)。</td></tr>
 <tr><td><code>gemini_cli</code></td><td>Gemini CLIツール設定 (<code>[gemini_cli]</code> セクション)。</td></tr>
 <tr><td><code>google_workspace</code></td><td>Google Workspace CLI (<code>gws</code>) ツール設定 (<code>[google_workspace]</code> セクション)。</td></tr>
@@ -218,16 +242,16 @@
 <tr><td><code>image_gen</code></td><td>スタンドアロン画像生成ツール設定 (<code>[image_gen]</code>)。</td></tr>
 <tr><td><code>jira</code></td><td>Jira統合設定 (<code>[jira]</code>)。</td></tr>
 <tr><td><code>knowledge</code></td><td>専門知識の取得と再利用のためのナレッジグラフ設定。</td></tr>
-<tr><td><code>knowledge_bundles</code></td><td>Named knowledge bundles (<code>[knowledge_bundles.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>knowledge_bundles</code></td><td>名前付きナレッジバンドル（<code>[knowledge_bundles.&lt;alias&gt;]</code>）。</td></tr>
 <tr><td><code>link_enricher</code></td><td>インバウンドチャネルメッセージの自動リンク理解（<code>[link_enricher]</code>）。</td></tr>
 <tr><td><code>linkedin</code></td><td>LinkedIn統合設定（<code>[linkedin]</code>セクション）。</td></tr>
 <tr><td><code>locale</code></td><td>ツール説明用のロケール（例：<code>"en"</code>、<code>"zh-CN"</code>）。</td></tr>
 <tr><td><code>mcp</code></td><td>外部MCPクライアント設定（<code>[mcp]</code>セクション）。</td></tr>
-<tr><td><code>mcp_bundles</code></td><td>Named MCP server bundles (<code>[mcp_bundles.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>mcp_bundles</code></td><td>名前付きMCPサーバーバンドル（<code>[mcp_bundles.&lt;alias&gt;]</code>）。</td></tr>
 <tr><td><code>media_pipeline</code></td><td>自動メディア理解パイプライン設定（<code>[media_pipeline]</code>）。</td></tr>
 <tr><td><code>memory</code></td><td>メモリバックエンド設定 (<code>[memory]</code> セクション)。</td></tr>
 <tr><td><code>microsoft365</code></td><td>Microsoft Graph API経由のMicrosoft 365統合（<code>[microsoft365]</code>セクション）。</td></tr>
-<tr><td><code>model_routes</code></td><td>Model-routing rules — route <code>hint:&lt;name&gt;</code> to specific</td></tr>
+<tr><td><code>model_routes</code></td><td>モデルルーティングルール — <code>hint:&lt;name&gt;</code> を特定のものにルーティング</td></tr>
 <tr><td><code>multimodal</code></td><td>マルチモーダル（画像）処理設定（<code>[multimodal]</code>セクション）。</td></tr>
 <tr><td><code>node_transport</code></td><td>ノード間通信のセキュアトランスポート設定（<code>[node_transport]</code>）。</td></tr>
 <tr><td><code>nodes</code></td><td>動的ノード検出システムの設定（<code>[nodes]</code>）。</td></tr>
@@ -236,36 +260,37 @@
 <tr><td><code>onboard_state</code></td><td>マルチクライアントワークスペース分離設定。</td></tr>
 <tr><td><code>opencode_cli</code></td><td>OpenCode CLIツール設定（<code>[opencode_cli]</code>セクション）。</td></tr>
 <tr><td><code>pacing</code></td><td>低速/ローカルLLMワークロード用のペーシング制御（<code>[pacing]</code>セクション）。</td></tr>
-<tr><td><code>peer_groups</code></td><td>Named peer groups (<code>[peer_groups.&lt;name&gt;]</code>). Each entry binds a</td></tr>
+<tr><td><code>peer_groups</code></td><td>名前付きピアグループ（<code>[peer_groups.&lt;name&gt;]</code>）。各エントリは</td></tr>
 <tr><td><code>peripherals</code></td><td>周辺機器ボード統合設定（<code>[peripherals]</code>セクション）。</td></tr>
 <tr><td><code>pipeline</code></td><td>パイプラインツール設定（<code>[pipeline]</code>セクション）。</td></tr>
 <tr><td><code>plugins</code></td><td>プラグインシステム設定。</td></tr>
 <tr><td><code>project_intel</code></td><td>プロジェクト配信インテリジェンス設定（<code>[project_intel]</code>セクション）。</td></tr>
-<tr><td><code>providers</code></td><td>Top-level wrapper for every provider category. TOML root sees a</td></tr>
+<tr><td><code>providers</code></td><td>すべてのプロバイダーカテゴリーのトップレベルラッパー。TOML ルートが認識するのは</td></tr>
 <tr><td><code>proxy</code></td><td>アウトバウンドHTTP/HTTPS/SOCKS5トラフィック用のプロキシ設定（<code>[proxy]</code>セクション）。</td></tr>
 <tr><td><code>query_classification</code></td><td>自動クエリ分類 — キーワード/パターンでユーザーメッセージを分類します。</td></tr>
 <tr><td><code>reliability</code></td><td>信頼性と監督設定（<code>[reliability]</code>セクション）。</td></tr>
-<tr><td><code>risk_profiles</code></td><td>Named risk/autonomy profiles (<code>[risk_profiles.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>risk_profiles</code></td><td>名前付きのリスク/自律性プロファイル (<code>[risk_profiles.&lt;alias&gt;]</code>)。</td></tr>
 <tr><td><code>runtime</code></td><td>ランタイムアダプター設定（<code>[runtime]</code>セクション）。</td></tr>
-<tr><td><code>runtime_profiles</code></td><td>Named runtime/LLM execution profiles (<code>[runtime_profiles.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>runtime_profiles</code></td><td>名前付きランタイム/LLM実行プロファイル（<code>[runtime_profiles.&lt;alias&gt;]</code>）。</td></tr>
 <tr><td><code>scheduler</code></td><td>定期的なタスク実行用スケジューラー設定（<code>[scheduler]</code>セクション）。</td></tr>
 <tr><td><code>schema_version</code></td><td>設定ファイルのスキーマバージョン。</td></tr>
 <tr><td><code>secrets</code></td><td>シークレット暗号化設定 (<code>[secrets]</code> セクション)。</td></tr>
-<tr><td><code>security</code></td><td>Security configuration for audit logging, OTP, e-stop, IAM/SSO, and WebAuthn.</td></tr>
+<tr><td><code>security</code></td><td>監査ログ、OTP、緊急停止（e-stop）、IAM/SSO、WebAuthn のためのセキュリティ設定。</td></tr>
 <tr><td><code>security_ops</code></td><td>マネージドサイバーセキュリティサービス (MCSS) ダッシュボードエージェント設定 (<code>[security_ops]</code>)。</td></tr>
 <tr><td><code>shell_tool</code></td><td>シェルツール設定 (<code>[shell_tool]</code> セクション)。</td></tr>
-<tr><td><code>skill_bundles</code></td><td>Named skill bundles (<code>[skill_bundles.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>skill_bundles</code></td><td>名前付きスキルバンドル（<code>[skill_bundles.&lt;alias&gt;]</code>）。</td></tr>
 <tr><td><code>skills</code></td><td>スキル読み込み設定 (<code>[skills]</code> セクション)。</td></tr>
 <tr><td><code>sop</code></td><td>標準操作手順エンジン設定 (<code>[sop]</code>)。</td></tr>
 <tr><td><code>storage</code></td><td>永続ストレージ設定 (<code>[storage]</code> セクション)。</td></tr>
 <tr><td><code>text_browser</code></td><td>テキストブラウザツール設定 (<code>[text_browser]</code> セクション)。</td></tr>
 <tr><td><code>transcription</code></td><td>マルチプロバイダー対応の音声文字起こし設定。</td></tr>
 <tr><td><code>trust</code></td><td></td></tr>
-<tr><td><code>tts</code></td><td>Text-to-Speech subsystem configuration (<code>[tts]</code>).</td></tr>
+<tr><td><code>tts</code></td><td>Text-to-Speech サブシステムの構成（<code>[tts]</code>）。</td></tr>
 <tr><td><code>tunnel</code></td><td>ゲートウェイを公開するためのトンネル設定 (<code>[tunnel]</code> セクション)。</td></tr>
 <tr><td><code>verifiable_intent</code></td><td>Verifiable Intent (VI) 認証情報の検証と発行 (<code>[verifiable_intent]</code> セクション)。</td></tr>
 <tr><td><code>web_fetch</code></td><td>Webフェッチツール設定 (<code>[web_fetch]</code> セクション)。</td></tr>
 <tr><td><code>web_search</code></td><td>Web検索ツール設定 (<code>[web_search]</code> セクション)。</td></tr>
+<tr><td><code>wss</code></td><td>WebSocket Secure (WSS) transport for remote TUI-to-daemon connections (<code>[wss]</code>).</td></tr>
 </tbody>
 </table>
 </div>
@@ -284,7 +309,7 @@
 </table>
 </div>
 <h2 id="agents"><a class="header" href="#agents"><code>agents</code></a></h2>
-<p>Aliased agents in this install. Each entry under <code>[agents.&lt;alias&gt;]</code> is one user-facing agent with its own identity, channels, model provider, risk profile, workspace, and memory scope. <code>DelegateTool</code> consults this map when one agent delegates a subtask to another.</p>
+<p>このインストールにおけるエイリアス付きエージェント。<code>[agents.&lt;alias&gt;]</code> 配下の各エントリは、独自のアイデンティティ、チャンネル、モデルプロバイダー、リスクプロファイル、ワークスペース、メモリスコープを持つ、ユーザー向けエージェント1つを表します。<code>DelegateTool</code> は、あるエージェントが別のエージェントにサブタスクを委任する際に、このマップを参照します。</p>
 <h2 id="backup"><a class="header" href="#backup"><code>backup</code></a></h2>
 <p>バックアップツール設定 (<code>[backup]</code> セクション)。</p>
 <div class="table-wrapper">
@@ -362,7 +387,7 @@
 </div>
 <h2 id="channels"><a class="header" href="#channels"><code>channels</code></a></h2>
 <p>トップレベルチャネル設定 (<code>[channels]</code> セクション)。</p>
-<p>each channel type is a keyed table of named instances (aliases). <code>[channels.telegram.default]</code> is the conventional single-instance key. Access via <code>config.channels.telegram.get("default")</code>.</p>
+<p>各チャネルタイプは、名前付きインスタンス（エイリアス）のキー付きテーブルです。<code>[channels.telegram.default]</code> が従来からの単一インスタンスのキーです。<code>config.channels.telegram.get("default")</code> を介してアクセスします。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -370,45 +395,45 @@
 </thead>
 <tbody>
 <tr><td><code>ack_reactions</code></td><td>ブール値</td><td><code>true</code></td><td>確認応答リアクションを追加するかどうか（受信時に👀、完了時に✅/⚠️</td></tr>
-<tr><td><code>bluesky</code></td><td>map</td><td>—</td><td>Bluesky channel instances (<code>[channels.bluesky.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>clawdtalk</code></td><td>map</td><td>—</td><td>ClawdTalk voice channel instances (<code>[channels.clawdtalk.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>bluesky</code></td><td>map</td><td>—</td><td>Bluesky チャンネルインスタンス（<code>[channels.bluesky.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>clawdtalk</code></td><td>map</td><td>—</td><td>ClawdTalk音声チャンネルインスタンス（<code>[channels.clawdtalk.&lt;alias&gt;]</code>）。</td></tr>
 <tr><td><code>cli</code></td><td>ブール値</td><td><code>true</code></td><td>CLIインタラクティブチャネルを有効にします。デフォルト：<code>true</code>。</td></tr>
 <tr><td><code>debounce_ms</code></td><td>整数</td><td><code>0</code></td><td>インバウンドメッセージのデバウンスウィンドウ（ミリ秒）。送信者が</td></tr>
-<tr><td><code>dingtalk</code></td><td>map</td><td>—</td><td>DingTalk channel instances (<code>[channels.dingtalk.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>discord</code></td><td>map</td><td>—</td><td>Discord bot channel instances (<code>[channels.discord.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>email</code></td><td>map</td><td>—</td><td>Email channel instances (<code>[channels.email.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>gmail_push</code></td><td>map</td><td>—</td><td>Gmail Pub/Sub push notification channel instances (<code>[channels.gmail_push.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>imessage</code></td><td>map</td><td>—</td><td>iMessage channel instances (<code>[channels.imessage.&lt;alias&gt;]</code>, macOS only).</td></tr>
-<tr><td><code>irc</code></td><td>map</td><td>—</td><td>IRC channel instances (<code>[channels.irc.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>lark</code></td><td>map</td><td>—</td><td>Lark channel instances (<code>[channels.lark.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>line</code></td><td>map</td><td>—</td><td>LINE Messaging API channel instances (<code>[channels.line.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>linq</code></td><td>map</td><td>—</td><td>Linq Partner API channel instances (<code>[channels.linq.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>matrix</code></td><td>map</td><td>—</td><td>Matrix channel instances (<code>[channels.matrix.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>mattermost</code></td><td>map</td><td>—</td><td>Mattermost bot channel instances (<code>[channels.mattermost.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>dingtalk</code></td><td>map</td><td>—</td><td>DingTalk チャネルインスタンス（<code>[channels.dingtalk.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>discord</code></td><td>map</td><td>—</td><td>Discord ボットのチャンネルインスタンス（<code>[channels.discord.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>email</code></td><td>map</td><td>—</td><td>メールチャネルのインスタンス（<code>[channels.email.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>gmail_push</code></td><td>map</td><td>—</td><td>Gmail Pub/Sub プッシュ通知チャネルインスタンス (<code>[channels.gmail_push.&lt;alias&gt;]</code>)。</td></tr>
+<tr><td><code>imessage</code></td><td>map</td><td>—</td><td>iMessage チャネルインスタンス（<code>[channels.imessage.&lt;alias&gt;]</code>、macOS のみ）。</td></tr>
+<tr><td><code>irc</code></td><td>map</td><td>—</td><td>IRC チャンネルインスタンス (<code>[channels.irc.&lt;alias&gt;]</code>)。</td></tr>
+<tr><td><code>lark</code></td><td>map</td><td>—</td><td>Lark チャンネルインスタンス（<code>[channels.lark.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>line</code></td><td>map</td><td>—</td><td>LINE Messaging API チャネルインスタンス (<code>[channels.line.&lt;alias&gt;]</code>)。</td></tr>
+<tr><td><code>linq</code></td><td>map</td><td>—</td><td>Linq Partner API チャネルインスタンス（<code>[channels.linq.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>matrix</code></td><td>map</td><td>—</td><td>Matrix チャンネルインスタンス (<code>[channels.matrix.&lt;alias&gt;]</code>)。</td></tr>
+<tr><td><code>mattermost</code></td><td>map</td><td>—</td><td>Mattermost ボットのチャンネルインスタンス（<code>[channels.mattermost.&lt;alias&gt;]</code>）。</td></tr>
 <tr><td><code>message_timeout_secs</code></td><td>整数</td><td><code>300</code></td><td>単一チャネルメッセージ処理のベースタイムアウト（秒）(LLM + ツール)。</td></tr>
-<tr><td><code>mochat</code></td><td>map</td><td>—</td><td>Mochat customer service channel instances (<code>[channels.mochat.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>mqtt</code></td><td>map</td><td>—</td><td>MQTT channel instances (<code>[channels.mqtt.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>nextcloud_talk</code></td><td>map</td><td>—</td><td>Nextcloud Talk bot channel instances (<code>[channels.nextcloud_talk.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>mochat</code></td><td>map</td><td>—</td><td>Mochat カスタマーサービスチャネルインスタンス（<code>[channels.mochat.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>mqtt</code></td><td>map</td><td>—</td><td>MQTT チャネルインスタンス (<code>[channels.mqtt.&lt;alias&gt;]</code>)。</td></tr>
+<tr><td><code>nextcloud_talk</code></td><td>map</td><td>—</td><td>Nextcloud Talk ボットチャンネルインスタンス (<code>[channels.nextcloud_talk.&lt;alias&gt;]</code>)。</td></tr>
 <tr><td><code>nostr</code></td><td>map</td><td>—</td><td></td></tr>
-<tr><td><code>qq</code></td><td>map</td><td>—</td><td>QQ Official Bot channel instances (<code>[channels.qq.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>reddit</code></td><td>map</td><td>—</td><td>Reddit channel instances (<code>[channels.reddit.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>qq</code></td><td>map</td><td>—</td><td>QQ 公式ボットチャンネルのインスタンス（<code>[channels.qq.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>reddit</code></td><td>map</td><td>—</td><td>Reddit チャンネルインスタンス（<code>[channels.reddit.&lt;alias&gt;]</code>）。</td></tr>
 <tr><td><code>session_backend</code></td><td>string</td><td><code>"sqlite"</code></td><td>セッション永続化バックエンド: <code>"jsonl"</code> (レガシー) または <code>"sqlite"</code> (新規デフォルト)。</td></tr>
 <tr><td><code>session_persistence</code></td><td>ブール値</td><td><code>true</code></td><td>チャネル会話履歴をJSONLファイルに永続化し、セッションが存続するようにします</td></tr>
 <tr><td><code>session_ttl_hours</code></td><td>整数</td><td><code>0</code></td><td>この時間数より古いスタッシュセッションを自動アーカイブします。<code>0</code> は無効化します。デフォルト: <code>0</code>。</td></tr>
 <tr><td><code>show_tool_calls</code></td><td>ブール値</td><td><code>false</code></td><td>ツール呼び出し通知メッセージを送信するかどうか（例：<code>🔧 web_search_tool: …</code>）</td></tr>
-<tr><td><code>signal</code></td><td>map</td><td>—</td><td>Signal channel instances (<code>[channels.signal.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>slack</code></td><td>map</td><td>—</td><td>Slack bot channel instances (<code>[channels.slack.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>telegram</code></td><td>map</td><td>—</td><td>Telegram bot channel instances (<code>[channels.telegram.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>twitter</code></td><td>map</td><td>—</td><td>X/Twitter channel instances (<code>[channels.twitter.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>voice_call</code></td><td>map</td><td>—</td><td>Voice call channel instances (<code>[channels.voice_call.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>voice_duplex</code></td><td>map</td><td>—</td><td>Voice duplex instances (<code>[channels.voice_duplex.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>voice_wake</code></td><td>map</td><td>—</td><td>Voice wake word detection channel instances (<code>[channels.voice_wake.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>wati</code></td><td>map</td><td>—</td><td>WATI WhatsApp Business API channel instances (<code>[channels.wati.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>webhook</code></td><td>map</td><td>—</td><td>Webhook channel instances (<code>[channels.webhook.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>wechat</code></td><td>map</td><td>—</td><td>WeChat personal iLink Bot channel instances (<code>[channels.wechat.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>wecom</code></td><td>map</td><td>—</td><td>WeCom (WeChat Enterprise) Bot Webhook channel instances (<code>[channels.wecom.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>signal</code></td><td>map</td><td>—</td><td>シグナルチャネルインスタンス (<code>[channels.signal.&lt;alias&gt;]</code>)。</td></tr>
+<tr><td><code>slack</code></td><td>map</td><td>—</td><td>Slack ボットチャンネルインスタンス（<code>[channels.slack.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>telegram</code></td><td>map</td><td>—</td><td>Telegram ボットチャネルインスタンス（<code>[channels.telegram.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>twitter</code></td><td>map</td><td>—</td><td>X/Twitter チャンネルインスタンス (<code>[channels.twitter.&lt;alias&gt;]</code>)。</td></tr>
+<tr><td><code>voice_call</code></td><td>map</td><td>—</td><td>ボイスコールチャネルインスタンス（<code>[channels.voice_call.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>voice_duplex</code></td><td>map</td><td>—</td><td>音声二重通信インスタンス（<code>[channels.voice_duplex.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>voice_wake</code></td><td>map</td><td>—</td><td>音声ウェイクワード検出チャンネルのインスタンス（<code>[channels.voice_wake.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>wati</code></td><td>map</td><td>—</td><td>WATI WhatsApp Business API チャネルインスタンス（<code>[channels.wati.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>webhook</code></td><td>map</td><td>—</td><td>Webhook チャネルインスタンス（<code>[channels.webhook.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td>wechat</td><td>map</td><td>—</td><td>WeChat 個人 iLink Bot チャネルインスタンス（<code>[channels.wechat.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>wecom</code></td><td>map</td><td>—</td><td>WeCom（WeChat Enterprise）Bot Webhookチャネルインスタンス（<code>[channels.wecom.&lt;alias&gt;]</code>）。</td></tr>
 <tr><td><code>wecom_ws</code></td><td>map</td><td>—</td><td>WeCom AI Bot WebSocket channel instances (<code>[channels.wecom_ws.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>whatsapp</code></td><td>map</td><td>—</td><td>WhatsApp channel instances (<code>[channels.whatsapp.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>whatsapp</code></td><td>map</td><td>—</td><td>WhatsApp チャネルインスタンス（<code>[channels.whatsapp.&lt;alias&gt;]</code>）。</td></tr>
 </tbody>
 </table>
 </div>
@@ -455,10 +480,10 @@
 </thead>
 <tbody>
 <tr><td><code>cost_threshold_monthly_usd</code></td><td>number</td><td><code>100.0</code></td><td>コスト項目にフラグを付けるための月額USD閾値。デフォルト:100.0。</td></tr>
-<tr><td><code>default_cloud</code></td><td>string</td><td><code>"aws"</code></td><td>Default cloud model_provider for analysis context. Default: “aws”.</td></tr>
+<tr><td><code>default_cloud</code></td><td>string</td><td><code>"aws"</code></td><td>分析コンテキストのデフォルトクラウド model_provider。デフォルト: “aws”。</td></tr>
 <tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>クラウド操作ツールを有効化。デフォルト:false。</td></tr>
 <tr><td><code>iac_tools</code></td><td>string[]</td><td><code>["terraform"]</code></td><td>レビュー対象のサポート対象IaCツール。デフォルト:[<code>terraform</code>]。</td></tr>
-<tr><td><code>supported_clouds</code></td><td>string[]</td><td><code>["aws","azure","gcp"]</code></td><td>Supported cloud model_providers. Default: [<code>aws</code>, <code>azure</code>, <code>gcp</code>].</td></tr>
+<tr><td><code>supported_clouds</code></td><td>string[]</td><td><code>["aws","azure","gcp"]</code></td><td>サポートされているクラウド model_providers。デフォルト: [<code>aws</code>, <code>azure</code>, <code>gcp</code>]。</td></tr>
 <tr><td><code>well_architected_frameworks</code></td><td>string[]</td><td><code>["aws-waf"]</code></td><td>確認対象のWell-Architected Frameworks。デフォルト: [<code>aws-waf</code>]。</td></tr>
 </tbody>
 </table>
@@ -528,8 +553,8 @@
 <tr><td><code>enabled</code></td><td>ブール値</td><td><code>true</code></td><td>コスト追跡を有効化（デフォルト: true）</td></tr>
 <tr><td><code>enforcement</code></td><td>オブジェクト</td><td>—</td><td>予算上限に達した場合のコスト実施動作の設定。</td></tr>
 <tr><td><code>monthly_limit_usd</code></td><td>number</td><td><code>100.0</code></td><td>月次支出上限（USD単位、デフォルト: 100.00）</td></tr>
-<tr><td><code>rates</code></td><td>オブジェクト</td><td>—</td><td><code>[cost.rates]</code> — top-level rate-sheet namespace. Mirrors the</td></tr>
-<tr><td><code>track_per_agent</code></td><td>ブール値</td><td><code>true</code></td><td>Stamp each recorded cost entry with the originating agent alias so</td></tr>
+<tr><td><code>rates</code></td><td>オブジェクト</td><td>—</td><td><code>[cost.rates]</code> — トップレベルのレートシート名前空間。これは以下を反映します</td></tr>
+<tr><td><code>track_per_agent</code></td><td>ブール値</td><td><code>true</code></td><td>各コストエントリの記録時に、発生元のエージェントエイリアスを刻印します</td></tr>
 <tr><td><code>warn_at_percent</code></td><td>整数</td><td><code>80</code></td><td>支出がこのパーセンテージの制限に達したときに警告します（デフォルト: 80）</td></tr>
 </tbody>
 </table>
@@ -549,35 +574,35 @@
 </table>
 </div>
 <h3 id="costrates"><a class="header" href="#costrates"><code>cost.rates</code></a></h3>
-<p><code>[cost.rates]</code> — top-level rate-sheet namespace. Mirrors the <code>[providers.*]</code> shape so each subsection here points at the same kind of resource its <code>[providers.*]</code> counterpart configures.</p>
+<p><code>[cost.rates]</code> — トップレベルのレートシート名前空間。<code>[providers.*]</code> の構造を反映しており、ここの各サブセクションは、対応する <code>[providers.*]</code> が設定するリソースと同じ種類のリソースを指します。</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
 </thead>
 <tbody>
-<tr><td><code>providers</code></td><td>オブジェクト</td><td>—</td><td><code>[cost.rates.providers.*]</code> — provider-shaped rate sheets. Each field</td></tr>
-<tr><td><code>tools</code></td><td>map</td><td><code>{}</code></td><td><code>[cost.rates.tools.&lt;name&gt;]</code> — per-call rates for tools that</td></tr>
+<tr><td><code>providers</code></td><td>オブジェクト</td><td>—</td><td><code>[cost.rates.providers.*]</code> — プロバイダー形式のレートシート。各フィールド</td></tr>
+<tr><td><code>tools</code></td><td>map</td><td><code>{}</code></td><td><code>[cost.rates.tools.&lt;name&gt;]</code> — ツールごとの呼び出し単位のレート</td></tr>
 </tbody>
 </table>
 </div>
 <h4 id="costratesproviders"><a class="header" href="#costratesproviders"><code>cost.rates.providers</code></a></h4>
-<p><code>[cost.rates.providers.*]</code> — provider-shaped rate sheets. Each field here mirrors a corresponding field on <code>[providers.*]</code> with the trailing alias segment replaced by the resource the rate prices. The inner typed wrappers carry the per-provider-type slot layout and own dispatch (their slot list is the single source of truth, shared with their providers counterpart via the <code>for_each_*_provider_slot!</code> macros in [<code>crate::providers</code>]).</p>
+<p><code>[cost.rates.providers.*]</code> — プロバイダー形式のレートシート。ここの各フィールドは、末尾のエイリアスセグメントをレートが価格付けするリソースに置き換えたうえで、<code>[providers.*]</code> 上の対応するフィールドを反映します。内部の型付きラッパーは、プロバイダータイプごとのスロットレイアウトを保持し、ディスパッチを自前で行います（そのスロットリストが唯一の信頼できる情報源であり、[<code>crate::providers</code>] 内の <code>for_each_*_provider_slot!</code> マクロを介してプロバイダー側のカウンターパートと共有されます）。</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
 </thead>
 <tbody>
-<tr><td><code>models</code></td><td>オブジェクト</td><td>—</td><td><code>[cost.rates.providers.models.&lt;type&gt;.&lt;model&gt;]</code> — token-cost rates</td></tr>
+<tr><td><code>models</code></td><td>オブジェクト</td><td>—</td><td><code>[cost.rates.providers.models.&lt;type&gt;.&lt;model&gt;]</code> — トークンコストのレート</td></tr>
 <tr><td><code>transcription</code></td><td>オブジェクト</td><td>—</td><td><code>cost.rates.providers.transcription.&lt;type&gt;.&lt;model&gt;</code></td></tr>
 <tr><td><code>tts</code></td><td>オブジェクト</td><td>—</td><td><code>cost.rates.providers.tts.&lt;type&gt;.&lt;voice&gt;</code></td></tr>
 </tbody>
 </table>
 </div>
 <h2 id="cron"><a class="header" href="#cron"><code>cron</code></a></h2>
-<p>Declarative cron jobs (<code>[cron.&lt;alias&gt;]</code>), alias-keyed.</p>
-<p>Each entry is a named scheduled job synced into the database at scheduler startup. Subsystem runtime knobs (enable/disable, catch-up, run-history retention) live on <code>[scheduler]</code>.</p>
+<p>宣言的 cron ジョブ（<code>[cron.&lt;alias&gt;]</code>）、エイリアスをキーとする。</p>
+<p>各エントリは、スケジューラー起動時にデータベースへ同期される名前付きのスケジュールジョブです。サブシステムのランタイム設定（有効化/無効化、キャッチアップ、実行履歴の保持）は <code>[scheduler]</code> で管理されます。</p>
 <h2 id="data_retention"><a class="header" href="#data_retention"><code>data_retention</code></a></h2>
 <p>データ保持とパージ設定 (<code>[data_retention]</code> セクション)。</p>
 <div class="table-wrapper">
@@ -602,22 +627,39 @@
 </thead>
 <tbody>
 <tr><td><code>agentic_timeout_secs</code></td><td>整数</td><td><code>300</code></td><td>エージェント型サブエージェント実行のデフォルトタイムアウト（秒）。</td></tr>
-<tr><td><code>timeout_secs</code></td><td>整数</td><td><code>120</code></td><td>Default timeout in seconds for non-agentic sub-agent model_provider calls.</td></tr>
+<tr><td><code>timeout_secs</code></td><td>整数</td><td><code>120</code></td><td>非エージェント型サブエージェントの model_provider 呼び出しのデフォルトタイムアウト（秒）。</td></tr>
 </tbody>
 </table>
 </div>
 <h2 id="embedding_routes"><a class="header" href="#embedding_routes"><code>embedding_routes</code></a></h2>
-<p>Embedding-routing rules — route <code>hint:&lt;name&gt;</code> to specific model_provider + model combos for embedding requests.</p>
+<p>Embedding-routing ルール — 埋め込みリクエストの <code>hint:&lt;name&gt;</code> を特定の model_provider + model の組み合わせにルーティングします。</p>
 <h2 id="escalation"><a class="header" href="#escalation"><code>escalation</code></a></h2>
-<p>Escalation routing configuration (<code>[escalation]</code> section).</p>
-<p>Controls which channels receive alert notifications when <code>escalate_to_human</code> is called with high or critical urgency. Channels are identified by name (e.g. <code>"telegram"</code>, <code>"slack"</code>). Alerts are sent best-effort and do not block the escalation.</p>
+<p>エスカレーションルーティングの設定（<code>[escalation]</code> セクション）。</p>
+<p><code>escalate_to_human</code> が高または重大な緊急度で呼び出されたときに、どのチャネルがアラート通知を受け取るかを制御します。チャネルは名前（例: <code>"telegram"</code>、<code>"slack"</code>）で識別されます。アラートはベストエフォートで送信され、エスカレーションをブロックしません。</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
 </thead>
 <tbody>
-<tr><td><code>alert_channels</code></td><td>string[]</td><td><code>[]</code></td><td>Channel names to alert on high/critical escalations (default: empty).</td></tr>
+<tr><td><code>alert_channels</code></td><td>string[]</td><td><code>[]</code></td><td>エスカレーションが high/critical のときに通知するチャンネル名（デフォルト: 空）。</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="file_download"><a class="header" href="#file_download"><code>file_download</code></a></h2>
+<p>Standalone file download tool configuration (<code>[file_download]</code>).</p>
+<p>When <code>url</code> is set to a non-empty value, registers a <code>file_download</code> tool that GETs a file from the configured endpoint and writes it to the agent’s workspace filesystem. The LLM supplies only a document identifier and a workspace-relative destination path; the endpoint URL comes solely from this config and is never model-controlled. Response bytes are streamed to disk and never loaded into model context.</p>
+<p>When <code>url</code> is <code>None</code> or empty, the tool is not registered.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
+</thead>
+<tbody>
+<tr><td><code>headers</code></td><td>map</td><td><code>{}</code></td><td>Static HTTP headers attached to every download request — typically an</td></tr>
+<tr><td><code>max_file_size_bytes</code></td><td>整数</td><td><code>26214400</code></td><td>Maximum download size in bytes. Enforced while streaming: the transfer</td></tr>
+<tr><td><code>timeout_secs</code></td><td>整数</td><td><code>120</code></td><td>Request timeout in seconds. Default: 120.</td></tr>
+<tr><td><code>url</code></td><td>any</td><td><code>null</code></td><td>Download endpoint URL. Tool is disabled when this is <code>None</code> or empty.</td></tr>
 </tbody>
 </table>
 </div>
@@ -640,6 +682,28 @@
 </tbody>
 </table>
 </div>
+<h2 id="file_upload_bundle"><a class="header" href="#file_upload_bundle"><code>file_upload_bundle</code></a></h2>
+<p>Standalone multi-file bundle upload tool configuration (<code>[file_upload_bundle]</code>).</p>
+<p>When <code>url</code> is set to a non-empty value, registers a <code>file_upload_bundle</code> tool that POSTs N files from the agent’s local filesystem to the configured endpoint as a single <code>multipart/form-data</code> request. The LLM provides only file paths; the host reads the bytes.</p>
+<p>When <code>url</code> is <code>None</code> or empty, the tool is not registered.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
+</thead>
+<tbody>
+<tr><td><code>field_name</code></td><td>string</td><td><code>"file"</code></td><td>Multipart form-field name reused across every file part. Default: <code>file</code>.</td></tr>
+<tr><td><code>headers</code></td><td>map</td><td><code>{}</code></td><td>Static HTTP headers attached to every upload request.</td></tr>
+<tr><td><code>max_file_size_bytes</code></td><td>整数</td><td><code>10485760</code></td><td>Maximum per-file size in bytes. Default: 10 MiB.</td></tr>
+<tr><td><code>max_files</code></td><td>整数</td><td><code>16</code></td><td>Maximum number of files per call. Default: 16.</td></tr>
+<tr><td><code>max_response_body_bytes</code></td><td>整数</td><td><code>4096</code></td><td>Maximum response body bytes to read from the upload endpoint.</td></tr>
+<tr><td><code>max_total_size_bytes</code></td><td>整数</td><td><code>33554432</code></td><td>Maximum cumulative size across every file in one call. Default: 32 MiB.</td></tr>
+<tr><td><code>method</code></td><td>string</td><td><code>"POST"</code></td><td>HTTP method. Only <code>POST</code> (default) and <code>PUT</code> are accepted.</td></tr>
+<tr><td><code>timeout_secs</code></td><td>整数</td><td><code>120</code></td><td>Request timeout in seconds. Default: 120.</td></tr>
+<tr><td><code>url</code></td><td>any</td><td><code>null</code></td><td>Upload endpoint URL. Tool is disabled when this is <code>None</code> or empty.</td></tr>
+</tbody>
+</table>
+</div>
 <h2 id="gateway"><a class="header" href="#gateway"><code>gateway</code></a></h2>
 <p>ゲートウェイサーバー設定 (<code>[gateway]</code> セクション)。</p>
 <p>webhook およびペアリングエンドポイント用の HTTP ゲートウェイを制御します。</p>
@@ -653,14 +717,14 @@
 <tr><td><code>host</code></td><td>string</td><td><code>"127.0.0.1"</code></td><td>ゲートウェイホスト（デフォルト: 127.0.0.1）</td></tr>
 <tr><td><code>idempotency_max_keys</code></td><td>整数</td><td><code>10000</code></td><td>メモリに保持される最大の異なるべき等性キー数。</td></tr>
 <tr><td><code>idempotency_ttl_secs</code></td><td>整数</td><td><code>300</code></td><td>webhook べき等性キーの TTL。</td></tr>
-<tr><td><code>long_running_request_timeout_secs</code></td><td>整数</td><td><code>600</code></td><td>HTTP request timeout (seconds) for <code>POST /api/cron/{id}/run</code>, which</td></tr>
+<tr><td><code>long_running_request_timeout_secs</code></td><td>整数</td><td><code>600</code></td><td><code>POST /api/cron/{id}/run</code> の HTTP リクエストタイムアウト（秒）。これは</td></tr>
 <tr><td><code>pair_rate_limit_per_minute</code></td><td>整数</td><td><code>10</code></td><td>クライアントキーあたり 1 分間の最大 <code>/pair</code> リクエスト数。</td></tr>
 <tr><td><code>paired_tokens</code> 🔑</td><td>string[]</td><td><code>[]</code></td><td>ペアリング済みベアラートークン（自動で管理され、ユーザーが編集しない）</td></tr>
 <tr><td><code>pairing_dashboard</code></td><td>オブジェクト</td><td>—</td><td>ペアリングダッシュボード設定（<code>[gateway.pairing_dashboard]</code>）。</td></tr>
 <tr><td><code>path_prefix</code></td><td>any</td><td><code>null</code></td><td>リバースプロキシデプロイメント用のオプション URL パスプレフィックス。</td></tr>
 <tr><td><code>port</code></td><td>整数</td><td><code>42617</code></td><td>ゲートウェイポート（デフォルト: 42617）</td></tr>
 <tr><td><code>rate_limit_max_keys</code></td><td>整数</td><td><code>10000</code></td><td>ゲートウェイレート制限マップで追跡される最大の異なるクライアントキー数。</td></tr>
-<tr><td><code>request_timeout_secs</code></td><td>整数</td><td><code>30</code></td><td>HTTP request timeout (seconds) for gateway routes other than the</td></tr>
+<tr><td><code>request_timeout_secs</code></td><td>整数</td><td><code>30</code></td><td>ゲートウェイルートの HTTP リクエストタイムアウト（秒）。ただし</td></tr>
 <tr><td><code>require_pairing</code></td><td>ブール値</td><td><code>true</code></td><td>ペアリング前にリクエストを受け入れることを要求します (デフォルト: true)</td></tr>
 <tr><td><code>session_persistence</code></td><td>ブール値</td><td><code>true</code></td><td>ゲートウェイ WebSocket チャット セッションを SQLite に永続化します。デフォルト: true。</td></tr>
 <tr><td><code>session_ttl_hours</code></td><td>整数</td><td><code>0</code></td><td>N 時間以上前の古いゲートウェイ セッションを自動アーカイブします。0 = 無効。デフォルト: 0。</td></tr>
@@ -775,12 +839,12 @@
 <tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
 </thead>
 <tbody>
-<tr><td><code>baud_rate</code></td><td>整数</td><td><code>115200</code></td><td>Baud rate negotiated on the serial link. 115200 matches the common Arduino / ESP32 bootloader default; bump to 230400+ when your firmware explicitly supports faster rates and you need the throughput.</td></tr>
-<tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>Opt in to direct physical-hardware control — GPIO pins, USB-tethered microcontrollers (Arduino, ESP32, Nucleo), or SWD/JTAG debug probes. Leave off for software-only use; turning it on without the right transport configured does nothing.</td></tr>
-<tr><td><code>probe_target</code></td><td>any</td><td><code>null</code></td><td>Target chip identifier for <code>transport = probe</code> (e.g. <code>STM32F401RE</code>, <code>nRF52840_xxAA</code>). Passed straight to probe-rs for flash/debug operations; must match a chip probe-rs recognizes.</td></tr>
-<tr><td><code>serial_port</code></td><td>any</td><td><code>null</code></td><td>TTY path for the <code>serial</code> transport — e.g. <code>/dev/ttyACM0</code> on Linux, <code>/dev/tty.usbmodem1</code> on macOS, <code>COM3</code> on Windows. Ignored for other transports.</td></tr>
+<tr><td><code>baud_rate</code></td><td>整数</td><td><code>115200</code></td><td>シリアルリンクでネゴシエートされるボーレート。115200 は一般的な Arduino / ESP32 ブートローダーのデフォルトと一致します。ファームウェアがより高速なレートを明示的にサポートしており、スループットが必要な場合は 230400 以上に引き上げてください。</td></tr>
+<tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>GPIO ピン、USB 接続のマイクロコントローラー（Arduino、ESP32、Nucleo）、SWD/JTAG デバッグプローブといった物理ハードウェアの直接制御を有効にします。ソフトウェアのみで使用する場合はオフのままにしてください。適切なトランスポートを構成せずに有効にしても何も起こりません。</td></tr>
+<tr><td><code>probe_target</code></td><td>any</td><td><code>null</code></td><td><code>transport = probe</code> 用のターゲットチップ識別子（例: <code>STM32F401RE</code>、<code>nRF52840_xxAA</code>）。フラッシュ/デバッグ操作のために probe-rs へそのまま渡されます。probe-rs が認識するチップと一致する必要があります。</td></tr>
+<tr><td><code>serial_port</code></td><td>any</td><td><code>null</code></td><td><code>serial</code> トランスポート用の TTY パス — 例: Linux では <code>/dev/ttyACM0</code>、macOS では <code>/dev/tty.usbmodem1</code>、Windows では <code>COM3</code>。他のトランスポートでは無視されます。</td></tr>
 <tr><td><code>transport</code></td><td><code>None</code> | <code>Native</code> | <code>Serial</code> | <code>Probe</code></td><td>—</td><td>ハードウェア トランスポート モード。</td></tr>
-<tr><td><code>workspace_datasheets</code></td><td>ブール値</td><td><code>false</code></td><td>Index PDF schematics and datasheets from the workspace into a local RAG store, so the agent can look up pin assignments and electrical specs inline when you ask hardware questions. Off by default — turn on once the workspace has relevant PDFs dropped in.</td></tr>
+<tr><td><code>workspace_datasheets</code></td><td>ブール値</td><td><code>false</code></td><td>ワークスペース内のPDF回路図やデータシートをローカルのRAGストアにインデックス化することで、ハードウェアに関する質問をした際に、エージェントがピン割り当てや電気仕様をインラインで参照できるようになります。デフォルトでは無効です。関連するPDFがワークスペースに配置されたら有効にしてください。</td></tr>
 </tbody>
 </table>
 </div>
@@ -793,11 +857,11 @@
 </thead>
 <tbody>
 <tr><td><code>adaptive</code></td><td>ブール値</td><td><code>false</code></td><td>適応的な間隔を有効にします。エラー時はバックオフし、成功時は高速化します</td></tr>
-<tr><td><code>agent</code></td><td>string</td><td><code>""</code></td><td>Configured agent alias the heartbeat worker runs as. Required</td></tr>
+<tr><td><code>agent</code></td><td>string</td><td><code>""</code></td><td>エージェントエイリアスが設定されると、ハートビートワーカーがそのエイリアスとして実行されます。必須</td></tr>
 <tr><td><code>deadman_channel</code></td><td>any</td><td><code>null</code></td><td>デッドマン スイッチ アラートのチャネル（例: <code>telegram</code>）。<code>to</code> にフォールバックします</td></tr>
 <tr><td><code>deadman_timeout_minutes</code></td><td>整数</td><td><code>0</code></td><td>デッドマン スイッチ タイムアウト（分単位）。ハートビート信号がティックしていない場合</td></tr>
 <tr><td><code>deadman_to</code></td><td>any</td><td><code>null</code></td><td>デッドマン スイッチ アラートの受信者。<code>to</code> にフォールバックします。</td></tr>
-<tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>Enable periodic heartbeat pings. Default: <code>false</code>. When enabled,</td></tr>
+<tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>定期的なハートビートpingを有効にします。デフォルト: <code>false</code>。有効にすると、</td></tr>
 <tr><td><code>interval_minutes</code></td><td>整数</td><td><code>30</code></td><td>ハートビート ping 間隔（分単位）。最小: <code>1</code>。デフォルト: <code>30</code>。</td></tr>
 <tr><td><code>load_session_context</code></td><td>ブール値</td><td><code>false</code></td><td>各ハートビート タスク実行前にチャネル セッション履歴を読み込みます</td></tr>
 <tr><td><code>max_interval_minutes</code></td><td>整数</td><td><code>120</code></td><td>適応モードがバックオフするときの最大間隔（分単位）。デフォルト: <code>120</code>。</td></tr>
@@ -863,6 +927,7 @@
 <tbody>
 <tr><td><code>allow_private_hosts</code></td><td>ブール値</td><td><code>false</code></td><td>プライベート/LANホスト（RFC 1918、ループバック、リンクローカル、.local）へのリクエストを許可。</td></tr>
 <tr><td><code>allowed_domains</code></td><td>string[]</td><td><code>[]</code></td><td>HTTPリクエストで許可されたドメイン（完全一致またはサブドメイン一致）</td></tr>
+<tr><td><code>allowed_private_hosts</code></td><td>string[]</td><td><code>[]</code></td><td>Private/internal hosts explicitly allowed to bypass SSRF protection.</td></tr>
 <tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>APIインタラクション用の <code>http_request</code> ツールを有効化</td></tr>
 <tr><td><code>max_response_size</code></td><td>整数</td><td><code>1000000</code></td><td>最大応答サイズ（バイト単位）（デフォルト: 1MB、0 = 無制限）</td></tr>
 <tr><td><code>timeout_secs</code></td><td>整数</td><td><code>30</code></td><td>リクエストタイムアウト（秒単位）（デフォルト: 30）</td></tr>
@@ -894,7 +959,7 @@
 <li><code>timeout_secs</code>: <code>30</code></li>
 </ul>
 <h2 id="認証"><a class="header" href="#認証">認証</a></h2>
-<p>Jira Cloud uses HTTP Basic auth: <code>email</code> + <code>api_token</code>. Jira Server/Data Center uses Bearer token auth: omit <code>email</code> and set <code>api_token</code> to a personal access token. <code>api_token</code> is stored encrypted at rest; set it here or via <code>JIRA_API_TOKEN</code>.</p>
+<p>Jira Cloud は HTTP Basic 認証を使用します：<code>email</code> + <code>api_token</code>。Jira Server/Data Center は Bearer トークン認証を使用します：<code>email</code> を省略し、<code>api_token</code> にパーソナルアクセストークンを設定してください。<code>api_token</code> は保存時に暗号化されます。ここで設定するか、<code>JIRA_API_TOKEN</code> 経由で設定してください。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -904,7 +969,7 @@
 <tr><td><code>allowed_actions</code></td><td>string[]</td><td><code>["get_ticket"]</code></td><td>エージェントが呼び出しを許可されているアクション。</td></tr>
 <tr><td><code>api_token</code> 🔑</td><td>string</td><td><code>""</code></td><td>Jira APIトークン。保存時に暗号化されます。<code>JIRA_API_TOKEN</code>環境変数にフォールバックします。</td></tr>
 <tr><td><code>base_url</code></td><td>string</td><td><code>""</code></td><td>AtlassianインスタンスのベースURL。例：<code>https://yourco.atlassian.net</code>。</td></tr>
-<tr><td><code>email</code></td><td>any</td><td>—</td><td>Jira account email used for Basic auth (Cloud).</td></tr>
+<tr><td><code>email</code></td><td>any</td><td>—</td><td>Basic認証（Cloud）で使用するJiraアカウントのメールアドレス。</td></tr>
 <tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td><code>jira</code>ツールを有効にします。デフォルト: <code>false</code>。</td></tr>
 <tr><td><code>timeout_secs</code></td><td>整数</td><td><code>30</code></td><td>リクエストタイムアウト（秒単位）。デフォルト: <code>30</code>。</td></tr>
 </tbody>
@@ -927,7 +992,7 @@
 </table>
 </div>
 <h2 id="knowledge_bundles"><a class="header" href="#knowledge_bundles"><code>knowledge_bundles</code></a></h2>
-<p>Named knowledge bundles (<code>[knowledge_bundles.&lt;alias&gt;]</code>).</p>
+<p>名前付きナレッジバンドル（<code>[knowledge_bundles.&lt;alias&gt;]</code>）。</p>
 <h2 id="link_enricher"><a class="header" href="#link_enricher"><code>link_enricher</code></a></h2>
 <p>インバウンドチャネルメッセージの自動リンク理解（<code>[link_enricher]</code>）。</p>
 <p>有効にされると、受信メッセージ内のURLは自動的にフェッチされ、要約されます。要約はメッセージの前に付加され、エージェントが処理する前に、LLMに明示的なツール呼び出しなしでリンクされたページのコンテキストを与えます。</p>
@@ -988,10 +1053,10 @@
 <tr><td><code>card_accent_color</code></td><td>string</td><td><code>"#0A66C2"</code></td><td>フォールバックカードのアクセントカラー（CSSの16進数）。</td></tr>
 <tr><td><code>dalle</code></td><td>オブジェクト</td><td>—</td><td>OpenAI DALL-E設定（<code>[linkedin.image.dalle]</code>）。</td></tr>
 <tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>投稿の画像生成を有効にする。</td></tr>
-<tr><td><code>fallback_card</code></td><td>ブール値</td><td><code>true</code></td><td>Generate a branded SVG text card when all AI model_providers fail.</td></tr>
+<tr><td><code>fallback_card</code></td><td>ブール値</td><td><code>true</code></td><td>すべてのAI model_providersが失敗した場合に、ブランド化されたSVGテキストカードを生成します。</td></tr>
 <tr><td><code>flux</code></td><td>オブジェクト</td><td>—</td><td>Flux（fal.ai）画像生成設定（<code>[linkedin.image.flux]</code>）。</td></tr>
 <tr><td><code>imagen</code></td><td>オブジェクト</td><td>—</td><td>Google Imagen（Vertex AI）設定（<code>[linkedin.image.imagen]</code>）。</td></tr>
-<tr><td><code>providers</code></td><td>string[]</td><td><code>["stability","imagen","dalle","flux"]</code></td><td>ModelProvider priority order. Tried in sequence; first success wins.</td></tr>
+<tr><td><code>providers</code></td><td>string[]</td><td><code>["stability","imagen","dalle","flux"]</code></td><td>ModelProvider の優先順位。順番に試行され、最初に成功したものが採用されます。</td></tr>
 <tr><td><code>stability</code></td><td>オブジェクト</td><td>—</td><td>Stability AI画像生成設定（<code>[linkedin.image.stability]</code>）。</td></tr>
 <tr><td><code>temp_dir</code></td><td>string</td><td><code>"linkedin/images"</code></td><td>生成された画像の一時ディレクトリ（ワークスペースからの相対パス）。</td></tr>
 </tbody>
@@ -1065,12 +1130,12 @@
 <tbody>
 <tr><td><code>deferred_loading</code></td><td>ブール値</td><td><code>true</code></td><td><code>tool_search</code> を介してオンデマンドで MCP ツールスキーマを読み込み、積極的な読み込みの代わりに使用します</td></tr>
 <tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>MCP ツール読み込みを有効にします。</td></tr>
-<tr><td><code>servers</code></td><td>object[]</td><td><code>[]</code></td><td>Configured MCP servers. The <code>#[nested]</code> annotation makes the macro</td></tr>
+<tr><td><code>servers</code></td><td>object[]</td><td><code>[]</code></td><td>設定済みの MCP サーバー。<code>#[nested]</code> アノテーションにより、マクロが</td></tr>
 </tbody>
 </table>
 </div>
 <h2 id="mcp_bundles"><a class="header" href="#mcp_bundles"><code>mcp_bundles</code></a></h2>
-<p>Named MCP server bundles (<code>[mcp_bundles.&lt;alias&gt;]</code>).</p>
+<p>名前付きMCPサーバーバンドル（<code>[mcp_bundles.&lt;alias&gt;]</code>）。</p>
 <h2 id="media_pipeline"><a class="header" href="#media_pipeline"><code>media_pipeline</code></a></h2>
 <p>自動メディア理解パイプライン設定（<code>[media_pipeline]</code>）。</p>
 <p>有効にすると、メディア添付ファイルを含むインバウンドチャネルメッセージはエージェントに到達する前に前処理されます：オーディオが文字起こしされ、画像に注釈が付けられ、ビデオが要約されます。</p>
@@ -1083,39 +1148,39 @@
 <tr><td><code>describe_images</code></td><td>ブール値</td><td><code>true</code></td><td>ビジョン対応モデルがアクティブな場合、画像説明を追加します。</td></tr>
 <tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>メディアパイプラインのマスタートグル（デフォルト: false）。</td></tr>
 <tr><td><code>summarize_video</code></td><td>ブール値</td><td><code>true</code></td><td>ビデオ添付ファイルを要約します（プレースホルダー - 外部 API が必要）。</td></tr>
-<tr><td><code>transcribe_audio</code></td><td>ブール値</td><td><code>true</code></td><td>Transcribe audio attachments using the configured transcription model_provider.</td></tr>
+<tr><td><code>transcribe_audio</code></td><td>ブール値</td><td><code>true</code></td><td>設定された文字起こしモデルプロバイダーを使用して、音声添付ファイルを文字起こしします。</td></tr>
 </tbody>
 </table>
 </div>
 <h2 id="memory"><a class="header" href="#memory"><code>memory</code></a></h2>
 <p>メモリバックエンド設定 (<code>[memory]</code> セクション)。</p>
-<p>Controls conversation memory storage, embeddings, hybrid search, response caching, and memory snapshot/hydration. Backend-specific connection settings live under <code>[storage.&lt;backend&gt;.&lt;alias&gt;]</code>; this section selects which storage instance to use via the <code>backend</code> dotted reference.</p>
+<p>会話メモリのストレージ、埋め込み、ハイブリッド検索、レスポンスキャッシュ、メモリのスナップショット/ハイドレーションを制御します。バックエンド固有の接続設定は <code>[storage.&lt;backend&gt;.&lt;alias&gt;]</code> 配下に記述します。このセクションでは、<code>backend</code> のドット区切り参照を介して使用するストレージインスタンスを選択します。</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
 </thead>
 <tbody>
-<tr><td><code>archive_after_days</code></td><td>整数</td><td><code>7</code></td><td>Move daily/session files to the archive directory after this many days. Keeps the hot working set small without deleting history.</td></tr>
+<tr><td><code>archive_after_days</code></td><td>整数</td><td><code>7</code></td><td>この日数が経過した後、デイリー/セッションファイルをアーカイブディレクトリに移動します。履歴を削除することなく、ホットワーキングセットを小さく保ちます。</td></tr>
 <tr><td><code>audit_enabled</code></td><td>ブール値</td><td><code>false</code></td><td>メモリ操作の監査ログを有効にします。</td></tr>
 <tr><td><code>audit_retention_days</code></td><td>整数</td><td><code>30</code></td><td>監査エントリの保持期間（日数）（デフォルト: 30）。</td></tr>
 <tr><td><code>auto_hydrate</code></td><td>ブール値</td><td><code>true</code></td><td>brain.db がない場合、MEMORY_SNAPSHOT.md から自動ハイドレーション</td></tr>
-<tr><td><code>auto_save</code></td><td>ブール値</td><td><code>true</code></td><td>Auto-save what <em>you</em> tell ZeroClaw into memory as conversation history — the agent’s own replies are not saved. Turn off if you want memory to only hold things you explicitly record via the memory tool.</td></tr>
-<tr><td><code>backend</code>*</td><td>string</td><td>—</td><td>Dotted reference to the active storage instance: <code>&lt;backend&gt;.&lt;alias&gt;</code></td></tr>
+<tr><td><code>auto_save</code></td><td>ブール値</td><td><code>true</code></td><td><em>あなた</em> が ZeroClaw に伝えた内容を会話履歴として自動的にメモリへ保存します。エージェント自身の返信は保存されません。メモリツールを通じて明示的に記録したものだけをメモリに保持したい場合は、オフにしてください。</td></tr>
+<tr><td><code>backend</code>*</td><td>string</td><td>—</td><td>アクティブなストレージインスタンスへのドット表記による参照: <code>&lt;backend&gt;.&lt;alias&gt;</code></td></tr>
 <tr><td><code>chunk_max_tokens</code></td><td>整数</td><td><code>512</code></td><td>ドキュメント分割用のチャンクあたりの最大トークン数</td></tr>
 <tr><td><code>conflict_threshold</code></td><td>number</td><td><code>0.85</code></td><td>競合検出のコサイン類似度閾値（0.0–1.0）。</td></tr>
-<tr><td><code>conversation_retention_days</code></td><td>整数</td><td><code>30</code></td><td>For the sqlite backend only — drop conversation rows older than this many days to keep the DB lean. Doesn’t touch core memories or notes.</td></tr>
+<tr><td><code>conversation_retention_days</code></td><td>整数</td><td><code>30</code></td><td>sqlite バックエンドのみ — DB を軽量に保つため、この日数より古い会話行を削除します。コアメモリやノートには影響しません。</td></tr>
 <tr><td><code>default_namespace</code></td><td>string</td><td><code>"default"</code></td><td>メモリエントリのデフォルト名前空間。</td></tr>
 <tr><td><code>embedding_cache_size</code></td><td>整数</td><td><code>10000</code></td><td>LRU 削除前の最大埋め込みキャッシュエントリ数</td></tr>
-<tr><td><code>embedding_dimensions</code></td><td>整数</td><td><code>1536</code></td><td>Vector width produced by the embedding model — must match the model’s native dimension or vectors won’t store correctly. Look up the number on the model_provider’s model page.</td></tr>
-<tr><td><code>embedding_model</code></td><td>string</td><td><code>"text-embedding-3-small"</code></td><td>Embedding model identifier — must match a model your chosen embedding model_provider serves (e.g. <code>text-embedding-3-small</code> for OpenAI). Changing this invalidates existing embeddings; you’ll need to re-index.</td></tr>
-<tr><td><code>embedding_provider</code></td><td>string</td><td><code>"none"</code></td><td>Source of embedding vectors for semantic search. <code>none</code> = keyword-only retrieval (no API calls, no vector cost); <code>openai</code> = OpenAI’s embedding API; <code>custom:URL</code> = any OpenAI-compatible embedding endpoint (LiteLLM, local gateway, etc.).</td></tr>
+<tr><td><code>embedding_dimensions</code></td><td>整数</td><td><code>1536</code></td><td>埋め込みモデルが生成するベクトル幅 — モデルのネイティブ次元と一致している必要があります。一致しないとベクトルが正しく保存されません。<code>model_provider</code> のモデルページで数値を確認してください。</td></tr>
+<tr><td><code>embedding_model</code></td><td>string</td><td><code>"text-embedding-3-small"</code></td><td>埋め込みモデルの識別子 — 選択した埋め込み model_provider が提供するモデルと一致する必要があります（例: OpenAI の場合は <code>text-embedding-3-small</code>）。これを変更すると既存の埋め込みが無効になり、再インデックスが必要になります。</td></tr>
+<tr><td><code>embedding_provider</code></td><td>string</td><td><code>"none"</code></td><td>セマンティック検索の埋め込みベクトルのソース。<code>none</code> = キーワードのみの検索（API 呼び出しなし、ベクトルコストなし）、<code>openai</code> = OpenAI の埋め込み API、<code>custom:URL</code> = OpenAI 互換の埋め込みエンドポイント（LiteLLM、ローカルゲートウェイなど）。</td></tr>
 <tr><td><code>fts_early_return_score</code></td><td>number</td><td><code>0.85</code></td><td>ベクトル検索をスキップして早期リターンするFTSスコア (0.0–1.0)。</td></tr>
-<tr><td><code>hygiene_enabled</code></td><td>ブール値</td><td><code>true</code></td><td>Run the periodic hygiene pass that archives stale daily/session files and enforces retention windows. Leave on unless you want to manage cleanup yourself.</td></tr>
-<tr><td><code>keyword_weight</code></td><td>number</td><td><code>0.3</code></td><td>How heavily BM25 (keyword) overlap counts when <code>search_mode = hybrid</code>. Raise toward 1.0 for exact-term matching; lower it when paraphrases should still score well.</td></tr>
+<tr><td><code>hygiene_enabled</code></td><td>ブール値</td><td><code>true</code></td><td>古くなったデイリー/セッションファイルをアーカイブし、保持期間を適用する定期的なクリーンアップ処理を実行します。クリーンアップを自分で管理したい場合を除き、有効のままにしておいてください。</td></tr>
+<tr><td><code>keyword_weight</code></td><td>number</td><td><code>0.3</code></td><td><code>search_mode = hybrid</code> のときに BM25（キーワード）の一致がどの程度重視されるかを指定します。完全一致の語句を重視する場合は 1.0 に近づけ、言い換えでも高いスコアを得られるようにするには値を下げてください。</td></tr>
 <tr><td><code>min_relevance_score</code></td><td>number</td><td><code>0.4</code></td><td>メモリをコンテキストに含めるための最小ハイブリッドスコア (0.0–1.0)。</td></tr>
 <tr><td><code>policy</code></td><td>オブジェクト</td><td>—</td><td>メモリポリシー設定 (<code>[memory.policy]</code> セクション)。</td></tr>
-<tr><td><code>purge_after_days</code></td><td>整数</td><td><code>30</code></td><td>Delete archived files permanently after this many days. Set high if you need long-term history; set low for privacy / disk-space reasons.</td></tr>
+<tr><td><code>purge_after_days</code></td><td>整数</td><td><code>30</code></td><td>アーカイブされたファイルを指定した日数が経過した後に完全に削除します。長期間の履歴が必要な場合は大きな値を、プライバシーやディスク容量の理由がある場合は小さな値を設定してください。</td></tr>
 <tr><td><code>rerank_enabled</code></td><td>ブール値</td><td><code>false</code></td><td>候補数が閾値を超えたときにLLM再ランキングを有効化します。</td></tr>
 <tr><td><code>rerank_threshold</code></td><td>整数</td><td><code>5</code></td><td>再ランキングをトリガーする最小候補数。</td></tr>
 <tr><td><code>response_cache_enabled</code></td><td>ブール値</td><td><code>false</code></td><td>重複するプロンプトの支払いを避けるためにLLM応答キャッシュを有効化</td></tr>
@@ -1126,7 +1191,7 @@
 <tr><td><code>search_mode</code></td><td>any</td><td>—</td><td>メモリ回想の検索戦略。</td></tr>
 <tr><td><code>snapshot_enabled</code></td><td>ブール値</td><td><code>false</code></td><td>コアメモリをMEMORY_SNAPSHOT.mdに定期的にエクスポートを有効化</td></tr>
 <tr><td><code>snapshot_on_hygiene</code></td><td>ブール値</td><td><code>false</code></td><td>衛生パス中にスナップショットを実行 (ハートビート駆動)</td></tr>
-<tr><td><code>vector_weight</code></td><td>number</td><td><code>0.7</code></td><td>How heavily vector (semantic) similarity counts when <code>search_mode = hybrid</code>. Raise toward 1.0 to favor meaning-based matches; lower it to lean on keyword overlap instead.</td></tr>
+<tr><td><code>vector_weight</code></td><td>number</td><td><code>0.7</code></td><td><code>search_mode = hybrid</code> の場合に、ベクトル（セマンティック）類似度をどの程度重視するか。1.0 に近づけると意味ベースの一致を優先し、下げるとキーワードの重複を重視します。</td></tr>
 </tbody>
 </table>
 </div>
@@ -1166,12 +1231,12 @@
 </table>
 </div>
 <h2 id="model_routes"><a class="header" href="#model_routes"><code>model_routes</code></a></h2>
-<p>Model-routing rules — route <code>hint:&lt;name&gt;</code> to specific model_provider + model combos.</p>
+<p>モデルルーティングルール — <code>hint:&lt;name&gt;</code> を特定の model_provider + model の組み合わせにルーティングします。</p>
 <h2 id="multimodal"><a class="header" href="#multimodal"><code>multimodal</code></a></h2>
 <p>マルチモーダル（画像）処理設定（<code>[multimodal]</code>セクション）。</p>
-<h1 id="privacy-and-cost-note"><a class="header" href="#privacy-and-cost-note">Privacy and cost note</a></h1>
-<p>Tool results that print real local image paths (e.g. shell tools doing <code>ls /pictures</code> or <code>find . -name '*.png'</code>) are canonicalized into <code>[IMAGE:...]</code> markers and base64-inlined into the next provider request. This means image bytes that previously stayed local will be uploaded to the configured provider when surfaced by a tool.</p>
-<p><code>max_images</code> (and the <code>trim_old_images</code> LRU policy) bounds the per-request image budget, but operators running shell-style tools over directories of personal or sensitive images should be aware of the upload semantics. See <code>docs/book/src/contributing/privacy.md</code> for the project’s privacy stance.</p>
+<h1 id="プライバシーとコストに関する注意"><a class="header" href="#プライバシーとコストに関する注意">プライバシーとコストに関する注意</a></h1>
+<p>実際のローカル画像パスを出力するツールの結果（例: <code>ls /pictures</code> や <code>find . -name '*.png'</code> を実行するシェルツール）は <code>[IMAGE:...]</code> マーカーに正規化され、次のプロバイダーリクエストに base64 でインライン化されます。これは、以前はローカルにとどまっていた画像バイトが、ツールによって表示された際に、設定済みのプロバイダーへアップロードされることを意味します。</p>
+<p><code>max_images</code>（および <code>trim_old_images</code> の LRU ポリシー）はリクエストごとの画像予算を制限しますが、個人的または機密性の高い画像を含むディレクトリに対してシェル形式のツールを実行する運用者は、アップロードのセマンティクスに注意する必要があります。プロジェクトのプライバシーに関する方針については <code>docs/book/src/contributing/privacy.md</code> を参照してください。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1180,9 +1245,10 @@
 <tbody>
 <tr><td><code>allow_remote_fetch</code></td><td>ブール値</td><td><code>false</code></td><td>リモート画像 URL（http/https）のフェッチを許可する。デフォルトでは無効。</td></tr>
 <tr><td><code>max_image_size_mb</code></td><td>整数</td><td><code>5</code></td><td>Base64 エンコード前の最大画像ペイロード サイズ（MiB 単位）。</td></tr>
+<tr><td><code>max_image_turns</code></td><td>整数</td><td><code>0</code></td><td>Maximum age of images in conversation turns.</td></tr>
 <tr><td><code>max_images</code></td><td>整数</td><td><code>4</code></td><td>リクエストごとに受け入れられる最大画像添付ファイル数。</td></tr>
-<tr><td><code>vision_model</code></td><td>any</td><td><code>null</code></td><td>Model to use when routing to the vision model_provider (e.g. <code>"llava:7b"</code>).</td></tr>
-<tr><td><code>vision_model_provider</code></td><td>any</td><td><code>null</code></td><td>ModelProvider name to use for vision/image messages (e.g. <code>"ollama"</code>).</td></tr>
+<tr><td><code>vision_model</code></td><td>any</td><td><code>null</code></td><td>vision model_provider にルーティングする際に使用するモデル（例: <code>"llava:7b"</code>）。</td></tr>
+<tr><td><code>vision_model_provider</code></td><td>any</td><td><code>null</code></td><td>ビジョン/画像メッセージに使用する ModelProvider 名（例: <code>"ollama"</code>）。</td></tr>
 </tbody>
 </table>
 </div>
@@ -1251,12 +1317,12 @@
 </thead>
 <tbody>
 <tr><td><code>backend</code>*</td><td>string</td><td>—</td><td>“none” | “log” | “verbose” | “prometheus” | “otel”</td></tr>
-<tr><td><code>log_persistence</code></td><td>string</td><td><code>"rolling"</code></td><td>Log persistence mode: “none” | “rolling” | “full”.</td></tr>
-<tr><td><code>log_persistence_max_entries</code></td><td>整数</td><td><code>200</code></td><td>Maximum entries retained when <code>log_persistence = "rolling"</code>.</td></tr>
-<tr><td><code>log_persistence_path</code></td><td>string</td><td><code>"state/runtime-trace.jsonl"</code></td><td>Log persistence file path. Relative paths resolve under workspace_dir.</td></tr>
-<tr><td><code>log_tool_io</code></td><td>string</td><td><code>"redacted"</code></td><td>Tool I/O capture policy: “off” | “redacted” | “full”.</td></tr>
-<tr><td><code>log_tool_io_denylist</code></td><td>string[]</td><td><code>[]</code></td><td>Tool names whose I/O is never logged beyond name + outcome + duration</td></tr>
-<tr><td><code>log_tool_io_truncate_bytes</code></td><td>整数</td><td><code>8192</code></td><td>Truncate the captured tool input and output at this many bytes when</td></tr>
+<tr><td><code>log_persistence</code></td><td>string</td><td><code>"rolling"</code></td><td>ログ永続化モード: “none” | “rolling” | “full”。</td></tr>
+<tr><td><code>log_persistence_max_entries</code></td><td>整数</td><td><code>200</code></td><td><code>log_persistence = "rolling"</code> の場合に保持される最大エントリ数。</td></tr>
+<tr><td><code>log_persistence_path</code></td><td>string</td><td><code>"state/runtime-trace.jsonl"</code></td><td>ログ永続化ファイルのパス。相対パスは workspace_dir 配下で解決されます。</td></tr>
+<tr><td><code>log_tool_io</code></td><td>string</td><td><code>"redacted"</code></td><td>ツール I/O キャプチャポリシー: “off” | “redacted” | “full”。</td></tr>
+<tr><td><code>log_tool_io_denylist</code></td><td>string[]</td><td><code>[]</code></td><td>ツール名（I/O は名前 + 結果 + 実行時間のみ記録され、それ以上はログに残らない）</td></tr>
+<tr><td><code>log_tool_io_truncate_bytes</code></td><td>整数</td><td><code>40960</code></td><td>キャプチャしたツールの入力と出力をこのバイト数で切り詰めます</td></tr>
 <tr><td><code>otel_endpoint</code></td><td>any</td><td><code>null</code></td><td>OTLPエンドポイント (例: <code>"http://localhost:4318"</code>)。backend = <code>"otel"</code> の場合のみ使用されます。</td></tr>
 <tr><td><code>otel_headers</code></td><td>any</td><td><code>null</code></td><td>すべてのOTLPエクスポートリクエストとともに送信されるオプショナルHTTPヘッダー (例: authorization)。</td></tr>
 <tr><td><code>otel_service_name</code></td><td>any</td><td><code>null</code></td><td>OTelコレクターに報告されるサービス名。デフォルトは “zeroclaw”。</td></tr>
@@ -1265,15 +1331,16 @@
 </div>
 <h2 id="onboard_state"><a class="header" href="#onboard_state"><code>onboard_state</code></a></h2>
 <p>マルチクライアントワークスペース分離設定。</p>
-<p>When enabled, each client engagement gets an isolated workspace with separate memory, audit, secrets, and tool restrictions. Opaque state the <code>zeroclaw onboard</code> flow writes so it can tell, on a re-run, which sections the user has already walked through at least once — which lets it offer “Reconfigure? [y/N]” skip gates instead of forcing users through every field again.</p>
-<p>This is meta-state about the onboard process, not user-facing config.</p>
+<p>When enabled, each client engagement gets an isolated workspace with separate memory, audit, secrets, and tool restrictions. Opaque state the Quickstart flow writes so it can tell, on a re-run, which sections the user has already walked through at least once — which lets it offer “Reconfigure? [y/N]” skip gates instead of forcing users through every field again.</p>
+<p>This is meta-state about the Quickstart flow, not user-facing config.</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
 </thead>
 <tbody>
-<tr><td><code>completed_sections</code></td><td>string[]</td><td><code>[]</code></td><td>Section keys the user has completed at least once via onboard.</td></tr>
+<tr><td><code>completed_sections</code></td><td>string[]</td><td><code>[]</code></td><td>Section keys the user has completed at least once.</td></tr>
+<tr><td><code>quickstart_completed</code></td><td>ブール値</td><td><code>false</code></td><td><code>true</code> once the Quickstart has applied a <code>BuilderSubmission</code></td></tr>
 </tbody>
 </table>
 </div>
@@ -1313,7 +1380,7 @@
 </table>
 </div>
 <h2 id="peer_groups"><a class="header" href="#peer_groups"><code>peer_groups</code></a></h2>
-<p>Named peer groups (<code>[peer_groups.&lt;name&gt;]</code>). Each entry binds a channel, a list of member agents, and optional non-agent (external) members and a per-group blocklist. Mutual opt-in: two agents become peers only when both appear in the same group’s <code>agents</code>. Empty by default for single-agent installs. See <code>crate::multi_agent::PeerGroupConfig</code>.</p>
+<p>名前付きピアグループ（<code>[peer_groups.&lt;name&gt;]</code>）。各エントリは、チャンネル、メンバーエージェントのリスト、およびオプションの非エージェント（外部）メンバーとグループごとのブロックリストを関連付けます。相互オプトイン：2つのエージェントは、両方が同じグループの <code>agents</code> に表示されている場合にのみピアになります。シングルエージェントのインストールではデフォルトで空です。<code>crate::multi_agent::PeerGroupConfig</code> を参照してください。</p>
 <h2 id="peripherals"><a class="header" href="#peripherals"><code>peripherals</code></a></h2>
 <p>周辺機器ボード統合設定（<code>[peripherals]</code>セクション）。</p>
 <p>ボードが有効な場合、ボードはエージェントツールになります。</p>
@@ -1393,7 +1460,7 @@
 </table>
 </div>
 <h2 id="providers"><a class="header" href="#providers"><code>providers</code></a></h2>
-<p>Top-level wrapper for every provider category. TOML root sees a single <code>[providers]</code> table with one sub-key per category:</p>
+<p>すべてのプロバイダーカテゴリーの最上位ラッパーです。TOML のルートには、カテゴリーごとに 1 つのサブキーを持つ単一の <code>[providers]</code> テーブルが表示されます:</p>
 <pre><code class="language-toml">[providers.models.anthropic.default]
 api_key = "..."
 
@@ -1403,24 +1470,24 @@ api_key = "..."
 [providers.transcription.groq.default]
 api_key = "..."
 </code></pre>
-<p>Each category keeps its own typed-slot internals (so per-family endpoints and extras stay validated at the type level); this wrapper just gives them a shared top-level home.</p>
+<p>各カテゴリは独自の型付きスロット内部構造を保持します（そのため、ファミリーごとのエンドポイントや追加項目は型レベルで検証されたままになります）。このラッパーは、それらに共有のトップレベルの場所を提供するだけです。</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
 </thead>
 <tbody>
-<tr><td><code>models</code></td><td>オブジェクト</td><td>—</td><td>Typed model provider container — one slot per canonical model_provider type.</td></tr>
-<tr><td><code>transcription</code></td><td>オブジェクト</td><td>—</td><td>Typed transcription-provider container — one slot per STT family.</td></tr>
-<tr><td><code>tts</code></td><td>オブジェクト</td><td>—</td><td>Typed TTS-provider container — one slot per TTS family. Mirrors</td></tr>
+<tr><td><code>models</code></td><td>オブジェクト</td><td>—</td><td>型付けされたモデルプロバイダーコンテナ — 正規の <code>model_provider</code> タイプごとに1スロット。</td></tr>
+<tr><td><code>transcription</code></td><td>オブジェクト</td><td>—</td><td>入力された文字起こしプロバイダーのコンテナ — STTファミリーごとに1スロット。</td></tr>
+<tr><td><code>tts</code></td><td>オブジェクト</td><td>—</td><td>型付きTTSプロバイダーコンテナ — TTSファミリーごとに1スロット。ミラー</td></tr>
 </tbody>
 </table>
 </div>
 <h3 id="providersmodels"><a class="header" href="#providersmodels"><code>providers.models</code></a></h3>
-<p>Typed model provider container — one slot per canonical model_provider type.</p>
-<p>Replaces the <code>HashMap&lt;String, HashMap&lt;String, ModelProviderConfig&gt;&gt;</code> with a typed struct so each family’s per-alias map carries its own typed config (with the family’s <code>*Endpoint</code> enum and family-specific extras visible at the type level).</p>
-<p>TOML shape is preserved byte-identical: each named field deserializes from the same <code>[model_providers.&lt;type&gt;.&lt;alias&gt;]</code> block as before.</p>
-<p>Adding a new model_provider family means: define the typed config in <code>schema.rs</code>, then add one row to <code>for_each_model_provider_slot!</code> — every helper picks up the new slot automatically.</p>
+<p>型付けされたモデルプロバイダーコンテナ — 正規の <code>model_provider</code> タイプごとに1スロット。</p>
+<p><code>HashMap&lt;String, HashMap&lt;String, ModelProviderConfig&gt;&gt;</code> を型付き構造体に置き換えることで、各ファミリーのエイリアスごとのマップが独自の型付き設定（ファミリーの <code>*Endpoint</code> enum とファミリー固有の追加情報を型レベルで参照可能）を保持するようにします。</p>
+<p>TOMLの構造はバイト単位で同一に保持されます。名前付きの各フィールドは、以前と同じ <code>[model_providers.&lt;type&gt;.&lt;alias&gt;]</code> ブロックからデシリアライズされます。</p>
+<p>新しい model_provider ファミリーを追加するには、<code>schema.rs</code> で型付き設定を定義し、<code>for_each_model_provider_slot!</code> に1行追加します。これで、すべてのヘルパーが新しいスロットを自動的に認識します。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1428,7 +1495,7 @@ api_key = "..."
 </thead>
 <tbody>
 <tr><td><code>ai21</code></td><td>map</td><td>—</td><td></td></tr>
-<tr><td><code>aihubmix</code></td><td>map</td><td>—</td><td></td></tr>
+<tr><td>aihubmix</td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>anthropic</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>anyscale</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>astrai</code></td><td>map</td><td>—</td><td></td></tr>
@@ -1448,13 +1515,13 @@ api_key = "..."
 <tr><td><code>deepseek</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>doubao</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>fireworks</code></td><td>map</td><td>—</td><td></td></tr>
-<tr><td><code>friendli</code></td><td>map</td><td>—</td><td></td></tr>
+<tr><td>friendli</td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>gemini</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>gemini_cli</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>glm</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>groq</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>huggingface</code></td><td>map</td><td>—</td><td></td></tr>
-<tr><td><code>hunyuan</code></td><td>map</td><td>—</td><td></td></tr>
+<tr><td>hunyuan</td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>hyperbolic</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>kilocli</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>lepton</code></td><td>map</td><td>—</td><td></td></tr>
@@ -1476,7 +1543,7 @@ api_key = "..."
 <tr><td><code>ovh</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>perplexity</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>qianfan</code></td><td>map</td><td>—</td><td></td></tr>
-<tr><td><code>qwen</code></td><td>map</td><td>—</td><td></td></tr>
+<tr><td>qwen</td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>reka</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>sambanova</code></td><td>map</td><td>—</td><td></td></tr>
 <tr><td><code>sglang</code></td><td>map</td><td>—</td><td></td></tr>
@@ -1495,7 +1562,7 @@ api_key = "..."
 </table>
 </div>
 <h3 id="providerstranscription"><a class="header" href="#providerstranscription"><code>providers.transcription</code></a></h3>
-<p>Typed transcription-provider container — one slot per STT family. Mirrors <code>ModelProviders</code> / <code>TtsProviders</code>. Closed set of 6 families: groq, openai, deepgram, assemblyai, google, local_whisper.</p>
+<p>型付き文字起こしプロバイダーコンテナ — STTファミリーごとに1スロット。<code>ModelProviders</code> / <code>TtsProviders</code> をミラーリングします。6つのファミリーからなる閉じたセット: groq, openai, deepgram, assemblyai, google, local_whisper。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1512,7 +1579,7 @@ api_key = "..."
 </table>
 </div>
 <h3 id="providerstts"><a class="header" href="#providerstts"><code>providers.tts</code></a></h3>
-<p>Typed TTS-provider container — one slot per TTS family. Mirrors <code>ModelProviders</code> but smaller (TTS has a closed set of 5 families: openai, elevenlabs, google, edge, piper). No catch-all needed.</p>
+<p>型付き TTS プロバイダーコンテナ — TTS ファミリーごとに 1 スロット。<code>ModelProviders</code> を反映していますが、より小規模です（TTS には openai、elevenlabs、google、edge、piper という 5 つのファミリーからなるクローズドセットがあります）。キャッチオールは不要です。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1560,7 +1627,7 @@ api_key = "..."
 </div>
 <h2 id="reliability"><a class="header" href="#reliability"><code>reliability</code></a></h2>
 <p>信頼性と監督設定（<code>[reliability]</code>セクション）。</p>
-<p>Controls model_provider retries, API key rotation, and channel restart backoff.</p>
+<p>model_providerのリトライ、APIキーのローテーション、チャネル再起動のバックオフを制御します。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1570,15 +1637,15 @@ api_key = "..."
 <tr><td><code>api_keys</code></td><td>string[]</td><td><code>[]</code></td><td>レート制限 (429) エラー時のラウンドロビンローテーション用の追加API キー。</td></tr>
 <tr><td><code>channel_initial_backoff_secs</code></td><td>整数</td><td><code>2</code></td><td>チャネル/デーモン再起動の初期バックオフ。</td></tr>
 <tr><td><code>channel_max_backoff_secs</code></td><td>整数</td><td><code>60</code></td><td>チャネル/デーモン再起動の最大バックオフ。</td></tr>
-<tr><td><code>provider_backoff_ms</code></td><td>整数</td><td><code>500</code></td><td>Base backoff (ms) for model_provider retry delay.</td></tr>
-<tr><td><code>provider_retries</code></td><td>整数</td><td><code>2</code></td><td>Retries per model_provider before bailing.</td></tr>
+<tr><td><code>provider_backoff_ms</code></td><td>整数</td><td><code>500</code></td><td>model_provider のリトライ遅延の基本バックオフ（ミリ秒）。</td></tr>
+<tr><td><code>provider_retries</code></td><td>整数</td><td><code>2</code></td><td>モデルプロバイダーごとの、中断するまでのリトライ回数。</td></tr>
 <tr><td><code>scheduler_poll_secs</code></td><td>整数</td><td><code>15</code></td><td>スケジューラーのポーリング間隔 (秒)。</td></tr>
 <tr><td><code>scheduler_retries</code></td><td>整数</td><td><code>2</code></td><td>cron ジョブ実行試行の最大リトライ回数。</td></tr>
 </tbody>
 </table>
 </div>
 <h2 id="risk_profiles"><a class="header" href="#risk_profiles"><code>risk_profiles</code></a></h2>
-<p>Named risk/autonomy profiles (<code>[risk_profiles.&lt;alias&gt;]</code>).</p>
+<p>名前付きのリスク/自律性プロファイル (<code>[risk_profiles.&lt;alias&gt;]</code>)。</p>
 <h2 id="runtime"><a class="header" href="#runtime"><code>runtime</code></a></h2>
 <p>ランタイムアダプター設定（<code>[runtime]</code>セクション）。</p>
 <div class="table-wrapper">
@@ -1589,8 +1656,8 @@ api_key = "..."
 <tbody>
 <tr><td><code>docker</code></td><td>オブジェクト</td><td>—</td><td>Docker ランタイム構成 (<code>[runtime.docker]</code> セクション)。</td></tr>
 <tr><td><code>kind</code></td><td>string</td><td><code>"native"</code></td><td>ランタイムの種類 (<code>native</code> | <code>docker</code>)。</td></tr>
-<tr><td><code>reasoning_effort</code></td><td>any</td><td><code>null</code></td><td>Optional reasoning effort for model_providers that expose a level control.</td></tr>
-<tr><td><code>reasoning_enabled</code></td><td>any</td><td><code>null</code></td><td>Global reasoning override for model_providers that expose explicit controls.</td></tr>
+<tr><td><code>reasoning_effort</code></td><td>any</td><td><code>null</code></td><td>レベル制御を公開する model_providers 向けのオプションの推論努力。</td></tr>
+<tr><td><code>reasoning_enabled</code></td><td>any</td><td><code>null</code></td><td>モデルプロバイダーが明示的な制御を公開している場合の、グローバルな推論のオーバーライド。</td></tr>
 </tbody>
 </table>
 </div>
@@ -1613,10 +1680,10 @@ api_key = "..."
 </table>
 </div>
 <h2 id="runtime_profiles"><a class="header" href="#runtime_profiles"><code>runtime_profiles</code></a></h2>
-<p>Named runtime/LLM execution profiles (<code>[runtime_profiles.&lt;alias&gt;]</code>).</p>
+<p>名前付きランタイム/LLM実行プロファイル（<code>[runtime_profiles.&lt;alias&gt;]</code>）。</p>
 <h2 id="scheduler"><a class="header" href="#scheduler"><code>scheduler</code></a></h2>
 <p>定期的なタスク実行用スケジューラー設定（<code>[scheduler]</code>セクション）。</p>
-<p>Owns the cron-runtime knobs: per-job declarations live on <code>Config.cron: HashMap&lt;String, CronJobDecl&gt;</code> (alias-keyed), while the scheduler loop’s runtime behavior (<code>enabled</code>, polling cap, catch-up) lives here.</p>
+<p>cron ランタイムのつまみを管理します。ジョブごとの宣言は <code>Config.cron: HashMap&lt;String, CronJobDecl&gt;</code>（エイリアスをキーとする）に存在し、スケジューラーループのランタイム動作（<code>enabled</code>、ポーリング上限、キャッチアップ）はこちらに存在します。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1624,10 +1691,10 @@ api_key = "..."
 </thead>
 <tbody>
 <tr><td><code>catch_up_on_startup</code></td><td>ブール値</td><td><code>true</code></td><td>スケジューラ起動時にすべての期限切れジョブを実行します。デフォルト: <code>true</code>。</td></tr>
-<tr><td><code>enabled</code></td><td>ブール値</td><td><code>true</code></td><td>Enable the built-in scheduler loop. When false, no cron jobs run.</td></tr>
-<tr><td><code>max_concurrent</code></td><td>整数</td><td><code>4</code></td><td>Maximum tasks executed in parallel within a single polling cycle.</td></tr>
+<tr><td><code>enabled</code></td><td>ブール値</td><td><code>true</code></td><td>ビルトインのスケジューラーループを有効にします。false の場合、cron ジョブは実行されません。</td></tr>
+<tr><td><code>max_concurrent</code></td><td>整数</td><td><code>4</code></td><td>1回のポーリングサイクル内で並列実行されるタスクの最大数。</td></tr>
 <tr><td><code>max_run_history</code></td><td>整数</td><td><code>50</code></td><td>保持する cron 実行レコードの履歴の最大数。デフォルト: <code>50</code>。</td></tr>
-<tr><td><code>max_tasks</code></td><td>整数</td><td><code>64</code></td><td>Maximum number of persisted scheduled tasks per polling cycle.</td></tr>
+<tr><td><code>max_tasks</code></td><td>整数</td><td><code>64</code></td><td>ポーリングサイクルごとに永続化されるスケジュール済みタスクの最大数。</td></tr>
 </tbody>
 </table>
 </div>
@@ -1646,8 +1713,8 @@ api_key = "..."
 </table>
 </div>
 <h2 id="security"><a class="header" href="#security"><code>security</code></a></h2>
-<p>Security configuration for audit logging, OTP, e-stop, IAM/SSO, and WebAuthn.</p>
-<p>Sandbox backend and resource limits live on per-agent risk profiles (see <code>RiskProfileConfig::sandbox_*</code> and <code>RiskProfileConfig::max_*</code>); the runtime resolves them via <code>Config::active_risk_profile(agent_alias)</code>.</p>
+<p>監査ログ、OTP、緊急停止（e-stop）、IAM/SSO、WebAuthn のためのセキュリティ設定。</p>
+<p>サンドボックスのバックエンドとリソース制限は、エージェントごとのリスクプロファイル（<code>RiskProfileConfig::sandbox_*</code> と <code>RiskProfileConfig::max_*</code> を参照）に存在します。ランタイムは <code>Config::active_risk_profile(agent_alias)</code> を介してそれらを解決します。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1780,7 +1847,7 @@ api_key = "..."
 </table>
 </div>
 <h2 id="skill_bundles"><a class="header" href="#skill_bundles"><code>skill_bundles</code></a></h2>
-<p>Named skill bundles (<code>[skill_bundles.&lt;alias&gt;]</code>).</p>
+<p>名前付きスキルバンドル（<code>[skill_bundles.&lt;alias&gt;]</code>）。</p>
 <h2 id="skills"><a class="header" href="#skills"><code>skills</code></a></h2>
 <p>スキル読み込み設定 (<code>[skills]</code> セクション)。</p>
 <div class="table-wrapper">
@@ -1790,7 +1857,7 @@ api_key = "..."
 </thead>
 <tbody>
 <tr><td><code>allow_scripts</code></td><td>ブール値</td><td><code>false</code></td><td>スキルでスクリプト形式のファイル (<code>.sh</code>、<code>.bash</code>、<code>.ps1</code>、シバン付きシェルファイル) を許可する。</td></tr>
-<tr><td><code>install_suggestions</code></td><td>オブジェクト</td><td>—</td><td>Prompt-triggered skill install suggestions (<code>[skills.install_suggestions]</code> section).</td></tr>
+<tr><td><code>install_suggestions</code></td><td>オブジェクト</td><td>—</td><td>プロンプトでトリガーされるスキルインストールの提案（<code>[skills.install_suggestions]</code>セクション）。</td></tr>
 <tr><td><code>open_skills_dir</code></td><td>any</td><td><code>null</code></td><td>ローカルオープンスキルリポジトリへのオプションパス。</td></tr>
 <tr><td><code>open_skills_enabled</code></td><td>ブール値</td><td><code>false</code></td><td>コミュニティオープンスキルリポジトリの読み込みと同期を有効にする。</td></tr>
 <tr><td><code>prompt_injection_mode</code></td><td>any</td><td>—</td><td>スキル読み込み設定 (<code>[skills]</code> セクション)。</td></tr>
@@ -1801,14 +1868,14 @@ api_key = "..."
 </table>
 </div>
 <h3 id="skillsinstall_suggestions"><a class="header" href="#skillsinstall_suggestions"><code>skills.install_suggestions</code></a></h3>
-<p>Prompt-triggered skill install suggestions (<code>[skills.install_suggestions]</code> section).</p>
+<p>プロンプトでトリガーされるスキルインストールの提案（<code>[skills.install_suggestions]</code>セクション）。</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
 </thead>
 <tbody>
-<tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>Enable suggestions for installable skills before normal agent turns.</td></tr>
+<tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>通常のエージェントターンの前に、インストール可能なスキルの提案を有効にします。</td></tr>
 </tbody>
 </table>
 </div>
@@ -1858,18 +1925,18 @@ api_key = "..."
 </div>
 <h2 id="storage"><a class="header" href="#storage"><code>storage</code></a></h2>
 <p>永続ストレージ設定 (<code>[storage]</code> セクション)。</p>
-<p>Storage is a two-tier alias-keyed map: <code>[storage.&lt;backend&gt;.&lt;alias&gt;]</code>, parallel to <code>[model_providers.&lt;type&gt;.&lt;alias&gt;]</code>. Each backend has its own typed config struct. <code>MemoryConfig.backend</code> carries a dotted reference (<code>"sqlite.default"</code>, <code>"postgres.work"</code>) that resolves to one of these entries via [<code>Config::resolve_active_storage</code>].</p>
+<p>ストレージは2層のエイリアスをキーとするマップです: <code>[storage.&lt;backend&gt;.&lt;alias&gt;]</code>。これは <code>[model_providers.&lt;type&gt;.&lt;alias&gt;]</code> と並列の構造です。各バックエンドは、それぞれ独自の型付き設定構造体を持ちます。<code>MemoryConfig.backend</code> はドット区切りの参照（<code>"sqlite.default"</code>、<code>"postgres.work"</code>）を保持し、[<code>Config::resolve_active_storage</code>] を介してこれらのエントリのいずれかに解決されます。</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
 </thead>
 <tbody>
-<tr><td><code>lucid</code></td><td>map</td><td>—</td><td>Lucid CLI sync instances (<code>[storage.lucid.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>markdown</code></td><td>map</td><td>—</td><td>Markdown storage instances (<code>[storage.markdown.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>postgres</code></td><td>map</td><td>—</td><td>PostgreSQL storage instances (<code>[storage.postgres.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>qdrant</code></td><td>map</td><td>—</td><td>Qdrant storage instances (<code>[storage.qdrant.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>sqlite</code></td><td>map</td><td>—</td><td>SQLite storage instances (<code>[storage.sqlite.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>lucid</code></td><td>map</td><td>—</td><td>Lucid CLI同期インスタンス（<code>[storage.lucid.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>markdown</code></td><td>map</td><td>—</td><td>Markdown ストレージインスタンス (<code>[storage.markdown.&lt;alias&gt;]</code>)。</td></tr>
+<tr><td><code>postgres</code></td><td>map</td><td>—</td><td>PostgreSQL ストレージインスタンス（<code>[storage.postgres.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>qdrant</code></td><td>map</td><td>—</td><td>Qdrant ストレージインスタンス（<code>[storage.qdrant.&lt;alias&gt;]</code>）。</td></tr>
+<tr><td><code>sqlite</code></td><td>map</td><td>—</td><td>SQLite ストレージインスタンス（<code>[storage.sqlite.&lt;alias&gt;]</code>）。</td></tr>
 </tbody>
 </table>
 </div>
@@ -1897,24 +1964,24 @@ api_key = "..."
 <tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
 </thead>
 <tbody>
-<tr><td><code>api_key</code> 🔑</td><td>any</td><td><code>null</code></td><td>API key used for transcription requests (Groq transcription provider).</td></tr>
-<tr><td><code>api_url</code></td><td>string</td><td><code>"https://api.groq.com/openai/v1/audio/transcriptions"</code></td><td>Whisper API endpoint URL (Groq transcription provider).</td></tr>
-<tr><td><code>assemblyai</code></td><td>オブジェクト</td><td>—</td><td>AssemblyAI STT model_provider configuration (<code>[transcription.assemblyai]</code>).</td></tr>
-<tr><td><code>deepgram</code></td><td>オブジェクト</td><td>—</td><td>Deepgram STT model_provider configuration (<code>[transcription.deepgram]</code>).</td></tr>
+<tr><td><code>api_key</code> 🔑</td><td>any</td><td><code>null</code></td><td>文字起こしリクエストに使用するAPIキー（Groq文字起こしプロバイダー）。</td></tr>
+<tr><td><code>api_url</code></td><td>string</td><td><code>"https://api.groq.com/openai/v1/audio/transcriptions"</code></td><td>Whisper APIエンドポイントURL（Groq文字起こしプロバイダー）。</td></tr>
+<tr><td><code>assemblyai</code></td><td>オブジェクト</td><td>—</td><td>AssemblyAI STT model_provider 設定（<code>[transcription.assemblyai]</code>）。</td></tr>
+<tr><td><code>deepgram</code></td><td>オブジェクト</td><td>—</td><td>Deepgram STT model_provider 設定（<code>[transcription.deepgram]</code>）。</td></tr>
 <tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>それをサポートするチャネルの音声トランスクリプションを有効にします。</td></tr>
-<tr><td><code>google</code></td><td>オブジェクト</td><td>—</td><td>Google Cloud Speech-to-Text model_provider configuration (<code>[transcription.google]</code>).</td></tr>
+<tr><td><code>google</code></td><td>オブジェクト</td><td>—</td><td>Google Cloud Speech-to-Text の model_provider 設定（<code>[transcription.google]</code>）。</td></tr>
 <tr><td><code>initial_prompt</code></td><td>any</td><td><code>null</code></td><td>予想される語彙への文字起こしをバイアスするためのオプションの初期プロンプト</td></tr>
-<tr><td><code>language</code></td><td>any</td><td><code>null</code></td><td>Optional language hint (ISO-639-1, e.g. “en”, “ru”) for Groq transcription provider.</td></tr>
+<tr><td><code>language</code></td><td>any</td><td><code>null</code></td><td>Groq文字起こしプロバイダー向けのオプションの言語ヒント（ISO-639-1、例: “en”、“ru”）。</td></tr>
 <tr><td><code>local_whisper</code></td><td>オブジェクト</td><td>—</td><td>ローカル/自己ホストの Whisper 互換 STT エンドポイント (<code>[transcription.local_whisper]</code>)。</td></tr>
 <tr><td><code>max_duration_secs</code></td><td>整数</td><td><code>120</code></td><td>最大音声時間 (秒単位) (これより長いメッセージはスキップされます)。</td></tr>
-<tr><td><code>model</code></td><td>string</td><td><code>"whisper-large-v3-turbo"</code></td><td>Whisper model name (Groq transcription provider).</td></tr>
-<tr><td><code>openai</code></td><td>オブジェクト</td><td>—</td><td>OpenAI Whisper STT model_provider configuration (<code>[transcription.openai]</code>).</td></tr>
+<tr><td><code>model</code></td><td>string</td><td><code>"whisper-large-v3-turbo"</code></td><td>Whisperモデル名（Groq文字起こしプロバイダー）。</td></tr>
+<tr><td><code>openai</code></td><td>オブジェクト</td><td>—</td><td>OpenAI Whisper STT の model_provider 設定 (<code>[transcription.openai]</code>)。</td></tr>
 <tr><td><code>transcribe_non_ptt_audio</code></td><td>ブール値</td><td><code>false</code></td><td>WhatsApp で非 PTT (転送/通常) 音声メッセージも文字起こしします。</td></tr>
 </tbody>
 </table>
 </div>
 <h3 id="transcriptionassemblyai"><a class="header" href="#transcriptionassemblyai"><code>transcription.assemblyai</code></a></h3>
-<p>AssemblyAI STT model_provider configuration (<code>[transcription.assemblyai]</code>).</p>
+<p>AssemblyAI STT model_provider 設定（<code>[transcription.assemblyai]</code>）。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1926,7 +1993,7 @@ api_key = "..."
 </table>
 </div>
 <h3 id="transcriptiondeepgram"><a class="header" href="#transcriptiondeepgram"><code>transcription.deepgram</code></a></h3>
-<p>Deepgram STT model_provider configuration (<code>[transcription.deepgram]</code>).</p>
+<p>Deepgram STT model_provider 設定（<code>[transcription.deepgram]</code>）。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1939,7 +2006,7 @@ api_key = "..."
 </table>
 </div>
 <h3 id="transcriptiongoogle"><a class="header" href="#transcriptiongoogle"><code>transcription.google</code></a></h3>
-<p>Google Cloud Speech-to-Text model_provider configuration (<code>[transcription.google]</code>).</p>
+<p>Google Cloud Speech-to-Text の model_provider 設定（<code>[transcription.google]</code>）。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1968,7 +2035,7 @@ api_key = "..."
 </table>
 </div>
 <h3 id="transcriptionopenai"><a class="header" href="#transcriptionopenai"><code>transcription.openai</code></a></h3>
-<p>OpenAI Whisper STT model_provider configuration (<code>[transcription.openai]</code>).</p>
+<p>OpenAI Whisper STT の model_provider 設定 (<code>[transcription.openai]</code>)。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1996,8 +2063,8 @@ api_key = "..."
 </table>
 </div>
 <h2 id="tts"><a class="header" href="#tts"><code>tts</code></a></h2>
-<p>Text-to-Speech subsystem configuration (<code>[tts]</code>).</p>
-<p>Per-instance TTS configs live under <code>[tts_providers.&lt;type&gt;.&lt;alias&gt;]</code> (parallel to <code>providers.models</code>). What remains here are the global runtime knobs that apply to every model_provider invocation.</p>
+<p>Text-to-Speech サブシステムの構成（<code>[tts]</code>）。</p>
+<p>インスタンスごとの TTS 設定は <code>[tts_providers.&lt;type&gt;.&lt;alias&gt;]</code> の下に配置されます（<code>providers.models</code> と同様）。ここに残っているのは、すべての model_provider 呼び出しに適用されるグローバルなランタイム設定です。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -2005,7 +2072,7 @@ api_key = "..."
 </thead>
 <tbody>
 <tr><td><code>default_format</code></td><td>string</td><td><code>"mp3"</code></td><td>デフォルトオーディオ出力形式（<code>"mp3"</code>、<code>"opus"</code>、<code>"wav"</code>）。</td></tr>
-<tr><td><code>default_voice</code></td><td>string</td><td><code>"alloy"</code></td><td>Default voice ID passed to the selected tts provider.</td></tr>
+<tr><td><code>default_voice</code></td><td>string</td><td><code>"alloy"</code></td><td>選択した TTS プロバイダーに渡されるデフォルトのボイス ID。</td></tr>
 <tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>TTS合成を有効化。</td></tr>
 <tr><td><code>max_text_length</code></td><td>整数</td><td><code>4096</code></td><td>最大入力テキスト長（文字数、デフォルト4096）。</td></tr>
 </tbody>
@@ -2013,7 +2080,7 @@ api_key = "..."
 </div>
 <h2 id="tunnel"><a class="header" href="#tunnel"><code>tunnel</code></a></h2>
 <p>ゲートウェイを公開するためのトンネル設定 (<code>[tunnel]</code> セクション)。</p>
-<p>Supported model_providers: <code>"none"</code> (default), <code>"cloudflare"</code>, <code>"tailscale"</code>, <code>"ngrok"</code>, <code>"openvpn"</code>, <code>"pinggy"</code>, <code>"custom"</code>.</p>
+<p>サポートされている model_providers: <code>"none"</code> (デフォルト)、<code>"cloudflare"</code>、<code>"tailscale"</code>、<code>"ngrok"</code>、<code>"openvpn"</code>、<code>"pinggy"</code>、<code>"custom"</code>。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -2026,7 +2093,7 @@ api_key = "..."
 <tr><td><code>openvpn</code></td><td>オブジェクト</td><td>—</td><td>OpenVPNトンネル設定（<code>[tunnel.openvpn]</code>）。</td></tr>
 <tr><td><code>pinggy</code></td><td>オブジェクト</td><td>—</td><td></td></tr>
 <tr><td><code>tailscale</code></td><td>オブジェクト</td><td>—</td><td></td></tr>
-<tr><td><code>tunnel_provider</code>*</td><td>string</td><td>—</td><td>How the gateway gets exposed to the public internet so webhooks (Telegram, Slack, etc.) can reach it. <code>none</code> = keep it local, no tunnel; <code>cloudflare</code> = Cloudflare Tunnel via cloudflared (needs a Zero Trust account and token); <code>tailscale</code> = Tailscale Funnel/Serve (tailnet-only or public, no account beyond tailscale); <code>ngrok</code> = ngrok agent with auth token; <code>openvpn</code> = bring-your-own OpenVPN egress; <code>pinggy</code> = Pinggy SSH tunnels (quick one-shot URLs); <code>custom</code> = run an arbitrary command you define under <code>[tunnel.custom]</code>.</td></tr>
+<tr><td><code>tunnel_provider</code>*</td><td>string</td><td>—</td><td>ゲートウェイをパブリックインターネットに公開して、Webhook（Telegram、Slack など）が到達できるようにする方法。<code>none</code> = ローカルのまま、トンネルなし。<code>cloudflare</code> = cloudflared 経由の Cloudflare Tunnel（Zero Trust アカウントとトークンが必要）。<code>tailscale</code> = Tailscale Funnel/Serve（tailnet 内のみまたはパブリック、tailscale 以外のアカウント不要）。<code>ngrok</code> = 認証トークンを使う ngrok エージェント。<code>openvpn</code> = 独自の OpenVPN 出口を使用。<code>pinggy</code> = Pinggy SSH トンネル（手軽なワンショット URL）。<code>custom</code> = <code>[tunnel.custom]</code> で定義した任意のコマンドを実行。</td></tr>
 </tbody>
 </table>
 </div>
@@ -2068,7 +2135,7 @@ api_key = "..."
 </div>
 <h3 id="tunnelopenvpn"><a class="header" href="#tunnelopenvpn"><code>tunnel.openvpn</code></a></h3>
 <p>OpenVPNトンネル設定（<code>[tunnel.openvpn]</code>）。</p>
-<p>Required when <code>tunnel.tunnel_provider = "openvpn"</code>. Omitting this section entirely preserves previous behavior. Setting <code>tunnel.tunnel_provider = "none"</code> (or removing the <code>[tunnel.openvpn]</code> block) cleanly reverts to no-tunnel mode.</p>
+<p><code>tunnel.tunnel_provider = "openvpn"</code> の場合は必須です。このセクションを完全に省略すると、以前の動作が維持されます。<code>tunnel.tunnel_provider = "none"</code> を設定する（または <code>[tunnel.openvpn]</code> ブロックを削除する）と、トンネルなしモードにクリーンに戻ります。</p>
 <p>デフォルト: <code>connect_timeout_secs = 30</code>。</p>
 <div class="table-wrapper">
 <table>
@@ -2164,13 +2231,31 @@ api_key = "..."
 <tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
 </thead>
 <tbody>
-<tr><td><code>brave_api_key</code> 🔑</td><td>any</td><td><code>null</code></td><td>Brave Search API key (required if search_provider is “brave”)</td></tr>
+<tr><td><code>brave_api_key</code> 🔑</td><td>any</td><td><code>null</code></td><td>Brave Search APIキー（search_providerが“brave“の場合に必須）</td></tr>
 <tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td><code>web_search_tool</code>を有効にしてウェブ検索を行う</td></tr>
+<tr><td><code>jina_api_key</code> 🔑</td><td>any</td><td><code>null</code></td><td>Jina AI API key (required if search_provider is “jina”)</td></tr>
 <tr><td><code>max_results</code></td><td>整数</td><td><code>5</code></td><td>検索あたりの最大結果数（1～10）</td></tr>
-<tr><td><code>search_provider</code></td><td>string</td><td><code>"duckduckgo"</code></td><td>Search provider: “duckduckgo” (free), “brave” (requires API key), “tavily” (requires API key), or “searxng” (self-hosted)</td></tr>
-<tr><td><code>searxng_instance_url</code></td><td>any</td><td><code>null</code></td><td>SearXNG instance URL (required if search_provider is <code>"searxng"</code>), e.g. <code>"https://searx.example.com"</code>.</td></tr>
-<tr><td><code>tavily_api_key</code> 🔑</td><td>any</td><td><code>null</code></td><td>Tavily Search API key (required if search_provider is “tavily”)</td></tr>
+<tr><td><code>search_provider</code></td><td>string</td><td><code>"duckduckgo"</code></td><td>Search provider: “duckduckgo” (free), “brave” (requires API key), “tavily” (requires API key), “searxng” (self-hosted), or “jina” (requires API key)</td></tr>
+<tr><td><code>searxng_instance_url</code></td><td>any</td><td><code>null</code></td><td>SearXNG インスタンスの URL（search_provider が <code>"searxng"</code> の場合は必須）。例: <code>"https://searx.example.com"</code>。</td></tr>
+<tr><td><code>tavily_api_key</code> 🔑</td><td>any</td><td><code>null</code></td><td>Tavily Search API キー（search_provider が “tavily” の場合は必須）</td></tr>
 <tr><td><code>timeout_secs</code></td><td>整数</td><td><code>15</code></td><td>リクエストタイムアウト（秒単位）</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="wss"><a class="header" href="#wss"><code>wss</code></a></h2>
+<p>WebSocket Secure (WSS) transport for remote TUI-to-daemon connections (<code>[wss]</code>).</p>
+<p>When enabled, the daemon listens for TLS-encrypted WebSocket connections on the configured bind address and port. TUI clients connect via <code>--connect wss://host:port</code>.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>キー</th><th>タイプ</th><th>デフォルト</th><th>説明</th></tr>
+</thead>
+<tbody>
+<tr><td><code>bind</code></td><td>string</td><td><code>"0.0.0.0"</code></td><td>Bind address for the WSS listener (default: “0.0.0.0”).</td></tr>
+<tr><td><code>cert_path</code></td><td>string</td><td><code>""</code></td><td>PEM エンコード済みサーバー証明書ファイルへのパス。</td></tr>
+<tr><td><code>enabled</code></td><td>ブール値</td><td><code>false</code></td><td>Enable the WSS listener (default: false).</td></tr>
+<tr><td><code>key_path</code></td><td>string</td><td><code>""</code></td><td>PEM エンコード済みサーバー秘密鍵ファイルへのパス。</td></tr>
+<tr><td><code>port</code></td><td>整数</td><td>9781</td><td>Port for the WSS listener (default: 9781).</td></tr>
 </tbody>
 </table>
 </div>
@@ -2226,10 +2311,11 @@ api_key = "..."
         <script src="../book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
-        <script src="../theme/version-selector-e8a1edcd.js"></script>
-        <script src="../theme/lang-switcher-82c8c4bf.js"></script>
+        <script src="../../../_shared/theme/version-selector.js"></script>
+        <script src="../../../_shared/theme/lang-switcher.js"></script>
+        <script src="../../../_shared/theme/pc-enhance.js"></script>
         <script src="../mermaid-193ae996.min.js"></script>
-        <script src="../mermaid-init-94f7f342.js"></script>
+        <script src="../mermaid-init-d3ccd83c.js"></script>
 
 
 

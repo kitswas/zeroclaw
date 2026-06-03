@@ -82,7 +82,7 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../" data
 <a href=#80 id=80 data-nosnippet>80</a>        <span class="kw">let </span>timeout = <span class="self">self</span>.timeout_secs;
 <a href=#81 id=81 data-nosnippet>81</a>        <span class="kw">let </span>poll_interval = std::time::Duration::from_secs((timeout / <span class="number">2</span>).max(<span class="number">1</span>));
 <a href=#82 id=82 data-nosnippet>82</a>
-<a href=#83 id=83 data-nosnippet>83</a>        <span class="kw">let </span>handle = tokio::spawn(<span class="kw">async move </span>{
+<a href=#83 id=83 data-nosnippet>83</a>        <span class="kw">let </span>handle = <span class="macro">zeroclaw_spawn::spawn!</span>(<span class="kw">async move </span>{
 <a href=#84 id=84 data-nosnippet>84</a>            <span class="kw">let </span><span class="kw-2">mut </span>interval = tokio::time::interval(poll_interval);
 <a href=#85 id=85 data-nosnippet>85</a>            <span class="comment">// The first tick completes immediately — skip it so we wait a full
 <a href=#86 id=86 data-nosnippet>86</a>            // interval before the first check.

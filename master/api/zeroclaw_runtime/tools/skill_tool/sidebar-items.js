@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"struct":["SkillShellTool"]};
+window.SIDEBAR_ITEMS = {"struct":["SkillBuiltinTool","SkillShellTool"]};

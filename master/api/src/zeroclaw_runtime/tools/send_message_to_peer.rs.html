@@ -22,7 +22,7 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../../" d
 <a href=#20 id=20 data-nosnippet>20</a>//!   through the same channel beta is configured on.
 <a href=#21 id=21 data-nosnippet>21</a>//!
 <a href=#22 id=22 data-nosnippet>22</a>//!   This path is fire-and-forget: the recipient runs on a detached
-<a href=#23 id=23 data-nosnippet>23</a>//!   `tokio::spawn`, so the sender's `ToolResult.success = true`
+<a href=#23 id=23 data-nosnippet>23</a>//!   `zeroclaw_spawn::spawn!`, so the sender's `ToolResult.success = true`
 <a href=#24 id=24 data-nosnippet>24</a>//!   means "accepted for processing", not "completed". Recipient
 <a href=#25 id=25 data-nosnippet>25</a>//!   errors do NOT surface to the sender; they are emitted via
 <a href=#26 id=26 data-nosnippet>26</a>//!   `tracing::warn!` inside the spawned task and via the recipient
@@ -227,7 +227,7 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../../" d
 <a href=#225 id=225 data-nosnippet>225</a>            <span class="kw">let </span>sender = <span class="self">self</span>.sender_alias.clone();
 <a href=#226 id=226 data-nosnippet>226</a>            <span class="kw">let </span>recipient_alias = canonical.clone();
 <a href=#227 id=227 data-nosnippet>227</a>            <span class="kw">let </span>body = message.clone();
-<a href=#228 id=228 data-nosnippet>228</a>            tokio::spawn(<span class="kw">async move </span>{
+<a href=#228 id=228 data-nosnippet>228</a>            <span class="macro">zeroclaw_spawn::spawn!</span>(<span class="kw">async move </span>{
 <a href=#229 id=229 data-nosnippet>229</a>                <span class="kw">if let </span><span class="prelude-val">Err</span>(e) =
 <a href=#230 id=230 data-nosnippet>230</a>                    <span class="kw">crate</span>::agent::loop_::process_message(cfg, <span class="kw-2">&amp;</span>recipient_alias, <span class="kw-2">&amp;</span>body, <span class="prelude-val">None</span>).<span class="kw">await
 <a href=#231 id=231 data-nosnippet>231</a>                </span>{

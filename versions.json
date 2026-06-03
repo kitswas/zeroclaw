@@ -2,9 +2,8 @@
   "stable": null,
   "versions": [
     {
-      "tag": "master",
       "label": "Development (master)",
-      "url": "/master/"
+      "tag": "master"
     }
   ]
 }

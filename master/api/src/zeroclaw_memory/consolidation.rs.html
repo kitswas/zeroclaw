@@ -42,7 +42,7 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../" data
 <a href=#40 id=40 data-nosnippet>40</a>/// Phase 1: Write a history entry to the Daily memory category.
 <a href=#41 id=41 data-nosnippet>41</a>/// Phase 2: Write a memory update to the Core category (if the LLM identified new facts).
 <a href=#42 id=42 data-nosnippet>42</a>///
-<a href=#43 id=43 data-nosnippet>43</a>/// This function is designed to be called fire-and-forget via `tokio::spawn`.
+<a href=#43 id=43 data-nosnippet>43</a>/// This function is designed to be called fire-and-forget via `zeroclaw_spawn::spawn!`.
 <a href=#44 id=44 data-nosnippet>44</a>/// Strip channel media markers (e.g. `[IMAGE:/local/path]`, `[DOCUMENT:...]`)
 <a href=#45 id=45 data-nosnippet>45</a>/// that contain local filesystem paths.  These must never be forwarded to
 <a href=#46 id=46 data-nosnippet>46</a>/// upstream model_provider APIs — they would leak local paths and cause API errors.

@@ -249,7 +249,7 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../" data
 <a href=#247 id=247 data-nosnippet>247</a>
 <a href=#248 id=248 data-nosnippet>248</a>    <span class="comment">// Spawn a task that forwards broadcast updates to the WebSocket
 <a href=#249 id=249 data-nosnippet>249</a>    </span><span class="kw">let </span>canvas_id_clone = canvas_id.clone();
-<a href=#250 id=250 data-nosnippet>250</a>    <span class="kw">let </span>send_task = tokio::spawn(<span class="kw">async move </span>{
+<a href=#250 id=250 data-nosnippet>250</a>    <span class="kw">let </span>send_task = <span class="macro">zeroclaw_spawn::spawn!</span>(<span class="kw">async move </span>{
 <a href=#251 id=251 data-nosnippet>251</a>        <span class="kw">loop </span>{
 <a href=#252 id=252 data-nosnippet>252</a>            <span class="kw">match </span>rx.recv().<span class="kw">await </span>{
 <a href=#253 id=253 data-nosnippet>253</a>                <span class="prelude-val">Ok</span>(frame) =&gt; {

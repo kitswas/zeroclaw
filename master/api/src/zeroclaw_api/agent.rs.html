@@ -51,8 +51,13 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../" data
 <a href=#49 id=49 data-nosnippet>49</a>    /// unavailable for this call" rather than zero.
 <a href=#50 id=50 data-nosnippet>50</a>    </span>Usage {
 <a href=#51 id=51 data-nosnippet>51</a>        input_tokens: <span class="prelude-ty">Option</span>&lt;u64&gt;,
-<a href=#52 id=52 data-nosnippet>52</a>        output_tokens: <span class="prelude-ty">Option</span>&lt;u64&gt;,
-<a href=#53 id=53 data-nosnippet>53</a>        cost_usd: <span class="prelude-ty">Option</span>&lt;f64&gt;,
-<a href=#54 id=54 data-nosnippet>54</a>    },
-<a href=#55 id=55 data-nosnippet>55</a>}
+<a href=#52 id=52 data-nosnippet>52</a>        <span class="doccomment">/// Tokens served from the provider's prompt cache (e.g. Anthropic
+<a href=#53 id=53 data-nosnippet>53</a>        /// `cache_read_input_tokens`, OpenAI `cached_tokens`). These count
+<a href=#54 id=54 data-nosnippet>54</a>        /// toward the context window and must be added to `input_tokens` to
+<a href=#55 id=55 data-nosnippet>55</a>        /// get the true total context size.
+<a href=#56 id=56 data-nosnippet>56</a>        </span>cached_input_tokens: <span class="prelude-ty">Option</span>&lt;u64&gt;,
+<a href=#57 id=57 data-nosnippet>57</a>        output_tokens: <span class="prelude-ty">Option</span>&lt;u64&gt;,
+<a href=#58 id=58 data-nosnippet>58</a>        cost_usd: <span class="prelude-ty">Option</span>&lt;f64&gt;,
+<a href=#59 id=59 data-nosnippet>59</a>    },
+<a href=#60 id=60 data-nosnippet>60</a>}
 </code></pre></div></section></main></body></html>

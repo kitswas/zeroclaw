@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ja" class="ayu sidebar-visible" dir="ltr">
+<html lang="ja" class="default-dark sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -12,11 +12,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="../favicon-fc23365c.svg">
-        <link rel="shortcut icon" href="../favicon-53763955.png">
+        <link rel="icon" href="../../../_shared/favicon.svg">
+        <link rel="shortcut icon" href="../../../_shared/favicon.png">
         <link rel="stylesheet" href="../css/variables-8adf115d.css">
         <link rel="stylesheet" href="../css/general-2459343d.css">
-        <link rel="stylesheet" href="../css/chrome-9dfbd86b.css">
+        <link rel="stylesheet" href="../../../_shared/css/chrome.css">
         <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
@@ -27,19 +27,20 @@
         <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
         <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
 
-        <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="../theme/custom-a6e9ac27.css">
+        <!-- Custom theme stylesheets (pc-themes.css generated; ordered first) -->
+        <link rel="stylesheet" href="../../../_shared/theme/pc-themes.css">
+        <link rel="stylesheet" href="../../../_shared/theme/custom.css">
 
 
         <!-- Provide site root and default themes to javascript -->
         <script>
             const path_to_root = "../";
-            const default_light_theme = "ayu";
-            const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../searchindex-ebf8c374.js";
+            const default_light_theme = "default-dark";
+            const default_dark_theme = "default-dark";
+            window.path_to_searchindex_js = "../searchindex-341576cc.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-0ac1f263.js"></script>
+        <script src="../toc-961cbe6b.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -77,7 +78,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
-            html.classList.remove('ayu')
+            html.classList.remove('default-dark')
             html.classList.add(theme);
             html.classList.add("js");
         </script>
@@ -127,11 +128,34 @@
                         </button>
                         <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
                             <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                            <!-- PC_THEME_LIST_START: generated from themes.json by `cargo xtask mdbook themes`; do not edit between markers -->
+                            <li role="none" class="pc-theme-group">Dark</li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-default-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#1e1e24;--s1:#22d3ee;--s2:#a78bfa;--s3:#f59e0b"></span><span class="pc-theme-name">Default Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-oled-black"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#000000;--s1:#22d3ee;--s2:#8b5cf6;--s3:#10b981"></span><span class="pc-theme-name">OLED Black</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-nord-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#2e3440;--s1:#88c0d0;--s2:#81a1c1;--s3:#a3be8c"></span><span class="pc-theme-name">Nord Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-dracula"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#282a36;--s1:#bd93f9;--s2:#ff79c6;--s3:#50fa7b"></span><span class="pc-theme-name">Dracula</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-monokai"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#272822;--s1:#f92672;--s2:#a6e22e;--s3:#e6db74"></span><span class="pc-theme-name">Monokai</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-solarized-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#002b36;--s1:#268bd2;--s2:#2aa198;--s3:#b58900"></span><span class="pc-theme-name">Solarized Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-kanagawa-wave"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#1f1f28;--s1:#7e9cd8;--s2:#957fb8;--s3:#e6c384"></span><span class="pc-theme-name">Kanagawa Wave</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-kanagawa-dragon"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#181616;--s1:#8ba4b0;--s2:#a292a3;--s3:#c4b28a"></span><span class="pc-theme-name">Kanagawa Dragon</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-rose-pine"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#191724;--s1:#ebbcba;--s2:#c4a7e7;--s3:#f6c177"></span><span class="pc-theme-name">Rosé Pine</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-rose-pine-moon"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#232136;--s1:#ea9a97;--s2:#c4a7e7;--s3:#f6c177"></span><span class="pc-theme-name">Rosé Pine Moon</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-night-owl"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#011627;--s1:#82aaff;--s2:#c792ea;--s3:#addb67"></span><span class="pc-theme-name">Night Owl</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-everforest-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#2d353b;--s1:#a7c080;--s2:#83c092;--s3:#dbbc7f"></span><span class="pc-theme-name">Everforest Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-cobalt2"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#193549;--s1:#ffc600;--s2:#ff9d00;--s3:#80ffbb"></span><span class="pc-theme-name">Cobalt2</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-flexoki-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#100f0f;--s1:#ce5d97;--s2:#879a39;--s3:#da702c"></span><span class="pc-theme-name">Flexoki Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-hacker-green"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#0a0e0a;--s1:#00ff41;--s2:#00cc33;--s3:#008f11"></span><span class="pc-theme-name">Hacker Green</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-material-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#212121;--s1:#89ddff;--s2:#c792ea;--s3:#ffcb6b"></span><span class="pc-theme-name">Material Dark</span></button></li>
+                            <li role="none" class="pc-theme-group">Light</li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-default-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#f4f4f5;--s1:#22d3ee;--s2:#8b5cf6;--s3:#f59e0b"></span><span class="pc-theme-name">Default Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-nord-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#eceff4;--s1:#5e81ac;--s2:#88c0d0;--s3:#a3be8c"></span><span class="pc-theme-name">Nord Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-solarized-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fdf6e3;--s1:#268bd2;--s2:#2aa198;--s3:#b58900"></span><span class="pc-theme-name">Solarized Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-kanagawa-lotus"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#f2ecbc;--s1:#4d699b;--s2:#b35b79;--s3:#836f4a"></span><span class="pc-theme-name">Kanagawa Lotus</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-rose-pine-dawn"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#faf4ed;--s1:#d7827e;--s2:#907aa9;--s3:#ea9d34"></span><span class="pc-theme-name">Rosé Pine Dawn</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-everforest-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fdf6e3;--s1:#8da101;--s2:#35a77c;--s3:#dfa000"></span><span class="pc-theme-name">Everforest Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-flexoki-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fffcf0;--s1:#ce5d97;--s2:#879a39;--s3:#da702c"></span><span class="pc-theme-name">Flexoki Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-material-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fafafa;--s1:#6182b8;--s2:#7c4dff;--s3:#f76d47"></span><span class="pc-theme-name">Material Light</span></button></li>
+                            <!-- PC_THEME_LIST_END -->
                         </ul>
                         <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
                             <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
@@ -141,14 +165,11 @@
                     <h1 class="menu-title">ZeroClaw Docs</h1>
 
                     <div class="right-buttons">
-                        <a href="../print.html" title="Print this book" aria-label="Print this book">
-                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
-                        </a>
                         <a href="https://github.com/zeroclaw-labs/zeroclaw" title="Git repository" aria-label="Git repository">
                             <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
                         </a>
-                        <a href="https://github.com/zeroclaw-labs/zeroclaw/edit/master/docs/book/src/foundations/fnd-003-governance.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
-                            <span class=fa-svg id="git-edit-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M421.7 220.3l-11.3 11.3-22.6 22.6-205 205c-6.6 6.6-14.8 11.5-23.8 14.1L30.8 511c-8.4 2.5-17.5 .2-23.7-6.1S-1.5 489.7 1 481.2L38.7 353.1c2.6-9 7.5-17.2 14.1-23.8l205-205 22.6-22.6 11.3-11.3 33.9 33.9 62.1 62.1 33.9 33.9zM96 353.9l-9.3 9.3c-.9 .9-1.6 2.1-2 3.4l-25.3 86 86-25.3c1.3-.4 2.5-1.1 3.4-2l9.3-9.3H112c-8.8 0-16-7.2-16-16V353.9zM453.3 19.3l39.4 39.4c25 25 25 65.5 0 90.5l-14.5 14.5-22.6 22.6-11.3 11.3-33.9-33.9-62.1-62.1L314.3 67.7l11.3-11.3 22.6-22.6 14.5-14.5c25-25 65.5-25 90.5 0z"/></svg></span>
+                        <a href="https://discord.gg/tQ88WUkPyJ" title="Join our Discord" aria-label="Join our Discord" rel="external noopener" target="_blank">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg></span>
                         </a>
 
                     </div>
@@ -180,11 +201,12 @@
                 </script>
 
                 <div id="mdbook-content" class="content">
+                    <aside id="pc-page-toc" class="pc-page-toc" aria-label="On this page"></aside>
                     <main>
                         <h1 id="fnd-003-チーム編成プロジェクトガバナンスコントリビューションパイプライン"><a class="header" href="#fnd-003-チーム編成プロジェクトガバナンスコントリビューションパイプライン">FND-003: チーム編成、プロジェクトガバナンス、コントリビューションパイプライン</a></h1>
-<p>Starting v0.7.0 · Type: Governance · Rev. 5</p>
+<p>v0.7.0 開始 · 種別: ガバナンス · リビジョン 5</p>
 <blockquote>
-<p><strong>Canonical reference</strong> · Ratified by the team · Rev. 5 Original governance discussion: <a href="https://github.com/zeroclaw-labs/zeroclaw/issues/5577">#5577</a> Follow-up work-lane and label-governance policy: <a href="https://github.com/zeroclaw-labs/zeroclaw/issues/6808">#6808</a></p>
+<p><strong>正式リファレンス</strong> · チームにより承認 · Rev. 5 当初のガバナンスに関する議論: <a href="https://github.com/zeroclaw-labs/zeroclaw/issues/5577">#5577</a> 後続のワークレーンおよびラベルガバナンスポリシー: <a href="https://github.com/zeroclaw-labs/zeroclaw/issues/6808">#6808</a></p>
 </blockquote>
 <hr>
 <blockquote>
@@ -201,9 +223,9 @@
 <tbody>
 <tr><td>1</td><td>2026年4月9日</td><td>初期ドラフト</td></tr>
 <tr><td>2</td><td>2026年4月9日</td><td>§6.4「アーキテクチャ準拠：人間のレビューとAIの支援」を追加し、アーキテクチャレビューのAI自動化に関するディスカッション質問を記載しました。</td></tr>
-<tr><td>3</td><td>2026-05-24</td><td>Added #6808 operational-label-policy pointers; current label behavior lives in maintainer docs</td></tr>
-<tr><td>4</td><td>2026-05-24</td><td>Added #6808 community-pickup and issue-risk/PR-risk operational pointers</td></tr>
-<tr><td>5</td><td>2026-05-25</td><td>Promoted #6808 feature-facing work-lane and label-governance policy into FND-003; clarified durable source boundaries, Discussions stewardship, Discord-to-GitHub handoff, and where operational gate questions live</td></tr>
+<tr><td>3</td><td>2026-05-24</td><td>#6808 の運用ラベルポリシーへのポインターを追加。現在のラベル動作はメンテナー向けドキュメントに記載されています</td></tr>
+<tr><td>4</td><td>2026-05-24</td><td>#6808 community-pickup と issue-risk/PR-risk の運用ポインターを追加しました</td></tr>
+<tr><td>5</td><td>2026-05-25</td><td>#6808 の機能向けワークレーンとラベルガバナンスポリシーを FND-003 に昇格。永続的なソース境界、Discussions のスチュワードシップ、Discord から GitHub へのハンドオフ、および運用ゲートに関する質問の所在を明確化</td></tr>
 </tbody>
 </table>
 </div>
@@ -214,12 +236,12 @@
 <li><a href="#2-the-three-part-system">3部構成システム</a></li>
 <li><a href="#3-github-projects-the-work-pipeline">GitHub プロジェクト: ワークパイプライン</a>
 <ul>
-<li><a href="#36-work-lanes-and-state-ownership">3.6 Work Lanes and State Ownership</a></li>
+<li><a href="#36-work-lanes-and-state-ownership">3.6 ワークレーンと状態の所有権</a></li>
 </ul>
 </li>
-<li><a href="#4-github-discussions-community-discussion-and-handoff">GitHub Discussions: Community Discussion and Handoff</a>
+<li><a href="#4-github-discussions-community-discussion-and-handoff">GitHub Discussions: コミュニティでの議論と引き継ぎ</a>
 <ul>
-<li><a href="#45-discussions-stewardship-and-discord-to-github-handoff">4.5 Discussions Stewardship And Discord-to-GitHub Handoff</a></li>
+<li><a href="#45-discussions-stewardship-and-discord-to-github-handoff">4.5 ディスカッションの管理とDiscordからGitHubへの引き継ぎ</a></li>
 </ul>
 </li>
 <li><a href="#5-team-tiers-and-contribution-authority">チームティアと貢献権限</a></li>
@@ -249,7 +271,7 @@
 <p>ZeroClawには3つのものが必要です：</p>
 <ol>
 <li><strong>パイプライン</strong>は、アイデアを実装されたコードに変換するための仕組みで、各段階が可視化され、移行ごとに明確なゲートが設けられています。</li>
-<li><strong>A maintained discussion lane</strong> for community questions, ideas, showcases, and early exploration that are not ready for the pipeline yet, without losing them or cluttering the active work</li>
+<li><strong>メンテナンスされたディスカッションレーン</strong>: コミュニティからの質問、アイデア、ショーケース、まだパイプラインに乗せる準備ができていない初期段階の検討事項を、見失ったりアクティブな作業を散らかしたりすることなく扱うための場</li>
 <li><strong>ガバナンスモデル</strong>は、誰が何を決定できるか、アーキテクチャの決定がどのように行われるか、そしてチームがどのように成長するかを定義します。</li>
 </ol>
 <p>これらは3つの異なる懸念事項です。これらを混同する—すべてを1つのボードにまとめる、または非公式なチャットに依存して意思決定を行う—ことが、チームが脱却しようとしている混乱の原因となります。</p>
@@ -262,28 +284,28 @@
 </thead>
 <tbody>
 <tr><td>ワークパイプライン（バックログ → リリース）</td><td><strong>GitHub プロジェクト v2</strong></td><td>カスタムフィールド、複数のビュー、カンバンとロードマップ、組み込みの自動化、マイルストーン追跡</td></tr>
-<tr><td>Community discussion and idea incubation</td><td><strong>GitHub Discussions</strong></td><td>Community-visible, no PR required, separates early conversation from committed work, promotes concrete outcomes into the owning tracked surface</td></tr>
+<tr><td>コミュニティでの議論とアイデアの育成</td><td><strong>GitHub Discussions</strong></td><td>コミュニティに公開され、PR は不要で、初期の議論を確定した作業から分離し、具体的な成果を所有元の追跡対象に昇格させる</td></tr>
 <tr><td>ガバナンスと意思決定権限</td><td><strong>RFCプロセス + チームティア + CODEOWNERS</strong></td><td>すでに <code>docs/proposals/</code> を通じて部分的に確立されていますが、正式な文書化と完了が必要です。</td></tr>
 </tbody>
 </table>
 </div>
-<p>The key principle: <strong>the Project board contains only work the team has committed to thinking about.</strong> Early community discussion, ideas, Q&amp;A, and showcases can live in Discussions when the lane is maintained. Work that has been evaluated, accepted, and scoped lives in the Project. This distinction is what keeps the board useful.</p>
-<p>FND-003 is the durable governance source for work-lane and contribution-pipeline policy. RFC #6808 was the staging discussion for feature-facing work lanes, label governance, issue triage, and maintainer routing; after its policy slices are promoted, their durable rules live in this foundation document plus the maintainer operational pages linked below. Do not treat the RFC issue as a competing governance document after its policy has been promoted here.</p>
-<p>Operational details intentionally live close to the workflow that uses them:</p>
+<p>重要な原則: <strong>Project ボードには、チームが検討すると確約した作業のみを含めます。</strong> 初期のコミュニティでの議論、アイデア、Q&amp;A、ショーケースは、レーンが整備されていれば Discussions に置くことができます。評価され、承認され、スコープが定められた作業は Project に置きます。この区別こそが、ボードを有用に保ちます。</p>
+<p>FND-003 は、作業レーンおよびコントリビューションパイプラインのポリシーに関する永続的なガバナンスソースです。RFC #6808 は、機能向け作業レーン、ラベルガバナンス、issue のトリアージ、メンテナールーティングに関するステージング段階の議論でした。そのポリシースライスがプロモートされた後、それらの永続的なルールはこのファウンデーションドキュメントと、以下にリンクされているメンテナー運用ページに格納されます。ポリシーがここにプロモートされた後は、RFC issue を競合するガバナンスドキュメントとして扱わないでください。</p>
+<p>運用の詳細は、それを使用するワークフローの近くに意図的に配置されています。</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Durable decision</th><th>Operational home</th></tr>
+<tr><th>永続的な決定</th><th>運用ホーム</th></tr>
 </thead>
 <tbody>
-<tr><td>Project board purpose and stage gates</td><td>This document</td></tr>
-<tr><td>PR lanes and merge/review queue discipline</td><td><a href="../maintainers/pr-workflow.html">Maintainer PR workflow</a></td></tr>
-<tr><td>Label definitions, ownership boundaries, and cleanup protocol</td><td><a href="../maintainers/labels.html">Maintainer labels guide</a></td></tr>
-<tr><td>Reviewer intake, risk depth, issue triage, and queue hygiene</td><td><a href="../maintainers/reviewer-playbook.html">Reviewer playbook</a></td></tr>
-<tr><td>Mechanical issue-triage procedure and stale pass details</td><td><a href="../maintainers/skills.html#issue-triage-workflow">Maintainer skills guide</a> and <a href="../maintainers/reviewer-playbook.html#issue-triage">Reviewer playbook</a></td></tr>
-<tr><td>Contributor-facing filing and PR mechanics</td><td>Issue templates, PR template, and <a href="../contributing/how-to.html">How to contribute</a></td></tr>
-<tr><td>Contributor communication, Discussions stewardship, and Discord-to-GitHub handoff</td><td><a href="../contributing/communication.html">Communication</a> and §4.5 below</td></tr>
-<tr><td>RFC-shaped contribution routing before implementation</td><td><a href="../contributing/architecture-map.html">Architecture and contribution map</a> and <a href="../contributing/rfcs.html">RFC process</a></td></tr>
+<tr><td>プロジェクトボードの目的とステージゲート</td><td>このドキュメント</td></tr>
+<tr><td>PRレーンとマージ/レビューキューの規律</td><td><a href="../maintainers/pr-workflow.html">メンテナーの PR ワークフロー</a></td></tr>
+<tr><td>ラベル定義、所有権の境界、およびクリーンアッププロトコル</td><td><a href="../maintainers/labels.html">Maintainer labels guide</a></td></tr>
+<tr><td>レビュアーの受付、リスクの深掘り、課題のトリアージ、キューの整理</td><td><a href="../maintainers/reviewer-playbook.html">レビュアープレイブック</a></td></tr>
+<tr><td>機械的なイシューのトリアージ手順とstaleパスの詳細</td><td><a href="../maintainers/skills.html#issue-triage-workflow">メンテナースキルガイド</a>と<a href="../maintainers/reviewer-playbook.html#issue-triage">レビュアープレイブック</a></td></tr>
+<tr><td>コントリビューター向けの課題報告と PR の手続き</td><td>課題テンプレート、PRテンプレート、<a href="../contributing/how-to.html">コントリビュート方法</a></td></tr>
+<tr><td>コントリビューターとのコミュニケーション、Discussions の運営、Discord から GitHub への引き継ぎ</td><td><a href="../contributing/communication.html">コミュニケーション</a> および以下の §4.5</td></tr>
+<tr><td>実装前のRFC形式のコントリビューションルーティング</td><td><a href="../contributing/architecture-map.html">アーキテクチャと貢献マップ</a>と<a href="../contributing/rfcs.html">RFCプロセス</a></td></tr>
 </tbody>
 </table>
 </div>
@@ -306,7 +328,7 @@
 <p>どこからでも到達可能なターミナル状態を1つ追加します：</p>
 <pre><code>🚫 Won't Do  ← explicit decision not to pursue; never silently closed
 </code></pre>
-<p>The board-level <code>Won't Do</code> state is a durable closure decision. Current closure-label spelling and replacement-process rules live in the <a href="../maintainers/labels.html#resolution-labels">maintainer label guide</a> and <a href="../maintainers/superseding.html">superseding guide</a>.</p>
+<p>ボードレベルの <code>Won't Do</code> ステートは永続的なクローズ決定です。現在のクローズラベルの表記と置き換えプロセスのルールについては、<a href="../maintainers/labels.html#resolution-labels">メンテナーラベルガイド</a>および<a href="../maintainers/superseding.html">置き換えガイド</a>を参照してください。</p>
 <h3 id="32-ザゲイトクエスチョン"><a class="header" href="#32-ザゲイトクエスチョン">3.2 ザ・ゲイト・クエスチョン</a></h3>
 <p>各遷移にはゲート質問があります。項目が次に進む前に、この質問に「yes」と答える必要があります。これによりプロジェクトボードが運用可能になります。Vision → Architecture → Design → Implementation → Testing → Documentation の階層は、各段階でチェックリストになります。</p>
 <div class="table-wrapper">
@@ -325,15 +347,15 @@
 </table>
 </div>
 <p><strong>学生チームにとって明示的なゲートが重要な理由:</strong> ゲートがないと、カードは「完了した」と誰かが感じたために移動し、完了の定義があるために移動するわけではありません。これは「完了」した作業が実際には完了していないという最も一般的な原因です。ゲートによって、完了の定義が可視化され、共有されます。</p>
-<p>These gate questions are governance prompts, not another checklist to duplicate in every PR body or issue comment. The operational forms live in the artifacts that maintainers already touch:</p>
+<p>これらのゲート質問はガバナンスのためのプロンプトであり、すべてのPR本文やIssueコメントに複製するためのチェックリストではありません。運用上の形式は、メンテナーがすでに扱っている成果物の中に存在します。</p>
 <ul>
-<li>issue templates collect the report, user value, reproduction, architecture impact, and risk hints needed for first triage;</li>
-<li>the PR template collects scope boundary, validation evidence, security/privacy impact, compatibility, rollback, labels, and linked issues;</li>
-<li>the maintainer PR workflow defines Definition of Ready, Definition of Done, PR lanes, and merge checks;</li>
-<li>the labels guide defines durable classification, stale-policy labels, and cleanup sequence;</li>
-<li>the reviewer playbook defines intake, review depth, issue triage, automation override, and queue hygiene.</li>
+<li>課題テンプレートは、初期トリアージに必要なレポート、ユーザー価値、再現手順、アーキテクチャへの影響、リスクのヒントを収集します。</li>
+<li>PR テンプレートでは、スコープ境界、検証エビデンス、セキュリティ/プライバシーへの影響、互換性、ロールバック、ラベル、関連 issue を収集します。</li>
+<li>メンテナーのPRワークフローでは、Definition of Ready、Definition of Done、PRレーン、マージチェックを定義します。</li>
+<li>ラベルガイドでは、永続的な分類、stale-policy ラベル、およびクリーンアップシーケンスを定義します。</li>
+<li>レビュアープレイブックでは、受け入れ、レビューの深度、問題のトリアージ、自動化のオーバーライド、キューの整理について定義します。</li>
 </ul>
-<p>If an old FND-003 gate question seems missing, first check those operational homes before adding another copy here.</p>
+<p>古い FND-003 のゲート質問が見当たらない場合は、ここに別のコピーを追加する前に、まずそれらの運用先を確認してください。</p>
 <h3 id="33-カスタムフィールド"><a class="header" href="#33-カスタムフィールド">3.3 カスタムフィールド</a></h3>
 <p>GitHub プロジェクトの設定で、次のフィールドを作成してください:</p>
 <div class="table-wrapper">
@@ -405,59 +427,59 @@
 <li>現在議論中のアクティブなRFC</li>
 <li>最も要望の多かったコミュニティ機能（最高投票数のディスカッション）</li>
 <li>次のリリースマイルストーンを追跡する問題</li>
-<li>The good first issue index (an issue that links to all current <code>good first issue</code> items)</li>
+<li>現在の <code>good first issue</code> 項目すべてにリンクする good first issue インデックス（イシュー）</li>
 </ol>
 <p>ピン留めされたイシューはコミュニティへの約束です：これらは現在最も重要なものです。優先順位が変更されたら、それに応じて更新してください。</p>
-<h3 id="36-work-lanes-and-state-ownership"><a class="header" href="#36-work-lanes-and-state-ownership">3.6 Work Lanes and State Ownership</a></h3>
-<p>Work-lane policy keeps the board, labels, PRs, and issues from trying to answer the same question in different places.</p>
-<p>Use this split:</p>
+<h3 id="36-ワークレーンと状態の所有権"><a class="header" href="#36-ワークレーンと状態の所有権">3.6 ワークレーンと状態の所有権</a></h3>
+<p>ワークレーンポリシーにより、ボード、ラベル、PR、issueが同じ問いに別々の場所で答えようとするのを防ぎます。</p>
+<p>この分割を使用してください</p>
 <div class="table-wrapper">
 <table>
 <thead>
-<tr><th>Surface</th><th>Owns</th><th>Does not own</th></tr>
+<tr><th>Surface</th><th>所有</th><th>所有していません</th></tr>
 </thead>
 <tbody>
-<tr><td>ラベル</td><td>durable classification: type, scope, risk, size, contributor tier, stale/triage policy</td><td>per-push review state, active CI status, personal task lists</td></tr>
-<tr><td>Project board</td><td>planning state: readiness, active owner, roadmap grouping, dependency/blocker state, stale-exemption reason when a field exists</td><td>authoritative PR review queue, mergeability, required checks</td></tr>
-<tr><td>Native PR state</td><td>review decision, required checks, branch freshness, conflicts, mergeability, draft/ready state</td><td>long-term roadmap ownership</td></tr>
-<tr><td>Issues/RFCs</td><td>durable discussion record, acceptance state, user need, linked implementation trail</td><td>live replacement for maintainer docs after policy promotion</td></tr>
+<tr><td>ラベル</td><td>永続的な分類: type、scope、risk、size、contributor tier、stale/triage ポリシー</td><td>プッシュごとのレビュー状態、アクティブなCIステータス、個人のタスクリスト</td></tr>
+<tr><td>プロジェクトボード</td><td>計画状態: 準備状況、アクティブなオーナー、ロードマップのグループ化、依存関係/ブロッカーの状態、フィールドが存在する場合の陳腐化除外理由</td><td>権威あるPRレビューキュー、マージ可能性、必須チェック</td></tr>
+<tr><td>ネイティブPRの状態</td><td>レビュー判定、必須チェック、ブランチの最新性、コンフリクト、マージ可否、ドラフト/レディ状態</td><td>長期的なロードマップのオーナーシップ</td></tr>
+<tr><td>課題/RFC</td><td>永続的なディスカッション記録、承認状態、ユーザーニーズ、リンクされた実装履歴</td><td>ポリシー昇格後のメンテナー向けドキュメントのライブ置換</td></tr>
 </tbody>
 </table>
 </div>
-<p>PR lanes, contributor-pickup labels, stale-exemption labels, and label migration are durable governance concepts, but their exact operational criteria live in maintainer docs. FND-003 owns the split: labels classify durable work, project boards plan work, native PR state owns live review and merge state, and issues/RFCs preserve decisions. The <a href="../maintainers/pr-workflow.html#pr-lanes">Maintainer PR workflow</a> owns PR lane definitions, the <a href="../maintainers/labels.html">Labels guide</a> owns exact label meanings and cleanup rules, and the <a href="../maintainers/reviewer-playbook.html#issue-triage">Reviewer playbook</a> owns how reviewers apply those signals during triage and review. Treat live label migration as a separate maintainer-approved cleanup, not ordinary PR review.</p>
-<p>Stale exemptions are governance exceptions, not permanent label shields. The target policy is that <code>status:no-stale</code> is valid only when the lane’s operational source records both why the issue is exempt and who owns it. The maintainer docs define where those facts live and how stale automation or stale sweeps enforce the rule.</p>
+<p>PRレーン、コントリビューター受け入れラベル、stale除外ラベル、ラベル移行は永続的なガバナンスの概念ですが、その正確な運用基準はメンテナードキュメントに記載されています。FND-003がこの役割分担を管理します。ラベルは永続的な作業を分類し、プロジェクトボードは作業を計画し、ネイティブのPRステートはライブレビューとマージの状態を管理し、issue/RFCは決定事項を保持します。<a href="../maintainers/pr-workflow.html#pr-lanes">メンテナーPRワークフロー</a>はPRレーンの定義を管理し、<a href="../maintainers/labels.html">ラベルガイド</a>はラベルの正確な意味とクリーンアップルールを管理し、<a href="../maintainers/reviewer-playbook.html#issue-triage">レビュアープレイブック</a>はレビュアーがトリアージとレビューの際にこれらのシグナルをどのように適用するかを管理します。ライブラベル移行は通常のPRレビューではなく、メンテナーが承認した別個のクリーンアップ作業として扱ってください。</p>
+<p>stale 除外はガバナンス上の例外であり、恒久的なラベルによる保護ではありません。対象ポリシーは、レーンの運用ソースに「なぜその issue が除外されているか」と「誰がそれを所有しているか」の両方が記録されている場合に限り、<code>status:no-stale</code> が有効になるというものです。メンテナー向けドキュメントでは、これらの事実がどこに存在するか、また stale 自動化や stale スイープがどのようにこのルールを適用するかを定義しています。</p>
 <hr>
-<h2 id="4-github-discussions-community-discussion-and-handoff"><a class="header" href="#4-github-discussions-community-discussion-and-handoff">4. GitHub Discussions: Community Discussion and Handoff</a></h2>
-<h3 id="41-maintained-discussions-lane"><a class="header" href="#41-maintained-discussions-lane">4.1 Maintained Discussions Lane</a></h3>
-<p>Treat GitHub Discussions as a maintained community surface. Discussions are useful for questions, ideas, polls, announcements, showcases, project or integration demos, and exploratory threads that need more permanence than Discord but are not yet tracked work.</p>
-<p>Exact categories, category descriptions, and steward cadence are operational details. They belong in the contributor communication guide and maintainer stewardship docs, and they may evolve without revising this foundation document.</p>
-<h3 id="42-promotion-from-discussion-to-tracked-work"><a class="header" href="#42-promotion-from-discussion-to-tracked-work">4.2 Promotion From Discussion To Tracked Work</a></h3>
-<p>Discussions do not become backlog work just because a thread exists. Promote a Discussion when it produces a concrete tracked outcome. Contributor-facing trigger examples live in <a href="../contributing/communication.html">Communication</a>.</p>
-<p>The target depends on the result. Confirmed bugs and accepted feature scopes move to issues. Architecture decisions move through the RFC process. PR-specific details move to PR comments. Durable operating rules move to maintainer or contributor docs.</p>
-<p>Close the loop in the originating Discussion. If the category supports answers, mark the summary or tracked-work link as the answer when that is appropriate. If it does not, add a final summary comment with the issue, RFC, PR, or docs link.</p>
+<h2 id="4-github-discussions-コミュニティでのディスカッションと引き継ぎ"><a class="header" href="#4-github-discussions-コミュニティでのディスカッションと引き継ぎ">4. GitHub Discussions: コミュニティでのディスカッションと引き継ぎ</a></h2>
+<h3 id="41-メンテナンス済みディスカッションレーン"><a class="header" href="#41-メンテナンス済みディスカッションレーン">4.1 メンテナンス済みディスカッションレーン</a></h3>
+<p>GitHub Discussions は、メンテナンスされたコミュニティの場として扱ってください。Discussions は、質問、アイデア、投票、お知らせ、ショーケース、プロジェクトや統合機能のデモ、また Discord よりも永続性が求められるものの、まだ追跡対象の作業にはなっていない探索的なスレッドに役立ちます。</p>
+<p>正確なカテゴリ、カテゴリの説明、およびスチュワードの周期は運用上の詳細です。これらはコントリビューター向けコミュニケーションガイドおよびメンテナーのスチュワードシップドキュメントに記載されており、この基盤ドキュメントを改訂することなく進化する可能性があります。</p>
+<h3 id="42-ディスカッションから追跡対象作業への昇格"><a class="header" href="#42-ディスカッションから追跡対象作業への昇格">4.2 ディスカッションから追跡対象作業への昇格</a></h3>
+<p>Discussion はスレッドが存在するというだけでバックログ作業になるわけではありません。Discussion が具体的に追跡可能な成果を生み出したときに昇格させてください。コントリビューター向けのトリガー例は <a href="../contributing/communication.html">Communication</a> を参照してください。</p>
+<p>ターゲットは結果によって異なります。確認されたバグや受理された機能スコープはissueに移行します。アーキテクチャに関する決定はRFCプロセスを通じて処理されます。PR固有の詳細はPRコメントに移行します。恒久的な運用ルールはメンテナーまたはコントリビューター向けドキュメントに移行します。</p>
+<p>発端となった Discussion でループを閉じます。カテゴリが回答をサポートしている場合は、適切なときに要約や追跡作業へのリンクを回答としてマークします。サポートしていない場合は、issue、RFC、PR、またはドキュメントへのリンクを記載した最終的な要約コメントを追加します。</p>
 <h3 id="43-投票を待たないアイデア"><a class="header" href="#43-投票を待たないアイデア">4.3 投票を待たないアイデア</a></h3>
-<p>Some items bypass Discussions and enter the tracked surface directly:</p>
+<p>一部の項目は Discussions を経由せず、トラッキング対象に直接登録されます。</p>
 <ul>
 <li>セキュリティ脆弱性（プライベートなセキュリティレポート経由、公開されない）</li>
 <li>再現手順付きのバグを確認しました（バグ報告のIssueテンプレートに直接進んでください）。</li>
 <li>RFCで承認されたアーキテクチャ項目（RFCのクローズループから直接派生）</li>
 <li>プロジェクトロードマップからのアイテム（コアチームによって直接配置）</li>
 </ul>
-<h3 id="44-architecture-exploration"><a class="header" href="#44-architecture-exploration">4.4 Architecture Exploration</a></h3>
-<p>Architecture exploration can start in Discussions when the question is community-facing and not yet ready for a formal RFC. This lowers the barrier to raising design concerns without turning every early thought into tracked policy.</p>
-<p>When the thread reaches a concrete architecture proposal, open the RFC issue and move the durable proposal into the RFC surface. The Discussion can then link to the RFC and stop being the source of truth.</p>
-<h3 id="45-discussions-stewardship-and-discord-to-github-handoff"><a class="header" href="#45-discussions-stewardship-and-discord-to-github-handoff">4.5 Discussions Stewardship And Discord-to-GitHub Handoff</a></h3>
-<p>Discord is for fast conversation. GitHub is the durable record. Discussions are one maintained GitHub surface for community-facing conversation that needs more permanence than Discord but is not yet tracked work.</p>
-<p>Discussions are active only when someone owns the lane. That ownership can be a named steward or a documented review cadence. Without ownership, Discussions are a passive archive, not a required intake path.</p>
-<p>Use Discussions for exploratory, community-facing, or broad-feedback threads. Use an issue, RFC issue, PR comment, or maintainer doc when the outcome is already concrete or authoritative. The contributor-facing trigger list and category examples live in <a href="../contributing/communication.html">Communication</a>.</p>
-<p>The handoff does not need to copy the whole chat. Capture the outcome and enough context for another maintainer to continue. If a Discussion later produces tracked work or durable policy, promote that result into the surface that owns it.</p>
+<h3 id="44-アーキテクチャの探索"><a class="header" href="#44-アーキテクチャの探索">4.4 アーキテクチャの探索</a></h3>
+<p>アーキテクチャの検討は、その問いがコミュニティに向けたものであり、まだ正式なRFCにする段階ではない場合、Discussionsから始めることができます。これにより、すべての初期段階の考えを追跡対象のポリシーにすることなく、設計上の懸念を提起する際のハードルを下げられます。</p>
+<p>スレッドが具体的なアーキテクチャ提案に到達したら、RFC issue を作成し、永続的な提案を RFC サーフェスに移動してください。その後、Discussion から RFC へリンクを張ることで、Discussion が信頼できる唯一の情報源 (source of truth) ではなくなります。</p>
+<h3 id="45-ディスカッションの管理と-discord-から-github-への引き継ぎ"><a class="header" href="#45-ディスカッションの管理と-discord-から-github-への引き継ぎ">4.5 ディスカッションの管理と Discord から GitHub への引き継ぎ</a></h3>
+<p>Discordは素早い会話のための場所です。GitHubは永続的な記録です。Discussionsは、Discordよりも永続性が必要だがまだ追跡対象の作業ではない、コミュニティ向けの会話のために維持されているGitHubの場の1つです。</p>
+<p>ディスカッションは、誰かがそのレーンを所有している場合にのみアクティブになります。その所有権は、指名されたスチュワードであっても、文書化されたレビューの頻度であってもかまいません。所有権がなければ、ディスカッションは必須の受付経路ではなく、受動的なアーカイブにすぎません。</p>
+<p>探索的、コミュニティ向け、または幅広いフィードバックを求めるスレッドには Discussions を使用します。結果がすでに具体的または確定的である場合は、issue、RFC issue、PR コメント、またはメンテナードキュメントを使用します。コントリビューター向けのトリガー一覧とカテゴリの例は <a href="../contributing/communication.html">Communication</a> を参照してください。</p>
+<p>ハンドオフではチャット全体をコピーする必要はありません。成果と、別のメンテナーが作業を継続できるだけの十分なコンテキストを記録してください。Discussion から後に追跡対象の作業や恒久的なポリシーが生じた場合は、その結果をそれを所有するサーフェスに昇格させてください。</p>
 <hr>
 <h2 id="5-チームのティアと貢献権限"><a class="header" href="#5-チームのティアと貢献権限">5. チームのティアと貢献権限</a></h2>
 <h3 id="51-3つの階層"><a class="header" href="#51-3つの階層">5.1 3つの階層</a></h3>
 <p>オープンソースプロジェクトは<strong>メリトクラシー</strong>に基づいて運営されます。つまり、影響力や権限は、年功序列や肩書き、あるいは誰を知っているかではなく、実際に示された貢献によって与えられます。これは、オープンソースが企業内のソフトウェアと異なる点の一つであり、明示的に教える価値があります。</p>
 <p>3つの階層は、プロジェクトに対する示されたコミットメントの増加を反映しています：</p>
 <hr>
-<h4 id="tier-1-community"><a class="header" href="#tier-1-community">Tier 1: Community</a></h4>
+<h4 id="ティア1コミュニティ"><a class="header" href="#ティア1コミュニティ">ティア1：コミュニティ</a></h4>
 <p>誰でも。承認は不要です。</p>
 <p><em>何ができるか:</em></p>
 <ul>
@@ -475,7 +497,7 @@
 <li>拘束力のある権限を持つRFCに投票する</li>
 </ul>
 <hr>
-<h4 id="tier-2-contributor"><a class="header" href="#tier-2-contributor">Tier 2: Contributor</a></h4>
+<h4 id="ティア2-コントリビューター"><a class="header" href="#ティア2-コントリビューター">ティア2: コントリビューター</a></h4>
 <p><code>master</code> ブランチに少なくとも2つのPRがマージされたコミュニティメンバー。</p>
 <p><em>なる方法:</em> 2つのPRがマージされると、Core TeamのメンバーがGitHubのContributorsチームにあなたを追加し、<code>CONTRIBUTORS.md</code>にも記載されます。</p>
 <p>コミュニティが提供するものを超えるもの：</p>
@@ -493,7 +515,7 @@
 </ul>
 <p><em>このティアが存在する理由:</em> 新規コントリビューターにとって、視覚的に分かりやすく達成可能な最初のマイルストーンを作成します。「もっとどのように関与すればよいですか？」に対する明確な答えは、2つのPRをマージすることです。これは初期の良好な貢献を促進し、チームがコントリビューターを公に認識する方法を提供します。</p>
 <hr>
-<h4 id="tier-3-core-team"><a class="header" href="#tier-3-core-team">Tier 3: Core Team</a></h4>
+<h4 id="ティア3-コアチーム"><a class="header" href="#ティア3-コアチーム">ティア3: コアチーム</a></h4>
 <p>長期間にわたり一貫して高品質な貢献を行い、既存のコアチームメンバーから招待されたコントリビューター。</p>
 <p><strong>コアチームメンバーになる方法:</strong> 既存のコアチームメンバーからの招待。これはディスカッションで公開されます。正式な基準はありません。過去の貢献の質、一貫性、そして整合性に基づいた判断です。</p>
 <p><em>Contributor</em> として得られるもの：</p>
@@ -1019,7 +1041,7 @@ clippy                  ← cargo clippy --all-targets -- -D warnings
 </table>
 </div>
 <h3 id="status--これはプロセスのどの段階にありますか"><a class="header" href="#status--これはプロセスのどの段階にありますか"><code>status:</code> — これはプロセスのどの段階にありますか？</a></h3>
-<p>This table records governance intent and historical taxonomy shape. For current live label semantics and automation behavior, use the maintainer label guide as the operational reference; maintainer docs carry later label-policy corrections from #6808.</p>
+<p>この表はガバナンスの意図と過去の分類体系の構造を記録するものです。現在運用中のラベルのセマンティクスや自動化の挙動については、メンテナー向けラベルガイドを運用上のリファレンスとして参照してください。メンテナー向けドキュメントには、#6808 以降のラベルポリシーの修正が反映されています。</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1027,19 +1049,19 @@ clippy                  ← cargo clippy --all-targets -- -D warnings
 </thead>
 <tbody>
 <tr><td><code>ステータス:triageが必要</code></td><td><code>#f8fafc</code> 白</td><td>新規作成、未レビュー</td></tr>
-<tr><td><code>status:accepted</code></td><td><code>#0e8a16</code> Green</td><td>RFC or work item ratified; not stale-exempt by itself</td></tr>
-<tr><td><code>status:blocked</code></td><td><code>#b60205</code> Red</td><td>Waiting on a recorded unresolved external dependency, maintainer decision, or linked prerequisite</td></tr>
-<tr><td><code>status:in-progress</code></td><td><code>#0075ca</code> 青</td><td>Open PR is actively targeting the issue; verify live PR state during stale passes</td></tr>
-<tr><td><code>status:stale</code></td><td><code>#e4e669</code> 黄色</td><td>No original-author activity for the stale threshold window</td></tr>
-<tr><td><code>status:no-stale</code></td><td><code>#0e8a16</code> Green</td><td>Explicit stale exemption for accepted or otherwise long-lived work; target policy requires a recorded reason and active owner in the operational source</td></tr>
+<tr><td><code>status:accepted</code></td><td><code>#0e8a16</code> 緑</td><td>RFC または作業項目が承認済み。それ自体では stale 除外の対象にはなりません</td></tr>
+<tr><td><code>status:blocked</code></td><td><code>#b60205</code> 赤</td><td>記録済みの未解決の外部依存関係、メンテナーの判断、またはリンクされた前提条件を待機中</td></tr>
+<tr><td><code>status:in-progress</code></td><td><code>#0075ca</code> 青</td><td>オープンPRがそのIssueに積極的に対応しています。staleパス中はライブPRの状態を確認してください</td></tr>
+<tr><td><code>status:stale</code></td><td><code>#e4e669</code> 黄色</td><td>staleしきい値ウィンドウ内に元の作成者のアクティビティがありません</td></tr>
+<tr><td><code>status:no-stale</code></td><td><code>#0e8a16</code> 緑</td><td>受け入れ済みまたはその他の長期稼働作業に対する明示的な stale 除外設定。対象ポリシーでは、運用ソースに記録された理由とアクティブなオーナーが必要です</td></tr>
 <tr><td><code>status:help-wanted</code></td><td><code>#059669</code> グリーン</td><td>コントリビューターを探しています</td></tr>
 <tr><td><code>status:good-first-issue</code></td><td><code>#059669</code> グリーン</td><td>新規コントリビューター向け</td></tr>
 <tr><td><code>status:discussion</code></td><td><code>#a78bfa</code> 紫</td><td>作業開始前にチームでの議論が必要です</td></tr>
 </tbody>
 </table>
 </div>
-<p>The live community-pickup labels are the unprefixed <code>good first issue</code> and <code>help wanted</code>; the <code>status:*</code> pickup rows above are historical taxonomy. Current operational risk labels also distinguish issue risk (likely fix blast radius from the report) from PR risk (the actual diff under review). See the <a href="../maintainers/labels.html">maintainer label guide</a> for the live policy.</p>
-<p>Terminal closure labels are operational policy, not part of the historical <code>status:*</code> taxonomy in this foundation document. Use the <a href="../maintainers/labels.html#resolution-labels">maintainer label guide</a> for current resolution labels and the <a href="../maintainers/superseding.html">superseding guide</a> for replacement-process rules.</p>
+<p>コミュニティによるピックアップで実際に使われているラベルはプレフィックスなしの <code>good first issue</code> と <code>help wanted</code> であり、上記の <code>status:*</code> ピックアップ行は過去の分類体系です。現在の運用上のリスクラベルでは、issueリスク（報告内容から推定される修正の影響範囲）とPRリスク（レビュー対象の実際の差分）も区別しています。実際のポリシーについては<a href="../maintainers/labels.html">メンテナー向けラベルガイド</a>を参照してください。</p>
+<p>ターミナルクロージャーラベルは運用ポリシーであり、この基盤ドキュメントの歴史的な <code>status:*</code> 分類体系の一部ではありません。現在の解決ラベルについては<a href="../maintainers/labels.html#resolution-labels">メンテナーラベルガイド</a>を、置き換えプロセスのルールについては<a href="../maintainers/superseding.html">置き換えガイド</a>を参照してください。</p>
 <h3 id="rfc--rfc固有のステータス"><a class="header" href="#rfc--rfc固有のステータス"><code>rfc:</code> — RFC固有のステータス</a></h3>
 <p><code>rfc:accepted</code> · <code>rfc:rejected</code> · <code>rfc:revision-requested</code></p>
 <hr>
@@ -1094,12 +1116,12 @@ clippy                  ← cargo clippy --all-targets -- -D warnings
 </table>
 </div>
 <h3 id="112-github-actions-ワークフロー"><a class="header" href="#112-github-actions-ワークフロー">11.2 GitHub Actions ワークフロー</a></h3>
-<p><strong>Auto-label by changed files:</strong></p>
-<p>The active path labeler applies scope labels to PRs based on changed files. Risk and size labels are currently maintainer-applied; the maintainer label guide is the live source for label names, automation status, and risk semantics.</p>
+<p><strong>変更されたファイルによる自動ラベル付け:</strong></p>
+<p>アクティブなパスラベラーは、変更されたファイルに基づいてPRにスコープラベルを適用します。リスクラベルとサイズラベルは現在メンテナーが手動で適用しています。メンテナーラベルガイドは、ラベル名、自動化ステータス、リスクセマンティクスの最新の情報源です。</p>
 <p><strong>CODEOWNERS のレビューを自動でリクエスト（CODEOWNERS に組み込まれているため、アクションは不要）：</strong></p>
 <p>GitHub は、CODEOWNERS ファイルが存在し、ブランチ保護で必要とされている場合に自動的に CODEOWNERS を適用します。アクションは不要です。</p>
 <p><strong>古いIssueの管理 (<code>.github/workflows/stale.yml</code>):</strong></p>
-<p>Issues with no activity for 45 days are labeled <code>status:stale</code> and a comment is posted asking if the issue is still relevant. Issues with no activity for 15 days after the stale label is applied are closed. This prevents the backlog from accumulating hundreds of issues that are months old and no longer relevant. Exclude <code>priority:p0</code>, <code>type:rfc</code>, issues with open linked PRs, and issues with <code>status:blocked</code> while a recorded blocker remains unresolved. The intended <code>status:no-stale</code> follow-up is to exclude it only while the operational source records both the stale-exemption reason and the active owner. The maintainer label guide and issue-triage protocol carry the current operational details.</p>
+<p>45日間アクティビティがないイシューには <code>status:stale</code> ラベルが付けられ、そのイシューがまだ関連性があるかどうかを尋ねるコメントが投稿されます。stale ラベルが付けられてから15日間アクティビティがないイシューはクローズされます。これにより、数か月前のものでもはや関連性のない数百件のイシューがバックログに蓄積されるのを防ぎます。<code>priority:p0</code>、<code>type:rfc</code>、オープンなリンク済み PR を持つイシュー、および記録されたブロッカーが未解決のまま <code>status:blocked</code> が付いているイシューは除外します。意図された <code>status:no-stale</code> のフォローアップは、運用上の情報源が stale 除外の理由とアクティブなオーナーの両方を記録している場合に限り、それを除外することです。メンテナーのラベルガイドとイシュートリアージプロトコルに、現在の運用上の詳細が記載されています。</p>
 <p><strong>PRサイズラベル付け (<code>.github/workflows/pr-size.yml</code>):</strong></p>
 <p>変更された行数に基づいて、PR に <code>size:xs</code> から <code>size:xl</code> までのラベルを自動的に付与します。これにより、差分を開かずにレビュアーやメンテナーが範囲をすぐに把握できます。これらの閾値を初期値として使用してください：XS &lt; 10行、S &lt; 50行、M &lt; 250行、L &lt; 1000行、XL ≥ 1000行。</p>
 <p><strong>PRマージ時のマイルストーンチェック (<code>.github/workflows/milestone-check.yml</code>):</strong></p>
@@ -1119,7 +1141,7 @@ clippy                  ← cargo clippy --all-targets -- -D warnings
 <ul>
 <li><input disabled="" type="checkbox"> ステータス、タイプ、優先度、マイルストーンフィールドを含むGitHubプロジェクトを作成します。</li>
 <li><input disabled="" type="checkbox"> 4つのプロジェクトビュー（ロードマップ、ボード、バックログ、マイワーク）を作成します</li>
-<li><input disabled="" type="checkbox"> Enable GitHub Discussions with maintained categories documented in the contributor communication and maintainer stewardship docs</li>
+<li><input disabled="" type="checkbox"> コントリビューターコミュニケーションおよびメンテナースチュワードシップのドキュメントに記載された管理対象カテゴリで GitHub Discussions を有効化する</li>
 <li><input disabled="" type="checkbox"> 既存の提案（セクション 8.4）に対して、3つのRFC課題を作成する</li>
 <li><input disabled="" type="checkbox"> 6つのイシューテンプレート（セクション7）を追加する</li>
 <li><input disabled="" type="checkbox"> <code>CODEOWNERS</code> ファイルを作成する（セクション 6.1）</li>
@@ -1148,12 +1170,12 @@ clippy                  ← cargo clippy --all-targets -- -D warnings
 <p>プラグインシステムが実用的になるにつれて、外部からの貢献者が増えることになります。貢献のためのインフラストラクチャは準備できていなければなりません。</p>
 <ul>
 <li><input disabled="" type="checkbox"> PRのサイズラベリングワークフローを実装する</li>
-<li><input disabled="" type="checkbox"> Create the first batch of <code>good first issue</code> items (minimum 5) for the plugin SDK work</li>
-<li><input disabled="" type="checkbox"> Add the <code>Good First Issue Index</code> as a pinned issue with links to current good first issues</li>
+<li><input disabled="" type="checkbox"> プラグインSDK作業のための最初のバッチとなる <code>good first issue</code> 項目（最低5件）を作成する</li>
+<li><input disabled="" type="checkbox"> <code>Good First Issue Index</code> を現在の good first issue へのリンクを含むピン留めされた issue として追加する</li>
 <li><input disabled="" type="checkbox"> アイデアの促進閾値を設定し、最初のDiscussionアイデアをイシューに促進します</li>
 <li><input disabled="" type="checkbox"> コアチームの拡大プロセスを文書化する — 新しいコアチームメンバーを招待するための基準</li>
 </ul>
-<p><strong>Success signal:</strong> At least one external contributor (not on the current team) submits a PR via a good first issue. The Discussions Ideas category has active community participation.</p>
+<p><strong>成功のシグナル:</strong> 少なくとも1人の外部コントリビューター（現在のチームに属していない人）が good first issue を通じて PR を提出する。Discussions の Ideas カテゴリにコミュニティが活発に参加している。</p>
 <hr>
 <h3 id="フェーズ4--v100--持続可能なガバナンス"><a class="header" href="#フェーズ4--v100--持続可能なガバナンス">フェーズ4 · v1.0.0 — 「持続可能なガバナンス」</a></h3>
 <p>v1.0.0 までに、ガバナンスモデルは自己維持可能であるべきです。チームはそれについて考える必要はなく、自動的に機能するはずです。</p>
@@ -1171,7 +1193,7 @@ clippy                  ← cargo clippy --all-targets -- -D warnings
 <p><input disabled="" type="checkbox"> マイルストーンベースの計画が緩すぎると感じる場合は、タイムボックス化されたサイクル（2週間または4週間）の導入を検討してください。</p>
 </li>
 <li>
-<p><input disabled="" type="checkbox"> <strong>コアチームメンバーの離脱または非アクティブ化のプロセス</strong></p>
+<p><input disabled="" type="checkbox"> このプロセスに従うことで、コアチームメンバーの離脱または非アクティブ化をスムーズに行うことができます。このプロセスに従うことで、コアチームメンバーの離脱または非アクティブ化をスムーズに行うことができます。このプロセスに従うことで、コアチームメンバーの離脱または非アクティブ化をスムーズに行うことができます。このプロセスに従うことで、コアチームメンバーの離脱または非アクティブ化をスムーズに行うことができます。<strong>コアチームメンバーの離脱または非アクティブ化のプロセス</strong></p>
 <p>コアチームメンバーが離脱するか、非アクティブになる場合、以下の手順に従ってください。</p>
 <h3 id="1-離脱または非アクティブ化の理由の明確化"><a class="header" href="#1-離脱または非アクティブ化の理由の明確化">1. 離脱または非アクティブ化の理由の明確化</a></h3>
 <p>まず、離脱または非アクティブ化の理由を明確にします。これにより、チーム全体が状況を理解し、適切な対応を取ることができます。</p>
@@ -1230,7 +1252,7 @@ clippy                  ← cargo clippy --all-targets -- -D warnings
 <li><strong>CODEOWNERS 構文リファレンス</strong> — https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners — CODEOWNERS ファイルの完全な構文。</li>
 <li><strong>「オープンソース・ソフトウェアの生産」</strong> — カール・フォゲル — オープンソース・プロジェクトの運営に関する決定版の書籍。https://producingoss.com でオンラインで無料公開されています。ガバナンス、コントリビューター管理、コミュニケーションに関する章は直接的に適用可能です。</li>
 <li><strong>「オープンソースガバナンスモデルへの入門」</strong> — Apache Software Foundation のガバナンス文書は、成熟したオープンソースプロジェクトが権限と意思決定をどのように形式化するかを示す良いモデルです: https://www.apache.org/foundation/governance/</li>
-<li><strong>Vale prose linter</strong> — <a href="https://vale.sh">Vale</a> — Referenced in the documentation RFC; integrates with the <code>good first issue</code> documentation improvement workflow.</li>
+<li><strong>Vale prose linter</strong> — <a href="https://vale.sh">Vale</a> — ドキュメント RFC で参照されています。<code>good first issue</code> のドキュメント改善ワークフローと統合されています。</li>
 </ul>
 <hr>
 <p><em>この提案は、ZeroClaw v0.6.8 およびその直前に策定された2つのアーキテクチャおよびドキュメントに関するRFCの文脈で開発されました。ここで提案されるガバナンスモデルは、コミュニティ成長の初期段階にある学生主導のプロジェクト向けに、意図的に軽量な設計となっています。このモデルは、チームの拡大に伴ってプロセスを追加していくことでスケーラブルに設計されており、一度にすべてを導入するものではありません。</em></p>
@@ -1287,10 +1309,11 @@ clippy                  ← cargo clippy --all-targets -- -D warnings
         <script src="../book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
-        <script src="../theme/version-selector-e8a1edcd.js"></script>
-        <script src="../theme/lang-switcher-82c8c4bf.js"></script>
+        <script src="../../../_shared/theme/version-selector.js"></script>
+        <script src="../../../_shared/theme/lang-switcher.js"></script>
+        <script src="../../../_shared/theme/pc-enhance.js"></script>
         <script src="../mermaid-193ae996.min.js"></script>
-        <script src="../mermaid-init-94f7f342.js"></script>
+        <script src="../mermaid-init-d3ccd83c.js"></script>
 
 
 

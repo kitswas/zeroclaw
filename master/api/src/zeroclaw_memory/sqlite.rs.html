@@ -2937,7 +2937,7 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../" data
 <a href=#2935 id=2935 data-nosnippet>2935</a>        <span class="kw">let </span><span class="kw-2">mut </span>handles = Vec::new();
 <a href=#2936 id=2936 data-nosnippet>2936</a>        <span class="kw">for </span>i <span class="kw">in </span><span class="number">0</span>..<span class="number">10 </span>{
 <a href=#2937 id=2937 data-nosnippet>2937</a>            <span class="kw">let </span>mem = std::sync::Arc::clone(<span class="kw-2">&amp;</span>mem);
-<a href=#2938 id=2938 data-nosnippet>2938</a>            handles.push(tokio::spawn(<span class="kw">async move </span>{
+<a href=#2938 id=2938 data-nosnippet>2938</a>            handles.push(<span class="macro">zeroclaw_spawn::spawn!</span>(<span class="kw">async move </span>{
 <a href=#2939 id=2939 data-nosnippet>2939</a>                mem.store(
 <a href=#2940 id=2940 data-nosnippet>2940</a>                    <span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"concurrent_key_{i}"</span>),
 <a href=#2941 id=2941 data-nosnippet>2941</a>                    <span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"value_{i}"</span>),
@@ -2975,7 +2975,7 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../" data
 <a href=#2973 id=2973 data-nosnippet>2973</a>        <span class="comment">// Concurrent reads
 <a href=#2974 id=2974 data-nosnippet>2974</a>        </span><span class="kw">for _ in </span><span class="number">0</span>..<span class="number">5 </span>{
 <a href=#2975 id=2975 data-nosnippet>2975</a>            <span class="kw">let </span>mem = std::sync::Arc::clone(<span class="kw-2">&amp;</span>mem);
-<a href=#2976 id=2976 data-nosnippet>2976</a>            handles.push(tokio::spawn(<span class="kw">async move </span>{
+<a href=#2976 id=2976 data-nosnippet>2976</a>            handles.push(<span class="macro">zeroclaw_spawn::spawn!</span>(<span class="kw">async move </span>{
 <a href=#2977 id=2977 data-nosnippet>2977</a>                <span class="kw">let _ </span>= mem.get(<span class="string">"shared_key"</span>).<span class="kw">await</span>.unwrap();
 <a href=#2978 id=2978 data-nosnippet>2978</a>            }));
 <a href=#2979 id=2979 data-nosnippet>2979</a>        }
@@ -2983,7 +2983,7 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../" data
 <a href=#2981 id=2981 data-nosnippet>2981</a>        <span class="comment">// Concurrent writes
 <a href=#2982 id=2982 data-nosnippet>2982</a>        </span><span class="kw">for </span>i <span class="kw">in </span><span class="number">0</span>..<span class="number">5 </span>{
 <a href=#2983 id=2983 data-nosnippet>2983</a>            <span class="kw">let </span>mem = std::sync::Arc::clone(<span class="kw-2">&amp;</span>mem);
-<a href=#2984 id=2984 data-nosnippet>2984</a>            handles.push(tokio::spawn(<span class="kw">async move </span>{
+<a href=#2984 id=2984 data-nosnippet>2984</a>            handles.push(<span class="macro">zeroclaw_spawn::spawn!</span>(<span class="kw">async move </span>{
 <a href=#2985 id=2985 data-nosnippet>2985</a>                mem.store(
 <a href=#2986 id=2986 data-nosnippet>2986</a>                    <span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"key_{i}"</span>),
 <a href=#2987 id=2987 data-nosnippet>2987</a>                    <span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"val_{i}"</span>),

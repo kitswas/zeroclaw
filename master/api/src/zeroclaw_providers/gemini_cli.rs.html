@@ -265,147 +265,148 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../" data
 <a href=#263 id=263 data-nosnippet>263</a>        model: <span class="kw-2">&amp;</span>str,
 <a href=#264 id=264 data-nosnippet>264</a>        temperature: <span class="prelude-ty">Option</span>&lt;f64&gt;,
 <a href=#265 id=265 data-nosnippet>265</a>    ) -&gt; anyhow::Result&lt;String&gt; {
-<a href=#266 id=266 data-nosnippet>266</a>        <span class="kw">let </span>temperature = temperature.unwrap_or(<span class="self">self</span>.default_temperature());
-<a href=#267 id=267 data-nosnippet>267</a>        <span class="self">Self</span>::validate_temperature(temperature)<span class="question-mark">?</span>;
-<a href=#268 id=268 data-nosnippet>268</a>
-<a href=#269 id=269 data-nosnippet>269</a>        <span class="kw">let </span>full_message = <span class="kw">match </span>system_prompt {
-<a href=#270 id=270 data-nosnippet>270</a>            <span class="prelude-val">Some</span>(system) <span class="kw">if </span>!system.is_empty() =&gt; {
-<a href=#271 id=271 data-nosnippet>271</a>                <span class="macro">format!</span>(<span class="string">"{system}\n\n{message}"</span>)
-<a href=#272 id=272 data-nosnippet>272</a>            }
-<a href=#273 id=273 data-nosnippet>273</a>            <span class="kw">_ </span>=&gt; message.to_string(),
-<a href=#274 id=274 data-nosnippet>274</a>        };
-<a href=#275 id=275 data-nosnippet>275</a>
-<a href=#276 id=276 data-nosnippet>276</a>        <span class="self">self</span>.invoke_cli(<span class="kw-2">&amp;</span>full_message, model).<span class="kw">await
-<a href=#277 id=277 data-nosnippet>277</a>    </span>}
-<a href=#278 id=278 data-nosnippet>278</a>
-<a href=#279 id=279 data-nosnippet>279</a>    <span class="kw">async fn </span>chat(
-<a href=#280 id=280 data-nosnippet>280</a>        <span class="kw-2">&amp;</span><span class="self">self</span>,
-<a href=#281 id=281 data-nosnippet>281</a>        request: ChatRequest&lt;<span class="lifetime">'_</span>&gt;,
-<a href=#282 id=282 data-nosnippet>282</a>        model: <span class="kw-2">&amp;</span>str,
-<a href=#283 id=283 data-nosnippet>283</a>        temperature: <span class="prelude-ty">Option</span>&lt;f64&gt;,
-<a href=#284 id=284 data-nosnippet>284</a>    ) -&gt; anyhow::Result&lt;ChatResponse&gt; {
-<a href=#285 id=285 data-nosnippet>285</a>        <span class="kw">let </span>text = <span class="self">self
-<a href=#286 id=286 data-nosnippet>286</a>            </span>.chat_with_history(request.messages, model, temperature)
-<a href=#287 id=287 data-nosnippet>287</a>            .<span class="kw">await</span><span class="question-mark">?</span>;
-<a href=#288 id=288 data-nosnippet>288</a>
-<a href=#289 id=289 data-nosnippet>289</a>        <span class="prelude-val">Ok</span>(ChatResponse {
-<a href=#290 id=290 data-nosnippet>290</a>            text: <span class="prelude-val">Some</span>(text),
-<a href=#291 id=291 data-nosnippet>291</a>            tool_calls: Vec::new(),
-<a href=#292 id=292 data-nosnippet>292</a>            usage: <span class="prelude-val">Some</span>(TokenUsage::default()),
-<a href=#293 id=293 data-nosnippet>293</a>            reasoning_content: <span class="prelude-val">None</span>,
-<a href=#294 id=294 data-nosnippet>294</a>        })
-<a href=#295 id=295 data-nosnippet>295</a>    }
-<a href=#296 id=296 data-nosnippet>296</a>}
-<a href=#297 id=297 data-nosnippet>297</a>
-<a href=#298 id=298 data-nosnippet>298</a><span class="kw">impl </span>::zeroclaw_api::attribution::Attributable <span class="kw">for </span>GeminiCliModelProvider {
-<a href=#299 id=299 data-nosnippet>299</a>    <span class="kw">fn </span>role(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; ::zeroclaw_api::attribution::Role {
-<a href=#300 id=300 data-nosnippet>300</a>        ::zeroclaw_api::attribution::Role::Provider(
-<a href=#301 id=301 data-nosnippet>301</a>            ::zeroclaw_api::attribution::ProviderKind::Model(
-<a href=#302 id=302 data-nosnippet>302</a>                ::zeroclaw_api::attribution::ModelProviderKind::GeminiCli,
-<a href=#303 id=303 data-nosnippet>303</a>            ),
-<a href=#304 id=304 data-nosnippet>304</a>        )
-<a href=#305 id=305 data-nosnippet>305</a>    }
-<a href=#306 id=306 data-nosnippet>306</a>    <span class="kw">fn </span>alias(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <span class="kw-2">&amp;</span>str {
-<a href=#307 id=307 data-nosnippet>307</a>        <span class="kw-2">&amp;</span><span class="self">self</span>.alias
-<a href=#308 id=308 data-nosnippet>308</a>    }
-<a href=#309 id=309 data-nosnippet>309</a>}
-<a href=#310 id=310 data-nosnippet>310</a>
-<a href=#311 id=311 data-nosnippet>311</a><span class="attr">#[cfg(test)]
-<a href=#312 id=312 data-nosnippet>312</a></span><span class="kw">mod </span>tests {
-<a href=#313 id=313 data-nosnippet>313</a>    <span class="kw">use </span>super::<span class="kw-2">*</span>;
-<a href=#314 id=314 data-nosnippet>314</a>
-<a href=#315 id=315 data-nosnippet>315</a>    <span class="attr">#[test]
-<a href=#316 id=316 data-nosnippet>316</a>    </span><span class="kw">fn </span>new_uses_explicit_binary_path() {
-<a href=#317 id=317 data-nosnippet>317</a>        <span class="kw">let </span>p = GeminiCliModelProvider::new(<span class="string">"test"</span>, <span class="prelude-val">Some</span>(<span class="string">"/usr/local/bin/gemini"</span>));
-<a href=#318 id=318 data-nosnippet>318</a>        <span class="macro">assert_eq!</span>(p.binary_path, PathBuf::from(<span class="string">"/usr/local/bin/gemini"</span>));
-<a href=#319 id=319 data-nosnippet>319</a>    }
-<a href=#320 id=320 data-nosnippet>320</a>
-<a href=#321 id=321 data-nosnippet>321</a>    <span class="attr">#[test]
-<a href=#322 id=322 data-nosnippet>322</a>    </span><span class="kw">fn </span>new_defaults_to_gemini() {
-<a href=#323 id=323 data-nosnippet>323</a>        <span class="kw">let </span>p = GeminiCliModelProvider::new(<span class="string">"test"</span>, <span class="prelude-val">None</span>);
-<a href=#324 id=324 data-nosnippet>324</a>        <span class="macro">assert_eq!</span>(p.binary_path, PathBuf::from(<span class="string">"gemini"</span>));
-<a href=#325 id=325 data-nosnippet>325</a>    }
-<a href=#326 id=326 data-nosnippet>326</a>
-<a href=#327 id=327 data-nosnippet>327</a>    <span class="attr">#[test]
-<a href=#328 id=328 data-nosnippet>328</a>    </span><span class="kw">fn </span>new_ignores_blank_binary_path() {
-<a href=#329 id=329 data-nosnippet>329</a>        <span class="kw">let </span>p = GeminiCliModelProvider::new(<span class="string">"test"</span>, <span class="prelude-val">Some</span>(<span class="string">"   "</span>));
-<a href=#330 id=330 data-nosnippet>330</a>        <span class="macro">assert_eq!</span>(p.binary_path, PathBuf::from(<span class="string">"gemini"</span>));
-<a href=#331 id=331 data-nosnippet>331</a>    }
-<a href=#332 id=332 data-nosnippet>332</a>
-<a href=#333 id=333 data-nosnippet>333</a>    <span class="attr">#[test]
-<a href=#334 id=334 data-nosnippet>334</a>    </span><span class="kw">fn </span>should_forward_model_standard() {
-<a href=#335 id=335 data-nosnippet>335</a>        <span class="macro">assert!</span>(GeminiCliModelProvider::should_forward_model(
-<a href=#336 id=336 data-nosnippet>336</a>            <span class="string">"gemini-2.5-pro"
-<a href=#337 id=337 data-nosnippet>337</a>        </span>));
-<a href=#338 id=338 data-nosnippet>338</a>        <span class="macro">assert!</span>(GeminiCliModelProvider::should_forward_model(
-<a href=#339 id=339 data-nosnippet>339</a>            <span class="string">"gemini-2.5-flash"
-<a href=#340 id=340 data-nosnippet>340</a>        </span>));
-<a href=#341 id=341 data-nosnippet>341</a>    }
-<a href=#342 id=342 data-nosnippet>342</a>
-<a href=#343 id=343 data-nosnippet>343</a>    <span class="attr">#[test]
-<a href=#344 id=344 data-nosnippet>344</a>    </span><span class="kw">fn </span>should_not_forward_default_model() {
-<a href=#345 id=345 data-nosnippet>345</a>        <span class="macro">assert!</span>(!GeminiCliModelProvider::should_forward_model(
-<a href=#346 id=346 data-nosnippet>346</a>            DEFAULT_MODEL_MARKER
-<a href=#347 id=347 data-nosnippet>347</a>        ));
-<a href=#348 id=348 data-nosnippet>348</a>        <span class="macro">assert!</span>(!GeminiCliModelProvider::should_forward_model(<span class="string">""</span>));
-<a href=#349 id=349 data-nosnippet>349</a>        <span class="macro">assert!</span>(!GeminiCliModelProvider::should_forward_model(<span class="string">"   "</span>));
-<a href=#350 id=350 data-nosnippet>350</a>    }
-<a href=#351 id=351 data-nosnippet>351</a>
-<a href=#352 id=352 data-nosnippet>352</a>    <span class="attr">#[test]
-<a href=#353 id=353 data-nosnippet>353</a>    </span><span class="kw">fn </span>validate_temperature_allows_defaults() {
-<a href=#354 id=354 data-nosnippet>354</a>        <span class="macro">assert!</span>(GeminiCliModelProvider::validate_temperature(<span class="number">0.7</span>).is_ok());
-<a href=#355 id=355 data-nosnippet>355</a>        <span class="macro">assert!</span>(GeminiCliModelProvider::validate_temperature(<span class="number">1.0</span>).is_ok());
-<a href=#356 id=356 data-nosnippet>356</a>    }
-<a href=#357 id=357 data-nosnippet>357</a>
-<a href=#358 id=358 data-nosnippet>358</a>    <span class="attr">#[test]
-<a href=#359 id=359 data-nosnippet>359</a>    </span><span class="kw">fn </span>validate_temperature_rejects_custom_value() {
-<a href=#360 id=360 data-nosnippet>360</a>        <span class="kw">let </span>err = GeminiCliModelProvider::validate_temperature(<span class="number">0.2</span>).unwrap_err();
-<a href=#361 id=361 data-nosnippet>361</a>        <span class="macro">assert!</span>(
-<a href=#362 id=362 data-nosnippet>362</a>            err.to_string()
-<a href=#363 id=363 data-nosnippet>363</a>                .contains(<span class="string">"temperature unsupported by Gemini CLI"</span>)
-<a href=#364 id=364 data-nosnippet>364</a>        );
-<a href=#365 id=365 data-nosnippet>365</a>    }
-<a href=#366 id=366 data-nosnippet>366</a>
-<a href=#367 id=367 data-nosnippet>367</a>    <span class="comment">// Regression for #6520. Gemini CLI v0.40.x removed `--print`; the
-<a href=#368 id=368 data-nosnippet>368</a>    // headless-mode flag is now `--prompt`. The argv must (a) carry
-<a href=#369 id=369 data-nosnippet>369</a>    // `--prompt ""` so stdin still feeds the prompt content (keeping the
-<a href=#370 id=370 data-nosnippet>370</a>    // user message out of `ps`) and (b) NEVER carry `--print` or `-`.
-<a href=#371 id=371 data-nosnippet>371</a>    </span><span class="attr">#[test]
-<a href=#372 id=372 data-nosnippet>372</a>    </span><span class="kw">fn </span>build_cli_args_uses_prompt_flag_with_empty_token_default_model() {
-<a href=#373 id=373 data-nosnippet>373</a>        <span class="kw">let </span>args = GeminiCliModelProvider::build_cli_args(DEFAULT_MODEL_MARKER);
-<a href=#374 id=374 data-nosnippet>374</a>        <span class="macro">assert_eq!</span>(args, <span class="macro">vec!</span>[<span class="string">"--prompt"</span>.to_string(), String::new()]);
-<a href=#375 id=375 data-nosnippet>375</a>        <span class="macro">assert!</span>(!args.iter().any(|a| a == <span class="string">"--print"</span>));
-<a href=#376 id=376 data-nosnippet>376</a>        <span class="macro">assert!</span>(!args.iter().any(|a| a == <span class="string">"-"</span>));
-<a href=#377 id=377 data-nosnippet>377</a>    }
-<a href=#378 id=378 data-nosnippet>378</a>
-<a href=#379 id=379 data-nosnippet>379</a>    <span class="attr">#[test]
-<a href=#380 id=380 data-nosnippet>380</a>    </span><span class="kw">fn </span>build_cli_args_forwards_explicit_model_after_prompt() {
-<a href=#381 id=381 data-nosnippet>381</a>        <span class="kw">let </span>args = GeminiCliModelProvider::build_cli_args(<span class="string">"gemini-2.5-pro"</span>);
-<a href=#382 id=382 data-nosnippet>382</a>        <span class="macro">assert_eq!</span>(
-<a href=#383 id=383 data-nosnippet>383</a>            args,
-<a href=#384 id=384 data-nosnippet>384</a>            <span class="macro">vec!</span>[
-<a href=#385 id=385 data-nosnippet>385</a>                <span class="string">"--prompt"</span>.to_string(),
-<a href=#386 id=386 data-nosnippet>386</a>                String::new(),
-<a href=#387 id=387 data-nosnippet>387</a>                <span class="string">"--model"</span>.to_string(),
-<a href=#388 id=388 data-nosnippet>388</a>                <span class="string">"gemini-2.5-pro"</span>.to_string(),
-<a href=#389 id=389 data-nosnippet>389</a>            ]
-<a href=#390 id=390 data-nosnippet>390</a>        );
-<a href=#391 id=391 data-nosnippet>391</a>        <span class="macro">assert!</span>(!args.iter().any(|a| a == <span class="string">"--print"</span>));
-<a href=#392 id=392 data-nosnippet>392</a>    }
-<a href=#393 id=393 data-nosnippet>393</a>
-<a href=#394 id=394 data-nosnippet>394</a>    <span class="attr">#[tokio::test]
-<a href=#395 id=395 data-nosnippet>395</a>    </span><span class="kw">async fn </span>invoke_missing_binary_returns_error() {
-<a href=#396 id=396 data-nosnippet>396</a>        <span class="kw">let </span>model_provider = GeminiCliModelProvider {
-<a href=#397 id=397 data-nosnippet>397</a>            alias: <span class="string">"test"</span>.to_string(),
-<a href=#398 id=398 data-nosnippet>398</a>            binary_path: PathBuf::from(<span class="string">"/nonexistent/path/to/gemini"</span>),
-<a href=#399 id=399 data-nosnippet>399</a>        };
-<a href=#400 id=400 data-nosnippet>400</a>        <span class="kw">let </span>result = model_provider.invoke_cli(<span class="string">"hello"</span>, <span class="string">"default"</span>).<span class="kw">await</span>;
-<a href=#401 id=401 data-nosnippet>401</a>        <span class="macro">assert!</span>(result.is_err());
-<a href=#402 id=402 data-nosnippet>402</a>        <span class="kw">let </span>msg = result.unwrap_err().to_string();
-<a href=#403 id=403 data-nosnippet>403</a>        <span class="macro">assert!</span>(
-<a href=#404 id=404 data-nosnippet>404</a>            msg.contains(<span class="string">"Failed to spawn Gemini CLI binary"</span>),
-<a href=#405 id=405 data-nosnippet>405</a>            <span class="string">"unexpected error message: {msg}"
-<a href=#406 id=406 data-nosnippet>406</a>        </span>);
-<a href=#407 id=407 data-nosnippet>407</a>    }
-<a href=#408 id=408 data-nosnippet>408</a>}
+<a href=#266 id=266 data-nosnippet>266</a>        <span class="kw">if let </span><span class="prelude-val">Some</span>(t) = temperature {
+<a href=#267 id=267 data-nosnippet>267</a>            <span class="self">Self</span>::validate_temperature(t)<span class="question-mark">?</span>;
+<a href=#268 id=268 data-nosnippet>268</a>        }
+<a href=#269 id=269 data-nosnippet>269</a>
+<a href=#270 id=270 data-nosnippet>270</a>        <span class="kw">let </span>full_message = <span class="kw">match </span>system_prompt {
+<a href=#271 id=271 data-nosnippet>271</a>            <span class="prelude-val">Some</span>(system) <span class="kw">if </span>!system.is_empty() =&gt; {
+<a href=#272 id=272 data-nosnippet>272</a>                <span class="macro">format!</span>(<span class="string">"{system}\n\n{message}"</span>)
+<a href=#273 id=273 data-nosnippet>273</a>            }
+<a href=#274 id=274 data-nosnippet>274</a>            <span class="kw">_ </span>=&gt; message.to_string(),
+<a href=#275 id=275 data-nosnippet>275</a>        };
+<a href=#276 id=276 data-nosnippet>276</a>
+<a href=#277 id=277 data-nosnippet>277</a>        <span class="self">self</span>.invoke_cli(<span class="kw-2">&amp;</span>full_message, model).<span class="kw">await
+<a href=#278 id=278 data-nosnippet>278</a>    </span>}
+<a href=#279 id=279 data-nosnippet>279</a>
+<a href=#280 id=280 data-nosnippet>280</a>    <span class="kw">async fn </span>chat(
+<a href=#281 id=281 data-nosnippet>281</a>        <span class="kw-2">&amp;</span><span class="self">self</span>,
+<a href=#282 id=282 data-nosnippet>282</a>        request: ChatRequest&lt;<span class="lifetime">'_</span>&gt;,
+<a href=#283 id=283 data-nosnippet>283</a>        model: <span class="kw-2">&amp;</span>str,
+<a href=#284 id=284 data-nosnippet>284</a>        temperature: <span class="prelude-ty">Option</span>&lt;f64&gt;,
+<a href=#285 id=285 data-nosnippet>285</a>    ) -&gt; anyhow::Result&lt;ChatResponse&gt; {
+<a href=#286 id=286 data-nosnippet>286</a>        <span class="kw">let </span>text = <span class="self">self
+<a href=#287 id=287 data-nosnippet>287</a>            </span>.chat_with_history(request.messages, model, temperature)
+<a href=#288 id=288 data-nosnippet>288</a>            .<span class="kw">await</span><span class="question-mark">?</span>;
+<a href=#289 id=289 data-nosnippet>289</a>
+<a href=#290 id=290 data-nosnippet>290</a>        <span class="prelude-val">Ok</span>(ChatResponse {
+<a href=#291 id=291 data-nosnippet>291</a>            text: <span class="prelude-val">Some</span>(text),
+<a href=#292 id=292 data-nosnippet>292</a>            tool_calls: Vec::new(),
+<a href=#293 id=293 data-nosnippet>293</a>            usage: <span class="prelude-val">Some</span>(TokenUsage::default()),
+<a href=#294 id=294 data-nosnippet>294</a>            reasoning_content: <span class="prelude-val">None</span>,
+<a href=#295 id=295 data-nosnippet>295</a>        })
+<a href=#296 id=296 data-nosnippet>296</a>    }
+<a href=#297 id=297 data-nosnippet>297</a>}
+<a href=#298 id=298 data-nosnippet>298</a>
+<a href=#299 id=299 data-nosnippet>299</a><span class="kw">impl </span>::zeroclaw_api::attribution::Attributable <span class="kw">for </span>GeminiCliModelProvider {
+<a href=#300 id=300 data-nosnippet>300</a>    <span class="kw">fn </span>role(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; ::zeroclaw_api::attribution::Role {
+<a href=#301 id=301 data-nosnippet>301</a>        ::zeroclaw_api::attribution::Role::Provider(
+<a href=#302 id=302 data-nosnippet>302</a>            ::zeroclaw_api::attribution::ProviderKind::Model(
+<a href=#303 id=303 data-nosnippet>303</a>                ::zeroclaw_api::attribution::ModelProviderKind::GeminiCli,
+<a href=#304 id=304 data-nosnippet>304</a>            ),
+<a href=#305 id=305 data-nosnippet>305</a>        )
+<a href=#306 id=306 data-nosnippet>306</a>    }
+<a href=#307 id=307 data-nosnippet>307</a>    <span class="kw">fn </span>alias(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; <span class="kw-2">&amp;</span>str {
+<a href=#308 id=308 data-nosnippet>308</a>        <span class="kw-2">&amp;</span><span class="self">self</span>.alias
+<a href=#309 id=309 data-nosnippet>309</a>    }
+<a href=#310 id=310 data-nosnippet>310</a>}
+<a href=#311 id=311 data-nosnippet>311</a>
+<a href=#312 id=312 data-nosnippet>312</a><span class="attr">#[cfg(test)]
+<a href=#313 id=313 data-nosnippet>313</a></span><span class="kw">mod </span>tests {
+<a href=#314 id=314 data-nosnippet>314</a>    <span class="kw">use </span>super::<span class="kw-2">*</span>;
+<a href=#315 id=315 data-nosnippet>315</a>
+<a href=#316 id=316 data-nosnippet>316</a>    <span class="attr">#[test]
+<a href=#317 id=317 data-nosnippet>317</a>    </span><span class="kw">fn </span>new_uses_explicit_binary_path() {
+<a href=#318 id=318 data-nosnippet>318</a>        <span class="kw">let </span>p = GeminiCliModelProvider::new(<span class="string">"test"</span>, <span class="prelude-val">Some</span>(<span class="string">"/usr/local/bin/gemini"</span>));
+<a href=#319 id=319 data-nosnippet>319</a>        <span class="macro">assert_eq!</span>(p.binary_path, PathBuf::from(<span class="string">"/usr/local/bin/gemini"</span>));
+<a href=#320 id=320 data-nosnippet>320</a>    }
+<a href=#321 id=321 data-nosnippet>321</a>
+<a href=#322 id=322 data-nosnippet>322</a>    <span class="attr">#[test]
+<a href=#323 id=323 data-nosnippet>323</a>    </span><span class="kw">fn </span>new_defaults_to_gemini() {
+<a href=#324 id=324 data-nosnippet>324</a>        <span class="kw">let </span>p = GeminiCliModelProvider::new(<span class="string">"test"</span>, <span class="prelude-val">None</span>);
+<a href=#325 id=325 data-nosnippet>325</a>        <span class="macro">assert_eq!</span>(p.binary_path, PathBuf::from(<span class="string">"gemini"</span>));
+<a href=#326 id=326 data-nosnippet>326</a>    }
+<a href=#327 id=327 data-nosnippet>327</a>
+<a href=#328 id=328 data-nosnippet>328</a>    <span class="attr">#[test]
+<a href=#329 id=329 data-nosnippet>329</a>    </span><span class="kw">fn </span>new_ignores_blank_binary_path() {
+<a href=#330 id=330 data-nosnippet>330</a>        <span class="kw">let </span>p = GeminiCliModelProvider::new(<span class="string">"test"</span>, <span class="prelude-val">Some</span>(<span class="string">"   "</span>));
+<a href=#331 id=331 data-nosnippet>331</a>        <span class="macro">assert_eq!</span>(p.binary_path, PathBuf::from(<span class="string">"gemini"</span>));
+<a href=#332 id=332 data-nosnippet>332</a>    }
+<a href=#333 id=333 data-nosnippet>333</a>
+<a href=#334 id=334 data-nosnippet>334</a>    <span class="attr">#[test]
+<a href=#335 id=335 data-nosnippet>335</a>    </span><span class="kw">fn </span>should_forward_model_standard() {
+<a href=#336 id=336 data-nosnippet>336</a>        <span class="macro">assert!</span>(GeminiCliModelProvider::should_forward_model(
+<a href=#337 id=337 data-nosnippet>337</a>            <span class="string">"gemini-2.5-pro"
+<a href=#338 id=338 data-nosnippet>338</a>        </span>));
+<a href=#339 id=339 data-nosnippet>339</a>        <span class="macro">assert!</span>(GeminiCliModelProvider::should_forward_model(
+<a href=#340 id=340 data-nosnippet>340</a>            <span class="string">"gemini-2.5-flash"
+<a href=#341 id=341 data-nosnippet>341</a>        </span>));
+<a href=#342 id=342 data-nosnippet>342</a>    }
+<a href=#343 id=343 data-nosnippet>343</a>
+<a href=#344 id=344 data-nosnippet>344</a>    <span class="attr">#[test]
+<a href=#345 id=345 data-nosnippet>345</a>    </span><span class="kw">fn </span>should_not_forward_default_model() {
+<a href=#346 id=346 data-nosnippet>346</a>        <span class="macro">assert!</span>(!GeminiCliModelProvider::should_forward_model(
+<a href=#347 id=347 data-nosnippet>347</a>            DEFAULT_MODEL_MARKER
+<a href=#348 id=348 data-nosnippet>348</a>        ));
+<a href=#349 id=349 data-nosnippet>349</a>        <span class="macro">assert!</span>(!GeminiCliModelProvider::should_forward_model(<span class="string">""</span>));
+<a href=#350 id=350 data-nosnippet>350</a>        <span class="macro">assert!</span>(!GeminiCliModelProvider::should_forward_model(<span class="string">"   "</span>));
+<a href=#351 id=351 data-nosnippet>351</a>    }
+<a href=#352 id=352 data-nosnippet>352</a>
+<a href=#353 id=353 data-nosnippet>353</a>    <span class="attr">#[test]
+<a href=#354 id=354 data-nosnippet>354</a>    </span><span class="kw">fn </span>validate_temperature_allows_defaults() {
+<a href=#355 id=355 data-nosnippet>355</a>        <span class="macro">assert!</span>(GeminiCliModelProvider::validate_temperature(<span class="number">0.7</span>).is_ok());
+<a href=#356 id=356 data-nosnippet>356</a>        <span class="macro">assert!</span>(GeminiCliModelProvider::validate_temperature(<span class="number">1.0</span>).is_ok());
+<a href=#357 id=357 data-nosnippet>357</a>    }
+<a href=#358 id=358 data-nosnippet>358</a>
+<a href=#359 id=359 data-nosnippet>359</a>    <span class="attr">#[test]
+<a href=#360 id=360 data-nosnippet>360</a>    </span><span class="kw">fn </span>validate_temperature_rejects_custom_value() {
+<a href=#361 id=361 data-nosnippet>361</a>        <span class="kw">let </span>err = GeminiCliModelProvider::validate_temperature(<span class="number">0.2</span>).unwrap_err();
+<a href=#362 id=362 data-nosnippet>362</a>        <span class="macro">assert!</span>(
+<a href=#363 id=363 data-nosnippet>363</a>            err.to_string()
+<a href=#364 id=364 data-nosnippet>364</a>                .contains(<span class="string">"temperature unsupported by Gemini CLI"</span>)
+<a href=#365 id=365 data-nosnippet>365</a>        );
+<a href=#366 id=366 data-nosnippet>366</a>    }
+<a href=#367 id=367 data-nosnippet>367</a>
+<a href=#368 id=368 data-nosnippet>368</a>    <span class="comment">// Regression for #6520. Gemini CLI v0.40.x removed `--print`; the
+<a href=#369 id=369 data-nosnippet>369</a>    // headless-mode flag is now `--prompt`. The argv must (a) carry
+<a href=#370 id=370 data-nosnippet>370</a>    // `--prompt ""` so stdin still feeds the prompt content (keeping the
+<a href=#371 id=371 data-nosnippet>371</a>    // user message out of `ps`) and (b) NEVER carry `--print` or `-`.
+<a href=#372 id=372 data-nosnippet>372</a>    </span><span class="attr">#[test]
+<a href=#373 id=373 data-nosnippet>373</a>    </span><span class="kw">fn </span>build_cli_args_uses_prompt_flag_with_empty_token_default_model() {
+<a href=#374 id=374 data-nosnippet>374</a>        <span class="kw">let </span>args = GeminiCliModelProvider::build_cli_args(DEFAULT_MODEL_MARKER);
+<a href=#375 id=375 data-nosnippet>375</a>        <span class="macro">assert_eq!</span>(args, <span class="macro">vec!</span>[<span class="string">"--prompt"</span>.to_string(), String::new()]);
+<a href=#376 id=376 data-nosnippet>376</a>        <span class="macro">assert!</span>(!args.iter().any(|a| a == <span class="string">"--print"</span>));
+<a href=#377 id=377 data-nosnippet>377</a>        <span class="macro">assert!</span>(!args.iter().any(|a| a == <span class="string">"-"</span>));
+<a href=#378 id=378 data-nosnippet>378</a>    }
+<a href=#379 id=379 data-nosnippet>379</a>
+<a href=#380 id=380 data-nosnippet>380</a>    <span class="attr">#[test]
+<a href=#381 id=381 data-nosnippet>381</a>    </span><span class="kw">fn </span>build_cli_args_forwards_explicit_model_after_prompt() {
+<a href=#382 id=382 data-nosnippet>382</a>        <span class="kw">let </span>args = GeminiCliModelProvider::build_cli_args(<span class="string">"gemini-2.5-pro"</span>);
+<a href=#383 id=383 data-nosnippet>383</a>        <span class="macro">assert_eq!</span>(
+<a href=#384 id=384 data-nosnippet>384</a>            args,
+<a href=#385 id=385 data-nosnippet>385</a>            <span class="macro">vec!</span>[
+<a href=#386 id=386 data-nosnippet>386</a>                <span class="string">"--prompt"</span>.to_string(),
+<a href=#387 id=387 data-nosnippet>387</a>                String::new(),
+<a href=#388 id=388 data-nosnippet>388</a>                <span class="string">"--model"</span>.to_string(),
+<a href=#389 id=389 data-nosnippet>389</a>                <span class="string">"gemini-2.5-pro"</span>.to_string(),
+<a href=#390 id=390 data-nosnippet>390</a>            ]
+<a href=#391 id=391 data-nosnippet>391</a>        );
+<a href=#392 id=392 data-nosnippet>392</a>        <span class="macro">assert!</span>(!args.iter().any(|a| a == <span class="string">"--print"</span>));
+<a href=#393 id=393 data-nosnippet>393</a>    }
+<a href=#394 id=394 data-nosnippet>394</a>
+<a href=#395 id=395 data-nosnippet>395</a>    <span class="attr">#[tokio::test]
+<a href=#396 id=396 data-nosnippet>396</a>    </span><span class="kw">async fn </span>invoke_missing_binary_returns_error() {
+<a href=#397 id=397 data-nosnippet>397</a>        <span class="kw">let </span>model_provider = GeminiCliModelProvider {
+<a href=#398 id=398 data-nosnippet>398</a>            alias: <span class="string">"test"</span>.to_string(),
+<a href=#399 id=399 data-nosnippet>399</a>            binary_path: PathBuf::from(<span class="string">"/nonexistent/path/to/gemini"</span>),
+<a href=#400 id=400 data-nosnippet>400</a>        };
+<a href=#401 id=401 data-nosnippet>401</a>        <span class="kw">let </span>result = model_provider.invoke_cli(<span class="string">"hello"</span>, <span class="string">"default"</span>).<span class="kw">await</span>;
+<a href=#402 id=402 data-nosnippet>402</a>        <span class="macro">assert!</span>(result.is_err());
+<a href=#403 id=403 data-nosnippet>403</a>        <span class="kw">let </span>msg = result.unwrap_err().to_string();
+<a href=#404 id=404 data-nosnippet>404</a>        <span class="macro">assert!</span>(
+<a href=#405 id=405 data-nosnippet>405</a>            msg.contains(<span class="string">"Failed to spawn Gemini CLI binary"</span>),
+<a href=#406 id=406 data-nosnippet>406</a>            <span class="string">"unexpected error message: {msg}"
+<a href=#407 id=407 data-nosnippet>407</a>        </span>);
+<a href=#408 id=408 data-nosnippet>408</a>    }
+<a href=#409 id=409 data-nosnippet>409</a>}
 </code></pre></div></section></main></body></html>

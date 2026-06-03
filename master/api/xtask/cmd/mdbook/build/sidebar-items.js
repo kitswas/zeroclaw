@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"fn":["assemble","build_locales","inject_lang_switcher_locales","print_locales","run"]};
+window.SIDEBAR_ITEMS = {"fn":["assemble","build_locales","extract_shared_chrome","inject_lang_switcher_locales","print_locales","run"]};

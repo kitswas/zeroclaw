@@ -5,8 +5,8 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../" data
 <a href=#3 id=3 data-nosnippet>3</a>//! Reaches the model catalog for any provider family without constructing
 <a href=#4 id=4 data-nosnippet>4</a>//! a live `ModelProvider` (which would require typed runtime context like
 <a href=#5 id=5 data-nosnippet>5</a>//! Azure's `resource`/`deployment` or Bedrock's `region`). Used by the
-<a href=#6 id=6 data-nosnippet>6</a>//! gateway's `/api/onboard/catalog/models` endpoint and the TUI's
-<a href=#7 id=7 data-nosnippet>7</a>//! `onboard` flow when the operator hasn't supplied a credential yet.
+<a href=#6 id=6 data-nosnippet>6</a>//! gateway's `/api/config/catalog/models` endpoint and the TUI's
+<a href=#7 id=7 data-nosnippet>7</a>//! config flow when the operator hasn't supplied a credential yet.
 <a href=#8 id=8 data-nosnippet>8</a>//!
 <a href=#9 id=9 data-nosnippet>9</a>//! Each family maps to a tuple `(models_dev_key, openrouter_vendor_prefix)`;
 <a href=#10 id=10 data-nosnippet>10</a>//! `list_models_for_family` walks them in that order, returning the first

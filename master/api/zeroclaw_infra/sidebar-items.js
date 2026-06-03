@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"fn":["make_session_backend"],"mod":["acp_session_store","debounce","session_backend","session_sqlite","session_store","stall_watchdog"]};
+window.SIDEBAR_ITEMS = {"fn":["make_session_backend"],"mod":["acp_session_store","debounce","session_backend","session_queue","session_sqlite","session_store","stall_watchdog"]};

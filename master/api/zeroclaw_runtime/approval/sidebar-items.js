@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"enum":["ApprovalRequirement","ApprovalResponse"],"fn":["summarize_args"],"struct":["ApprovalLogEntry","ApprovalManager","ApprovalRequest"]};
+window.SIDEBAR_ITEMS = {"constant":["MAX_REPLACEMENT_LEN"],"enum":["ApprovalRequirement","ApprovalResponse"],"fn":["sanitize_tool_replacement","summarize_args"],"struct":["ApprovalLogEntry","ApprovalManager","ApprovalRequest"]};

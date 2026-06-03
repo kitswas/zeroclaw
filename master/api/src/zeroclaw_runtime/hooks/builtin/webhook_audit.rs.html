@@ -330,7 +330,7 @@ data-theme="ayu"></script><meta name="rustdoc-vars" data-root-path="../../../../
 <a href=#328 id=328 data-nosnippet>328</a>        <span class="kw">let </span>url = <span class="self">self</span>.config.url.clone();
 <a href=#329 id=329 data-nosnippet>329</a>
 <a href=#330 id=330 data-nosnippet>330</a>        <span class="comment">// Fire-and-forget — never block the agent loop.
-<a href=#331 id=331 data-nosnippet>331</a>        </span>tokio::spawn(<span class="kw">async move </span>{
+<a href=#331 id=331 data-nosnippet>331</a>        </span><span class="macro">zeroclaw_spawn::spawn!</span>(<span class="kw">async move </span>{
 <a href=#332 id=332 data-nosnippet>332</a>            <span class="kw">match </span>client.post(<span class="kw-2">&amp;</span>url).json(<span class="kw-2">&amp;</span>payload).send().<span class="kw">await </span>{
 <a href=#333 id=333 data-nosnippet>333</a>                <span class="prelude-val">Ok</span>(resp) =&gt; {
 <a href=#334 id=334 data-nosnippet>334</a>                    <span class="kw">if </span>!resp.status().is_success() {

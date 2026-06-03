@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="es" class="ayu sidebar-visible" dir="ltr">
+<html lang="es" class="default-dark sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -12,11 +12,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="../favicon-fc23365c.svg">
-        <link rel="shortcut icon" href="../favicon-53763955.png">
+        <link rel="icon" href="../../../_shared/favicon.svg">
+        <link rel="shortcut icon" href="../../../_shared/favicon.png">
         <link rel="stylesheet" href="../css/variables-8adf115d.css">
         <link rel="stylesheet" href="../css/general-2459343d.css">
-        <link rel="stylesheet" href="../css/chrome-9dfbd86b.css">
+        <link rel="stylesheet" href="../../../_shared/css/chrome.css">
         <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
@@ -27,19 +27,20 @@
         <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
         <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
 
-        <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="../theme/custom-a6e9ac27.css">
+        <!-- Custom theme stylesheets (pc-themes.css generated; ordered first) -->
+        <link rel="stylesheet" href="../../../_shared/theme/pc-themes.css">
+        <link rel="stylesheet" href="../../../_shared/theme/custom.css">
 
 
         <!-- Provide site root and default themes to javascript -->
         <script>
             const path_to_root = "../";
-            const default_light_theme = "ayu";
-            const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../searchindex-214694e1.js";
+            const default_light_theme = "default-dark";
+            const default_dark_theme = "default-dark";
+            window.path_to_searchindex_js = "../searchindex-81124761.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-2f24c095.js"></script>
+        <script src="../toc-0643ac63.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -77,7 +78,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
-            html.classList.remove('ayu')
+            html.classList.remove('default-dark')
             html.classList.add(theme);
             html.classList.add("js");
         </script>
@@ -127,11 +128,34 @@
                         </button>
                         <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
                             <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                            <!-- PC_THEME_LIST_START: generated from themes.json by `cargo xtask mdbook themes`; do not edit between markers -->
+                            <li role="none" class="pc-theme-group">Dark</li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-default-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#1e1e24;--s1:#22d3ee;--s2:#a78bfa;--s3:#f59e0b"></span><span class="pc-theme-name">Default Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-oled-black"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#000000;--s1:#22d3ee;--s2:#8b5cf6;--s3:#10b981"></span><span class="pc-theme-name">OLED Black</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-nord-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#2e3440;--s1:#88c0d0;--s2:#81a1c1;--s3:#a3be8c"></span><span class="pc-theme-name">Nord Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-dracula"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#282a36;--s1:#bd93f9;--s2:#ff79c6;--s3:#50fa7b"></span><span class="pc-theme-name">Dracula</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-monokai"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#272822;--s1:#f92672;--s2:#a6e22e;--s3:#e6db74"></span><span class="pc-theme-name">Monokai</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-solarized-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#002b36;--s1:#268bd2;--s2:#2aa198;--s3:#b58900"></span><span class="pc-theme-name">Solarized Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-kanagawa-wave"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#1f1f28;--s1:#7e9cd8;--s2:#957fb8;--s3:#e6c384"></span><span class="pc-theme-name">Kanagawa Wave</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-kanagawa-dragon"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#181616;--s1:#8ba4b0;--s2:#a292a3;--s3:#c4b28a"></span><span class="pc-theme-name">Kanagawa Dragon</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-rose-pine"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#191724;--s1:#ebbcba;--s2:#c4a7e7;--s3:#f6c177"></span><span class="pc-theme-name">Rosé Pine</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-rose-pine-moon"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#232136;--s1:#ea9a97;--s2:#c4a7e7;--s3:#f6c177"></span><span class="pc-theme-name">Rosé Pine Moon</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-night-owl"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#011627;--s1:#82aaff;--s2:#c792ea;--s3:#addb67"></span><span class="pc-theme-name">Night Owl</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-everforest-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#2d353b;--s1:#a7c080;--s2:#83c092;--s3:#dbbc7f"></span><span class="pc-theme-name">Everforest Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-cobalt2"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#193549;--s1:#ffc600;--s2:#ff9d00;--s3:#80ffbb"></span><span class="pc-theme-name">Cobalt2</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-flexoki-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#100f0f;--s1:#ce5d97;--s2:#879a39;--s3:#da702c"></span><span class="pc-theme-name">Flexoki Dark</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-hacker-green"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#0a0e0a;--s1:#00ff41;--s2:#00cc33;--s3:#008f11"></span><span class="pc-theme-name">Hacker Green</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-material-dark"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#212121;--s1:#89ddff;--s2:#c792ea;--s3:#ffcb6b"></span><span class="pc-theme-name">Material Dark</span></button></li>
+                            <li role="none" class="pc-theme-group">Light</li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-default-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#f4f4f5;--s1:#22d3ee;--s2:#8b5cf6;--s3:#f59e0b"></span><span class="pc-theme-name">Default Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-nord-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#eceff4;--s1:#5e81ac;--s2:#88c0d0;--s3:#a3be8c"></span><span class="pc-theme-name">Nord Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-solarized-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fdf6e3;--s1:#268bd2;--s2:#2aa198;--s3:#b58900"></span><span class="pc-theme-name">Solarized Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-kanagawa-lotus"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#f2ecbc;--s1:#4d699b;--s2:#b35b79;--s3:#836f4a"></span><span class="pc-theme-name">Kanagawa Lotus</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-rose-pine-dawn"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#faf4ed;--s1:#d7827e;--s2:#907aa9;--s3:#ea9d34"></span><span class="pc-theme-name">Rosé Pine Dawn</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-everforest-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fdf6e3;--s1:#8da101;--s2:#35a77c;--s3:#dfa000"></span><span class="pc-theme-name">Everforest Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-flexoki-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fffcf0;--s1:#ce5d97;--s2:#879a39;--s3:#da702c"></span><span class="pc-theme-name">Flexoki Light</span></button></li>
+                            <li role="none" class="pc-theme-item"><button role="menuitem" class="theme" id="mdbook-theme-material-light"><span class="pc-theme-swatch" aria-hidden="true" style="--s0:#fafafa;--s1:#6182b8;--s2:#7c4dff;--s3:#f76d47"></span><span class="pc-theme-name">Material Light</span></button></li>
+                            <!-- PC_THEME_LIST_END -->
                         </ul>
                         <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
                             <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
@@ -141,14 +165,11 @@
                     <h1 class="menu-title">ZeroClaw Docs</h1>
 
                     <div class="right-buttons">
-                        <a href="../print.html" title="Print this book" aria-label="Print this book">
-                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
-                        </a>
                         <a href="https://github.com/zeroclaw-labs/zeroclaw" title="Git repository" aria-label="Git repository">
                             <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
                         </a>
-                        <a href="https://github.com/zeroclaw-labs/zeroclaw/edit/master/docs/book/src/reference/config.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
-                            <span class=fa-svg id="git-edit-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M421.7 220.3l-11.3 11.3-22.6 22.6-205 205c-6.6 6.6-14.8 11.5-23.8 14.1L30.8 511c-8.4 2.5-17.5 .2-23.7-6.1S-1.5 489.7 1 481.2L38.7 353.1c2.6-9 7.5-17.2 14.1-23.8l205-205 22.6-22.6 11.3-11.3 33.9 33.9 62.1 62.1 33.9 33.9zM96 353.9l-9.3 9.3c-.9 .9-1.6 2.1-2 3.4l-25.3 86 86-25.3c1.3-.4 2.5-1.1 3.4-2l9.3-9.3H112c-8.8 0-16-7.2-16-16V353.9zM453.3 19.3l39.4 39.4c25 25 25 65.5 0 90.5l-14.5 14.5-22.6 22.6-11.3 11.3-33.9-33.9-62.1-62.1L314.3 67.7l11.3-11.3 22.6-22.6 14.5-14.5c25-25 65.5-25 90.5 0z"/></svg></span>
+                        <a href="https://discord.gg/tQ88WUkPyJ" title="Join our Discord" aria-label="Join our Discord" rel="external noopener" target="_blank">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"/></svg></span>
                         </a>
 
                     </div>
@@ -180,6 +201,7 @@
                 </script>
 
                 <div id="mdbook-content" class="content">
+                    <aside id="pc-page-toc" class="pc-page-toc" aria-label="On this page"></aside>
                     <main>
                         <h1 id="referencia-de-configuración"><a class="header" href="#referencia-de-configuración">Referencia de configuración</a></h1>
 <p>ZeroClaw se configura mediante un archivo TOML. Todos los campos son opcionales a menos que se indique lo contrario.</p>
@@ -190,7 +212,7 @@
 </thead>
 <tbody>
 <tr><td><code>acp</code></td><td>ACP (Agent Client Protocol) server configuration (<code>[acp]</code> section).</td></tr>
-<tr><td><code>agents</code></td><td>Aliased agents in this install. Each entry under <code>[agents.&lt;alias&gt;]</code></td></tr>
+<tr><td><code>agents</code></td><td>Agentes con alias en esta instalación. Cada entrada en <code>[agents.&lt;alias&gt;]</code></td></tr>
 <tr><td><code>backup</code></td><td>Configuración de la herramienta de copia de seguridad (sección <code>[backup]</code>).</td></tr>
 <tr><td><code>navegador</code></td><td>Configuración de automatización del navegador (sección <code>[browser]</code>).</td></tr>
 <tr><td><code>browser_delegate</code></td><td></td></tr>
@@ -202,12 +224,14 @@
 <tr><td><code>composio</code></td><td>Integración de herramientas de OAuth gestionadas por Composio (<code>[composio]</code> sección).</td></tr>
 <tr><td><code>conversational_ai</code></td><td>Configuración del constructor de agentes de IA conversacional (sección <code>[conversational_ai]</code>).</td></tr>
 <tr><td><code>cost</code></td><td>Configuración del seguimiento de costos y la aplicación del presupuesto (sección <code>[cost]</code>).</td></tr>
-<tr><td><code>cron</code></td><td>Declarative cron jobs (<code>[cron.&lt;alias&gt;]</code>), alias-keyed.</td></tr>
+<tr><td><code>cron</code></td><td>Trabajos cron declarativos (<code>[cron.&lt;alias&gt;]</code>), indexados por alias.</td></tr>
 <tr><td><code>data_retention</code></td><td>Configuración de retención y purga de datos (<code>[data_retention]</code> sección).</td></tr>
 <tr><td><code>delegar</code></td><td>Configuración global de herramientas de delegación para los valores predeterminados de tiempo de espera.</td></tr>
-<tr><td><code>embedding_routes</code></td><td>Embedding-routing rules — route <code>hint:&lt;name&gt;</code> to specific</td></tr>
-<tr><td><code>escalation</code></td><td>Escalation routing configuration (<code>[escalation]</code> section).</td></tr>
+<tr><td><code>embedding_routes</code></td><td>Reglas de enrutamiento de embeddings: enruta <code>hint:&lt;name&gt;</code> a uno específico</td></tr>
+<tr><td><code>escalation</code></td><td>Configuración de enrutamiento de escalamiento (sección <code>[escalation]</code>).</td></tr>
+<tr><td><code>file_download</code></td><td>Standalone file download tool configuration (<code>[file_download]</code>).</td></tr>
 <tr><td><code>file_upload</code></td><td>Standalone file upload tool configuration (<code>[file_upload]</code>).</td></tr>
+<tr><td><code>file_upload_bundle</code></td><td>Standalone multi-file bundle upload tool configuration</td></tr>
 <tr><td><code>gateway</code></td><td>Configuración del servidor de puerta de enlace (sección <code>[gateway]</code>).</td></tr>
 <tr><td><code>gemini_cli</code></td><td>Configuración de la herramienta CLI de Gemini (sección <code>[gemini_cli]</code>).</td></tr>
 <tr><td><code>google_workspace</code></td><td>Configuración de la herramienta de línea de comandos de Google Workspace (<code>gws</code>) (sección <code>[google_workspace]</code>).</td></tr>
@@ -218,16 +242,16 @@
 <tr><td><code>image_gen</code></td><td>Configuración de la herramienta de generación de imágenes independiente (<code>[image_gen]</code>).</td></tr>
 <tr><td><code>jira</code></td><td>Configuración de la integración de Jira (<code>[jira]</code>).</td></tr>
 <tr><td><code>conocimiento</code></td><td>Configuración del grafo de conocimiento para capturar y reutilizar la experiencia.</td></tr>
-<tr><td><code>knowledge_bundles</code></td><td>Named knowledge bundles (<code>[knowledge_bundles.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>knowledge_bundles</code></td><td>Paquetes de conocimiento con nombre (<code>[knowledge_bundles.&lt;alias&gt;]</code>).</td></tr>
 <tr><td><code>link_enricher</code></td><td>Comprensión automática de enlaces para mensajes entrantes del canal (<code>[link_enricher]</code>).</td></tr>
 <tr><td><code>linkedin</code></td><td>Configuración de la integración de LinkedIn (sección <code>[linkedin]</code>).</td></tr>
 <tr><td><code>locale</code></td><td>Configuración regional para las descripciones de herramientas (por ejemplo, <code>"en"</code>, <code>"zh-CN"</code>).</td></tr>
 <tr><td><code>mcp</code></td><td>Configuración del cliente MCP externo (<code>[mcp]</code> sección).</td></tr>
-<tr><td><code>mcp_bundles</code></td><td>Named MCP server bundles (<code>[mcp_bundles.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>mcp_bundles</code></td><td>Paquetes de servidores MCP con nombre (<code>[mcp_bundles.&lt;alias&gt;]</code>).</td></tr>
 <tr><td><code>media_pipeline</code></td><td>Configuración del pipeline de comprensión automática de medios (<code>[media_pipeline]</code>).</td></tr>
 <tr><td><code>memory</code></td><td>Configuración del backend de memoria (sección <code>[memory]</code>).</td></tr>
 <tr><td><code>microsoft365</code></td><td>Integración de Microsoft 365 a través de la API de Microsoft Graph (sección <code>[microsoft365]</code>).</td></tr>
-<tr><td><code>model_routes</code></td><td>Model-routing rules — route <code>hint:&lt;name&gt;</code> to specific</td></tr>
+<tr><td><code>model_routes</code></td><td>Reglas de enrutamiento de modelos: enruta <code>hint:&lt;name&gt;</code> a uno específico</td></tr>
 <tr><td><code>multimodal</code></td><td>Configuración de manejo multimodal (imágenes) (sección <code>[multimodal]</code>).</td></tr>
 <tr><td><code>node_transport</code></td><td>Configuración de transporte seguro para la comunicación entre nodos (<code>[node_transport]</code>).</td></tr>
 <tr><td><code>nodos</code></td><td>Configuración para el sistema de descubrimiento dinámico de nodos (<code>[nodes]</code>).</td></tr>
@@ -236,36 +260,37 @@
 <tr><td><code>onboard_state</code></td><td>Configuración de aislamiento de espacio de trabajo para múltiples clientes.</td></tr>
 <tr><td><code>opencode_cli</code></td><td>Configuración de la herramienta CLI de OpenCode (sección <code>[opencode_cli]</code>).</td></tr>
 <tr><td><code>pacing</code></td><td>Controles de ritmo para cargas de trabajo de LLM lentos/locales (sección <code>[pacing]</code>).</td></tr>
-<tr><td><code>peer_groups</code></td><td>Named peer groups (<code>[peer_groups.&lt;name&gt;]</code>). Each entry binds a</td></tr>
+<tr><td><code>peer_groups</code></td><td>Grupos de pares con nombre (<code>[peer_groups.&lt;name&gt;]</code>). Cada entrada vincula un</td></tr>
 <tr><td><code>periféricos</code></td><td>Configuración de integración de la placa periférica (sección <code>[peripherals]</code>).</td></tr>
 <tr><td><code>pipeline</code></td><td>Configuración de la herramienta de pipeline (sección <code>[pipeline]</code>).</td></tr>
 <tr><td><code>plugins</code></td><td>Configuración del sistema de plugins.</td></tr>
 <tr><td><code>project_intel</code></td><td>Configuración de la inteligencia de entrega del proyecto (<code>[project_intel]</code> sección).</td></tr>
-<tr><td><code>proveedores</code></td><td>Top-level wrapper for every provider category. TOML root sees a</td></tr>
+<tr><td><code>proveedores</code></td><td>Contenedor de nivel superior para cada categoría de proveedor. La raíz TOML ve un</td></tr>
 <tr><td><code>proxy</code></td><td>Configuración del proxy para el tráfico saliente HTTP/HTTPS/SOCKS5 (sección <code>[proxy]</code>).</td></tr>
 <tr><td><code>query_classification</code></td><td>Clasificación automática de consultas — clasifica los mensajes del usuario por palabra clave o patrón</td></tr>
 <tr><td><code>fiabilidad</code></td><td>Configuración de fiabilidad y supervisión (sección <code>[reliability]</code>).</td></tr>
-<tr><td><code>risk_profiles</code></td><td>Named risk/autonomy profiles (<code>[risk_profiles.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>risk_profiles</code></td><td>Perfiles de riesgo/autonomía con nombre (<code>[risk_profiles.&lt;alias&gt;]</code>).</td></tr>
 <tr><td><code>runtime</code></td><td>Configuración del adaptador en tiempo de ejecución (sección <code>[runtime]</code>).</td></tr>
-<tr><td><code>runtime_profiles</code></td><td>Named runtime/LLM execution profiles (<code>[runtime_profiles.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>runtime_profiles</code></td><td>Perfiles de ejecución de runtime/LLM con nombre (<code>[runtime_profiles.&lt;alias&gt;]</code>).</td></tr>
 <tr><td><code>programador</code></td><td>Configuración del programador para la ejecución periódica de tareas (sección <code>[scheduler]</code>).</td></tr>
 <tr><td><code>schema_version</code></td><td>Versión del esquema del archivo de configuración.</td></tr>
 <tr><td><code>secrets</code></td><td>Configuración de cifrado de secretos (sección <code>[secrets]</code>).</td></tr>
-<tr><td><code>seguridad</code></td><td>Security configuration for audit logging, OTP, e-stop, IAM/SSO, and WebAuthn.</td></tr>
+<tr><td><code>seguridad</code></td><td>Configuración de seguridad para registro de auditoría, OTP, e-stop, IAM/SSO y WebAuthn.</td></tr>
 <tr><td><code>security_ops</code></td><td>Configuración del agente del panel de control del Servicio de Ciberseguridad Gestionado (MCSS) (<code>[security_ops]</code>).</td></tr>
 <tr><td><code>shell_tool</code></td><td>Configuración de la herramienta de shell (sección <code>[shell_tool]</code>).</td></tr>
-<tr><td><code>skill_bundles</code></td><td>Named skill bundles (<code>[skill_bundles.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>skill_bundles</code></td><td>Paquetes de skills con nombre (<code>[skill_bundles.&lt;alias&gt;]</code>).</td></tr>
 <tr><td><code>habilidades</code></td><td>Configuración de carga de habilidades (sección <code>[skills]</code>).</td></tr>
 <tr><td><code>sop</code></td><td>Configuración del motor de Procedimientos Operativos Estándar (<code>[sop]</code>).</td></tr>
 <tr><td><code>almacenamiento</code></td><td>Configuración de almacenamiento persistente (sección <code>[storage]</code>).</td></tr>
 <tr><td><code>text_browser</code></td><td>Configuración de la herramienta del navegador de texto (sección <code>[text_browser]</code>).</td></tr>
 <tr><td><code>transcripción</code></td><td>Configuración de transcripción de voz con soporte para múltiples proveedores.</td></tr>
 <tr><td><code>confianza</code></td><td></td></tr>
-<tr><td><code>tts</code></td><td>Text-to-Speech subsystem configuration (<code>[tts]</code>).</td></tr>
+<tr><td><code>tts</code></td><td>Configuración del subsistema de Text-to-Speech (<code>[tts]</code>).</td></tr>
 <tr><td><code>tunnel</code></td><td>Configuración del túnel para exponer el gateway públicamente (sección <code>[tunnel]</code>).</td></tr>
 <tr><td><code>verifiable_intent</code></td><td>Verificación y emisión de credenciales de Intención Verificable (VI) (sección <code>[verifiable_intent]</code>).</td></tr>
 <tr><td><code>web_fetch</code></td><td>Configuración de la herramienta de obtención web (sección <code>[web_fetch]</code>).</td></tr>
 <tr><td><code>web_search</code></td><td>Configuración de la herramienta de búsqueda web (sección <code>[web_search]</code>).</td></tr>
+<tr><td><code>wss</code></td><td>WebSocket Secure (WSS) transport for remote TUI-to-daemon connections (<code>[wss]</code>).</td></tr>
 </tbody>
 </table>
 </div>
@@ -284,7 +309,7 @@
 </table>
 </div>
 <h2 id="agents"><a class="header" href="#agents"><code>agents</code></a></h2>
-<p>Aliased agents in this install. Each entry under <code>[agents.&lt;alias&gt;]</code> is one user-facing agent with its own identity, channels, model provider, risk profile, workspace, and memory scope. <code>DelegateTool</code> consults this map when one agent delegates a subtask to another.</p>
+<p>Agentes con alias en esta instalación. Cada entrada bajo <code>[agents.&lt;alias&gt;]</code> es un agente de cara al usuario con su propia identidad, canales, proveedor de modelo, perfil de riesgo, espacio de trabajo y alcance de memoria. <code>DelegateTool</code> consulta este mapa cuando un agente delega una subtarea a otro.</p>
 <h2 id="backup"><a class="header" href="#backup"><code>backup</code></a></h2>
 <p>Configuración de la herramienta de copia de seguridad (sección <code>[backup]</code>).</p>
 <div class="table-wrapper">
@@ -362,7 +387,7 @@
 </div>
 <h2 id="canales"><a class="header" href="#canales"><code>canales</code></a></h2>
 <p>Configuraciones de canal de nivel superior (sección <code>[channels]</code>).</p>
-<p>each channel type is a keyed table of named instances (aliases). <code>[channels.telegram.default]</code> is the conventional single-instance key. Access via <code>config.channels.telegram.get("default")</code>.</p>
+<p>cada tipo de canal es una tabla indexada de instancias con nombre (alias). <code>[channels.telegram.default]</code> es la clave convencional para una sola instancia. Se accede mediante <code>config.channels.telegram.get("default")</code>.</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -370,45 +395,45 @@
 </thead>
 <tbody>
 <tr><td><code>ack_reactions</code></td><td>bool</td><td><code>true</code></td><td>Si se deben agregar reacciones de reconocimiento (👀 al recibir, ✅/⚠️ al</td></tr>
-<tr><td><code>bluesky</code></td><td>mapa</td><td>—</td><td>Bluesky channel instances (<code>[channels.bluesky.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>clawdtalk</code></td><td>mapa</td><td>—</td><td>ClawdTalk voice channel instances (<code>[channels.clawdtalk.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>bluesky</code></td><td>mapa</td><td>—</td><td>Instancias de canal de Bluesky (<code>[channels.bluesky.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>clawdtalk</code></td><td>mapa</td><td>—</td><td>Instancias de canal de voz de ClawdTalk (<code>[channels.clawdtalk.&lt;alias&gt;]</code>).</td></tr>
 <tr><td><code>cli</code></td><td>bool</td><td><code>true</code></td><td>Habilitar el canal interactivo de la CLI. Predeterminado: <code>true</code>.</td></tr>
 <tr><td><code>debounce_ms</code></td><td>entero</td><td><code>0</code></td><td>Ventana de desactivación de mensajes entrantes en milisegundos. Cuando un remitente envía</td></tr>
-<tr><td><code>dingtalk</code></td><td>mapa</td><td>—</td><td>DingTalk channel instances (<code>[channels.dingtalk.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>discord</code></td><td>mapa</td><td>—</td><td>Discord bot channel instances (<code>[channels.discord.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>email</code></td><td>mapa</td><td>—</td><td>Email channel instances (<code>[channels.email.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>gmail_push</code></td><td>mapa</td><td>—</td><td>Gmail Pub/Sub push notification channel instances (<code>[channels.gmail_push.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>imessage</code></td><td>mapa</td><td>—</td><td>iMessage channel instances (<code>[channels.imessage.&lt;alias&gt;]</code>, macOS only).</td></tr>
-<tr><td><code>irc</code></td><td>mapa</td><td>—</td><td>IRC channel instances (<code>[channels.irc.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>lark</code></td><td>mapa</td><td>—</td><td>Lark channel instances (<code>[channels.lark.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>línea</code></td><td>mapa</td><td>—</td><td>LINE Messaging API channel instances (<code>[channels.line.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>linq</code></td><td>mapa</td><td>—</td><td>Linq Partner API channel instances (<code>[channels.linq.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>matrix</code></td><td>mapa</td><td>—</td><td>Matrix channel instances (<code>[channels.matrix.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>mattermost</code></td><td>mapa</td><td>—</td><td>Mattermost bot channel instances (<code>[channels.mattermost.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>dingtalk</code></td><td>mapa</td><td>—</td><td>Instancias del canal DingTalk (<code>[channels.dingtalk.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>discord</code></td><td>mapa</td><td>—</td><td>Instancias de canal del bot de Discord (<code>[channels.discord.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>email</code></td><td>mapa</td><td>—</td><td>Instancias de canal de correo electrónico (<code>[channels.email.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>gmail_push</code></td><td>mapa</td><td>—</td><td>Instancias de canal de notificaciones push de Gmail Pub/Sub (<code>[channels.gmail_push.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>imessage</code></td><td>mapa</td><td>—</td><td>Instancias del canal iMessage (<code>[channels.imessage.&lt;alias&gt;]</code>, solo macOS).</td></tr>
+<tr><td><code>irc</code></td><td>mapa</td><td>—</td><td>Instancias de canal IRC (<code>[channels.irc.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>lark</code></td><td>mapa</td><td>—</td><td>Instancias del canal Lark (<code>[channels.lark.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>línea</code></td><td>mapa</td><td>—</td><td>Instancias de canal de LINE Messaging API (<code>[channels.line.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>linq</code></td><td>mapa</td><td>—</td><td>Instancias de canal de la API Linq Partner (<code>[channels.linq.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>matrix</code></td><td>mapa</td><td>—</td><td>Instancias de canal Matrix (<code>[channels.matrix.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>mattermost</code></td><td>mapa</td><td>—</td><td>Instancias de canal de bot de Mattermost (<code>[channels.mattermost.&lt;alias&gt;]</code>).</td></tr>
 <tr><td><code>message_timeout_secs</code></td><td>entero</td><td><code>300</code></td><td>Tiempo de espera base en segundos para procesar un mensaje de un solo canal (LLM + herramientas).</td></tr>
-<tr><td><code>mochat</code></td><td>mapa</td><td>—</td><td>Mochat customer service channel instances (<code>[channels.mochat.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>mqtt</code></td><td>mapa</td><td>—</td><td>MQTT channel instances (<code>[channels.mqtt.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>nextcloud_talk</code></td><td>mapa</td><td>—</td><td>Nextcloud Talk bot channel instances (<code>[channels.nextcloud_talk.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>mochat</code></td><td>mapa</td><td>—</td><td>Instancias del canal de atención al cliente de Mochat (<code>[channels.mochat.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>mqtt</code></td><td>mapa</td><td>—</td><td>Instancias de canal MQTT (<code>[channels.mqtt.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>nextcloud_talk</code></td><td>mapa</td><td>—</td><td>Instancias de canal de bot de Nextcloud Talk (<code>[channels.nextcloud_talk.&lt;alias&gt;]</code>).</td></tr>
 <tr><td><code>nostr</code></td><td>mapa</td><td>—</td><td></td></tr>
-<tr><td><code>qq</code></td><td>mapa</td><td>—</td><td>QQ Official Bot channel instances (<code>[channels.qq.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>reddit</code></td><td>mapa</td><td>—</td><td>Reddit channel instances (<code>[channels.reddit.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>qq</code></td><td>mapa</td><td>—</td><td>Instancias de canal de QQ Official Bot (<code>[channels.qq.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>reddit</code></td><td>mapa</td><td>—</td><td>Instancias de canal de Reddit (<code>[channels.reddit.&lt;alias&gt;]</code>).</td></tr>
 <tr><td><code>session_backend</code></td><td>cadena</td><td><code>"sqlite"</code></td><td>Backend de persistencia de sesiones: <code>"jsonl"</code> (legado) o <code>"sqlite"</code> (nuevo valor predeterminado).</td></tr>
 <tr><td><code>session_persistence</code></td><td>bool</td><td><code>true</code></td><td>Persistir el historial de conversaciones del canal en archivos JSONL para que las sesiones sobrevivan</td></tr>
 <tr><td><code>session_ttl_hours</code></td><td>entero</td><td><code>0</code></td><td>Archivar automáticamente las sesiones inactivas que tengan más de esta cantidad de horas. <code>0</code> desactiva esta función. Valor predeterminado: <code>0</code>.</td></tr>
 <tr><td><code>show_tool_calls</code></td><td>bool</td><td><code>false</code></td><td>Indica si se deben enviar mensajes de notificación de llamadas a herramientas (por ejemplo, <code>🔧 web_search_tool: …</code>)</td></tr>
-<tr><td><code>señal</code></td><td>mapa</td><td>—</td><td>Signal channel instances (<code>[channels.signal.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>slack</code></td><td>mapa</td><td>—</td><td>Slack bot channel instances (<code>[channels.slack.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>telegram</code></td><td>mapa</td><td>—</td><td>Telegram bot channel instances (<code>[channels.telegram.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>twitter</code></td><td>mapa</td><td>—</td><td>X/Twitter channel instances (<code>[channels.twitter.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>voice_call</code></td><td>mapa</td><td>—</td><td>Voice call channel instances (<code>[channels.voice_call.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>voice_duplex</code></td><td>mapa</td><td>—</td><td>Voice duplex instances (<code>[channels.voice_duplex.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>voice_wake</code></td><td>mapa</td><td>—</td><td>Voice wake word detection channel instances (<code>[channels.voice_wake.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>wati</code></td><td>mapa</td><td>—</td><td>WATI WhatsApp Business API channel instances (<code>[channels.wati.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>webhook</code></td><td>mapa</td><td>—</td><td>Webhook channel instances (<code>[channels.webhook.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>wechat</code></td><td>mapa</td><td>—</td><td>WeChat personal iLink Bot channel instances (<code>[channels.wechat.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>wecom</code></td><td>mapa</td><td>—</td><td>WeCom (WeChat Enterprise) Bot Webhook channel instances (<code>[channels.wecom.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>señal</code></td><td>mapa</td><td>—</td><td>Instancias de canal Signal (<code>[channels.signal.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>slack</code></td><td>mapa</td><td>—</td><td>Instancias de canal de bot de Slack (<code>[channels.slack.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>telegram</code></td><td>mapa</td><td>—</td><td>Instancias de canal del bot de Telegram (<code>[channels.telegram.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>twitter</code></td><td>mapa</td><td>—</td><td>Instancias de canal X/Twitter (<code>[channels.twitter.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>voice_call</code></td><td>mapa</td><td>—</td><td>Instancias de canal de llamada de voz (<code>[channels.voice_call.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>voice_duplex</code></td><td>mapa</td><td>—</td><td>Instancias de voz dúplex (<code>[channels.voice_duplex.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>voice_wake</code></td><td>mapa</td><td>—</td><td>Instancias de canal de detección de palabra de activación por voz (<code>[channels.voice_wake.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>wati</code></td><td>mapa</td><td>—</td><td>Instancias del canal de la API de WhatsApp Business de WATI (<code>[channels.wati.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>webhook</code></td><td>mapa</td><td>—</td><td>Instancias de canal de webhook (<code>[channels.webhook.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>wechat</code></td><td>mapa</td><td>—</td><td>Instancias del canal de bot iLink personal de WeChat (<code>[channels.wechat.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>wecom</code></td><td>mapa</td><td>—</td><td>Instancias del canal de webhook de bots de WeCom (WeChat Enterprise) (<code>[channels.wecom.&lt;alias&gt;]</code>).</td></tr>
 <tr><td><code>wecom_ws</code></td><td>mapa</td><td>—</td><td>WeCom AI Bot WebSocket channel instances (<code>[channels.wecom_ws.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>whatsapp</code></td><td>mapa</td><td>—</td><td>WhatsApp channel instances (<code>[channels.whatsapp.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>whatsapp</code></td><td>mapa</td><td>—</td><td>Instancias del canal de WhatsApp (<code>[channels.whatsapp.&lt;alias&gt;]</code>).</td></tr>
 </tbody>
 </table>
 </div>
@@ -455,10 +480,10 @@
 </thead>
 <tbody>
 <tr><td><code>cost_threshold_monthly_usd</code></td><td>número</td><td><code>100.0</code></td><td>Umbral mensual en USD para marcar elementos de costo. Predeterminado: 100.0.</td></tr>
-<tr><td><code>default_cloud</code></td><td>cadena</td><td><code>"aws"</code></td><td>Default cloud model_provider for analysis context. Default: “aws”.</td></tr>
+<tr><td><code>default_cloud</code></td><td>cadena</td><td><code>"aws"</code></td><td>Proveedor de modelo en la nube predeterminado para el contexto de análisis. Predeterminado: “aws”.</td></tr>
 <tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilitar herramientas de operaciones en la nube. Predeterminado: false.</td></tr>
 <tr><td><code>iac_tools</code></td><td>string[]</td><td><code>["terraform"]</code></td><td>Herramientas de IaC compatibles para revisión. Predeterminado: [<code>terraform</code>].</td></tr>
-<tr><td><code>supported_clouds</code></td><td>string[]</td><td><code>["aws","azure","gcp"]</code></td><td>Supported cloud model_providers. Default: [<code>aws</code>, <code>azure</code>, <code>gcp</code>].</td></tr>
+<tr><td><code>supported_clouds</code></td><td>string[]</td><td><code>["aws","azure","gcp"]</code></td><td>Proveedores de modelos en la nube compatibles. Predeterminado: [<code>aws</code>, <code>azure</code>, <code>gcp</code>].</td></tr>
 <tr><td><code>well_architected_frameworks</code></td><td>string[]</td><td><code>["aws-waf"]</code></td><td>Marcos de trabajo bien diseñados para verificar. Predeterminado: [<code>aws-waf</code>].</td></tr>
 </tbody>
 </table>
@@ -528,8 +553,8 @@
 <tr><td><code>enabled</code></td><td>bool</td><td><code>true</code></td><td>Habilitar el seguimiento de costos (predeterminado: true)</td></tr>
 <tr><td><code>aplicación</code></td><td>objeto</td><td>—</td><td>Configuración del comportamiento de aplicación de costos cuando se alcanzan los límites del presupuesto.</td></tr>
 <tr><td><code>monthly_limit_usd</code></td><td>número</td><td><code>100.0</code></td><td>Límite mensual de gastos en USD (predeterminado: 100.00)</td></tr>
-<tr><td><code>rates</code></td><td>objeto</td><td>—</td><td><code>[cost.rates]</code> — top-level rate-sheet namespace. Mirrors the</td></tr>
-<tr><td><code>track_per_agent</code></td><td>bool</td><td><code>true</code></td><td>Stamp each recorded cost entry with the originating agent alias so</td></tr>
+<tr><td><code>rates</code></td><td>objeto</td><td>—</td><td><code>[cost.rates]</code> — espacio de nombres de nivel superior para la hoja de tarifas. Replica el</td></tr>
+<tr><td><code>track_per_agent</code></td><td>bool</td><td><code>true</code></td><td>Marca cada entrada de coste registrada con el alias del agente de origen para que</td></tr>
 <tr><td><code>warn_at_percent</code></td><td>entero</td><td><code>80</code></td><td>Advertir cuando el gasto alcance este porcentaje del límite (predeterminado: 80)</td></tr>
 </tbody>
 </table>
@@ -549,35 +574,35 @@
 </table>
 </div>
 <h3 id="costrates"><a class="header" href="#costrates"><code>cost.rates</code></a></h3>
-<p><code>[cost.rates]</code> — top-level rate-sheet namespace. Mirrors the <code>[providers.*]</code> shape so each subsection here points at the same kind of resource its <code>[providers.*]</code> counterpart configures.</p>
+<p><code>[cost.rates]</code> — espacio de nombres de nivel superior para la hoja de tarifas. Refleja la estructura de <code>[providers.*]</code>, de modo que cada subsección aquí apunta al mismo tipo de recurso que configura su contraparte en <code>[providers.*]</code>.</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
 </thead>
 <tbody>
-<tr><td><code>proveedores</code></td><td>objeto</td><td>—</td><td><code>[cost.rates.providers.*]</code> — provider-shaped rate sheets. Each field</td></tr>
-<tr><td><code>tools</code></td><td>mapa</td><td><code>{}</code></td><td><code>[cost.rates.tools.&lt;name&gt;]</code> — per-call rates for tools that</td></tr>
+<tr><td><code>proveedores</code></td><td>objeto</td><td>—</td><td><code>[cost.rates.providers.*]</code> — hojas de tarifas con formato de proveedor. Cada campo</td></tr>
+<tr><td><code>tools</code></td><td>mapa</td><td><code>{}</code></td><td><code>[cost.rates.tools.&lt;name&gt;]</code> — tarifas por llamada para herramientas que</td></tr>
 </tbody>
 </table>
 </div>
 <h4 id="costratesproviders"><a class="header" href="#costratesproviders"><code>cost.rates.providers</code></a></h4>
-<p><code>[cost.rates.providers.*]</code> — provider-shaped rate sheets. Each field here mirrors a corresponding field on <code>[providers.*]</code> with the trailing alias segment replaced by the resource the rate prices. The inner typed wrappers carry the per-provider-type slot layout and own dispatch (their slot list is the single source of truth, shared with their providers counterpart via the <code>for_each_*_provider_slot!</code> macros in [<code>crate::providers</code>]).</p>
+<p><code>[cost.rates.providers.*]</code>: tablas de tarifas con forma de proveedor. Cada campo aquí refleja un campo correspondiente en <code>[providers.*]</code> con el segmento de alias final reemplazado por el recurso cuya tarifa se calcula. Los contenedores tipados internos transportan la disposición de slots por tipo de proveedor y su propio despacho (su lista de slots es la única fuente de verdad, compartida con su contraparte de proveedores mediante los macros <code>for_each_*_provider_slot!</code> en [<code>crate::providers</code>]).</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
 </thead>
 <tbody>
-<tr><td><code>models</code></td><td>objeto</td><td>—</td><td><code>[cost.rates.providers.models.&lt;type&gt;.&lt;model&gt;]</code> — token-cost rates</td></tr>
+<tr><td><code>models</code></td><td>objeto</td><td>—</td><td><code>[cost.rates.providers.models.&lt;type&gt;.&lt;model&gt;]</code> — tarifas de coste por token</td></tr>
 <tr><td><code>transcripción</code></td><td>objeto</td><td>—</td><td><code>cost.rates.providers.transcription.&lt;type&gt;.&lt;model&gt;</code></td></tr>
 <tr><td><code>tts</code></td><td>objeto</td><td>—</td><td><code>cost.rates.providers.tts.&lt;type&gt;.&lt;voice&gt;</code></td></tr>
 </tbody>
 </table>
 </div>
 <h2 id="cron"><a class="header" href="#cron"><code>cron</code></a></h2>
-<p>Declarative cron jobs (<code>[cron.&lt;alias&gt;]</code>), alias-keyed.</p>
-<p>Each entry is a named scheduled job synced into the database at scheduler startup. Subsystem runtime knobs (enable/disable, catch-up, run-history retention) live on <code>[scheduler]</code>.</p>
+<p>Trabajos cron declarativos (<code>[cron.&lt;alias&gt;]</code>), indexados por alias.</p>
+<p>Cada entrada es un trabajo programado con nombre que se sincroniza en la base de datos al iniciar el planificador. Los ajustes de tiempo de ejecución del subsistema (enable/disable, catch-up, retención del historial de ejecuciones) se encuentran en <code>[scheduler]</code>.</p>
 <h2 id="data_retention"><a class="header" href="#data_retention"><code>data_retention</code></a></h2>
 <p>Configuración de retención y purga de datos (<code>[data_retention]</code> sección).</p>
 <div class="table-wrapper">
@@ -602,22 +627,39 @@
 </thead>
 <tbody>
 <tr><td><code>agentic_timeout_secs</code></td><td>entero</td><td><code>300</code></td><td>Tiempo de espera predeterminado en segundos para las ejecuciones de subagentes agénticos.</td></tr>
-<tr><td><code>timeout_secs</code></td><td>entero</td><td><code>120</code></td><td>Default timeout in seconds for non-agentic sub-agent model_provider calls.</td></tr>
+<tr><td><code>timeout_secs</code></td><td>entero</td><td><code>120</code></td><td>Tiempo de espera predeterminado en segundos para las llamadas no agénticas a model_provider del sub-agente.</td></tr>
 </tbody>
 </table>
 </div>
 <h2 id="embedding_routes"><a class="header" href="#embedding_routes"><code>embedding_routes</code></a></h2>
-<p>Embedding-routing rules — route <code>hint:&lt;name&gt;</code> to specific model_provider + model combos for embedding requests.</p>
+<p>Reglas de enrutamiento de embeddings: enruta <code>hint:&lt;name&gt;</code> a combinaciones específicas de model_provider + model para las solicitudes de embedding.</p>
 <h2 id="escalation"><a class="header" href="#escalation"><code>escalation</code></a></h2>
-<p>Escalation routing configuration (<code>[escalation]</code> section).</p>
-<p>Controls which channels receive alert notifications when <code>escalate_to_human</code> is called with high or critical urgency. Channels are identified by name (e.g. <code>"telegram"</code>, <code>"slack"</code>). Alerts are sent best-effort and do not block the escalation.</p>
+<p>Configuración de enrutamiento de escalamiento (sección <code>[escalation]</code>).</p>
+<p>Controla qué canales reciben notificaciones de alerta cuando se llama a <code>escalate_to_human</code> con urgencia alta o crítica. Los canales se identifican por nombre (p. ej., <code>"telegram"</code>, <code>"slack"</code>). Las alertas se envían con el mejor esfuerzo posible y no bloquean la escalación.</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
 </thead>
 <tbody>
-<tr><td><code>alert_channels</code></td><td>string[]</td><td><code>[]</code></td><td>Channel names to alert on high/critical escalations (default: empty).</td></tr>
+<tr><td><code>alert_channels</code></td><td>string[]</td><td><code>[]</code></td><td>Nombres de canales para alertar en escalaciones altas/críticas (predeterminado: vacío).</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="file_download"><a class="header" href="#file_download"><code>file_download</code></a></h2>
+<p>Standalone file download tool configuration (<code>[file_download]</code>).</p>
+<p>When <code>url</code> is set to a non-empty value, registers a <code>file_download</code> tool that GETs a file from the configured endpoint and writes it to the agent’s workspace filesystem. The LLM supplies only a document identifier and a workspace-relative destination path; the endpoint URL comes solely from this config and is never model-controlled. Response bytes are streamed to disk and never loaded into model context.</p>
+<p>When <code>url</code> is <code>None</code> or empty, the tool is not registered.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
+</thead>
+<tbody>
+<tr><td><code>headers</code></td><td>mapa</td><td><code>{}</code></td><td>Static HTTP headers attached to every download request — typically an</td></tr>
+<tr><td><code>max_file_size_bytes</code></td><td>entero</td><td><code>26214400</code></td><td>Maximum download size in bytes. Enforced while streaming: the transfer</td></tr>
+<tr><td><code>timeout_secs</code></td><td>entero</td><td><code>120</code></td><td>Request timeout in seconds. Default: 120.</td></tr>
+<tr><td><code>url</code></td><td>cualquier</td><td><code>null</code></td><td>Download endpoint URL. Tool is disabled when this is <code>None</code> or empty.</td></tr>
 </tbody>
 </table>
 </div>
@@ -640,6 +682,28 @@
 </tbody>
 </table>
 </div>
+<h2 id="file_upload_bundle"><a class="header" href="#file_upload_bundle"><code>file_upload_bundle</code></a></h2>
+<p>Standalone multi-file bundle upload tool configuration (<code>[file_upload_bundle]</code>).</p>
+<p>When <code>url</code> is set to a non-empty value, registers a <code>file_upload_bundle</code> tool that POSTs N files from the agent’s local filesystem to the configured endpoint as a single <code>multipart/form-data</code> request. The LLM provides only file paths; the host reads the bytes.</p>
+<p>When <code>url</code> is <code>None</code> or empty, the tool is not registered.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
+</thead>
+<tbody>
+<tr><td><code>field_name</code></td><td>cadena</td><td><code>"file"</code></td><td>Multipart form-field name reused across every file part. Default: <code>file</code>.</td></tr>
+<tr><td><code>headers</code></td><td>mapa</td><td><code>{}</code></td><td>Static HTTP headers attached to every upload request.</td></tr>
+<tr><td><code>max_file_size_bytes</code></td><td>entero</td><td><code>10485760</code></td><td>Maximum per-file size in bytes. Default: 10 MiB.</td></tr>
+<tr><td><code>max_files</code></td><td>entero</td><td><code>16</code></td><td>Maximum number of files per call. Default: 16.</td></tr>
+<tr><td><code>max_response_body_bytes</code></td><td>entero</td><td><code>4096</code></td><td>Maximum response body bytes to read from the upload endpoint.</td></tr>
+<tr><td><code>max_total_size_bytes</code></td><td>entero</td><td><code>33554432</code></td><td>Maximum cumulative size across every file in one call. Default: 32 MiB.</td></tr>
+<tr><td><code>method</code></td><td>cadena</td><td><code>"POST"</code></td><td>HTTP method. Only <code>POST</code> (default) and <code>PUT</code> are accepted.</td></tr>
+<tr><td><code>timeout_secs</code></td><td>entero</td><td><code>120</code></td><td>Request timeout in seconds. Default: 120.</td></tr>
+<tr><td><code>url</code></td><td>cualquier</td><td><code>null</code></td><td>Upload endpoint URL. Tool is disabled when this is <code>None</code> or empty.</td></tr>
+</tbody>
+</table>
+</div>
 <h2 id="gateway"><a class="header" href="#gateway"><code>gateway</code></a></h2>
 <p>Configuración del servidor de puerta de enlace (sección <code>[gateway]</code>).</p>
 <p>Controla la puerta de enlace HTTP para los puntos de conexión de webhook y emparejamiento.</p>
@@ -653,14 +717,14 @@
 <tr><td><code>host</code></td><td>cadena</td><td><code>"127.0.0.1"</code></td><td>Host del gateway (predeterminado: 127.0.0.1)</td></tr>
 <tr><td><code>idempotency_max_keys</code></td><td>entero</td><td><code>10000</code></td><td>Claves de idempotencia distintas máximas retenidas en memoria.</td></tr>
 <tr><td><code>idempotency_ttl_secs</code></td><td>entero</td><td><code>300</code></td><td>TTL para las claves de idempotencia de los webhooks.</td></tr>
-<tr><td><code>long_running_request_timeout_secs</code></td><td>entero</td><td><code>600</code></td><td>HTTP request timeout (seconds) for <code>POST /api/cron/{id}/run</code>, which</td></tr>
+<tr><td><code>long_running_request_timeout_secs</code></td><td>entero</td><td><code>600</code></td><td>Tiempo de espera de solicitud HTTP (segundos) para <code>POST /api/cron/{id}/run</code>, que</td></tr>
 <tr><td><code>pair_rate_limit_per_minute</code></td><td>entero</td><td><code>10</code></td><td>Máximo de solicitudes <code>/pair</code> por minuto por clave de cliente.</td></tr>
 <tr><td><code>paired_tokens</code> 🔑</td><td>string[]</td><td><code>[]</code></td><td>Tokens de portador emparejados (gestión automática, no editados por el usuario)</td></tr>
 <tr><td><code>pairing_dashboard</code></td><td>objeto</td><td>—</td><td>Configuración del panel de emparejamiento (<code>[gateway.pairing_dashboard]</code>).</td></tr>
 <tr><td><code>path_prefix</code></td><td>cualquier</td><td><code>null</code></td><td>Prefijo de ruta URL opcional para implementaciones con proxy inverso.</td></tr>
 <tr><td><code>puerto</code></td><td>entero</td><td><code>42617</code></td><td>Puerto de puerta de enlace (predeterminado: 42617)</td></tr>
 <tr><td><code>rate_limit_max_keys</code></td><td>entero</td><td><code>10000</code></td><td>Claves de cliente distintas máximas rastreadas por los mapas del limitador de tasa del gateway.</td></tr>
-<tr><td><code>request_timeout_secs</code></td><td>entero</td><td><code>30</code></td><td>HTTP request timeout (seconds) for gateway routes other than the</td></tr>
+<tr><td><code>request_timeout_secs</code></td><td>entero</td><td><code>30</code></td><td>Tiempo de espera de la solicitud HTTP (segundos) para las rutas de gateway distintas de la</td></tr>
 <tr><td><code>require_pairing</code></td><td>bool</td><td><code>true</code></td><td>Requerir el emparejamiento antes de aceptar solicitudes (predeterminado: true)</td></tr>
 <tr><td><code>session_persistence</code></td><td>bool</td><td><code>true</code></td><td>Persistir las sesiones de chat WebSocket del gateway en SQLite. Predeterminado: true.</td></tr>
 <tr><td><code>session_ttl_hours</code></td><td>entero</td><td><code>0</code></td><td>Archivar automáticamente las sesiones de puerta de enlace inactivas con más de N horas de antigüedad. 0 = deshabilitado. Predeterminado: 0.</td></tr>
@@ -775,12 +839,12 @@
 <tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
 </thead>
 <tbody>
-<tr><td><code>baud_rate</code></td><td>entero</td><td><code>115200</code></td><td>Baud rate negotiated on the serial link. 115200 matches the common Arduino / ESP32 bootloader default; bump to 230400+ when your firmware explicitly supports faster rates and you need the throughput.</td></tr>
-<tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Opt in to direct physical-hardware control — GPIO pins, USB-tethered microcontrollers (Arduino, ESP32, Nucleo), or SWD/JTAG debug probes. Leave off for software-only use; turning it on without the right transport configured does nothing.</td></tr>
-<tr><td><code>probe_target</code></td><td>cualquier</td><td><code>null</code></td><td>Target chip identifier for <code>transport = probe</code> (e.g. <code>STM32F401RE</code>, <code>nRF52840_xxAA</code>). Passed straight to probe-rs for flash/debug operations; must match a chip probe-rs recognizes.</td></tr>
-<tr><td><code>serial_port</code></td><td>cualquier</td><td><code>null</code></td><td>TTY path for the <code>serial</code> transport — e.g. <code>/dev/ttyACM0</code> on Linux, <code>/dev/tty.usbmodem1</code> on macOS, <code>COM3</code> on Windows. Ignored for other transports.</td></tr>
+<tr><td><code>baud_rate</code></td><td>entero</td><td><code>115200</code></td><td>Velocidad en baudios negociada en el enlace serie. 115200 coincide con el valor predeterminado habitual del bootloader de Arduino / ESP32; aumenta a 230400+ cuando tu firmware admita explícitamente velocidades más rápidas y necesites el rendimiento.</td></tr>
+<tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilita el control directo del hardware físico — pines GPIO, microcontroladores conectados por USB (Arduino, ESP32, Nucleo) o sondas de depuración SWD/JTAG. Déjalo desactivado para uso exclusivo de software; activarlo sin el transporte adecuado configurado no tiene ningún efecto.</td></tr>
+<tr><td><code>probe_target</code></td><td>cualquier</td><td><code>null</code></td><td>Identificador del chip de destino para <code>transport = probe</code> (p. ej. <code>STM32F401RE</code>, <code>nRF52840_xxAA</code>). Se pasa directamente a probe-rs para las operaciones de flash/depuración; debe coincidir con un chip que probe-rs reconozca.</td></tr>
+<tr><td><code>serial_port</code></td><td>cualquier</td><td><code>null</code></td><td>Ruta TTY para el transporte <code>serial</code> — p. ej. <code>/dev/ttyACM0</code> en Linux, <code>/dev/tty.usbmodem1</code> en macOS, <code>COM3</code> en Windows. Se ignora para otros transportes.</td></tr>
 <tr><td><code>transporte</code></td><td><code>None</code> | <code>Native</code> | <code>Serial</code> | <code>Probe</code></td><td>—</td><td>Modo de transporte de hardware.</td></tr>
-<tr><td><code>workspace_datasheets</code></td><td>bool</td><td><code>false</code></td><td>Index PDF schematics and datasheets from the workspace into a local RAG store, so the agent can look up pin assignments and electrical specs inline when you ask hardware questions. Off by default — turn on once the workspace has relevant PDFs dropped in.</td></tr>
+<tr><td><code>workspace_datasheets</code></td><td>bool</td><td><code>false</code></td><td>Indexa esquemas PDF y hojas de datos del workspace en un almacén RAG local, para que el agente pueda consultar asignaciones de pines y especificaciones eléctricas en línea cuando hagas preguntas sobre hardware. Desactivado por defecto: actívalo una vez que el workspace tenga PDFs relevantes incorporados.</td></tr>
 </tbody>
 </table>
 </div>
@@ -793,11 +857,11 @@
 </thead>
 <tbody>
 <tr><td><code>adaptativo</code></td><td>bool</td><td><code>false</code></td><td>Habilitar intervalos adaptativos que se retrasan en caso de fallos y se aceleran para</td></tr>
-<tr><td><code>agente</code></td><td>cadena</td><td><code>""</code></td><td>Configured agent alias the heartbeat worker runs as. Required</td></tr>
+<tr><td><code>agente</code></td><td>cadena</td><td><code>""</code></td><td>Alias del agente configurado con el que se ejecuta el heartbeat worker. Obligatorio</td></tr>
 <tr><td><code>deadman_channel</code></td><td>cualquier</td><td><code>null</code></td><td>Canal para alertas del interruptor de seguridad (por ejemplo, <code>telegram</code>). Recurre a</td></tr>
 <tr><td><code>deadman_timeout_minutes</code></td><td>entero</td><td><code>0</code></td><td>Tiempo de espera del interruptor de seguridad en minutos. Si el latido no ha sonado</td></tr>
 <tr><td><code>deadman_to</code></td><td>cualquier</td><td><code>null</code></td><td>Destinatario de las alertas del interruptor de hombre muerto. Recurre a <code>to</code>.</td></tr>
-<tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Enable periodic heartbeat pings. Default: <code>false</code>. When enabled,</td></tr>
+<tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilitar pings de heartbeat periódicos. Predeterminado: <code>false</code>. Cuando está habilitado,</td></tr>
 <tr><td><code>interval_minutes</code></td><td>entero</td><td><code>30</code></td><td>Intervalo en minutos entre los pings de heartbeat. Mínimo: <code>1</code>. Predeterminado: <code>30</code>.</td></tr>
 <tr><td><code>load_session_context</code></td><td>bool</td><td><code>false</code></td><td>Carga el historial de la sesión del canal antes de cada ejecución de la tarea de latido</td></tr>
 <tr><td><code>max_interval_minutes</code></td><td>entero</td><td><code>120</code></td><td>Intervalo máximo en minutos cuando el modo adaptativo reduce la frecuencia. Predeterminado: <code>120</code>.</td></tr>
@@ -863,6 +927,7 @@
 <tbody>
 <tr><td><code>allow_private_hosts</code></td><td>bool</td><td><code>false</code></td><td>Permitir solicitudes a hosts privados/LAN (RFC 1918, bucle invertido, enlace-local, .local).</td></tr>
 <tr><td><code>allowed_domains</code></td><td>string[]</td><td><code>[]</code></td><td>Dominios permitidos para las solicitudes HTTP (coincidencia exacta o de subdominio)</td></tr>
+<tr><td><code>allowed_private_hosts</code></td><td>string[]</td><td><code>[]</code></td><td>Private/internal hosts explicitly allowed to bypass SSRF protection.</td></tr>
 <tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilita la herramienta <code>http_request</code> para interacciones con la API</td></tr>
 <tr><td><code>max_response_size</code></td><td>entero</td><td><code>1000000</code></td><td>Tamaño máximo de la respuesta en bytes (predeterminado: 1MB, 0 = ilimitado)</td></tr>
 <tr><td><code>timeout_secs</code></td><td>entero</td><td><code>30</code></td><td>Tiempo de espera de la solicitud en segundos (predeterminado: 30)</td></tr>
@@ -894,7 +959,7 @@
 <li><code>timeout_secs</code>: <code>30</code></li>
 </ul>
 <h2 id="autenticación"><a class="header" href="#autenticación">Autenticación</a></h2>
-<p>Jira Cloud uses HTTP Basic auth: <code>email</code> + <code>api_token</code>. Jira Server/Data Center uses Bearer token auth: omit <code>email</code> and set <code>api_token</code> to a personal access token. <code>api_token</code> is stored encrypted at rest; set it here or via <code>JIRA_API_TOKEN</code>.</p>
+<p>Jira Cloud usa autenticación HTTP Basic: <code>email</code> + <code>api_token</code>. Jira Server/Data Center usa autenticación Bearer token: omite <code>email</code> y establece <code>api_token</code> como un token de acceso personal. <code>api_token</code> se almacena cifrado en reposo; establécelo aquí o mediante <code>JIRA_API_TOKEN</code>.</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -904,7 +969,7 @@
 <tr><td><code>allowed_actions</code></td><td>string[]</td><td><code>["get_ticket"]</code></td><td>Acciones que el agente está autorizado para llamar.</td></tr>
 <tr><td><code>api_token</code> 🔑</td><td>cadena</td><td><code>""</code></td><td>Token de API de Jira. Cifrado en reposo. Recurre a la variable de entorno <code>JIRA_API_TOKEN</code>.</td></tr>
 <tr><td><code>base_url</code></td><td>cadena</td><td><code>""</code></td><td>URL base de la instancia de Atlassian, por ejemplo, <code>https://yourco.atlassian.net</code>.</td></tr>
-<tr><td><code>email</code></td><td>cualquier</td><td>—</td><td>Jira account email used for Basic auth (Cloud).</td></tr>
+<tr><td><code>email</code></td><td>cualquier</td><td>—</td><td>Correo electrónico de la cuenta de Jira utilizado para la autenticación básica (Cloud).</td></tr>
 <tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilita la herramienta <code>jira</code>. Valor predeterminado: <code>false</code>.</td></tr>
 <tr><td><code>timeout_secs</code></td><td>entero</td><td><code>30</code></td><td>Tiempo de espera de la solicitud en segundos. Predeterminado: <code>30</code>.</td></tr>
 </tbody>
@@ -927,7 +992,7 @@
 </table>
 </div>
 <h2 id="knowledge_bundles"><a class="header" href="#knowledge_bundles"><code>knowledge_bundles</code></a></h2>
-<p>Named knowledge bundles (<code>[knowledge_bundles.&lt;alias&gt;]</code>).</p>
+<p>Paquetes de conocimiento con nombre (<code>[knowledge_bundles.&lt;alias&gt;]</code>).</p>
 <h2 id="link_enricher"><a class="header" href="#link_enricher"><code>link_enricher</code></a></h2>
 <p>Comprensión automática de enlaces para mensajes entrantes del canal (<code>[link_enricher]</code>).</p>
 <p>Cuando está habilitado, las URLs en los mensajes entrantes se buscan y resumen automáticamente. El resumen se antepone al mensaje antes de que el agente lo procese, proporcionando al LLM contexto sobre las páginas enlazadas sin necesidad de una llamada de herramienta explícita.</p>
@@ -988,10 +1053,10 @@
 <tr><td><code>card_accent_color</code></td><td>cadena</td><td><code>"#0A66C2"</code></td><td>Color de acento para la tarjeta de respaldo (hexadecimal CSS).</td></tr>
 <tr><td><code>dalle</code></td><td>objeto</td><td>—</td><td>Configuración de OpenAI DALL-E (<code>[linkedin.image.dalle]</code>).</td></tr>
 <tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilitar la generación de imágenes para las publicaciones.</td></tr>
-<tr><td><code>tarjeta de respaldo</code></td><td>bool</td><td><code>true</code></td><td>Generate a branded SVG text card when all AI model_providers fail.</td></tr>
+<tr><td><code>tarjeta de respaldo</code></td><td>bool</td><td><code>true</code></td><td>Genera una tarjeta de texto SVG con la marca cuando todos los model_providers de IA fallan.</td></tr>
 <tr><td><code>flux</code></td><td>objeto</td><td>—</td><td>Configuraciones de generación de imágenes de Flux (fal.ai) (<code>[linkedin.image.flux]</code>).</td></tr>
 <tr><td><code>imagen</code></td><td>objeto</td><td>—</td><td>Configuraciones de Google Imagen (Vertex AI) (<code>[linkedin.image.imagen]</code>).</td></tr>
-<tr><td><code>proveedores</code></td><td>string[]</td><td><code>["estabilidad","imagen","dalle","flux"]</code></td><td>ModelProvider priority order. Tried in sequence; first success wins.</td></tr>
+<tr><td><code>proveedores</code></td><td>string[]</td><td><code>["estabilidad","imagen","dalle","flux"]</code></td><td>Orden de prioridad de ModelProvider. Se intentan en secuencia; gana el primero que tenga éxito.</td></tr>
 <tr><td><code>estabilidad</code></td><td>objeto</td><td>—</td><td>Configuraciones de generación de imágenes de Stability AI (<code>[linkedin.image.stability]</code>).</td></tr>
 <tr><td><code>temp_dir</code></td><td>cadena</td><td><code>"linkedin/images"</code></td><td>Directorio temporal para las imágenes generadas, relativo al espacio de trabajo.</td></tr>
 </tbody>
@@ -1065,12 +1130,12 @@
 <tbody>
 <tr><td><code>deferred_loading</code></td><td>bool</td><td><code>true</code></td><td>Cargar los esquemas de las herramientas MCP bajo demanda mediante <code>tool_search</code> en lugar de de forma anticipada</td></tr>
 <tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilitar la carga de herramientas MCP.</td></tr>
-<tr><td><code>servers</code></td><td>object[]</td><td><code>[]</code></td><td>Configured MCP servers. The <code>#[nested]</code> annotation makes the macro</td></tr>
+<tr><td><code>servers</code></td><td>object[]</td><td><code>[]</code></td><td>Servidores MCP configurados. La anotación <code>#[nested]</code> hace que el macro</td></tr>
 </tbody>
 </table>
 </div>
 <h2 id="mcp_bundles"><a class="header" href="#mcp_bundles"><code>mcp_bundles</code></a></h2>
-<p>Named MCP server bundles (<code>[mcp_bundles.&lt;alias&gt;]</code>).</p>
+<p>Paquetes de servidores MCP con nombre (<code>[mcp_bundles.&lt;alias&gt;]</code>).</p>
 <h2 id="media_pipeline"><a class="header" href="#media_pipeline"><code>media_pipeline</code></a></h2>
 <p>Configuración del pipeline de comprensión automática de medios (<code>[media_pipeline]</code>).</p>
 <p>Cuando está habilitado, los mensajes entrantes del canal con archivos multimedia se preprocesan antes de llegar al agente: el audio se transcribe, las imágenes se anotan y los videos se resumen.</p>
@@ -1083,39 +1148,39 @@
 <tr><td><code>describe_images</code></td><td>bool</td><td><code>true</code></td><td>Agrega descripciones de imágenes cuando un modelo con capacidades de visión esté activo.</td></tr>
 <tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Interruptor maestro para la canalización multimedia (predeterminado: false).</td></tr>
 <tr><td><code>summarize_video</code></td><td>bool</td><td><code>true</code></td><td>Resumir archivos adjuntos de video (marcador de posición: requiere una API externa).</td></tr>
-<tr><td><code>transcribe_audio</code></td><td>bool</td><td><code>true</code></td><td>Transcribe audio attachments using the configured transcription model_provider.</td></tr>
+<tr><td><code>transcribe_audio</code></td><td>bool</td><td><code>true</code></td><td>Transcribe los archivos de audio adjuntos usando el model_provider de transcripción configurado.</td></tr>
 </tbody>
 </table>
 </div>
 <h2 id="memory"><a class="header" href="#memory"><code>memory</code></a></h2>
 <p>Configuración del backend de memoria (sección <code>[memory]</code>).</p>
-<p>Controls conversation memory storage, embeddings, hybrid search, response caching, and memory snapshot/hydration. Backend-specific connection settings live under <code>[storage.&lt;backend&gt;.&lt;alias&gt;]</code>; this section selects which storage instance to use via the <code>backend</code> dotted reference.</p>
+<p>Controla el almacenamiento de la memoria de conversaciones, los embeddings, la búsqueda híbrida, el almacenamiento en caché de respuestas y la captura/hidratación de instantáneas de memoria. Las opciones de conexión específicas de cada backend se encuentran en <code>[storage.&lt;backend&gt;.&lt;alias&gt;]</code>; esta sección selecciona qué instancia de almacenamiento usar mediante la referencia con puntos <code>backend</code>.</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
 </thead>
 <tbody>
-<tr><td><code>archive_after_days</code></td><td>entero</td><td><code>7</code></td><td>Move daily/session files to the archive directory after this many days. Keeps the hot working set small without deleting history.</td></tr>
+<tr><td><code>archive_after_days</code></td><td>entero</td><td><code>7</code></td><td>Mueve los archivos diarios/de sesión al directorio de archivo después de esta cantidad de días. Mantiene reducido el conjunto de trabajo activo sin eliminar el historial.</td></tr>
 <tr><td><code>audit_enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilitar el registro de auditoría de las operaciones de memoria.</td></tr>
 <tr><td><code>audit_retention_days</code></td><td>entero</td><td><code>30</code></td><td>Período de retención para las entradas de auditoría en días (predeterminado: 30).</td></tr>
 <tr><td><code>auto_hydrate</code></td><td>bool</td><td><code>true</code></td><td>Hidratación automática desde MEMORY_SNAPSHOT.md cuando brain.db está ausente</td></tr>
-<tr><td><code>auto_save</code></td><td>bool</td><td><code>true</code></td><td>Auto-save what <em>you</em> tell ZeroClaw into memory as conversation history — the agent’s own replies are not saved. Turn off if you want memory to only hold things you explicitly record via the memory tool.</td></tr>
-<tr><td><code>backend</code>*</td><td>cadena</td><td>—</td><td>Dotted reference to the active storage instance: <code>&lt;backend&gt;.&lt;alias&gt;</code></td></tr>
+<tr><td><code>auto_save</code></td><td>bool</td><td><code>true</code></td><td>Guarda automáticamente en memoria lo que <em>tú</em> le dices a ZeroClaw como historial de conversación: las propias respuestas del agente no se guardan. Desactívalo si quieres que la memoria solo conserve lo que registres explícitamente mediante la herramienta de memoria.</td></tr>
+<tr><td><code>backend</code>*</td><td>cadena</td><td>—</td><td>Referencia con puntos a la instancia de almacenamiento activa: <code>&lt;backend&gt;.&lt;alias&gt;</code></td></tr>
 <tr><td><code>chunk_max_tokens</code></td><td>entero</td><td><code>512</code></td><td>Máximo de tokens por fragmento para la división de documentos</td></tr>
 <tr><td><code>conflict_threshold</code></td><td>número</td><td><code>0.85</code></td><td>Umbral de similitud coseno para la detección de conflictos (0.0–1.0).</td></tr>
-<tr><td><code>conversation_retention_days</code></td><td>entero</td><td><code>30</code></td><td>For the sqlite backend only — drop conversation rows older than this many days to keep the DB lean. Doesn’t touch core memories or notes.</td></tr>
+<tr><td><code>conversation_retention_days</code></td><td>entero</td><td><code>30</code></td><td>Solo para el backend sqlite — elimina las filas de conversación con más de estos días de antigüedad para mantener la BD ligera. No afecta a los recuerdos principales ni a las notas.</td></tr>
 <tr><td><code>default_namespace</code></td><td>cadena</td><td><code>"predeterminado"</code></td><td>Espacio de nombres predeterminado para las entradas de memoria.</td></tr>
 <tr><td><code>embedding_cache_size</code></td><td>entero</td><td><code>10000</code></td><td>Número máximo de entradas en la caché de incrustaciones antes de la eliminación LRU</td></tr>
-<tr><td><code>embedding_dimensions</code></td><td>entero</td><td><code>1536</code></td><td>Vector width produced by the embedding model — must match the model’s native dimension or vectors won’t store correctly. Look up the number on the model_provider’s model page.</td></tr>
-<tr><td><code>embedding_model</code></td><td>cadena</td><td><code>"text-embedding-3-small"</code></td><td>Embedding model identifier — must match a model your chosen embedding model_provider serves (e.g. <code>text-embedding-3-small</code> for OpenAI). Changing this invalidates existing embeddings; you’ll need to re-index.</td></tr>
-<tr><td><code>proveedor_de_embedding</code></td><td>cadena</td><td><code>"none"</code></td><td>Source of embedding vectors for semantic search. <code>none</code> = keyword-only retrieval (no API calls, no vector cost); <code>openai</code> = OpenAI’s embedding API; <code>custom:URL</code> = any OpenAI-compatible embedding endpoint (LiteLLM, local gateway, etc.).</td></tr>
+<tr><td><code>embedding_dimensions</code></td><td>entero</td><td><code>1536</code></td><td>Ancho de vector que produce el modelo de embedding: debe coincidir con la dimensión nativa del modelo o los vectores no se almacenarán correctamente. Busca el número en la página del modelo de model_provider.</td></tr>
+<tr><td><code>embedding_model</code></td><td>cadena</td><td><code>"text-embedding-3-small"</code></td><td>Identificador del modelo de embeddings: debe coincidir con un modelo que tu <code>model_provider</code> de embeddings elegido ofrezca (p. ej. <code>text-embedding-3-small</code> para OpenAI). Cambiar esto invalida los embeddings existentes; tendrás que volver a indexar.</td></tr>
+<tr><td><code>proveedor_de_embedding</code></td><td>cadena</td><td><code>"none"</code></td><td>Fuente de vectores de embedding para la búsqueda semántica. <code>none</code> = recuperación solo por palabras clave (sin llamadas a la API, sin costo de vectores); <code>openai</code> = API de embedding de OpenAI; <code>custom:URL</code> = cualquier endpoint de embedding compatible con OpenAI (LiteLLM, gateway local, etc.).</td></tr>
 <tr><td><code>fts_early_return_score</code></td><td>número</td><td><code>0.85</code></td><td>Puntuación FTS por encima de la cual se devuelve anticipadamente sin realizar búsqueda vectorial (0.0–1.0).</td></tr>
-<tr><td><code>hygiene_enabled</code></td><td>bool</td><td><code>true</code></td><td>Run the periodic hygiene pass that archives stale daily/session files and enforces retention windows. Leave on unless you want to manage cleanup yourself.</td></tr>
-<tr><td><code>keyword_weight</code></td><td>número</td><td><code>0.3</code></td><td>How heavily BM25 (keyword) overlap counts when <code>search_mode = hybrid</code>. Raise toward 1.0 for exact-term matching; lower it when paraphrases should still score well.</td></tr>
+<tr><td><code>hygiene_enabled</code></td><td>bool</td><td><code>true</code></td><td>Ejecuta la pasada periódica de limpieza que archiva los archivos diarios o de sesión obsoletos y aplica las ventanas de retención. Déjalo activado a menos que quieras gestionar la limpieza por tu cuenta.</td></tr>
+<tr><td><code>keyword_weight</code></td><td>número</td><td><code>0.3</code></td><td>Cuánto peso tiene la coincidencia BM25 (palabras clave) cuando <code>search_mode = hybrid</code>. Auméntalo hacia 1.0 para la coincidencia exacta de términos; redúcelo cuando las paráfrasis también deban obtener una buena puntuación.</td></tr>
 <tr><td><code>min_relevance_score</code></td><td>número</td><td><code>0.4</code></td><td>Puntuación híbrida mínima (0.0–1.0) para que una memoria se incluya en el contexto.</td></tr>
 <tr><td><code>política</code></td><td>objeto</td><td>—</td><td>Configuración de la política de memoria (sección <code>[memory.policy]</code>).</td></tr>
-<tr><td><code>purge_after_days</code></td><td>entero</td><td><code>30</code></td><td>Delete archived files permanently after this many days. Set high if you need long-term history; set low for privacy / disk-space reasons.</td></tr>
+<tr><td><code>purge_after_days</code></td><td>entero</td><td><code>30</code></td><td>Elimina permanentemente los archivos archivados después de esta cantidad de días. Establece un valor alto si necesitas un historial a largo plazo; establece un valor bajo por motivos de privacidad o de espacio en disco.</td></tr>
 <tr><td><code>rerank_enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilitar el reordenamiento con LLM cuando el número de candidatos supere el umbral.</td></tr>
 <tr><td><code>umbral de reordenación</code></td><td>entero</td><td><code>5</code></td><td>Conteo mínimo de candidatos para activar el reordenamiento.</td></tr>
 <tr><td><code>response_cache_enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilitar el almacenamiento en caché de las respuestas del LLM para evitar pagar por solicitudes duplicadas</td></tr>
@@ -1126,7 +1191,7 @@
 <tr><td><code>search_mode</code></td><td>cualquier</td><td>—</td><td>Estrategia de búsqueda para la recuperación de memoria.</td></tr>
 <tr><td><code>snapshot_enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilitar la exportación periódica de las memorias principales a MEMORY_SNAPSHOT.md</td></tr>
 <tr><td><code>snapshot_on_hygiene</code></td><td>bool</td><td><code>false</code></td><td>Ejecutar instantánea durante las pasadas de higiene (impulsada por latidos)</td></tr>
-<tr><td><code>vector_weight</code></td><td>número</td><td><code>0.7</code></td><td>How heavily vector (semantic) similarity counts when <code>search_mode = hybrid</code>. Raise toward 1.0 to favor meaning-based matches; lower it to lean on keyword overlap instead.</td></tr>
+<tr><td><code>vector_weight</code></td><td>número</td><td><code>0.7</code></td><td>Cuánto peso tiene la similitud vectorial (semántica) cuando <code>search_mode = hybrid</code>. Auméntalo hacia 1.0 para favorecer las coincidencias basadas en el significado; redúcelo para apoyarte en la coincidencia de palabras clave.</td></tr>
 </tbody>
 </table>
 </div>
@@ -1166,12 +1231,12 @@
 </table>
 </div>
 <h2 id="model_routes"><a class="header" href="#model_routes"><code>model_routes</code></a></h2>
-<p>Model-routing rules — route <code>hint:&lt;name&gt;</code> to specific model_provider + model combos.</p>
+<p>Reglas de enrutamiento de modelos: enruta <code>hint:&lt;name&gt;</code> a combinaciones específicas de model_provider + model.</p>
 <h2 id="multimodal"><a class="header" href="#multimodal"><code>multimodal</code></a></h2>
 <p>Configuración de manejo multimodal (imágenes) (sección <code>[multimodal]</code>).</p>
-<h1 id="privacy-and-cost-note"><a class="header" href="#privacy-and-cost-note">Privacy and cost note</a></h1>
-<p>Tool results that print real local image paths (e.g. shell tools doing <code>ls /pictures</code> or <code>find . -name '*.png'</code>) are canonicalized into <code>[IMAGE:...]</code> markers and base64-inlined into the next provider request. This means image bytes that previously stayed local will be uploaded to the configured provider when surfaced by a tool.</p>
-<p><code>max_images</code> (and the <code>trim_old_images</code> LRU policy) bounds the per-request image budget, but operators running shell-style tools over directories of personal or sensitive images should be aware of the upload semantics. See <code>docs/book/src/contributing/privacy.md</code> for the project’s privacy stance.</p>
+<h1 id="nota-sobre-privacidad-y-costo"><a class="header" href="#nota-sobre-privacidad-y-costo">Nota sobre privacidad y costo</a></h1>
+<p>Los resultados de herramientas que imprimen rutas reales de imágenes locales (por ejemplo, herramientas de shell que ejecutan <code>ls /pictures</code> o <code>find . -name '*.png'</code>) se canonicalizan en marcadores <code>[IMAGE:...]</code> y se insertan en línea como base64 en la siguiente solicitud al proveedor. Esto significa que los bytes de imagen que antes permanecían en local se subirán al proveedor configurado cuando los exponga una herramienta.</p>
+<p><code>max_images</code> (y la política LRU <code>trim_old_images</code>) limita el presupuesto de imágenes por solicitud, pero los operadores que ejecutan herramientas de tipo shell sobre directorios con imágenes personales o confidenciales deben tener en cuenta la semántica de carga. Consulta <code>docs/book/src/contributing/privacy.md</code> para conocer la postura del proyecto sobre la privacidad.</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1180,9 +1245,10 @@
 <tbody>
 <tr><td><code>allow_remote_fetch</code></td><td>bool</td><td><code>false</code></td><td>Permite obtener URLs de imágenes remotas (http/https). Desactivado por defecto.</td></tr>
 <tr><td><code>max_image_size_mb</code></td><td>entero</td><td><code>5</code></td><td>Tamaño máximo de la carga útil de la imagen en MiB antes de la codificación base64.</td></tr>
+<tr><td><code>max_image_turns</code></td><td>entero</td><td><code>0</code></td><td>Maximum age of images in conversation turns.</td></tr>
 <tr><td><code>max_images</code></td><td>entero</td><td><code>4</code></td><td>Número máximo de imágenes adjuntas aceptadas por solicitud.</td></tr>
-<tr><td><code>vision_model</code></td><td>cualquier</td><td><code>null</code></td><td>Model to use when routing to the vision model_provider (e.g. <code>"llava:7b"</code>).</td></tr>
-<tr><td><code>vision_model_provider</code></td><td>cualquier</td><td><code>null</code></td><td>ModelProvider name to use for vision/image messages (e.g. <code>"ollama"</code>).</td></tr>
+<tr><td><code>vision_model</code></td><td>cualquier</td><td><code>null</code></td><td>Modelo a usar al enrutar al model_provider de visión (p. ej., <code>"llava:7b"</code>).</td></tr>
+<tr><td><code>vision_model_provider</code></td><td>cualquier</td><td><code>null</code></td><td>Nombre del ModelProvider que se usará para mensajes de visión/imagen (p. ej., <code>"ollama"</code>).</td></tr>
 </tbody>
 </table>
 </div>
@@ -1251,12 +1317,12 @@
 </thead>
 <tbody>
 <tr><td><code>backend</code>*</td><td>cadena</td><td>—</td><td>“ninguno” | “log” | “verbose” | “prometheus” | “otel”</td></tr>
-<tr><td><code>log_persistence</code></td><td>cadena</td><td><code>"rolling"</code></td><td>Log persistence mode: “none” | “rolling” | “full”.</td></tr>
-<tr><td><code>log_persistence_max_entries</code></td><td>entero</td><td><code>200</code></td><td>Maximum entries retained when <code>log_persistence = "rolling"</code>.</td></tr>
-<tr><td><code>log_persistence_path</code></td><td>cadena</td><td><code>"state/runtime-trace.jsonl"</code></td><td>Log persistence file path. Relative paths resolve under workspace_dir.</td></tr>
-<tr><td><code>log_tool_io</code></td><td>cadena</td><td><code>"redacted"</code></td><td>Tool I/O capture policy: “off” | “redacted” | “full”.</td></tr>
-<tr><td><code>log_tool_io_denylist</code></td><td>string[]</td><td><code>[]</code></td><td>Tool names whose I/O is never logged beyond name + outcome + duration</td></tr>
-<tr><td><code>log_tool_io_truncate_bytes</code></td><td>entero</td><td><code>8192</code></td><td>Truncate the captured tool input and output at this many bytes when</td></tr>
+<tr><td><code>log_persistence</code></td><td>cadena</td><td><code>"rolling"</code></td><td>Modo de persistencia de registros: “none” | “rolling” | “full”.</td></tr>
+<tr><td><code>log_persistence_max_entries</code></td><td>entero</td><td><code>200</code></td><td>Número máximo de entradas conservadas cuando <code>log_persistence = "rolling"</code>.</td></tr>
+<tr><td><code>log_persistence_path</code></td><td>cadena</td><td><code>"state/runtime-trace.jsonl"</code></td><td>Ruta del archivo de persistencia de logs. Las rutas relativas se resuelven dentro de workspace_dir.</td></tr>
+<tr><td><code>log_tool_io</code></td><td>cadena</td><td><code>"redacted"</code></td><td>Política de captura de E/S de herramientas: “off” | “redacted” | “full”.</td></tr>
+<tr><td><code>log_tool_io_denylist</code></td><td>string[]</td><td><code>[]</code></td><td>Nombres de herramientas cuya E/S nunca se registra más allá del nombre + resultado + duración</td></tr>
+<tr><td><code>log_tool_io_truncate_bytes</code></td><td>entero</td><td><code>40960</code></td><td>Truncar la entrada y la salida capturadas de la herramienta en este número de bytes cuando</td></tr>
 <tr><td><code>otel_endpoint</code></td><td>cualquier</td><td><code>null</code></td><td>Endpoint de OTLP (por ejemplo, <code>"http://localhost:4318"</code>). Solo se utiliza cuando el backend es <code>"otel"</code>.</td></tr>
 <tr><td><code>otel_headers</code></td><td>cualquier</td><td><code>null</code></td><td>Encabezados HTTP opcionales enviados con cada solicitud de exportación OTLP (por ejemplo, autorización).</td></tr>
 <tr><td><code>otel_service_name</code></td><td>cualquier</td><td><code>null</code></td><td>Nombre del servicio reportado al colector de OTel. El valor predeterminado es “zeroclaw”.</td></tr>
@@ -1265,15 +1331,16 @@
 </div>
 <h2 id="onboard_state"><a class="header" href="#onboard_state"><code>onboard_state</code></a></h2>
 <p>Configuración de aislamiento de espacio de trabajo para múltiples clientes.</p>
-<p>When enabled, each client engagement gets an isolated workspace with separate memory, audit, secrets, and tool restrictions. Opaque state the <code>zeroclaw onboard</code> flow writes so it can tell, on a re-run, which sections the user has already walked through at least once — which lets it offer “Reconfigure? [y/N]” skip gates instead of forcing users through every field again.</p>
-<p>This is meta-state about the onboard process, not user-facing config.</p>
+<p>When enabled, each client engagement gets an isolated workspace with separate memory, audit, secrets, and tool restrictions. Opaque state the Quickstart flow writes so it can tell, on a re-run, which sections the user has already walked through at least once — which lets it offer “Reconfigure? [y/N]” skip gates instead of forcing users through every field again.</p>
+<p>This is meta-state about the Quickstart flow, not user-facing config.</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
 </thead>
 <tbody>
-<tr><td><code>completed_sections</code></td><td>string[]</td><td><code>[]</code></td><td>Section keys the user has completed at least once via onboard.</td></tr>
+<tr><td><code>completed_sections</code></td><td>string[]</td><td><code>[]</code></td><td>Section keys the user has completed at least once.</td></tr>
+<tr><td><code>quickstart_completed</code></td><td>bool</td><td><code>false</code></td><td><code>true</code> once the Quickstart has applied a <code>BuilderSubmission</code></td></tr>
 </tbody>
 </table>
 </div>
@@ -1313,7 +1380,7 @@
 </table>
 </div>
 <h2 id="peer_groups"><a class="header" href="#peer_groups"><code>peer_groups</code></a></h2>
-<p>Named peer groups (<code>[peer_groups.&lt;name&gt;]</code>). Each entry binds a channel, a list of member agents, and optional non-agent (external) members and a per-group blocklist. Mutual opt-in: two agents become peers only when both appear in the same group’s <code>agents</code>. Empty by default for single-agent installs. See <code>crate::multi_agent::PeerGroupConfig</code>.</p>
+<p>Grupos de pares con nombre (<code>[peer_groups.&lt;name&gt;]</code>). Cada entrada vincula un canal, una lista de agentes miembros y miembros opcionales no agentes (externos) y una lista de bloqueo por grupo. Aceptación mutua: dos agentes se convierten en pares solo cuando ambos aparecen en los <code>agents</code> del mismo grupo. Vacío de forma predeterminada para instalaciones de un solo agente. Consulta <code>crate::multi_agent::PeerGroupConfig</code>.</p>
 <h2 id="periféricos"><a class="header" href="#periféricos"><code>periféricos</code></a></h2>
 <p>Configuración de integración de la placa periférica (sección <code>[peripherals]</code>).</p>
 <p>Los tableros se convierten en herramientas de agente cuando están habilitados.</p>
@@ -1393,7 +1460,7 @@
 </table>
 </div>
 <h2 id="proveedores"><a class="header" href="#proveedores"><code>proveedores</code></a></h2>
-<p>Top-level wrapper for every provider category. TOML root sees a single <code>[providers]</code> table with one sub-key per category:</p>
+<p>Contenedor de nivel superior para cada categoría de proveedor. La raíz TOML ve una única tabla <code>[providers]</code> con una subclave por categoría:</p>
 <pre><code class="language-toml">[providers.models.anthropic.default]
 api_key = "..."
 
@@ -1403,24 +1470,24 @@ api_key = "..."
 [providers.transcription.groq.default]
 api_key = "..."
 </code></pre>
-<p>Each category keeps its own typed-slot internals (so per-family endpoints and extras stay validated at the type level); this wrapper just gives them a shared top-level home.</p>
+<p>Cada categoría mantiene sus propios elementos internos de slots tipados (de modo que los endpoints específicos de cada familia y los extras permanecen validados a nivel de tipo); este wrapper simplemente les proporciona un hogar compartido de nivel superior.</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
 </thead>
 <tbody>
-<tr><td><code>models</code></td><td>objeto</td><td>—</td><td>Typed model provider container — one slot per canonical model_provider type.</td></tr>
-<tr><td><code>transcripción</code></td><td>objeto</td><td>—</td><td>Typed transcription-provider container — one slot per STT family.</td></tr>
-<tr><td><code>tts</code></td><td>objeto</td><td>—</td><td>Typed TTS-provider container — one slot per TTS family. Mirrors</td></tr>
+<tr><td><code>models</code></td><td>objeto</td><td>—</td><td>Contenedor de proveedor de modelo tipado: un espacio por cada tipo canónico de model_provider.</td></tr>
+<tr><td><code>transcripción</code></td><td>objeto</td><td>—</td><td>Contenedor tipado de proveedor de transcripción: un espacio por familia STT.</td></tr>
+<tr><td><code>tts</code></td><td>objeto</td><td>—</td><td>Contenedor de proveedor de TTS tipado: una ranura por familia de TTS. Refleja</td></tr>
 </tbody>
 </table>
 </div>
 <h3 id="providersmodels"><a class="header" href="#providersmodels"><code>providers.models</code></a></h3>
-<p>Typed model provider container — one slot per canonical model_provider type.</p>
-<p>Replaces the <code>HashMap&lt;String, HashMap&lt;String, ModelProviderConfig&gt;&gt;</code> with a typed struct so each family’s per-alias map carries its own typed config (with the family’s <code>*Endpoint</code> enum and family-specific extras visible at the type level).</p>
-<p>TOML shape is preserved byte-identical: each named field deserializes from the same <code>[model_providers.&lt;type&gt;.&lt;alias&gt;]</code> block as before.</p>
-<p>Adding a new model_provider family means: define the typed config in <code>schema.rs</code>, then add one row to <code>for_each_model_provider_slot!</code> — every helper picks up the new slot automatically.</p>
+<p>Contenedor de proveedor de modelo tipado: un espacio por cada tipo canónico de model_provider.</p>
+<p>Reemplaza el <code>HashMap&lt;String, HashMap&lt;String, ModelProviderConfig&gt;&gt;</code> con una estructura tipada para que el mapa por alias de cada familia lleve su propia configuración tipada (con el enum <code>*Endpoint</code> de la familia y los extras específicos de la familia visibles a nivel de tipo).</p>
+<p>La estructura TOML se conserva byte a byte idéntica: cada campo nombrado se deserializa del mismo bloque <code>[model_providers.&lt;type&gt;.&lt;alias&gt;]</code> que antes.</p>
+<p>Agregar una nueva familia de model_provider significa: definir la configuración tipada en <code>schema.rs</code> y luego agregar una fila a <code>for_each_model_provider_slot!</code>; cada helper detecta el nuevo slot automáticamente.</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1495,7 +1562,7 @@ api_key = "..."
 </table>
 </div>
 <h3 id="providerstranscription"><a class="header" href="#providerstranscription"><code>providers.transcription</code></a></h3>
-<p>Typed transcription-provider container — one slot per STT family. Mirrors <code>ModelProviders</code> / <code>TtsProviders</code>. Closed set of 6 families: groq, openai, deepgram, assemblyai, google, local_whisper.</p>
+<p>Contenedor tipado de proveedores de transcripción: un espacio por familia de STT. Refleja <code>ModelProviders</code> / <code>TtsProviders</code>. Conjunto cerrado de 6 familias: groq, openai, deepgram, assemblyai, google, local_whisper.</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1512,7 +1579,7 @@ api_key = "..."
 </table>
 </div>
 <h3 id="providerstts"><a class="header" href="#providerstts"><code>providers.tts</code></a></h3>
-<p>Typed TTS-provider container — one slot per TTS family. Mirrors <code>ModelProviders</code> but smaller (TTS has a closed set of 5 families: openai, elevenlabs, google, edge, piper). No catch-all needed.</p>
+<p>Contenedor tipado de proveedores TTS: una ranura por familia de TTS. Refleja <code>ModelProviders</code> pero más pequeño (TTS tiene un conjunto cerrado de 5 familias: openai, elevenlabs, google, edge, piper). No se necesita un catch-all.</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1560,7 +1627,7 @@ api_key = "..."
 </div>
 <h2 id="fiabilidad"><a class="header" href="#fiabilidad"><code>fiabilidad</code></a></h2>
 <p>Configuración de fiabilidad y supervisión (sección <code>[reliability]</code>).</p>
-<p>Controls model_provider retries, API key rotation, and channel restart backoff.</p>
+<p>Controla los reintentos de model_provider, la rotación de claves de API y el backoff de reinicio del canal.</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1570,15 +1637,15 @@ api_key = "..."
 <tr><td><code>api_keys</code></td><td>string[]</td><td><code>[]</code></td><td>Claves de API adicionales para la rotación round-robin en errores de límite de tasa (429).</td></tr>
 <tr><td><code>channel_initial_backoff_secs</code></td><td>entero</td><td><code>2</code></td><td>Retardo inicial para reinicios de canal/daemon.</td></tr>
 <tr><td><code>channel_max_backoff_secs</code></td><td>entero</td><td><code>60</code></td><td>Max backoff para reinicios de canal/daemon.</td></tr>
-<tr><td><code>provider_backoff_ms</code></td><td>entero</td><td><code>500</code></td><td>Base backoff (ms) for model_provider retry delay.</td></tr>
-<tr><td><code>provider_retries</code></td><td>entero</td><td><code>2</code></td><td>Retries per model_provider before bailing.</td></tr>
+<tr><td><code>provider_backoff_ms</code></td><td>entero</td><td><code>500</code></td><td>Tiempo de espera base (ms) para el retraso de reintento de model_provider.</td></tr>
+<tr><td><code>provider_retries</code></td><td>entero</td><td><code>2</code></td><td>Reintentos por model_provider antes de abandonar.</td></tr>
 <tr><td><code>scheduler_poll_secs</code></td><td>entero</td><td><code>15</code></td><td>Frecuencia de sondeo del programador en segundos.</td></tr>
 <tr><td><code>scheduler_retries</code></td><td>entero</td><td><code>2</code></td><td>Número máximo de reintentos para los intentos de ejecución del trabajo cron.</td></tr>
 </tbody>
 </table>
 </div>
 <h2 id="risk_profiles"><a class="header" href="#risk_profiles"><code>risk_profiles</code></a></h2>
-<p>Named risk/autonomy profiles (<code>[risk_profiles.&lt;alias&gt;]</code>).</p>
+<p>Perfiles de riesgo/autonomía con nombre (<code>[risk_profiles.&lt;alias&gt;]</code>).</p>
 <h2 id="runtime"><a class="header" href="#runtime"><code>runtime</code></a></h2>
 <p>Configuración del adaptador en tiempo de ejecución (sección <code>[runtime]</code>).</p>
 <div class="table-wrapper">
@@ -1589,8 +1656,8 @@ api_key = "..."
 <tbody>
 <tr><td><code>docker</code></td><td>objeto</td><td>—</td><td>Configuración del tiempo de ejecución de Docker (<code>[runtime.docker]</code> sección).</td></tr>
 <tr><td><code>kind</code></td><td>cadena</td><td><code>"nativo"</code></td><td>Tipo de tiempo de ejecución (<code>native</code> | <code>docker</code>).</td></tr>
-<tr><td><code>esfuerzo_de_razonamiento</code></td><td>cualquier</td><td><code>null</code></td><td>Optional reasoning effort for model_providers that expose a level control.</td></tr>
-<tr><td><code>reasoning_enabled</code></td><td>cualquier</td><td><code>null</code></td><td>Global reasoning override for model_providers that expose explicit controls.</td></tr>
+<tr><td><code>esfuerzo_de_razonamiento</code></td><td>cualquier</td><td><code>null</code></td><td>Esfuerzo de razonamiento opcional para los model_providers que exponen un control de nivel.</td></tr>
+<tr><td><code>reasoning_enabled</code></td><td>cualquier</td><td><code>null</code></td><td>Anulación global de razonamiento para los model_providers que exponen controles explícitos.</td></tr>
 </tbody>
 </table>
 </div>
@@ -1613,10 +1680,10 @@ api_key = "..."
 </table>
 </div>
 <h2 id="runtime_profiles"><a class="header" href="#runtime_profiles"><code>runtime_profiles</code></a></h2>
-<p>Named runtime/LLM execution profiles (<code>[runtime_profiles.&lt;alias&gt;]</code>).</p>
+<p>Perfiles de ejecución de runtime/LLM con nombre (<code>[runtime_profiles.&lt;alias&gt;]</code>).</p>
 <h2 id="programador"><a class="header" href="#programador"><code>programador</code></a></h2>
 <p>Configuración del programador para la ejecución periódica de tareas (sección <code>[scheduler]</code>).</p>
-<p>Owns the cron-runtime knobs: per-job declarations live on <code>Config.cron: HashMap&lt;String, CronJobDecl&gt;</code> (alias-keyed), while the scheduler loop’s runtime behavior (<code>enabled</code>, polling cap, catch-up) lives here.</p>
+<p>Controla los ajustes de cron-runtime: las declaraciones por trabajo residen en <code>Config.cron: HashMap&lt;String, CronJobDecl&gt;</code> (indexadas por alias), mientras que el comportamiento en tiempo de ejecución del bucle del planificador (<code>enabled</code>, límite de sondeo, recuperación) reside aquí.</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1624,10 +1691,10 @@ api_key = "..."
 </thead>
 <tbody>
 <tr><td><code>catch_up_on_startup</code></td><td>bool</td><td><code>true</code></td><td>Ejecutar todos los trabajos atrasados al iniciar el programador. Predeterminado: <code>true</code>.</td></tr>
-<tr><td><code>enabled</code></td><td>bool</td><td><code>true</code></td><td>Enable the built-in scheduler loop. When false, no cron jobs run.</td></tr>
-<tr><td><code>max_concurrent</code></td><td>entero</td><td><code>4</code></td><td>Maximum tasks executed in parallel within a single polling cycle.</td></tr>
+<tr><td><code>enabled</code></td><td>bool</td><td><code>true</code></td><td>Habilita el bucle del programador integrado. Cuando es <code>false</code>, no se ejecuta ningún cron job.</td></tr>
+<tr><td><code>max_concurrent</code></td><td>entero</td><td><code>4</code></td><td>Número máximo de tareas ejecutadas en paralelo dentro de un único ciclo de sondeo.</td></tr>
 <tr><td><code>max_run_history</code></td><td>entero</td><td><code>50</code></td><td>Número máximo de registros históricos de ejecuciones de cron a conservar. Predeterminado: <code>50</code>.</td></tr>
-<tr><td><code>max_tasks</code></td><td>entero</td><td><code>64</code></td><td>Maximum number of persisted scheduled tasks per polling cycle.</td></tr>
+<tr><td><code>max_tasks</code></td><td>entero</td><td><code>64</code></td><td>Número máximo de tareas programadas persistidas por ciclo de sondeo.</td></tr>
 </tbody>
 </table>
 </div>
@@ -1646,8 +1713,8 @@ api_key = "..."
 </table>
 </div>
 <h2 id="seguridad"><a class="header" href="#seguridad"><code>seguridad</code></a></h2>
-<p>Security configuration for audit logging, OTP, e-stop, IAM/SSO, and WebAuthn.</p>
-<p>Sandbox backend and resource limits live on per-agent risk profiles (see <code>RiskProfileConfig::sandbox_*</code> and <code>RiskProfileConfig::max_*</code>); the runtime resolves them via <code>Config::active_risk_profile(agent_alias)</code>.</p>
+<p>Configuración de seguridad para registro de auditoría, OTP, e-stop, IAM/SSO y WebAuthn.</p>
+<p>El backend de sandbox y los límites de recursos residen en los perfiles de riesgo por agente (consulta <code>RiskProfileConfig::sandbox_*</code> y <code>RiskProfileConfig::max_*</code>); el runtime los resuelve mediante <code>Config::active_risk_profile(agent_alias)</code>.</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1780,7 +1847,7 @@ api_key = "..."
 </table>
 </div>
 <h2 id="skill_bundles"><a class="header" href="#skill_bundles"><code>skill_bundles</code></a></h2>
-<p>Named skill bundles (<code>[skill_bundles.&lt;alias&gt;]</code>).</p>
+<p>Paquetes de skills con nombre (<code>[skill_bundles.&lt;alias&gt;]</code>).</p>
 <h2 id="habilidades"><a class="header" href="#habilidades"><code>habilidades</code></a></h2>
 <p>Configuración de carga de habilidades (sección <code>[skills]</code>).</p>
 <div class="table-wrapper">
@@ -1790,7 +1857,7 @@ api_key = "..."
 </thead>
 <tbody>
 <tr><td><code>allow_scripts</code></td><td>bool</td><td><code>false</code></td><td>Permitir archivos similares a scripts en las habilidades (<code>.sh</code>, <code>.bash</code>, <code>.ps1</code>, archivos de shell con shebang).</td></tr>
-<tr><td><code>install_suggestions</code></td><td>objeto</td><td>—</td><td>Prompt-triggered skill install suggestions (<code>[skills.install_suggestions]</code> section).</td></tr>
+<tr><td><code>install_suggestions</code></td><td>objeto</td><td>—</td><td>Sugerencias de instalación de skill activadas por prompt (sección <code>[skills.install_suggestions]</code>).</td></tr>
 <tr><td><code>open_skills_dir</code></td><td>cualquier</td><td><code>null</code></td><td>Ruta opcional a un repositorio local de open-skills.</td></tr>
 <tr><td><code>open_skills_enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilitar la carga y sincronización del repositorio de habilidades abiertas de la comunidad.</td></tr>
 <tr><td><code>prompt_injection_mode</code></td><td>cualquier</td><td>—</td><td>Configuración de carga de habilidades (sección <code>[skills]</code>).</td></tr>
@@ -1801,14 +1868,14 @@ api_key = "..."
 </table>
 </div>
 <h3 id="skillsinstall_suggestions"><a class="header" href="#skillsinstall_suggestions"><code>skills.install_suggestions</code></a></h3>
-<p>Prompt-triggered skill install suggestions (<code>[skills.install_suggestions]</code> section).</p>
+<p>Sugerencias de instalación de skill activadas por prompt (sección <code>[skills.install_suggestions]</code>).</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
 </thead>
 <tbody>
-<tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Enable suggestions for installable skills before normal agent turns.</td></tr>
+<tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilita sugerencias para skills instalables antes de los turnos normales del agente.</td></tr>
 </tbody>
 </table>
 </div>
@@ -1858,18 +1925,18 @@ api_key = "..."
 </div>
 <h2 id="almacenamiento"><a class="header" href="#almacenamiento"><code>almacenamiento</code></a></h2>
 <p>Configuración de almacenamiento persistente (sección <code>[storage]</code>).</p>
-<p>Storage is a two-tier alias-keyed map: <code>[storage.&lt;backend&gt;.&lt;alias&gt;]</code>, parallel to <code>[model_providers.&lt;type&gt;.&lt;alias&gt;]</code>. Each backend has its own typed config struct. <code>MemoryConfig.backend</code> carries a dotted reference (<code>"sqlite.default"</code>, <code>"postgres.work"</code>) that resolves to one of these entries via [<code>Config::resolve_active_storage</code>].</p>
+<p>El almacenamiento es un mapa de dos niveles indexado por alias: <code>[storage.&lt;backend&gt;.&lt;alias&gt;]</code>, en paralelo a <code>[model_providers.&lt;type&gt;.&lt;alias&gt;]</code>. Cada backend tiene su propia estructura de configuración tipada. <code>MemoryConfig.backend</code> contiene una referencia con notación de puntos (<code>"sqlite.default"</code>, <code>"postgres.work"</code>) que se resuelve a una de estas entradas mediante [<code>Config::resolve_active_storage</code>].</p>
 <div class="table-wrapper">
 <table>
 <thead>
 <tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
 </thead>
 <tbody>
-<tr><td><code>lucid</code></td><td>mapa</td><td>—</td><td>Lucid CLI sync instances (<code>[storage.lucid.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>markdown</code></td><td>mapa</td><td>—</td><td>Markdown storage instances (<code>[storage.markdown.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>postgres</code></td><td>mapa</td><td>—</td><td>PostgreSQL storage instances (<code>[storage.postgres.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>qdrant</code></td><td>mapa</td><td>—</td><td>Qdrant storage instances (<code>[storage.qdrant.&lt;alias&gt;]</code>).</td></tr>
-<tr><td><code>sqlite</code></td><td>mapa</td><td>—</td><td>SQLite storage instances (<code>[storage.sqlite.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>lucid</code></td><td>mapa</td><td>—</td><td>Instancias de sincronización de Lucid CLI (<code>[storage.lucid.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>markdown</code></td><td>mapa</td><td>—</td><td>Instancias de almacenamiento Markdown (<code>[storage.markdown.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>postgres</code></td><td>mapa</td><td>—</td><td>Instancias de almacenamiento de PostgreSQL (<code>[storage.postgres.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>qdrant</code></td><td>mapa</td><td>—</td><td>Instancias de almacenamiento Qdrant (<code>[storage.qdrant.&lt;alias&gt;]</code>).</td></tr>
+<tr><td><code>sqlite</code></td><td>mapa</td><td>—</td><td>Instancias de almacenamiento SQLite (<code>[storage.sqlite.&lt;alias&gt;]</code>).</td></tr>
 </tbody>
 </table>
 </div>
@@ -1897,24 +1964,24 @@ api_key = "..."
 <tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
 </thead>
 <tbody>
-<tr><td><code>api_key</code> 🔑</td><td>cualquier</td><td><code>null</code></td><td>API key used for transcription requests (Groq transcription provider).</td></tr>
-<tr><td><code>api_url</code></td><td>cadena</td><td><code>"https://api.groq.com/openai/v1/audio/transcriptions"</code></td><td>Whisper API endpoint URL (Groq transcription provider).</td></tr>
-<tr><td><code>assemblyai</code></td><td>objeto</td><td>—</td><td>AssemblyAI STT model_provider configuration (<code>[transcription.assemblyai]</code>).</td></tr>
-<tr><td><code>deepgram</code></td><td>objeto</td><td>—</td><td>Deepgram STT model_provider configuration (<code>[transcription.deepgram]</code>).</td></tr>
+<tr><td><code>api_key</code> 🔑</td><td>cualquier</td><td><code>null</code></td><td>Clave de API utilizada para las solicitudes de transcripción (proveedor de transcripción Groq).</td></tr>
+<tr><td><code>api_url</code></td><td>cadena</td><td><code>"https://api.groq.com/openai/v1/audio/transcriptions"</code></td><td>URL del endpoint de la API de Whisper (proveedor de transcripción Groq).</td></tr>
+<tr><td><code>assemblyai</code></td><td>objeto</td><td>—</td><td>Configuración de model_provider de STT de AssemblyAI (<code>[transcription.assemblyai]</code>).</td></tr>
+<tr><td><code>deepgram</code></td><td>objeto</td><td>—</td><td>Configuración model_provider de STT de Deepgram (<code>[transcription.deepgram]</code>).</td></tr>
 <tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilitar la transcripción de voz para los canales que lo admitan.</td></tr>
-<tr><td><code>google</code></td><td>objeto</td><td>—</td><td>Google Cloud Speech-to-Text model_provider configuration (<code>[transcription.google]</code>).</td></tr>
+<tr><td><code>google</code></td><td>objeto</td><td>—</td><td>Configuración de model_provider de Google Cloud Speech-to-Text (<code>[transcription.google]</code>).</td></tr>
 <tr><td><code>initial_prompt</code></td><td>cualquier</td><td><code>null</code></td><td>Prompt inicial opcional para sesionar la transcripción hacia el vocabulario esperado</td></tr>
-<tr><td><code>language</code></td><td>cualquier</td><td><code>null</code></td><td>Optional language hint (ISO-639-1, e.g. “en”, “ru”) for Groq transcription provider.</td></tr>
+<tr><td><code>language</code></td><td>cualquier</td><td><code>null</code></td><td>Sugerencia de idioma opcional (ISO-639-1, p. ej. “en”, “ru”) para el proveedor de transcripción Groq.</td></tr>
 <tr><td><code>local_whisper</code></td><td>objeto</td><td>—</td><td>Punto final de STT compatible con Whisper local/autoalojado (<code>[transcription.local_whisper]</code>).</td></tr>
 <tr><td><code>max_duration_secs</code></td><td>entero</td><td><code>120</code></td><td>Duración máxima de la voz en segundos (los mensajes más largos que este se omiten).</td></tr>
-<tr><td><code>model</code></td><td>cadena</td><td><code>"whisper-large-v3-turbo"</code></td><td>Whisper model name (Groq transcription provider).</td></tr>
-<tr><td><code>openai</code></td><td>objeto</td><td>—</td><td>OpenAI Whisper STT model_provider configuration (<code>[transcription.openai]</code>).</td></tr>
+<tr><td><code>model</code></td><td>cadena</td><td><code>"whisper-large-v3-turbo"</code></td><td>Nombre del modelo Whisper (proveedor de transcripción Groq).</td></tr>
+<tr><td><code>openai</code></td><td>objeto</td><td>—</td><td>Configuración de model_provider de OpenAI Whisper STT (<code>[transcription.openai]</code>).</td></tr>
 <tr><td><code>transcribe_non_ptt_audio</code></td><td>bool</td><td><code>false</code></td><td>También transcribe los mensajes de audio no PTT (reenviados/regulares) en WhatsApp,</td></tr>
 </tbody>
 </table>
 </div>
 <h3 id="transcriptionassemblyai"><a class="header" href="#transcriptionassemblyai"><code>transcription.assemblyai</code></a></h3>
-<p>AssemblyAI STT model_provider configuration (<code>[transcription.assemblyai]</code>).</p>
+<p>Configuración de model_provider de STT de AssemblyAI (<code>[transcription.assemblyai]</code>).</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1926,7 +1993,7 @@ api_key = "..."
 </table>
 </div>
 <h3 id="transcriptiondeepgram"><a class="header" href="#transcriptiondeepgram"><code>transcription.deepgram</code></a></h3>
-<p>Deepgram STT model_provider configuration (<code>[transcription.deepgram]</code>).</p>
+<p>Configuración model_provider de STT de Deepgram (<code>[transcription.deepgram]</code>).</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1939,7 +2006,7 @@ api_key = "..."
 </table>
 </div>
 <h3 id="transcriptiongoogle"><a class="header" href="#transcriptiongoogle"><code>transcription.google</code></a></h3>
-<p>Google Cloud Speech-to-Text model_provider configuration (<code>[transcription.google]</code>).</p>
+<p>Configuración de model_provider de Google Cloud Speech-to-Text (<code>[transcription.google]</code>).</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1968,7 +2035,7 @@ api_key = "..."
 </table>
 </div>
 <h3 id="transcriptionopenai"><a class="header" href="#transcriptionopenai"><code>transcription.openai</code></a></h3>
-<p>OpenAI Whisper STT model_provider configuration (<code>[transcription.openai]</code>).</p>
+<p>Configuración de model_provider de OpenAI Whisper STT (<code>[transcription.openai]</code>).</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -1996,8 +2063,8 @@ api_key = "..."
 </table>
 </div>
 <h2 id="tts"><a class="header" href="#tts"><code>tts</code></a></h2>
-<p>Text-to-Speech subsystem configuration (<code>[tts]</code>).</p>
-<p>Per-instance TTS configs live under <code>[tts_providers.&lt;type&gt;.&lt;alias&gt;]</code> (parallel to <code>providers.models</code>). What remains here are the global runtime knobs that apply to every model_provider invocation.</p>
+<p>Configuración del subsistema de Text-to-Speech (<code>[tts]</code>).</p>
+<p>Las configuraciones de TTS por instancia se encuentran en <code>[tts_providers.&lt;type&gt;.&lt;alias&gt;]</code> (de forma paralela a <code>providers.models</code>). Lo que queda aquí son los parámetros de tiempo de ejecución globales que se aplican a cada invocación de model_provider.</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -2005,7 +2072,7 @@ api_key = "..."
 </thead>
 <tbody>
 <tr><td><code>default_format</code></td><td>cadena</td><td><code>"mp3"</code></td><td>Formato de salida de audio predeterminado (<code>"mp3"</code>, <code>"opus"</code>, <code>"wav"</code>).</td></tr>
-<tr><td><code>default_voice</code></td><td>cadena</td><td><code>"aleación"</code></td><td>Default voice ID passed to the selected tts provider.</td></tr>
+<tr><td><code>default_voice</code></td><td>cadena</td><td><code>"aleación"</code></td><td>ID de voz predeterminado que se pasa al proveedor de tts seleccionado.</td></tr>
 <tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilitar la síntesis de TTS.</td></tr>
 <tr><td><code>max_text_length</code></td><td>entero</td><td><code>4096</code></td><td>Longitud máxima del texto de entrada en caracteres (por defecto 4096).</td></tr>
 </tbody>
@@ -2013,7 +2080,7 @@ api_key = "..."
 </div>
 <h2 id="tunnel"><a class="header" href="#tunnel"><code>tunnel</code></a></h2>
 <p>Configuración del túnel para exponer el gateway públicamente (sección <code>[tunnel]</code>).</p>
-<p>Supported model_providers: <code>"none"</code> (default), <code>"cloudflare"</code>, <code>"tailscale"</code>, <code>"ngrok"</code>, <code>"openvpn"</code>, <code>"pinggy"</code>, <code>"custom"</code>.</p>
+<p>Proveedores de modelos compatibles: <code>"none"</code> (predeterminado), <code>"cloudflare"</code>, <code>"tailscale"</code>, <code>"ngrok"</code>, <code>"openvpn"</code>, <code>"pinggy"</code>, <code>"custom"</code>.</p>
 <div class="table-wrapper">
 <table>
 <thead>
@@ -2026,7 +2093,7 @@ api_key = "..."
 <tr><td><code>openvpn</code></td><td>objeto</td><td>—</td><td>Configuración del túnel OpenVPN (<code>[tunnel.openvpn]</code>).</td></tr>
 <tr><td><code>pinggy</code></td><td>objeto</td><td>—</td><td></td></tr>
 <tr><td><code>tailscale</code></td><td>objeto</td><td>—</td><td></td></tr>
-<tr><td><code>tunnel_provider</code>*</td><td>cadena</td><td>—</td><td>How the gateway gets exposed to the public internet so webhooks (Telegram, Slack, etc.) can reach it. <code>none</code> = keep it local, no tunnel; <code>cloudflare</code> = Cloudflare Tunnel via cloudflared (needs a Zero Trust account and token); <code>tailscale</code> = Tailscale Funnel/Serve (tailnet-only or public, no account beyond tailscale); <code>ngrok</code> = ngrok agent with auth token; <code>openvpn</code> = bring-your-own OpenVPN egress; <code>pinggy</code> = Pinggy SSH tunnels (quick one-shot URLs); <code>custom</code> = run an arbitrary command you define under <code>[tunnel.custom]</code>.</td></tr>
+<tr><td><code>tunnel_provider</code>*</td><td>cadena</td><td>—</td><td>Cómo se expone el gateway a la red pública para que los webhooks (Telegram, Slack, etc.) puedan alcanzarlo. <code>none</code> = mantenerlo local, sin túnel; <code>cloudflare</code> = Cloudflare Tunnel mediante cloudflared (requiere una cuenta de Zero Trust y un token); <code>tailscale</code> = Tailscale Funnel/Serve (solo tailnet o público, sin más cuenta que tailscale); <code>ngrok</code> = agente de ngrok con token de autenticación; <code>openvpn</code> = salida OpenVPN propia (bring-your-own); <code>pinggy</code> = túneles SSH de Pinggy (URLs rápidas de un solo uso); <code>custom</code> = ejecutar un comando arbitrario que definas en <code>[tunnel.custom]</code>.</td></tr>
 </tbody>
 </table>
 </div>
@@ -2068,7 +2135,7 @@ api_key = "..."
 </div>
 <h3 id="tunnelopenvpn"><a class="header" href="#tunnelopenvpn"><code>tunnel.openvpn</code></a></h3>
 <p>Configuración del túnel OpenVPN (<code>[tunnel.openvpn]</code>).</p>
-<p>Required when <code>tunnel.tunnel_provider = "openvpn"</code>. Omitting this section entirely preserves previous behavior. Setting <code>tunnel.tunnel_provider = "none"</code> (or removing the <code>[tunnel.openvpn]</code> block) cleanly reverts to no-tunnel mode.</p>
+<p>Obligatorio cuando <code>tunnel.tunnel_provider = "openvpn"</code>. Omitir esta sección por completo conserva el comportamiento anterior. Establecer <code>tunnel.tunnel_provider = "none"</code> (o eliminar el bloque <code>[tunnel.openvpn]</code>) revierte limpiamente al modo sin túnel.</p>
 <p>Valores predeterminados: <code>connect_timeout_secs = 30</code>.</p>
 <div class="table-wrapper">
 <table>
@@ -2164,13 +2231,31 @@ api_key = "..."
 <tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
 </thead>
 <tbody>
-<tr><td><code>brave_api_key</code> 🔑</td><td>cualquier</td><td><code>null</code></td><td>Brave Search API key (required if search_provider is “brave”)</td></tr>
+<tr><td><code>brave_api_key</code> 🔑</td><td>cualquier</td><td><code>null</code></td><td>Clave de API de Brave Search (obligatoria si search_provider es “brave”)</td></tr>
 <tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Habilita <code>web_search_tool</code> para las búsquedas web</td></tr>
+<tr><td><code>jina_api_key</code> 🔑</td><td>cualquier</td><td><code>null</code></td><td>Jina AI API key (required if search_provider is “jina”)</td></tr>
 <tr><td><code>max_results</code></td><td>entero</td><td><code>5</code></td><td>Resultados máximos por búsqueda (1-10)</td></tr>
-<tr><td><code>search_provider</code></td><td>cadena</td><td><code>"duckduckgo"</code></td><td>Search provider: “duckduckgo” (free), “brave” (requires API key), “tavily” (requires API key), or “searxng” (self-hosted)</td></tr>
-<tr><td><code>searxng_instance_url</code></td><td>cualquier</td><td><code>null</code></td><td>SearXNG instance URL (required if search_provider is <code>"searxng"</code>), e.g. <code>"https://searx.example.com"</code>.</td></tr>
-<tr><td><code>tavily_api_key</code> 🔑</td><td>cualquier</td><td><code>null</code></td><td>Tavily Search API key (required if search_provider is “tavily”)</td></tr>
+<tr><td><code>search_provider</code></td><td>cadena</td><td><code>"duckduckgo"</code></td><td>Search provider: “duckduckgo” (free), “brave” (requires API key), “tavily” (requires API key), “searxng” (self-hosted), or “jina” (requires API key)</td></tr>
+<tr><td><code>searxng_instance_url</code></td><td>cualquier</td><td><code>null</code></td><td>URL de la instancia de SearXNG (obligatorio si search_provider es <code>"searxng"</code>), p. ej. <code>"https://searx.example.com"</code>.</td></tr>
+<tr><td><code>tavily_api_key</code> 🔑</td><td>cualquier</td><td><code>null</code></td><td>Clave de API de Tavily Search (obligatoria si <code>search_provider</code> es “tavily”)</td></tr>
 <tr><td><code>timeout_secs</code></td><td>entero</td><td><code>15</code></td><td>Tiempo de espera de la solicitud en segundos</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="wss"><a class="header" href="#wss"><code>wss</code></a></h2>
+<p>WebSocket Secure (WSS) transport for remote TUI-to-daemon connections (<code>[wss]</code>).</p>
+<p>When enabled, the daemon listens for TLS-encrypted WebSocket connections on the configured bind address and port. TUI clients connect via <code>--connect wss://host:port</code>.</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Clave</th><th>Tipo</th><th>Predeterminado</th><th>Descripción</th></tr>
+</thead>
+<tbody>
+<tr><td><code>bind</code></td><td>cadena</td><td><code>"0.0.0.0"</code></td><td>Bind address for the WSS listener (default: “0.0.0.0”).</td></tr>
+<tr><td><code>cert_path</code></td><td>cadena</td><td><code>""</code></td><td>Ruta al archivo de certificado del servidor codificado en PEM.</td></tr>
+<tr><td><code>enabled</code></td><td>bool</td><td><code>false</code></td><td>Enable the WSS listener (default: false).</td></tr>
+<tr><td><code>key_path</code></td><td>cadena</td><td><code>""</code></td><td>Ruta al archivo de clave privada del servidor codificado en PEM.</td></tr>
+<tr><td><code>puerto</code></td><td>entero</td><td>9781</td><td>Port for the WSS listener (default: 9781).</td></tr>
 </tbody>
 </table>
 </div>
@@ -2226,10 +2311,11 @@ api_key = "..."
         <script src="../book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
-        <script src="../theme/version-selector-e8a1edcd.js"></script>
-        <script src="../theme/lang-switcher-82c8c4bf.js"></script>
+        <script src="../../../_shared/theme/version-selector.js"></script>
+        <script src="../../../_shared/theme/lang-switcher.js"></script>
+        <script src="../../../_shared/theme/pc-enhance.js"></script>
         <script src="../mermaid-193ae996.min.js"></script>
-        <script src="../mermaid-init-94f7f342.js"></script>
+        <script src="../mermaid-init-d3ccd83c.js"></script>
 
 
 
